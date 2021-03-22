@@ -1,0 +1,319 @@
+/* Konzilo main stylesheet.
+ *
+ * Copyright (C) 2021 Kntnt Sweden AB.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ */
+
+
+
+/* Body background and font size, color and rendering. */
+
+body {
+  color: var(--text-color);
+  background-color: var(--text-background-color);
+  font-family: var(--text-font-family);
+  font-size: var(--text-font-size);
+  font-weight: var(--text-font-weight);
+  font-style: var(--text-font-style);
+  text-rendering: optimizeLegibility;
+}
+
+
+
+
+/* Headings */
+
+h1 {
+  color: var(--h1-color);
+  font-family: var(--h1-font-family);
+  font-size: var(--h1-font-size);
+  font-weight: var(--h1-font-weight);
+  font-style: var(--h1-font-style);
+}
+
+h2 {
+  color: var(--h2-color);
+  font-family: var(--h2-font-family);
+  font-size: var(--h2-font-size);
+  font-weight: var(--h2-font-weight);
+  font-style: var(--h2-font-style);
+}
+
+h3 {
+  color: var(--h3-color);
+  font-family: var(--h3-font-family);
+  font-size: var(--h3-font-size);
+  font-weight: var(--h3-font-weight);
+  font-style: var(--h3-font-style);
+}
+
+h4 {
+  color: var(--h4-color);
+  font-family: var(--h4-font-family);
+  font-size: var(--h4-font-size);
+  font-weight: var(--h4-font-weight);
+  font-style: var(--h4-font-style);
+}
+
+h5 {
+  color: var(--h5-color);
+  font-family: var(--h5-font-family);
+  font-size: var(--h5-font-size);
+  font-weight: var(--h5-font-weight);
+  font-style: var(--h5-font-style);
+}
+
+h6 {
+  color: var(--h6-color);
+  font-family: var(--h6-font-family);
+  font-size: var(--h6-font-size);
+  font-weight: var(--h6-font-weight);
+  font-style: var(--h6-font-style);
+}
+
+
+
+
+h2,
+h3,
+h4,
+h5 {
+  color: var(--heading-color);
+}
+
+h4 {
+  font-style: italic;
+}
+
+
+/* Run-in header */
+
+h6 {
+  display: inline-block;
+  margin: var(--text-distance-paragraph) 0 0 0;
+  font-size: var(--text-font-size);
+  font-weight: bold;
+}
+
+h6 + p {
+  display: inline;
+}
+
+h6 + *::after {
+  content: '\0A';
+  white-space: pre-wrap;
+}
+
+
+/* Fluid images based on https://www.zachleat.com/web/fluid-images */
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+img[width] {
+  width: auto;
+}
+
+img[width][height] {
+  height: auto;
+}
+
+img[src$=".svg"] {
+  width: 100%;
+  height: auto;
+  max-width: none;
+}
+
+
+/* Tables */
+
+table {
+  table-layout: auto;
+  border-collapse: separate;
+  border-spacing: var(--table-cell-gutter);
+  margin: var(--text-distance-box);
+}
+
+table.alignright,
+table.alignleft {
+  width: 50%;
+}
+
+tr > th,
+thead > tr > td {
+  color: var(--table-heading-color);
+  background-color: var(--table-heading-background-color);
+  text-align: left;  
+  font-weight: inherit;
+}
+
+th,
+td {
+  font-size: var(--font-size-table);
+  padding: var(--table-cell-padding-vertical) var(--table-cell-padding-horizontal);
+}
+
+tr:nth-child(odd) {
+  color: var(--table-row-odd-color);
+  background: var(--table-row-odd-background-color);
+}
+
+tr:nth-child(even) {
+  color: var(--table-row-even-color);
+  background: var(--table-row-even-background-color);
+}
+
+:not(thead) > tr:hover {
+  color: var(--table-row-hovering-color);
+  background-color: var(--table-row-hovering-background-color);
+}
+
+
+/* Figure and table captions */
+
+.wp-caption .wp-caption-text,
+table caption {
+  text-align: left;
+  font-size: var(--font-size-caption);
+}
+
+.wp-caption .wp-caption-text {
+  margin: var(--box-distance-caption) 0 0 0; 
+}
+
+table caption {
+  margin: 0 var(--table-cell-gutter) var(--box-distance-caption) var(--table-cell-gutter); 
+}
+
+
+/* Footnotes */
+
+.single-content sup[class*=footnote],
+.footnote-line > span:first-child {
+  position: relative;
+  top: -0.5em;
+  font-size: 0.8em;
+}
+
+.footnote-line {
+  margin-top: var(--space-large);
+  padding-top: var(--space-medium);
+  border-top: 1px solid var(--text-color);
+  font-size: 0.8em;
+}
+
+.footnote-line + .footnote-line {
+  margin-top: 1em;
+  border-top: none;
+}
+
+.footnote-line > span:first-child {
+  margin-right: 0.5em;
+}
+
+.footnote-line > a:last-child {
+  margin-left: 0.5em;
+  text-decoration: none;
+}
+
+
+/* Non-visible horizontal ruler. Use this to clear floats. */
+
+hr {
+  margin: 0;
+  border: none;
+  clear: both;
+}
+
+
+/* Horizontal ruler that is a single solid, dashed or dotten line, respectively, or a double solid line. */
+
+hr.single,
+hr.dashed,
+hr.dotted,
+hr.double {
+  margin: 2em 0;  
+}
+
+hr.single {
+  border-top: 1px solid var(--text-color);
+}
+
+hr.dashed {
+  border-top: 2px dashed var(--text-color);
+}
+
+hr.dotted {
+  border-top: 3px dotted var(--text-color);
+}
+
+hr.double {
+  border-top: 5px double var(--text-color);
+}
+
+
+/* Dinkus with ***, ⁂ or ❦, respectively. */
+
+hr.dinkus,
+hr.asterism,
+hr.fleuron {
+  margin: 2em 0;
+  text-align: center;
+  line-height: 1px;
+}
+
+hr.dinkus::after {
+  content: "***";
+  display: inline;
+}
+
+hr.asterism::after {
+  content: "\2042";
+  display: inline;
+}
+
+hr.hedera::after {
+  content: "\2766";
+  display: inline;
+}
+
+
+/* Miscellanoues improvements */
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+:focus {
+  outline: none;
+}

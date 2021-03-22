@@ -1,0 +1,104 @@
+/* Kntnt CSS Framework – Layout
+ *
+ * Copyright (C) 2021 Kntnt Sweden AB.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ */
+
+
+
+
+/* Push footer to bottom. */
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+}
+
+body > :nth-last-child(2) {
+  flex: 1 0 auto;
+}
+
+body > footer {
+  flex-shrink: 0;
+}
+
+
+/* Center content */
+
+body > * {
+	width: 100%;
+}
+
+body > * > * {
+	height: 100%;
+	max-width: 1220px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 80px 160px;
+}
+
+@media (max-width: 1023px) {
+	body > * > * {
+		padding: 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	body > * > * {
+		padding: 20px;
+	}
+}
+
+
+/* Header and footer protrude on desktop. */
+
+header > *,
+footer > * {
+	padding: 0 80px;
+}
+
+@media (max-width: 1023px) {
+	header > *,
+	footer > * {
+		padding: 0 40px;
+	}
+}
+
+@media (max-width: 767px) {
+	header > *,
+	footer > * {
+		padding: 0 20px;
+	}
+}
+
+
+/* Hide empty parts of header and footer */
+
+header :empty:not(img),
+footer :empty:not(img) {
+	display: none;
+}

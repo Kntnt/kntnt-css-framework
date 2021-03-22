@@ -1,0 +1,196 @@
+/* Kntnt CSS Framework – Defaults
+ *
+ * Copyright (C) 2021 Kntnt Sweden AB.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ */
+
+:root {
+
+  /* VARIABLES (CAN BE OVERRIDEN IN SITE-SPECIFIC STYLESHEET) */
+
+  /* Font size of the root element at different screen widths. */
+  --root-font-size-desktop: 20px; /* 1024 px ≤ width           */
+  --root-font-size-tablet: 18px;  /*  768 px ≤ width < 1024 px */
+  --root-font-size-mobile: 16px;  /*           width <  768 px */
+
+  /* Defaults for text (directly or through inheritance from body) */
+  --text-font-family: var(--font-stack-sans);
+  --text-font-size: var(--font-size-medium);
+  --text-font-weight: var(--font-weight-normal);
+  --text-font-style: normal;
+  --text-background-color: var(--white);
+  --text-color: var(--gray-ii);
+  --text-distance-heading-above: var(--space-xsmall);
+  --text-distance-paragraph: var(--space-medium);
+  --text-distance-box: var(--space-large);
+
+/* Defaults for lists, tables, images and similar contents forming a "box" inbetween two paragraphs */
+  --box-indent: var(--space-large);
+  --box-distance-caption: var(--space-xsmall);
+
+  /* Defaults for h1 */
+  /* <h1><span class="kicker">KICKER</span>HEADER<span clas="deck">DECK</span></h1> */
+  --h1-font-family: var(--font-stack-sans);
+  --h1-font-size: var(--font-size-large-3);
+  --h1-font-weight: var(--font-weight-semi-bold);
+  --h1-font-style: normal;
+  --h1-large-color: var(--white);
+  --h1-color: var(--gray-ii);
+  
+  /* Defaults for kicker (the superheading of h1) */
+  /* <h1><span class="kicker">KICKER</span>HEADER<span clas="deck">DECK</span></h1> */
+  --h1-kicker-font-family: var(--font-stack-sans);
+  --h1-kicker-font-size: var(--font-size-large-1);
+  --h1-kicker-font-weight: var(--font-weight-semi-bold);
+  --h1-kicker-font-style: normal;
+  --h1-kicker-color: var(--gray-ii);
+
+  /* Defaults for deck (the sunheading of h1) */
+  /* <h1><span class="kicker">KICKER</span>HEADER<span clas="deck">DECK</span></h1> */
+  --h1-deck-font-family: var(--font-stack-sans);
+  --h1-deck-font-size: var(--font-size-large-2);
+  --h1-deck-font-weight: var(--font-weight-normal);
+  --h1-deck-font-style: normal;
+  --h1-deck-color: var(--gray-ii);
+
+  /* Defaults for large h1 and its kick and deck are the same as for corrsponding normal verions except following */
+  /* <h1 class="large"><span class="kicker">KICKER</span>HEADER<span clas="deck">DECK</span></h1> */
+  --h1-large-font-size: var(--font-size-large-5);
+  --h1-large-color: var(--white);
+  --h1-large-kicker-font-size: var(--font-size-large-3);
+  --h1-large-kicker-color: var(--white);
+  --h1-large-deck-font-size: var(--font-size-large-4);
+  --h1-large-deck-color: var(--white);
+   
+  /* Defaults for h2 */
+  --h2-font-family: var(--font-stack-serif);
+  --h2-font-size: var(--font-size-large-2);
+  --h2-font-weight: var(--font-weight-semi-bold);
+  --h2-font-style: normal;
+  --h2-color: var(--gray-ii);
+
+  /* Defaults for h3 */
+  --h3-font-family: var(--font-stack-sans);
+  --h3-font-size: var(--font-size-large-1);
+  --h3-font-weight: var(--font-weight-semi-bold);
+  --h3-font-style: normal;
+  --h3-color: var(--gray-ii);
+    
+  /* Defaults for h4 */
+  --h4-font-family: var(--h3-font-family);
+  --h4-font-size: var(--h3-font-size);
+  --h4-font-weight: var(--text-font-weight);
+  --h4-font-style: italic;
+  --h4-color: var(--gray-ii);
+  
+  /* Defaults for h5 */
+  --h5-font-family: var(--text-font-family);
+  --h5-font-size: var(--text-font-size);
+  --h5-font-weight: var(--font-weight-semi-bold);
+  --h5-font-style: var(--text-font-style);
+  --h5-color: var(--text-color);
+  
+  /* Defaults for h6 */
+  --h6-font-family: var(--text-font-family);
+  --h6-font-size: var(--text-font-size);
+  --h6-font-weight: var(--font-weight-semi-bold);
+  --h6-font-style: var(--text-font-style);
+  --h6-color: var(--text-color);
+
+  /* Defaults for table */
+  --table-font-family: var(--font-stack-sans);
+  --table-font-size: var(--font-size-small-1);
+  --table-font-weight: var(--font-weight-normal);
+  --table-font-style: normal;
+  --table-heading-color: var(--white);
+  --table-heading-background-color: var(--gray-ii);
+  --table-row-odd-color: var(--gray-ii);
+  --table-row-odd-background-color: var(--almost-white);
+  --table-row-even-color: var(--gray-ii);
+  --table-row-even-background-color: var(--gray-x);
+  --table-row-hovering-color: var(--gray-ii);
+  --table-row-hovering-background-color: var(--gray-ix);
+  --table-cell-gutter: var(--space-xxsmall);
+  --table-cell-padding-vertical: var(--space-xsmall);
+  --table-cell-padding-horizontal: var(--space-small);
+
+  /* Default for caption */
+  --caption-font-family: var(--font-stack-sans);
+  --caption-font-size: var(--font-size-small-2);
+  --caption-font-weight: var(--font-weight-normal);
+  --caption-font-style: normal;
+
+  /* Defaults for callout, pullquote etc */
+  --callout-font-family: var(--font-stack-sans);
+  --callout-font-size: var(--font-size-large-1);
+  --callout-font-weight: var(--font-weight-light);
+  --callout-font-style: normal;
+
+  /* Defaults for headings in boxout etc */
+  --boxout-h2-font-family: var(--font-stack-sans);
+  --boxout-h2-font-size: var(--font-size-large-1);
+  --boxout-h2-font-weight: var(--font-weight-semi-bold);
+  --boxout-h2-font-style: normal;
+
+  /* Defaults for subheadings in boxout etc */
+  --boxout-h3-font-family: var(--font-stack-sans);
+  --boxout-h3-font-size: var(--font-size-medium);
+  --boxout-h3-font-weight: var(--font-weight-semi-bold);
+  --boxout-h3-font-style: normal;
+
+  /* Defaults for text in boxout etc */
+  --boxout-text-font-family: var(--font-stack-sans);
+  --boxout-text-font-size: var(--font-size-small-1);
+  --boxout-text-font-weight: var(--font-weight-nromal);
+  --boxout-text-font-style: normal;
+
+  /* Default for the bar at the page top */
+  --topbar-font-family: var(--font-stack-sans);
+  --topbar-font-size: var(--font-size-small-1);
+  --topbar-font-weight: var(--font-weight-normal);
+  --topbar-font-style: normal;
+  --topbar-color: var(--white);
+  --topbar-background-color: var(--black);
+
+  /* Default header section */
+  --header-font-family: var(--font-stack-sans);
+  --header-font-size: var(--font-size-small-1);
+  --header-font-weight: var(--font-weight-semi-bold);
+  --header-font-style: normal;
+  --bottombar-color: var(--black);
+  --bottombar-background-color: var(--white);
+
+  /* Default for page footer */
+  --footer-font-family: var(--font-stack-sans);
+  --footer-font-size: var(--font-size-small-1);
+  --footer-font-weight: var(--font-weight-normal);
+  --footer-font-style: normal;
+  --bottombar-color: var(--black);
+  --bottombar-background-color: var(--white);
+
+  /* Defaults for the bar at the page bottom */
+  --bottombar-font-family: var(--font-stack-sans);
+  --bottombar-font-size: var(--font-size-small-2);
+  --bottombar-font-weight: var(--font-weight-normal);
+  --bottombar-font-style: normal;
+  --bottombar-color: var(--white);
+  --bottombar-background-color: var(--black);
+
+}

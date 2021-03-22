@@ -1,0 +1,80 @@
+/* Kntnt CSS Framework – Constants
+ *
+ * Copyright (C) 2021 Kntnt Sweden AB.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to
+ * deal in the Software without restriction, including without limitation the
+ * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ * sell copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in
+ * all copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+ * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
+ * DEALINGS IN THE SOFTWARE.
+ */
+
+
+:root {
+
+  /* System font stacks */
+  --font-stack-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
+  --font-stack-serif: "Georgia Pro", Georgia, serif;
+  --font-stack-mono: Consolas, Monaco, Menlo,"Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Courier New", monospace;
+
+  /* Font size */
+  --font-size-small-2: 0.6rem;
+  --font-size-small-1: 0.8rem;
+  --font-size-medium: 1rem;
+  --font-size-large-1: 1.25rem;
+  --font-size-large-2: 1.6rem;
+  --font-size-large-3: 2rem;
+  --font-size-large-4: 2.5rem;
+  --font-size-large-5: 3rem;
+
+  /* Font weights */
+  --font-weight-thin: 100;
+  --font-weight-extra-light: 200;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semi-bold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extra-bold: 800;
+  --font-weight-black: 900;
+  --font-weight-extra-black: 950;
+
+  /* Spacing */
+  --space-xxsmall: 0.1rem;
+  --space-xsmall: 0.2rem;
+  --space-small: 0.5rem;
+  --space-medium: 1rem;
+  --space-large: 2rem;
+  --space-xlarge: 4rem;
+
+  /* Gray scale */
+  --extra-black: #000000;
+  --black: #0B0B0B;
+  --almost-black: #151515;
+  --gray-i: #1B1B1B;
+  --gray-ii: #303030;
+  --gray-iii: #474747;
+  --gray-iv: #5E5E5E;
+  --gray-v: #777777;
+  --gray-vi: #919191;
+  --gray-vii: #ABABAB;
+  --gray-viii: #C6C6C6;
+  --gray-ix: #E2E2E2;
+  --gray-x: #EBEBEB;
+  --almost-white: #F1F1F1;
+  --white: #F7F7F7;
+  --extra-white: #FFFFFF;
+
+}
