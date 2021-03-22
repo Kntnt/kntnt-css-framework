@@ -38,43 +38,43 @@ body > * {
 
 body > * > * {
 	height: 100%;
-	max-width: 1220px;
+	max-width: calc(var(--content-width) + 4 * var(--content-padding-desktop));
 	margin-left: auto;
 	margin-right: auto;
-	padding: 80px 160px;
+	padding: var(--content-padding-desktop) calc(2 * var(--content-padding-desktop));
 }
 
 @media (max-width: 1023px) {
 	body > * > * {
-		padding: 40px;
+		padding: var(--content-padding-tablet);
 	}
 }
 
 @media (max-width: 767px) {
 	body > * > * {
-		padding: 20px;
+		padding: var(--content-padding-mobile);
 	}
 }
 
 
-/* Header and footer protrude on desktop. */
+/* Header and footer has no vertical padding and protrude on desktop. */
 
 header > *,
 footer > * {
-	padding: 0 80px;
+	padding: 0 var(--content-padding-desktop);
 }
 
 @media (max-width: 1023px) {
 	header > *,
 	footer > * {
-		padding: 0 40px;
+		padding: 0 var(--content-padding-tablet);
 	}
 }
 
 @media (max-width: 767px) {
 	header > *,
 	footer > * {
-		padding: 0 20px;
+		padding: 0 var(--content-padding-mobile);
 	}
 }
 

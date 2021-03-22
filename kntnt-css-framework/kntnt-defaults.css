@@ -34,7 +34,6 @@
   --h1-font-size: var(--font-size-large-3);
   --h1-font-weight: var(--font-weight-semi-bold);
   --h1-font-style: normal;
-  --h1-large-color: var(--white);
   --h1-color: var(--gray-ii);
   
   /* Defaults for kicker (the superheading of h1) */
@@ -141,7 +140,7 @@
   /* Defaults for text in boxout etc */
   --boxout-text-font-family: var(--font-stack-sans);
   --boxout-text-font-size: var(--font-size-small-1);
-  --boxout-text-font-weight: var(--font-weight-nromal);
+  --boxout-text-font-weight: var(--font-weight-normal);
   --boxout-text-font-style: normal;
 
   /* Default for the bar at the page top */
@@ -157,16 +156,16 @@
   --header-font-size: var(--font-size-small-1);
   --header-font-weight: var(--font-weight-semi-bold);
   --header-font-style: normal;
-  --bottombar-color: var(--black);
-  --bottombar-background-color: var(--white);
+  --header-color: var(--black);
+  --header-background-color: var(--white);
 
   /* Default for page footer */
   --footer-font-family: var(--font-stack-sans);
   --footer-font-size: var(--font-size-small-1);
   --footer-font-weight: var(--font-weight-normal);
   --footer-font-style: normal;
-  --bottombar-color: var(--black);
-  --bottombar-background-color: var(--white);
+  --footer-color: var(--black);
+  --footer-background-color: var(--white);
 
   /* Defaults for the bar at the page bottom */
   --bottombar-font-family: var(--font-stack-sans);
