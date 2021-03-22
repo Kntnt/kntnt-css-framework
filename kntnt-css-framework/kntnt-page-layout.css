@@ -1,0 +1,113 @@
+/**
+ * Kntnt CSS Framework – https://github.com/Kntnt/kntnt-css-framework
+ *
+ * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
+ * SPDX-License-Identifier: MIT
+ *
+ * IMPORTANT: This stylesheet assumes that HTML documents follow the layout
+ * described in the HTML code of layout-example.html.
+ */
+
+
+/**
+ * Center content
+ */
+
+body > * > * > * {
+	--padding-horizontal: calc(var(--row-padding-desktop) + var(--row-protruding-desktop));
+	width: 100%;
+	max-width: calc(var(--content-width) + 2 * var(--padding-horizontal));
+	margin-left: auto;
+	margin-right: auto;
+	padding: var(--row-padding-desktop) var(--padding-horizontal);
+}
+
+@media (max-width: 1023px) {
+
+	body > * > * > * {
+		--padding-horizontal: calc(var(--row-padding-tablet) + var(--row-protruding-tablet));
+		padding: var(--row-padding-tablet) var(--padding-horizontal);
+	}
+
+}
+
+
+@media (max-width: 767px) {
+
+	body > * > * > * {
+		--padding-horizontal: calc(var(--row-padding-mobile) + var(--row-protruding-mobile));
+		padding: var(--row-padding-mobile) var(--padding-horizontal);
+	}
+
+}
+
+
+/**
+ * Header and footer has less vertical padding and protrude on desktop.
+ */
+
+body > header > * > * {
+	padding: var(--header-padding-vertical-desktop) var(--row-padding-desktop);
+}
+
+body > footer > * > * {
+	padding: var(--footer-padding-vertical-desktop) var(--row-padding-desktop);
+}
+
+@media (max-width: 1023px) {
+
+	body > header > * > * {
+		padding: var(--header-padding-vertical-tablet) var(--row-padding-tablet);
+	}
+
+	body > footer > * > * {
+		padding: var(--footer-padding-vertical-tablet) var(--row-padding-tablet);
+	}
+
+}
+
+@media (max-width: 767px) {
+
+	body > header > * > * {
+		padding: var(--header-padding-vertical-mobile) var(--row-padding-mobile);
+	}
+
+	body > footer > * > * {
+		padding: var(--footer-padding-vertical-mobile) var(--row-padding-mobile);
+	}
+
+}
+
+
+/**
+ * Hide empty parts of header and footer
+ */
+
+body > header :empty:not(img),
+body > footer :empty:not(img) {
+	display: none;
+}
+
+
+/**
+ * Push footer to bottom.
+ */
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+body > :nth-last-child(2) {
+  flex: 1 0 auto;
+}
+
+body > footer {
+  flex-shrink: 0;
+}

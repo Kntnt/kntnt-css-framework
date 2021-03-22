@@ -1,7 +1,5 @@
 /**
- * Kntnt CSS Framework – Normalize
- *
- * Download at https://github.com/Kntnt/kntnt-css-framework
+ * Kntnt CSS Framework – https://github.com/Kntnt/kntnt-css-framework
  *
  * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
  * SPDX-License-Identifier: MIT
@@ -112,35 +110,14 @@ h6 + p {
 
 
 /**
- *  Fluid images. See https://www.zachleat.com/web/fluid-images 
+ *  Fluid images.
  */
 
 img {
   display: block;
-  max-width: 100%;
-}
-
-img[width] {
   width: auto;
-}
-
-img[width][height] {
   height: auto;
-}
-
-img[src$=".svg"] {
-  width: 100%;
-  height: auto;
-  max-width: none;
-}
-
-
-/**
- *  Hide focus outline 
- */
-
-:focus {
-  outline: none;
+  max-width: 100%;
 }
 
 
@@ -150,6 +127,14 @@ img[src$=".svg"] {
 
 html:focus-within {
   scroll-behavior: smooth;
+}
+
+
+/**
+ * Enable kerning and ligatures.
+ */
+body {
+    text-rendering: optimizeLegibility;
 }
 
 
@@ -166,4 +151,13 @@ html:focus-within {
     transition-duration: 0 !important;
     scroll-behavior: auto !important;
   }
+}
+
+
+/**
+ *  Hide focus outline 
+ */
+
+:focus {
+  outline: none;
 }

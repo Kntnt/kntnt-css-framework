@@ -1,7 +1,5 @@
 /**
- * Kntnt CSS Framework – Defaults
- *
- * Download at https://github.com/Kntnt/kntnt-css-framework
+ * Kntnt CSS Framework – https://github.com/Kntnt/kntnt-css-framework
  *
  * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
  * SPDX-License-Identifier: MIT
@@ -13,27 +11,65 @@
 
 :root {
 
+  /**
+   * Below, desktop, table and mobile refers to folowing widths:
+   *
+   *   Desktop: 1024 px ≤ width
+   *   Tablet:    768 px ≤ width < 1024 px 
+   *   Mobile:             width <  768 px
+   */
+
 
   /**
    *  Font size of the root element at different screen widths. 
    */
 
-  --root-font-size-desktop: 20px; /* 1024 px ≤ width           */
-
-  --root-font-size-tablet: 18px;  /*  768 px ≤ width < 1024 px */
-
-  --root-font-size-mobile: 16px;  /*           width <  768 px */
-
+  --root-font-size-desktop: 20px;
+  --root-font-size-tablet: 18px;
+  --root-font-size-mobile: 16px;
 
 
   /**
-   *  Content width and padding 
+   *  Maximum width of content within rows (e.g. max width of header, main and footer).
    */
 
-  --content-width: 900px;
-  --content-padding-desktop: 4rem;
-  --content-padding-tablet: 2rem;
-  --content-padding-mobile: 1rem;
+  --content-width: 45rem;
+
+
+  /**
+   * Padding around content within rows (e.g. padding of header, main and footer)
+   */
+
+  --row-padding-desktop: 4rem;
+  --row-padding-tablet: 2rem;
+  --row-padding-mobile: 1rem;
+  
+
+  /**
+   * Distance that protruding rows (e.g. header) protrudes with.
+   */
+
+  --row-protruding-desktop: 4rem;
+  --row-protruding-tablet: 0rem;
+  --row-protruding-mobile: 0rem;
+
+
+   /**
+    * Header vertical padding
+    */
+
+  --header-padding-vertical-desktop: var(--space-small);
+  --header-padding-vertical-tablet: var(--space-xsmall);
+  --header-padding-vertical-mobile: var(--space-xxsmall);
+
+
+   /**
+    * Footer vertical padding
+    */
+
+  --footer-padding-vertical-desktop: var(--space-small);
+  --footer-padding-vertical-tablet: var(--space-xsmall);
+  --footer-padding-vertical-mobile: var(--space-xxsmall);
 
 
   /**
@@ -49,6 +85,79 @@
   --text-distance-heading-above: var(--space-xsmall);
   --text-distance-paragraph: var(--space-medium);
   --text-distance-box: var(--space-large);
+
+
+  /**
+   *  Defaults for the topbar
+   */
+
+  --topbar-font-family: var(--font-stack-sans);
+  --topbar-font-size: var(--font-size-small-2);
+  --topbar-font-weight: var(--font-weight-normal);
+  --topbar-font-style: normal;
+  --topbar-color: var(--white);
+  --topbar-background-color: var(--black);
+
+
+  /**
+   *  Defaults for the header
+   */
+
+  --header-font-family: var(--font-stack-sans);
+  --header-font-size: var(--font-size-small-1);
+  --header-font-weight: var(--font-weight-semi-bold);
+  --header-font-style: normal;
+  --header-color: var(--black);
+  --header-background-color: var(--white);
+
+
+  /**
+   *  Defaults for the alertbar
+   */
+
+  --alertbar-font-family: var(--font-stack-sans);
+  --alertbar-font-size: var(--font-size-small-1);
+  --alertbar-font-weight: var(--font-weight-semi-bold);
+  --alertbar-font-style: normal;
+  --alertbar-color: var(--color-alert);
+  --alertbar-background-color: var(--background-color-alert);
+
+
+  /**
+   *  Defaults for the footer message
+   */
+
+  --message-font-family: var(--font-stack-sans);
+  --message-font-size: var(--font-size-medium);
+  --message-font-weight: var(--font-weight-normal);
+  --message-font-style: normal;
+  --message-color: var(--white);
+  --message-background-color: var(--gray-iv);
+
+
+  /**
+   *  Default for page footer 
+   */
+
+  --footer-font-family: var(--font-stack-sans);
+  --footer-font-size: var(--font-size-small-1);
+  --footer-font-weight: var(--font-weight-normal);
+  --footer-font-style: normal;
+  --footer-color: var(--black);
+  --footer-background-color: var(--white);
+
+
+  /**
+   *  Defaults for the bar at the page bottom 
+   */
+
+  --bottombar-font-family: var(--font-stack-sans);
+  --bottombar-font-size: var(--font-size-small-2);
+  --bottombar-font-weight: var(--font-weight-normal);
+  --bottombar-font-style: normal;
+  --bottombar-color: var(--white);
+  --bottombar-background-color: var(--black);
+
 
 /**
  *  Defaults for lists, tables, images and similar contents forming a "box" inbetween two paragraphs 
@@ -111,7 +220,7 @@
    *  Defaults for h2 
    */
 
-  --h2-font-family: var(--font-stack-serif);
+  --h2-font-family: var(--font-stack-sans);
   --h2-font-size: var(--font-size-large-2);
   --h2-font-weight: var(--font-weight-semi-bold);
   --h2-font-style: normal;
@@ -234,50 +343,49 @@
 
 
   /**
-   *  Default for the bar at the page top 
+   * Primary colors. The values are expected to be overriden.
    */
-
-  --topbar-font-family: var(--font-stack-sans);
-  --topbar-font-size: var(--font-size-small-1);
-  --topbar-font-weight: var(--font-weight-normal);
-  --topbar-font-style: normal;
-  --topbar-color: var(--white);
-  --topbar-background-color: var(--black);
-
+  --color-1-heavy: #00FF2A;
+  --color-1-hint: #F7FFF9;
+  --color-1-sheer: #F0FFF2;
+  --color-1-pastel: #E1FAE5;
+  --color-1-pale: #C8FAD0;
+  --color-1-subdued: #78D688;
+  --color-1-lucid: #00D624;
+  --color-1-neutral: #3FCC57; 
+  --color-1-gloomy: #309B42;
+  --color-1-dark: #20662B;
+  --color-1-dim: #103316;
 
   /**
-   *  Default header section 
+   * Secondary colors. The values are expected to be overriden.
    */
-
-  --header-font-family: var(--font-stack-sans);
-  --header-font-size: var(--font-size-small-1);
-  --header-font-weight: var(--font-weight-semi-bold);
-  --header-font-style: normal;
-  --header-color: var(--black);
-  --header-background-color: var(--white);
-
+  --color-2-heavy: #FF6900;
+  --color-2-hint: #FFFBF7;
+  --color-2-sheer: #FFF6F0;
+  --color-2-pastel: #FAEBE1;
+  --color-2-pale: #FADDC8;
+  --color-2-subdued: #D69F78;
+  --color-2-lucid: #D65900;
+  --color-2-neutral: #CC7A3F; 
+  --color-2-gloomy: #9C5D30;
+  --color-2-dark: #663D20;
+  --color-2-dim: #331E10;
 
   /**
-   *  Default for page footer 
+   * Tertiary colors. The values are expected to be overriden.
    */
+  --color-2-heavy: #00D4FF;
+  --color-2-hint: #F7FEFF;
+  --color-2-sheer: #F0FCFF;
+  --color-2-pastel: #E1F6FA;
+  --color-2-pale: #C8F2FA;
+  --color-2-subdued: #77C5D5;
+  --color-2-lucid: #3FB5CC;
+  --color-2-neutral: #3FB5CC; 
+  --color-2-gloomy: #308A9C;
+  --color-2-dark: #205A66;
+  --color-2-dim: #102D33;
 
-  --footer-font-family: var(--font-stack-sans);
-  --footer-font-size: var(--font-size-small-1);
-  --footer-font-weight: var(--font-weight-normal);
-  --footer-font-style: normal;
-  --footer-color: var(--black);
-  --footer-background-color: var(--white);
-
-
-  /**
-   *  Defaults for the bar at the page bottom 
-   */
-
-  --bottombar-font-family: var(--font-stack-sans);
-  --bottombar-font-size: var(--font-size-small-2);
-  --bottombar-font-weight: var(--font-weight-normal);
-  --bottombar-font-style: normal;
-  --bottombar-color: var(--white);
-  --bottombar-background-color: var(--black);
 
 }

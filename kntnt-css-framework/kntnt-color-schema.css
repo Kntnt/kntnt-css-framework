@@ -1,0 +1,67 @@
+/**
+ * Kntnt CSS Framework – https://github.com/Kntnt/kntnt-css-framework
+ *
+ * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
+ * SPDX-License-Identifier: MIT
+ *
+ * IMPORTANT: Don't edit this file. Instead, make your own copy that you
+ * include instead. Alternatively, alter the values by overriding them
+ * in your own stylesheet loaded after Kntnt CSS Framework.
+ */
+
+
+:root {
+
+  
+  /**
+   * Primary color with varying lighness and saturation.
+   */
+
+  --color-1-heavy: #00FF2A;
+  --color-1-hint: #F7FFF9;
+  --color-1-sheer: #F0FFF2;
+  --color-1-pastel: #E1FAE5;
+  --color-1-pale: #C8FAD0;
+  --color-1-subdued: #78D688;
+  --color-1-lucid: #00D624;
+  --color-1-neutral: #3FCC57;
+  --color-1-gloomy: #309B42; /* Default link color, and button hover color */
+  --color-1-dark: #20662B;   /* Default link hover color, and button color */
+  --color-1-dim: #103316;
+
+
+  /**
+   * Secondary color with varying lighness and saturation.
+   */
+
+  --color-2-heavy: #FF6900;
+  --color-2-hint: #FFFBF7;
+  --color-2-sheer: #FFF6F0;
+  --color-2-pastel: #FAEBE1;
+  --color-2-pale: #FADDC8;
+  --color-2-subdued: #D69F78;
+  --color-2-lucid: #D65900;
+  --color-2-neutral: #CC7A3F; 
+  --color-2-gloomy: #9C5D30;
+  --color-2-dark: #663D20;
+  --color-2-dim: #331E10;
+
+
+  /**
+   * Tertiary colors. The values are expected to be overriden.
+   */
+
+  --color-2-heavy: #00D4FF;
+  --color-2-hint: #F7FEFF;
+  --color-2-sheer: #F0FCFF;
+  --color-2-pastel: #E1F6FA;
+  --color-2-pale: #C8F2FA;
+  --color-2-subdued: #77C5D5;
+  --color-2-lucid: #3FB5CC;
+  --color-2-neutral: #3FB5CC; 
+  --color-2-gloomy: #308A9C;
+  --color-2-dark: #205A66;
+  --color-2-dim: #102D33;
+
+
+}

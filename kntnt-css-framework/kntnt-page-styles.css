@@ -1,0 +1,103 @@
+/**
+ * Kntnt CSS Framework – https://github.com/Kntnt/kntnt-css-framework
+ *
+ * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
+ * SPDX-License-Identifier: MIT
+ *
+ * IMPORTANT: This stylesheet assumes that HTML documents follow the layout
+ * described in the HTML code of layout-example.html.
+ */
+
+
+/**
+ *  Body background and font size, color and rendering. 
+ */
+
+body {
+  color: var(--text-color);
+  background-color: var(--text-background-color);
+  font-family: var(--text-font-family);
+  font-size: var(--text-font-size);
+  font-weight: var(--text-font-weight);
+  font-style: var(--text-font-style);
+}
+
+/**
+ * Style header section
+ */
+body > header {
+	box-shadow: var(--shadow);
+}
+
+
+/**
+ * Style topbar
+ */
+
+body > header > :nth-child(1) {
+  color: var(--topbar-color);
+  background-color: var(--topbar-background-color);
+  font-family: var(--topbar-font-family);
+  font-size: var(--topbar-font-size);
+  font-weight: var(--topbar-font-weight);
+  font-style: var(--topbar-font-style);
+}
+
+
+/**
+ * Style header
+ */
+
+body > header > :nth-child(2) {
+  color: var(--header-color);
+  background-color: var(--header-background-color);
+  font-family: var(--header-font-family);
+  font-size: var(--header-font-size);
+  font-weight: var(--header-font-weight);
+  font-style: var(--header-font-style);
+}
+
+
+/**
+ * Style alertbar
+ */
+
+body > header > :nth-child(3) {
+  color: var(--alertbar-color);
+  background-color: var(--alertbar-background-color);
+  font-family: var(--alertbar-font-family);
+  font-size: var(--alertbar-font-size);
+  font-weight: var(--alertbar-font-weight);
+  font-style: var(--alertbar-font-style);
+}
+
+
+/**
+ * TODO: STICKY HEADER (NOT TOPBAR OR ALERTBAR)
+ */
+
+
+/**
+ * TODO: STYLE FOOTER
+ */
+
+
+/**
+ * Unobtrusive links that appear when hovering in header and footer sections.
+ */
+
+body > header > * > * a,
+body > footer > * > * a {
+	color: inherit;
+	text-decoration: none;
+}
+
+body > header > * > * a:hover,
+body > header > * > * a:focus,
+body > header > * > * a:active,
+body > footer > * > * a:hover,
+body > footer > * > * a:focus,
+body > footer > * > * a:active {
+	color: inherit;
+	text-decoration: underline;
+}

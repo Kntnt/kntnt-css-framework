@@ -1,13 +1,32 @@
 :root {
-	--header-background-color: #112b16;
+	--header-background-color: var(--color-1-pale);
 }
 
-#topbar {
-	color: var(--topbar-color);
-	background-color: var(--topbar-header-color);
+#header > * {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
 }
 
-#header {
-	color: var(--header-color);
-	background-color: var(--header-background-color);
+#header > * > figure {
+	margin: 0;
+
 }
+
+#header > * > nav {
+	margin: 0;
+}
+
+#header > * > nav > ul {
+	display: flex;
+	flex-direction: row;
+	padding: 0;
+}
+
+#header > * > nav > ul > li {
+	list-style-type: none;
+	margin-left: 1em;
+}
+
+

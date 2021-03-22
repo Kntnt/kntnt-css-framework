@@ -9,23 +9,25 @@
   <link rel="stylesheet" href="../kntnt-css-framework/kntnt-constants.css">
   <link rel="stylesheet" href="../kntnt-css-framework/kntnt-defaults.css">
   <link rel="stylesheet" href="../kntnt-css-framework/kntnt-normalize.css">
-  <link rel="stylesheet" href="../kntnt-css-framework/kntnt-layout.css">
-  <link rel="stylesheet" href="../kntnt-css-framework/kntnt-styles.css">
+  <link rel="stylesheet" href="../kntnt-css-framework/kntnt-page-layout.css">
+  <link rel="stylesheet" href="../kntnt-css-framework/kntnt-page-styles.css">
+  <link rel="stylesheet" href="../kntnt-css-framework/kntnt-content.css">
   <link rel="stylesheet" href="../kntnt-css-framework/kntnt-wordpress.css">
   <link rel="stylesheet" href="../kntnt-css-framework/kntnt-utilities.css">
+  <link rel="stylesheet" href="../kntnt-css-framework/kntnt-colors.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body><!-- Kntnt CSS Framework (KCF) assumes that <body> are structured as described below. -->
   <header><!-- The first child of <body> can be <header>. It consists of three <div>:s that each corresponds to a "header row". -->
     <div id="topbar"><!-- The first header row is a top bar. -->
       <div><!-- Each non-empty row must contain a single element (e.g. <div>) wrapping the actutal content of the row. -->
-        <!-- Intentionally left blank -->
+        <a href="https://github.com/Kntnt/kntnt-css-framework">Download the code from GitHub</a>
       </div>
     </div>
     <div id="header"><!-- The second header row is the actual header where icon, menu etcetera usually exists. -->
       <div><!-- Each non-empty row must contain a single element (e.g. <div>) wrapping the actutal content of the row. -->
         <figure>
-          <a href="https://thiscoop.ddev.site">
+          <a href="https://github.com/Kntnt/kntnt-css-framework">
             <img srcset="logo-1x.png, logo-2x.png 2x, logo-3x.png 3x" src="logo-3x.png" alt="Kntnt logo" height="60">
           </a>
         </figure>
@@ -54,11 +56,11 @@
     <aside><!-- Another examle of a main row. -->
       <div>
         <h2>Author</h2>
-        <p>Kntnt CSS Framework is developed by Kntnt – a Swedish sales, marketing and web technology agency.</p>
+        <p>Kntnt CSS Framework is developed by <a href="https://www.kntnt.se">Kntnt</a> – a Swedish sales, marketing and web technology agency.</p>
       </div>
     </aside>
   </main>
-  <aside><!-- The <main>-element may be preceded or followed by zeror or more of <article>, <aside>, <nav>, <section> and <div>, with for instance  contain related articles, comment, call-to-actions etcetera. -->
+  <aside class="panel-gray-dark"><!-- The <main>-element may be preceded or followed by zeror or more of <article>, <aside>, <nav>, <section> and <div>, with for instance  contain related articles, comment, call-to-actions etcetera. -->
     <div><!-- Each of the above mentioned elements consists of one or more "content rows", each represented by a sectioning element (except <header> and <footer>) or a <div>. -->
       <h2>Just an example</h2>
       <p>Zoom out and notice how the footer stas at the bottom ogf the svreen.</p>

@@ -1,7 +1,5 @@
 /**
- * Konzilo main stylesheet.
- *
- * Download at https://github.com/Kntnt/kntnt-css-framework
+ * Kntnt CSS Framework – https://github.com/Kntnt/kntnt-css-framework
  *
  * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
  * SPDX-License-Identifier: MIT
@@ -9,20 +7,54 @@
 
 
 
+  /**
+   * TODO
+   */
+
+  .panel-gray-dark {
+    background-color: var(--gray-ii);
+    color: var(--white);
+  }
+
+  .panel-gray-light {
+    background-color: var(--gray-ix);
+    color: var(--black);
+  }
+
+  .panel-color-1-dark {
+    background-color: var(--color-1-dark);
+    color: var(--white);
+  }
+
+  .panel-color-1-light {
+    background-color: var(--color-1-subdued);
+    color: var(--black);
+  }
+
+  .panel-color-2-dark {
+    background-color: var(--color-2-dark);
+    color: var(--white);
+  }
+
+  .panel-color-2-light {
+    background-color: var(--color-2-subdued);
+    color: var(--black);
+  }
+
+  .panel-color-3-dark {
+    background-color: var(--color-2-dark);
+    color: var(--white);
+  }
+
+  .panel-color-3-light {
+    background-color: var(--color-3-subdued);
+    color: var(--black);
+  }
+  
+
 /**
- *  Body background and font size, color and rendering. 
+ * Links
  */
-
-body {
-  color: var(--text-color);
-  background-color: var(--text-background-color);
-  font-family: var(--text-font-family);
-  font-size: var(--text-font-size);
-  font-weight: var(--text-font-weight);
-  font-style: var(--text-font-style);
-  text-rendering: optimizeLegibility;
-}
-
 
 
 
@@ -111,30 +143,6 @@ h6 + p {
 h6 + *::after {
   content: '\0A';
   white-space: pre-wrap;
-}
-
-
-/**
- *  Fluid images based on https://www.zachleat.com/web/fluid-images 
- */
-
-img {
-  display: block;
-  max-width: 100%;
-}
-
-img[width] {
-  width: auto;
-}
-
-img[width][height] {
-  height: auto;
-}
-
-img[src$=".svg"] {
-  width: 100%;
-  height: auto;
-  max-width: none;
 }
 
 
