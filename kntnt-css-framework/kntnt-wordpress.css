@@ -1,25 +1,32 @@
-/* Kntnt CSS Framework – WordPress specific styling
+/**
+ * Kntnt CSS Framework – WordPress specific styling
  *
  * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
  * SPDX-License-Identifier: MIT
  */
 
 
-/* Exclude admin bar when pushing content to bottom (see konzilo-structure.css). */
+/**
+ * Exclude admin bar when pushing content to bottom (see konzilo-structure.css).
+ */
 
 body.admin-bar {
   height: calc(100vh - 32px);
 }
 
 
-/* Embeds */
+/**
+ * Embeds
+ */
 
 .oembed,
 .wp-audio-shortcode,
 .fluid-width-video-wrapper,
 .rll-youtube-player {
   margin: var(--text-distance-box) 0;
-  clear: both; /* Escape floats */
+  clear: both; /**
+ *  Escape floats 
+ */
 }
 
 .oembed {
@@ -31,7 +38,9 @@ body.admin-bar {
 }
 
 
-/* A non-comprenhesive workaround for the dreadful wpautop() bug (open since 2007!) */
+/**
+ * A non-comprenhesive workaround for the dreadful wpautop() bug (open since 2007!)
+ */
 
 p:empty {
   display: none;

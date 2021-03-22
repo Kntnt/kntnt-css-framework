@@ -13,7 +13,9 @@
 
 
 
-/* Responsive fonts */
+/**
+ *  Responsive fonts 
+ */
 
 :root {
   font-size: var(--root-font-size-desktop);
@@ -37,7 +39,9 @@
 }
 
 
-/* Include border and padding in claculation of width and height */
+/**
+ *  Include border and padding in claculation of width and height 
+ */
 
 :root {
   box-sizing: border-box;
@@ -50,7 +54,9 @@
 }
 
 
-/* Consistent vertical spacing */
+/**
+ *  Consistent vertical spacing 
+ */
 
 blockquote,
 dl,
@@ -104,7 +110,9 @@ h6 + p {
 }
 
 
-/* Fluid images. See https://www.zachleat.com/web/fluid-images */
+/**
+ *  Fluid images. See https://www.zachleat.com/web/fluid-images 
+ */
 
 img {
   display: block;
@@ -126,21 +134,27 @@ img[src$=".svg"] {
 }
 
 
-/* Hide focus outline */
+/**
+ *  Hide focus outline 
+ */
 
 :focus {
   outline: none;
 }
 
 
-/* Use smooth scroll for jumps on pages */
+/**
+ *  Use smooth scroll for jumps on pages 
+ */
 
 html:focus-within {
   scroll-behavior: smooth;
 }
 
 
-/* Respect users requested to minimize the amount of animation or motion */
+/**
+ *  Respect users requested to minimize the amount of animation or motion 
+ */
 
 @media (prefers-reduced-motion: reduce) {
   *,

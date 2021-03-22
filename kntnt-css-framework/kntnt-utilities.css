@@ -1,11 +1,14 @@
-/* Kntnt CSS Framework – Utility classes
+/**
+ * Kntnt CSS Framework – Utility classes
  *
  * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
  * SPDX-License-Identifier: MIT
  */
 
 
-/* Floats and clearfixes */
+/**
+ * Floats and clearfixes
+ */
 
 .wrap-float {
   clear: none !important;
@@ -16,7 +19,9 @@
 }
 
 
-/* Center children horizontally or vertically, respectively. */
+/**
+ *  Center children horizontally or vertically, respectively. 
+ */
 
 .center-children-horizontally,
 .center-children-vertically {
@@ -32,7 +37,9 @@
 }
 
 
-/* Align horizontally */
+/**
+ *  Align horizontally 
+ */
 
 .left,
 .right {
@@ -70,7 +77,9 @@ not(table).aligncenter {
 }
 
 
-/* Set width */
+/**
+ *  Set width 
+ */
 
 .wide,
 .width-100 {
@@ -92,7 +101,9 @@ not(table).aligncenter {
 }
 
 
-/* Children and descendants, respectively, inherits this elemenet's color */
+/**
+ *  Children and descendants, respectively, inherits this elemenet's color 
+ */
 
 .children-inherit-color > :not(:hover):not(:focus):not(:active),
 .descendants-inherit-color :not(:hover):not(:focus):not(:active) {
@@ -100,7 +111,9 @@ not(table).aligncenter {
 }
 
 
-/* Box-shadow */
+/**
+ *  Box-shadow 
+ */
 
 .shadow {
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.50);  
@@ -112,14 +125,18 @@ not(table).aligncenter {
 
 
 
-/* Tranistion */
+/**
+ *  Tranistion 
+ */
 
 .transition {
   transition: all 400ms ease-in-out;
 }
 
 
-/* Debug tool: Outline elements */
+/**
+ *  Debug tool: Outline elements 
+ */
 
 .debug {
   outline: 1px solid red;

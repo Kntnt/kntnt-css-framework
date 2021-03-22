@@ -1,4 +1,5 @@
-/* Konzilo main stylesheet.
+/**
+ * Konzilo main stylesheet.
  *
  * Copyright (C) 2021 Kntnt Sweden AB.
  *
@@ -8,7 +9,9 @@
 
 
 
-/* Body background and font size, color and rendering. */
+/**
+ *  Body background and font size, color and rendering. 
+ */
 
 body {
   color: var(--text-color);
@@ -23,7 +26,9 @@ body {
 
 
 
-/* Headings */
+/**
+ *  Headings 
+ */
 
 h1 {
   color: var(--h1-color);
@@ -88,7 +93,9 @@ h4 {
 }
 
 
-/* Run-in header */
+/**
+ *  Run-in header 
+ */
 
 h6 {
   display: inline-block;
@@ -107,7 +114,9 @@ h6 + *::after {
 }
 
 
-/* Fluid images based on https://www.zachleat.com/web/fluid-images */
+/**
+ *  Fluid images based on https://www.zachleat.com/web/fluid-images 
+ */
 
 img {
   display: block;
@@ -129,7 +138,9 @@ img[src$=".svg"] {
 }
 
 
-/* Tables */
+/**
+ *  Tables 
+ */
 
 table {
   table-layout: auto;
@@ -173,7 +184,9 @@ tr:nth-child(even) {
 }
 
 
-/* Figure and table captions */
+/**
+ *  Figure and table captions 
+ */
 
 .wp-caption .wp-caption-text,
 table caption {
@@ -190,7 +203,9 @@ table caption {
 }
 
 
-/* Footnotes */
+/**
+ *  Footnotes 
+ */
 
 .single-content sup[class*=footnote],
 .footnote-line > span:first-child {
@@ -221,7 +236,9 @@ table caption {
 }
 
 
-/* Non-visible horizontal ruler. Use this to clear floats. */
+/**
+ *  Non-visible horizontal ruler. Use this to clear floats. 
+ */
 
 hr {
   margin: 0;
@@ -230,7 +247,9 @@ hr {
 }
 
 
-/* Horizontal ruler that is a single solid, dashed or dotten line, respectively, or a double solid line. */
+/**
+ *  Horizontal ruler that is a single solid, dashed or dotten line, respectively, or a double solid line. 
+ */
 
 hr.single,
 hr.dashed,
@@ -256,7 +275,9 @@ hr.double {
 }
 
 
-/* Dinkus with ***, ⁂ or ❦, respectively. */
+/**
+ *  Dinkus with ***, ⁂ or ❦, respectively. 
+ */
 
 hr.dinkus,
 hr.asterism,
@@ -282,7 +303,9 @@ hr.hedera::after {
 }
 
 
-/* Miscellanoues improvements */
+/**
+ *  Miscellanoues improvements 
+ */
 
 html:focus-within {
   scroll-behavior: smooth;
