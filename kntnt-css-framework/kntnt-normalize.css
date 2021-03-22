@@ -1,15 +1,16 @@
-/* Kntnt CSS Framework – Normalize
+/**
+ * Kntnt CSS Framework – Normalize
  *
- * IMPORTANT:
- * Kntnt CSS Framwork (KCF) requires that Nicolas Gallagher's normalize.css
- * (see https://necolas.github.io/normalize.css/) is loaed before any of
- * the KCF files. A copy is included with the sample files.
- *
- * This stylesheet only provides additional normalization needed by KCF.
  *
  * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
  * SPDX-License-Identifier: MIT
+ *
+ * IMPORTANT: Kntnt CSS Framwork (KCF) requires that Nicolas Gallagher's
+ * normalize.css (see https://necolas.github.io/normalize.css/) is loaed
+ * before any of the KCF files. A copy is included with the sample files.
+ * This stylesheet only provides additional normalization needed by KCF.
  */
+
 
 
 /* Responsive fonts */
@@ -33,6 +34,19 @@
     font-size: var(--root-font-size-mobile);
   }
 
+}
+
+
+/* Include border and padding in claculation of width and height */
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
 }
 
 
