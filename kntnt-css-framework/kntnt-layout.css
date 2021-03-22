@@ -1,50 +1,33 @@
 /* Kntnt CSS Framework – Layout
  *
- * Copyright (C) 2021 Kntnt Sweden AB.
+ * This stylesheet requires following document structure:
  *
- * Permission is hereby granted, free of charge, to any person obtaining a copy
- * of this software and associated documentation files (the "Software"), to
- * deal in the Software without restriction, including without limitation the
- * rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
- * sell copies of the Software, and to permit persons to whom the Software is
- * furnished to do so, subject to the following conditions:
+ * <body>
+ *   <header>
+ *     <div>
+ *       Header content goes here. Notice that <header> must wrap one and only
+ *       one element (e.g. <div>) that contains the actual header content.
+ *     </div>
+ *   </header>
+ *   <section>
+ *     <div>
+ *       Between header and footer goes one or more <article>, <aside>, <nav>
+ *       or <section>. Notice that each each sectioning element must wrap one
+ *       and only one element (e.g. <div>) that contains the actual content.
+ *     </div>  
+ *   </section>
+ *   <div><!-- Push footer to bottom --></div>
+ *   <footer>
+ *     <div>
+ *       Footer content goes here. Notice that <footer> must wrap one and only
+ *       one element (e.g. <div>) that contains the actual footer content.
+ *     </div>
+ *   </footer>
+ * <body>
  *
- * The above copyright notice and this permission notice shall be included in
- * all copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
- * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
- * DEALINGS IN THE SOFTWARE.
+ * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
+ * SPDX-License-Identifier: MIT
  */
-
-
-
-
-/* Push footer to bottom. */
-
-html,
-body {
-  height: 100vh;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  height: 100vh;
-}
-
-body > :nth-last-child(2) {
-  flex: 1 0 auto;
-}
-
-body > footer {
-  flex-shrink: 0;
-}
 
 
 /* Center content */
@@ -101,4 +84,27 @@ footer > * {
 header :empty:not(img),
 footer :empty:not(img) {
 	display: none;
+}
+
+
+/* Push footer to bottom. */
+
+html,
+body {
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100vh;
+}
+
+body > :nth-last-child(2) {
+  flex: 1 0 auto;
+}
+
+body > footer {
+  flex-shrink: 0;
 }
