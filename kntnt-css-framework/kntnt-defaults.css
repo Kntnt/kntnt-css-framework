@@ -15,9 +15,9 @@
 
   /* Content width and padding */
   --content-width: 900px;
-  --content-padding-desktop: 80px;
-  --content-padding-tablet: 40px;
-  --content-padding-mobile: 20px;
+  --content-padding-desktop: 4rem;
+  --content-padding-tablet: 2rem;
+  --content-padding-mobile: 1rem;
 
   /* Defaults for text (directly or through inheritance from body) */
   --text-font-family: var(--font-stack-sans);
