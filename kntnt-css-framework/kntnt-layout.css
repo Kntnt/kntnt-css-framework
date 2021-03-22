@@ -1,33 +1,13 @@
 /**
  * Kntnt CSS Framework – Layout
  *
+ * Download at https://github.com/Kntnt/kntnt-css-framework
+ *
  * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
  * SPDX-License-Identifier: MIT
  *
- * This stylesheet assumes following document structure:
- *
- * <body>
- *   <header>
- *     <div>
- *       Header content goes here. Notice that <header> must wrap one element
-  *      (e.g. <div>) that contains the actual header content.
- *     </div>
- *   </header>
- *   <section>
- *     <div>
- *       Between header and footer goes one or more <article>, <aside>, <nav>
- *       or <section>. Notice that each each sectioning element must wrap one
- *       element (e.g. <div>) that contains the actual content.
- *     </div>  
- *   </section>
- *   <div><!-- Push footer to bottom --></div>
- *   <footer>
- *     <div>
- *       Footer content goes here. Notice that <footer> must wrap one element
- *       (e.g. <div>) that contains the actual footer content.
- *     </div>
- *   </footer>
- * <body>
+ * IMPORTANT: This stylesheet assumes that HTML documents follow the layout
+ * described as comments in the code of layout-example.html.
  */
 
 
