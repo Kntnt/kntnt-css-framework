@@ -13,7 +13,7 @@
 
 
 /**
- *  Responsive fonts 
+ *  Responsive fonts
  */
 
 :root {
@@ -39,7 +39,7 @@
 
 
 /**
- *  Include border and padding in claculation of width and height 
+ *  Include border and padding in claculation of width and height
  */
 
 :root {
@@ -54,7 +54,7 @@
 
 
 /**
- *  Consistent vertical spacing 
+ *  Consistent vertical spacing
  */
 
 blockquote,
@@ -122,7 +122,7 @@ img {
 
 
 /**
- *  Use smooth scroll for jumps on pages 
+ *  Use smooth scroll for jumps on pages
  */
 
 html:focus-within {
@@ -139,7 +139,7 @@ body {
 
 
 /**
- *  Respect users requested to minimize the amount of animation or motion 
+ *  Respect users requested to minimize the amount of animation or motion
  */
 
 @media (prefers-reduced-motion: reduce) {
@@ -155,7 +155,7 @@ body {
 
 
 /**
- *  Hide focus outline 
+ *  Hide focus outline
  */
 
 :focus {

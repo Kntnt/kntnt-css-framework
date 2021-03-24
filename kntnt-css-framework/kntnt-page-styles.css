@@ -10,7 +10,7 @@
 
 
 /**
- *  Body background and font size, color and rendering. 
+ *  Body background and font size, color and rendering.
  */
 
 body {
@@ -130,7 +130,7 @@ body > footer > * > * a,
 body > footer > * > * a:hover,
 body > footer > * > * a:focus,
 body > footer > * > * a:active {
-	color: inherit;
+  color: inherit;
 }
 
 body > header > :nth-child(2) > * a,

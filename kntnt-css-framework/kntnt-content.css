@@ -26,7 +26,7 @@ a:active {
 
 
 /**
- *  Headings 
+ *  Headings
  */
 
 h1 {
@@ -93,7 +93,7 @@ h4 {
 
 
 /**
- *  Run-in header 
+ *  Run-in header
  */
 
 h6 {
@@ -123,7 +123,7 @@ h6 + *::after {
 
 
 /**
- *  Tables 
+ *  Tables
  */
 
 table {
@@ -143,7 +143,7 @@ tr > th,
 thead > tr > td {
   color: var(--table-heading-color);
   background-color: var(--table-heading-background-color);
-  text-align: left;  
+  text-align: left;
   font-weight: inherit;
 }
 
@@ -170,7 +170,7 @@ tr:nth-child(even) {
 
 
 /**
- *  Figure and table captions 
+ *  Figure and table captions
  */
 
 .wp-caption .wp-caption-text,
@@ -180,16 +180,16 @@ table caption {
 }
 
 .wp-caption .wp-caption-text {
-  margin: var(--box-distance-caption) 0 0 0; 
+  margin: var(--box-distance-caption) 0 0 0;
 }
 
 table caption {
-  margin: 0 var(--table-cell-gutter) var(--box-distance-caption) var(--table-cell-gutter); 
+  margin: 0 var(--table-cell-gutter) var(--box-distance-caption) var(--table-cell-gutter);
 }
 
 
 /**
- *  Footnotes 
+ *  Footnotes
  */
 
 .single-content sup[class*=footnote],
@@ -222,7 +222,7 @@ table caption {
 
 
 /**
- *  Non-visible horizontal ruler. Use this to clear floats. 
+ *  Non-visible horizontal ruler. Use this to clear floats.
  */
 
 hr {
@@ -233,14 +233,14 @@ hr {
 
 
 /**
- *  Horizontal ruler that is a single solid, dashed or dotten line, respectively, or a double solid line. 
+ *  Horizontal ruler that is a single solid, dashed or dotten line, respectively, or a double solid line.
  */
 
 hr.single,
 hr.dashed,
 hr.dotted,
 hr.double {
-  margin: 0;  
+  margin: 0;
 }
 
 hr.single {
@@ -261,7 +261,7 @@ hr.double {
 
 
 /**
- *  Dinkus with ***, ⁂ or ❦, respectively. 
+ *  Dinkus with ***, ⁂ or ❦, respectively.
  */
 
 hr.dinkus,

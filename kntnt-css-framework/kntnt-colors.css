@@ -13,7 +13,7 @@
 
 :root {
 
-  
+
   /**
    * Primary color is inteded for links and hovered buttons.
    * YOU SHOULD OVERRIDE THIS ONE.
@@ -30,13 +30,13 @@
 
 
    /**
-    * Dark color is used for 
+    * Dark color is used for
     */
    --color-primary-dark: hsl(130, 30%, 50%);
 
 
    /**
-    * Light color is used for 
+    * Light color is used for
     */
    --color-primary-light: hsl(130, 30%, 80%);
 

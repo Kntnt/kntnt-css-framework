@@ -15,13 +15,13 @@
    * Below, desktop, table and mobile refers to folowing widths:
    *
    *   Desktop: 1024 px ≤ width
-   *   Tablet:    768 px ≤ width < 1024 px 
+   *   Tablet:    768 px ≤ width < 1024 px
    *   Mobile:             width <  768 px
    */
 
 
   /**
-   *  Font size of the root element at different screen widths. 
+   *  Font size of the root element at different screen widths.
    */
 
   --root-font-size-desktop: 20px;
@@ -43,7 +43,7 @@
   --row-padding-desktop: 4rem;
   --row-padding-tablet: 2rem;
   --row-padding-mobile: 1rem;
-  
+
 
   /**
    * Distance that protruding rows (e.g. header) protrudes with.
@@ -57,7 +57,7 @@
   /**
    * Vertical padding for the topbar
    */
- 
+
   --topbar-padding-vertical: var(--space-small);
 
 
@@ -100,7 +100,7 @@
 
 
   /**
-   *  Defaults for text (directly or through inheritance from body) 
+   *  Defaults for text (directly or through inheritance from body)
    */
 
   --text-font-family: var(--font-stack-sans);
@@ -139,7 +139,7 @@
 
 
   /**
-   *  Default for page footer 
+   *  Default for page footer
    */
 
   --footer-font-family: var(--font-stack-sans);
@@ -151,7 +151,7 @@
 
 
   /**
-   *  Defaults for the bar at the page bottom 
+   *  Defaults for the bar at the page bottom
    */
 
   --bottombar-font-family: var(--font-stack-sans);
@@ -163,7 +163,7 @@
 
 
 /**
- *  Defaults for lists, tables, images and similar contents forming a "box" inbetween two paragraphs 
+ *  Defaults for lists, tables, images and similar contents forming a "box" inbetween two paragraphs
  */
 
   --box-indent: var(--space-large);
@@ -171,8 +171,8 @@
 
 
   /**
-   *  Defaults for h1 
-   *  <h1><span class="kicker">KICKER</span>HEADER<span clas="deck">DECK</span></h1> 
+   *  Defaults for h1
+   *  <h1><span class="kicker">KICKER</span>HEADER<span clas="deck">DECK</span></h1>
    */
 
   --h1-font-family: var(--font-stack-sans);
@@ -180,11 +180,11 @@
   --h1-font-weight: var(--font-weight-semi-bold);
   --h1-font-style: normal;
   --h1-color: var(--gray-ii);
-  
+
 
   /**
-   *  Defaults for kicker (the superheading of h1) 
-   *  <h1><span class="kicker">KICKER</span>HEADER<span clas="deck">DECK</span></h1> 
+   *  Defaults for kicker (the superheading of h1)
+   *  <h1><span class="kicker">KICKER</span>HEADER<span clas="deck">DECK</span></h1>
    */
 
   --h1-kicker-font-family: var(--font-stack-sans);
@@ -195,8 +195,8 @@
 
 
   /**
-   *  Defaults for deck (the sunheading of h1) 
-   *  <h1><span class="kicker">KICKER</span>HEADER<span clas="deck">DECK</span></h1> 
+   *  Defaults for deck (the sunheading of h1)
+   *  <h1><span class="kicker">KICKER</span>HEADER<span clas="deck">DECK</span></h1>
    */
 
   --h1-deck-font-family: var(--font-stack-sans);
@@ -207,8 +207,8 @@
 
 
   /**
-   *  Defaults for large h1 and its kick and deck are the same as for corrsponding normal verions except following 
-   *  <h1 class="large"><span class="kicker">KICKER</span>HEADER<span clas="deck">DECK</span></h1> 
+   *  Defaults for large h1 and its kick and deck are the same as for corrsponding normal verions except following
+   *  <h1 class="large"><span class="kicker">KICKER</span>HEADER<span clas="deck">DECK</span></h1>
    */
 
   --h1-large-font-size: var(--font-size-large-5);
@@ -217,10 +217,10 @@
   --h1-large-kicker-color: var(--white);
   --h1-large-deck-font-size: var(--font-size-large-4);
   --h1-large-deck-color: var(--white);
-   
+
 
   /**
-   *  Defaults for h2 
+   *  Defaults for h2
    */
 
   --h2-font-family: var(--font-stack-sans);
@@ -231,7 +231,7 @@
 
 
   /**
-   *  Defaults for h3 
+   *  Defaults for h3
    */
 
   --h3-font-family: var(--font-stack-sans);
@@ -239,10 +239,10 @@
   --h3-font-weight: var(--font-weight-semi-bold);
   --h3-font-style: normal;
   --h3-color: var(--gray-ii);
-    
+
 
   /**
-   *  Defaults for h4 
+   *  Defaults for h4
    */
 
   --h4-font-family: var(--h3-font-family);
@@ -250,10 +250,10 @@
   --h4-font-weight: var(--text-font-weight);
   --h4-font-style: italic;
   --h4-color: var(--gray-ii);
-  
+
 
   /**
-   *  Defaults for h5 
+   *  Defaults for h5
    */
 
   --h5-font-family: var(--text-font-family);
@@ -261,10 +261,10 @@
   --h5-font-weight: var(--font-weight-semi-bold);
   --h5-font-style: var(--text-font-style);
   --h5-color: var(--text-color);
-  
+
 
   /**
-   *  Defaults for h6 
+   *  Defaults for h6
    */
 
   --h6-font-family: var(--text-font-family);
@@ -275,7 +275,7 @@
 
 
   /**
-   *  Defaults for table 
+   *  Defaults for table
    */
 
   --table-font-family: var(--font-stack-sans);
@@ -296,7 +296,7 @@
 
 
   /**
-   *  Default for caption 
+   *  Default for caption
    */
 
   --caption-font-family: var(--font-stack-sans);
@@ -306,7 +306,7 @@
 
 
   /**
-   *  Defaults for callout, pullquote etc 
+   *  Defaults for callout, pullquote etc
    */
 
   --callout-font-family: var(--font-stack-sans);
@@ -316,7 +316,7 @@
 
 
   /**
-   *  Defaults for headings in boxout etc 
+   *  Defaults for headings in boxout etc
    */
 
   --boxout-h2-font-family: var(--font-stack-sans);
@@ -326,7 +326,7 @@
 
 
   /**
-   *  Defaults for subheadings in boxout etc 
+   *  Defaults for subheadings in boxout etc
    */
 
   --boxout-h3-font-family: var(--font-stack-sans);
@@ -336,7 +336,7 @@
 
 
   /**
-   *  Defaults for text in boxout etc 
+   *  Defaults for text in boxout etc
    */
 
   --boxout-text-font-family: var(--font-stack-sans);
