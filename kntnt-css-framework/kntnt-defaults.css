@@ -54,9 +54,16 @@
   --row-protruding-mobile: 0rem;
 
 
-   /**
-    * Header vertical padding
-    */
+  /**
+   * Vertical padding for the topbar
+   */
+ 
+  --topbar-padding-vertical: var(--space-small);
+
+
+  /**
+   * Minimum verticla padding for the header
+   */
 
   --header-padding-vertical-desktop: var(--space-small);
   --header-padding-vertical-tablet: var(--space-xsmall);
@@ -64,8 +71,28 @@
 
 
    /**
-    * Footer vertical padding
+    * Extra vertical padding added when header is not shrunken.
     */
+
+  --header-padding-vertical-extra-desktop: var(--space-small);
+  --header-padding-vertical-extra-tablet: var(--space-xsmall);
+  --header-padding-vertical-extra-mobile: var(--space-xxsmall);
+
+
+
+
+  /**
+   * Maxiumu height of the header content (e.g. the logo)
+   */
+
+  --header-content-height-max-desktop: 3rem;
+  --header-content-height-max-tablet: 2rem;
+  --header-content-height-max-mobile: 1rem;
+
+
+  /**
+  * Footer vertical padding
+  */
 
   --footer-padding-vertical-desktop: var(--space-small);
   --footer-padding-vertical-tablet: var(--space-xsmall);
@@ -109,30 +136,6 @@
   --header-font-style: normal;
   --header-color: var(--black);
   --header-background-color: var(--white);
-
-
-  /**
-   *  Defaults for the alertbar
-   */
-
-  --alertbar-font-family: var(--font-stack-sans);
-  --alertbar-font-size: var(--font-size-small-1);
-  --alertbar-font-weight: var(--font-weight-semi-bold);
-  --alertbar-font-style: normal;
-  --alertbar-color: var(--color-alert);
-  --alertbar-background-color: var(--background-color-alert);
-
-
-  /**
-   *  Defaults for the footer message
-   */
-
-  --message-font-family: var(--font-stack-sans);
-  --message-font-size: var(--font-size-medium);
-  --message-font-weight: var(--font-weight-normal);
-  --message-font-style: normal;
-  --message-color: var(--white);
-  --message-background-color: var(--gray-iv);
 
 
   /**
@@ -343,49 +346,19 @@
 
 
   /**
-   * Primary colors. The values are expected to be overriden.
+   * Link colors
    */
-  --color-1-heavy: #00FF2A;
-  --color-1-hint: #F7FFF9;
-  --color-1-sheer: #F0FFF2;
-  --color-1-pastel: #E1FAE5;
-  --color-1-pale: #C8FAD0;
-  --color-1-subdued: #78D688;
-  --color-1-lucid: #00D624;
-  --color-1-neutral: #3FCC57; 
-  --color-1-gloomy: #309B42;
-  --color-1-dark: #20662B;
-  --color-1-dim: #103316;
+  --link-color: var(--color-primary);
+  --link-hover-color: var(--color-primary-accentuated);
+
 
   /**
-   * Secondary colors. The values are expected to be overriden.
+   * Button colors
    */
-  --color-2-heavy: #FF6900;
-  --color-2-hint: #FFFBF7;
-  --color-2-sheer: #FFF6F0;
-  --color-2-pastel: #FAEBE1;
-  --color-2-pale: #FADDC8;
-  --color-2-subdued: #D69F78;
-  --color-2-lucid: #D65900;
-  --color-2-neutral: #CC7A3F; 
-  --color-2-gloomy: #9C5D30;
-  --color-2-dark: #663D20;
-  --color-2-dim: #331E10;
-
-  /**
-   * Tertiary colors. The values are expected to be overriden.
-   */
-  --color-2-heavy: #00D4FF;
-  --color-2-hint: #F7FEFF;
-  --color-2-sheer: #F0FCFF;
-  --color-2-pastel: #E1F6FA;
-  --color-2-pale: #C8F2FA;
-  --color-2-subdued: #77C5D5;
-  --color-2-lucid: #3FB5CC;
-  --color-2-neutral: #3FB5CC; 
-  --color-2-gloomy: #308A9C;
-  --color-2-dark: #205A66;
-  --color-2-dim: #102D33;
+  --button-color: var(--white);
+  --button-background-color: var(--color-primary-accentuated);
+  --button-hover-color: var(--color-primary-accentuated);
+  --button-hover-background-color: var(--extra-white);
 
 
 }

@@ -64,36 +64,6 @@
   --font-weight-extra-black: 950;
 
 
-  /**
-   *  Gray scale
-   */
-
-  --extra-black: #000000;
-  --black: #0B0B0B;
-  --almost-black: #151515;
-  --gray-i: #1B1B1B;
-  --gray-ii: #303030;
-  --gray-iii: #474747;
-  --gray-iv: #5E5E5E;
-  --gray-v: #777777;
-  --gray-vi: #919191;
-  --gray-vii: #ABABAB;
-  --gray-viii: #C6C6C6;
-  --gray-ix: #E2E2E2;
-  --gray-x: #EBEBEB;
-  --almost-white: #F1F1F1;
-  --white: #F7F7F7;
-  --extra-white: #FFFFFF;
-
-
-  /**
-   * Alert colors
-   */
-
-  --color-alert: #C20000;
-  --background-color-alert: #FF8492;
-
-
    /**
     * Overlays
     */
@@ -107,6 +77,14 @@
    */
 
   --shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+
+  
+  /**
+   * Transitions durations
+   */
+  --promptly: 150ms;
+  --swiftly: 300ms;
+  --leisurely: 600ms;
 
 
 }

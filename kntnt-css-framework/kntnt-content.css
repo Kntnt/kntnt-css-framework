@@ -7,55 +7,22 @@
 
 
 
-  /**
-   * TODO
-   */
-
-  .panel-gray-dark {
-    background-color: var(--gray-ii);
-    color: var(--white);
-  }
-
-  .panel-gray-light {
-    background-color: var(--gray-ix);
-    color: var(--black);
-  }
-
-  .panel-color-1-dark {
-    background-color: var(--color-1-dark);
-    color: var(--white);
-  }
-
-  .panel-color-1-light {
-    background-color: var(--color-1-subdued);
-    color: var(--black);
-  }
-
-  .panel-color-2-dark {
-    background-color: var(--color-2-dark);
-    color: var(--white);
-  }
-
-  .panel-color-2-light {
-    background-color: var(--color-2-subdued);
-    color: var(--black);
-  }
-
-  .panel-color-3-dark {
-    background-color: var(--color-2-dark);
-    color: var(--white);
-  }
-
-  .panel-color-3-light {
-    background-color: var(--color-3-subdued);
-    color: var(--black);
-  }
-  
-
 /**
  * Links
  */
 
+a {
+  color: var(--link-color);
+  text-decoration-color: transparent;
+  transition: all var(--swiftly) ease-in-out;
+ }
+
+a:hover,
+a:focus,
+a:active {
+  color: var(--link-hover-color);
+  text-decoration-color: inherit;
+}
 
 
 /**
@@ -147,6 +114,15 @@ h6 + *::after {
 
 
 /**
+ * Images
+ */
+
+ img {
+  box-shadow: var(--shadow);
+ }
+
+
+/**
  *  Tables 
  */
 
@@ -155,6 +131,7 @@ table {
   border-collapse: separate;
   border-spacing: var(--table-cell-gutter);
   margin: var(--text-distance-box);
+  box-shadow: var(--shadow);
 }
 
 table.alignright,
@@ -249,7 +226,7 @@ table caption {
  */
 
 hr {
-  margin: 0;
+  margin: calc(0px - var(--text-distance-box)) 0 0 0;
   border: none;
   clear: both;
 }
@@ -263,7 +240,7 @@ hr.single,
 hr.dashed,
 hr.dotted,
 hr.double {
-  margin: 2em 0;  
+  margin: 0;  
 }
 
 hr.single {
@@ -305,31 +282,7 @@ hr.asterism::after {
   display: inline;
 }
 
-hr.hedera::after {
+hr.fleuron::after {
   content: "\2766";
   display: inline;
-}
-
-
-/**
- *  Miscellanoues improvements 
- */
-
-html:focus-within {
-  scroll-behavior: smooth;
-}
-
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
-}
-
-:focus {
-  outline: none;
 }

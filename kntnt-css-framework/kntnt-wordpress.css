@@ -7,7 +7,7 @@
 
 
 /**
- * Exclude admin bar when pushing content to bottom (see konzilo-structure.css).
+ * Exclude admin bar when pushing content to bottom (see kntnt-page-layout.css).
  */
 
 body.admin-bar {
@@ -24,9 +24,7 @@ body.admin-bar {
 .fluid-width-video-wrapper,
 .rll-youtube-player {
   margin: var(--text-distance-box) 0;
-  clear: both; /**
- *  Escape floats 
- */
+  clear: both; /* Escape floats */
 }
 
 .oembed {
