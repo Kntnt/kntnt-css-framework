@@ -102,13 +102,3 @@ body > header > :nth-child(2) > * a:active {
   text-decoration-color: inherit;
   transition: none;
 }
-
-
-/**
- * Hide empty parts of header and footer
- */
-
-body > header :empty:not(img),
-body > footer :empty:not(img) {
-  display: none;
-}
