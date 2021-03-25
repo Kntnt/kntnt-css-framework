@@ -58,8 +58,8 @@ body > header > * > * {
  */
 
 body > header > :first-child > * {
-  padding-top: var(--header-shrunken-padding-vertical);
-  padding-bottom: var(--header-shrunken-padding-vertical);
+  padding-top: var(--topbar-padding-vertical);
+  padding-bottom: var(--topbar-padding-vertical);
 }
 
 body > header > :last-child > * {
