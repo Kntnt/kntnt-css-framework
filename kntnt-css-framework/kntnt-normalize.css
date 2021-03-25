@@ -104,6 +104,34 @@ img {
 }
 
 
+/*
+ * Don't style content within <address>…</address>.
+ */
+
+address {
+  font-style: normal;
+}
+
+
+/**
+ * Nicolas Gallagher's normalize.css (which must should be loaded before this
+ * file) sets <small> to be 20 % smaller than the font size. For symmetry, we
+ * set <big> to be 20 % larger.
+ */
+big {
+  font-size: 1.2em;
+}
+
+
+/**
+ * Dont render an outlinr around an object with focus.
+ */
+
+:focus {
+  outline: none;
+}
+
+
 /**
  *  Use smooth scroll for jumps on pages
  */
@@ -134,13 +162,4 @@ body {
     transition-duration: 0 !important;
     scroll-behavior: auto !important;
   }
-}
-
-
-/**
- *  Hide focus outline
- */
-
-:focus {
-  outline: none;
 }
