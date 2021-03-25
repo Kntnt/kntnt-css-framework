@@ -13,79 +13,110 @@
  * Center content
  */
 
-body > * > * > * {
-  --padding-horizontal: calc(var(--row-padding-desktop) + var(--row-protruding-desktop));
+body > header > * > * ,
+body > footer > * > * ,
+body > :not(header):not(footer) > * {
+  --padding-horizontal: calc(var(--row-padding) + var(--row-protruding));
   width: 100%;
   max-width: calc(var(--content-width) + 2 * var(--padding-horizontal));
   margin-left: auto;
   margin-right: auto;
-  padding: var(--row-padding-desktop) var(--padding-horizontal);
-}
-
-@media (max-width: 1023px) {
-
-  body > * > * > * {
-    --padding-horizontal: calc(var(--row-padding-tablet) + var(--row-protruding-tablet));
-    padding: var(--row-padding-tablet) var(--padding-horizontal);
-  }
-
-}
-
-
-@media (max-width: 767px) {
-
-  body > * > * > * {
-    --padding-horizontal: calc(var(--row-padding-mobile) + var(--row-protruding-mobile));
-    padding: var(--row-padding-mobile) var(--padding-horizontal);
-  }
-
+  padding: var(--row-padding) var(--padding-horizontal);
 }
 
 
 /**
- * Header and footer has less vertical padding and protrude on desktop.
+ * Fix the height for the top bar and heading.
+ */
+
+body > header {
+  --topbar-height: calc(var(--topbar-font-size) + 2 * var(--topbar-padding-vertical));
+  --header-height: calc(var(--header-content-height-max) + 2 * var(--header-padding-vertical));
+}
+
+body > header > * {
+  display: flex;
+  align-items: center;
+}
+
+body > header > :nth-child(1) {
+  height: var(--topbar-height);
+}
+
+body > header > :nth-child(2) {
+  height: var(--header-height);
+}
+
+body > header > * > * {
+  overflow: hidden;
+}
+
+
+/**
+ * Header and footer section has less vertical padding than body sections
+ * and protrude on desktop.
  */
 
 body > header > * > * {
-  padding: var(--header-padding-vertical-desktop) var(--row-padding-desktop);
+  padding: var(--header-shrunken-padding-vertical) var(--row-padding);
 }
 
 body > footer > * > * {
-  padding: var(--footer-padding-vertical-desktop) var(--row-padding-desktop);
+  padding: var(--footer-padding-vertical) var(--row-padding);
 }
 
-@media (max-width: 1023px) {
 
-  body > header > * > * {
-    padding: var(--header-padding-vertical-tablet) var(--row-padding-tablet);
+
+/**
+ * Sticky header
+ */
+
+@media (min-width: 1024px) {
+
+  body > header.sticky,
+  body > header.sticky-desktop {
+    position: sticky;
+    top: calc(var(--header-content-height-max) + 2 * var(--header-shrunken-padding-vertical) - var(--topbar-height) - var(--header-height));
   }
 
-  body > footer > * > * {
-    padding: var(--footer-padding-vertical-tablet) var(--row-padding-tablet);
+  body > header.sticky > :nth-child(2) > *,
+  body > header.sticky-desktop > :nth-child(2) > * {
+    position: sticky;
+    top: 0;
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  body > header.sticky,
+  body > header.sticky-tablet {
+    position: sticky;
+    top: calc(var(--header-content-height-max) + 2 * var(--header-shrunken-padding-vertical) - var(--topbar-height) - var(--header-height));
+  }
+
+  body > header.sticky > :nth-child(2) > *,
+  body > header.sticky-tablet > :nth-child(2) > * {
+    position: sticky;
+    top: 0;
   }
 
 }
 
 @media (max-width: 767px) {
 
-  body > header > * > * {
-    padding: var(--header-padding-vertical-mobile) var(--row-padding-mobile);
+  body > header.sticky,
+  body > header.sticky-mobile {
+    position: sticky;
+    top: calc(var(--header-content-height-max) + 2 * var(--header-shrunken-padding-vertical) - var(--topbar-height) - var(--header-height));
   }
 
-  body > footer > * > * {
-    padding: var(--footer-padding-vertical-mobile) var(--row-padding-mobile);
+  body > header.sticky > :nth-child(2) > *,
+  body > header.sticky-mobile > :nth-child(2) > * {
+    position: sticky;
+    top: 0;
   }
 
-}
-
-
-/**
- * Hide empty parts of header and footer
- */
-
-body > header :empty:not(img),
-body > footer :empty:not(img) {
-  display: none;
 }
 
 

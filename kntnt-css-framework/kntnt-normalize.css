@@ -6,7 +6,7 @@
  *
  * IMPORTANT: Kntnt CSS Framwork (KCF) requires that Nicolas Gallagher's
  * normalize.css (see https://necolas.github.io/normalize.css/) is loaed
- * before any of the KCF files. A copy is included with the sample files.
+ * before any of the KCF files. A copy is included with the example.
  * This stylesheet only provides additional normalization needed by KCF.
  */
 
@@ -17,24 +17,7 @@
  */
 
 :root {
-  font-size: var(--root-font-size-desktop);
-}
-
-@media (max-width: 1023px) {
-
-  :root {
-    font-size: var(--root-font-size-tablet);
-
-  }
-
-}
-
-@media (max-width: 767px) {
-
-  :root {
-    font-size: var(--root-font-size-mobile);
-  }
-
+  font-size: var(--root-font-size);
 }
 
 

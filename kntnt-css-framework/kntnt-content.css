@@ -14,7 +14,10 @@
 a {
   color: var(--link-color);
   text-decoration-color: transparent;
-  transition: all var(--swiftly) ease-in-out;
+  transition-property: color, text-decoration-color;
+  transition-duration: var(--swiftly);
+  transition-timing-function: ease;
+  : text-decoration-color var(--swiftly) ease-in-out;
  }
 
 a:hover,

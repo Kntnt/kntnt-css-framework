@@ -7,7 +7,6 @@
 
 #header > * > figure {
   margin: 0;
-  max-height: var(--header-content-height-max);
 }
 
 #header > * > figure img {

@@ -5,7 +5,8 @@
  * SPDX-License-Identifier: MIT
  *
  * IMPORTANT: This stylesheet assumes that HTML documents follow the layout
- * described in the HTML code of layout-example.html.
+ * described in the HTML code of example/index.html which can be seen at
+ * https://github.com/Kntnt/kntnt-css-framework/blob/main/example/index.html
  */
 
 
@@ -52,74 +53,12 @@ body > header > :nth-child(2) {
 
 
 /**
- * Sticky header
- */
-
-body > header {
-  --header-content-height-max: var(--header-content-height-max-desktop);
-  --header-padding-vertical: var(--header-padding-vertical-desktop);
-  --header-padding-vertical-extra: var(--header-padding-vertical-extra-desktop);
-}
-
-@media (max-width: 1023px) {
-  body > header {
-  --header-content-height-max: var(--header-content-height-max-tablet);
-  --header-padding-vertical: var(--header-padding-vertical-tablet);
-  --header-padding-vertical-extra: var(--header-padding-vertical-extra-tablet);
-  }
-}
-
-@media (max-width: 767px) {
-  body > header {
-  --header-content-height-max: var(--header-content-height-max-mobile);
-  --header-padding-vertical: var(--header-padding-vertical-mobile);
-  --header-padding-vertical-extra: var(--header-padding-vertical-extra-mobile);
-  }
-}
-
-body > header {
-  --topbar-height: calc(var(--topbar-font-size) + 2 * var(--topbar-padding-vertical));
-  --header-shrunk-height: calc(var(--header-content-height-max) + 2 * var(--header-padding-vertical));
-  --header-height: calc(var(--header-shrunk-height) + 2 * var(--header-padding-vertical-extra));
-}
-
-body > header.sticky {
-  position: sticky;
-  top: calc(0px - var(--topbar-height) - (var(--header-height) - var(--header-shrunk-height)));
-}
-
-body > header.sticky > :nth-child(1) {
-  display: flex;
-  align-items: center;
-  height: var(--topbar-height);
-}
-
-body > header.sticky > :nth-child(1) > * {
-  overflow-y: hidden;
-}
-
-body > header.sticky > :nth-child(2) {
-  display: flex;
-  align-items: center;
-  height: var(--header-height);
-}
-
-body > header.sticky > :nth-child(2) > * {
-  position: sticky;
-  top: 0;
-  width: 100%;
-  height: var(--header-shrunk-height);
-  overflow-y: hidden;
-}
-
-
-/**
  * TODO: STYLE FOOTER
  */
 
 
 /**
- * Unobtrusive links in header and footer sections, except alert.
+ * Unobtrusive links in header and footer sections.
  */
 
 body > header > * > * a,
@@ -139,4 +78,14 @@ body > header > :nth-child(2) > * a:focus
 body > header > :nth-child(2) > * a:active {
   text-decoration-color: inherit;
   transition: none;
+}
+
+
+/**
+ * Hide empty parts of header and footer
+ */
+
+body > header :empty:not(img),
+body > footer :empty:not(img) {
+  display: none;
 }

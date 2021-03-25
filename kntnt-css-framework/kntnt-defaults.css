@@ -9,94 +9,91 @@
 */
 
 
+/**
+ * Defaults for desktop devices
+ */
+
+@media (min-width: 1024px) {
+
+  :root {
+
+    /* Font size of the root element at different screen widths. */
+    --root-font-size: 20px;
+
+    /* Maximum width of content within rows (e.g. max width of header, main and footer). */
+    --content-width: 45rem;
+
+    /* Padding around content within rows (e.g. padding of header, main and footer) */
+    --row-padding: 4rem;
+
+    /* Distance that protruding rows (e.g. header) protrudes with. */
+    --row-protruding: 4rem;
+
+    /* Vertical padding for the topbar */
+    --topbar-padding-vertical: var(--space-small);
+
+    /* Maximum height of header content (e.g. logo height at desktop). */
+    --header-content-height-max: 3rem;
+
+     /* Vertical padding for the header. */
+    --header-padding-vertical: var(--space-medium);
+
+    /* Verticla padding for a shrunken header. */
+    --header-shrunken-padding-vertical: var(--space-small);
+
+    /* Footer vertical padding */
+    --footer-padding-vertical: var(--space-small);
+
+  }
+
+}
+
+
+/**
+ * Defaults for tablet devices
+ */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  :root {
+    --root-font-size: 18px;
+    --content-width: 45rem;
+    --row-padding: 2rem;
+    --row-protruding: 0rem;
+    --topbar-padding-vertical: var(--space-small);
+    --header-content-height-max: 2.5rem;
+    --header-padding-vertical: var(--space-small);
+    --header-shrunken-padding-vertical: var(--space-xsmall);
+    --footer-padding-vertical: var(--space-xsmall);
+  }
+
+}
+
+/**
+ * Defaults for mobile devices
+ */
+@media (max-width: 767px) {
+
+  :root {
+    --root-font-size: 16px;
+    --content-width: 45rem;
+    --row-padding: 1rem;
+    --row-protruding: 0rem;
+    --topbar-padding-vertical: var(--space-small);
+    --header-content-height-max: 2rem;
+    --header-padding-vertical: var(--space-xsmall);
+    --header-shrunken-padding-vertical: var(--space-xxsmall);
+    --footer-padding-vertical: var(--space-xxsmall);    
+  }
+
+}
+
+
+/**
+ * All devices
+ */
+
 :root {
-
-  /**
-   * Below, desktop, table and mobile refers to folowing widths:
-   *
-   *   Desktop: 1024 px ≤ width
-   *   Tablet:    768 px ≤ width < 1024 px
-   *   Mobile:             width <  768 px
-   */
-
-
-  /**
-   *  Font size of the root element at different screen widths.
-   */
-
-  --root-font-size-desktop: 20px;
-  --root-font-size-tablet: 18px;
-  --root-font-size-mobile: 16px;
-
-
-  /**
-   *  Maximum width of content within rows (e.g. max width of header, main and footer).
-   */
-
-  --content-width: 45rem;
-
-
-  /**
-   * Padding around content within rows (e.g. padding of header, main and footer)
-   */
-
-  --row-padding-desktop: 4rem;
-  --row-padding-tablet: 2rem;
-  --row-padding-mobile: 1rem;
-
-
-  /**
-   * Distance that protruding rows (e.g. header) protrudes with.
-   */
-
-  --row-protruding-desktop: 4rem;
-  --row-protruding-tablet: 0rem;
-  --row-protruding-mobile: 0rem;
-
-
-  /**
-   * Vertical padding for the topbar
-   */
-
-  --topbar-padding-vertical: var(--space-small);
-
-
-  /**
-   * Minimum verticla padding for the header
-   */
-
-  --header-padding-vertical-desktop: var(--space-small);
-  --header-padding-vertical-tablet: var(--space-xsmall);
-  --header-padding-vertical-mobile: var(--space-xxsmall);
-
-
-   /**
-    * Extra vertical padding added when header is not shrunken.
-    */
-
-  --header-padding-vertical-extra-desktop: var(--space-small);
-  --header-padding-vertical-extra-tablet: var(--space-xsmall);
-  --header-padding-vertical-extra-mobile: var(--space-xxsmall);
-
-
-
-
-  /**
-   * Maxiumu height of the header content (e.g. the logo)
-   */
-
-  --header-content-height-max-desktop: 3rem;
-  --header-content-height-max-tablet: 2rem;
-  --header-content-height-max-mobile: 1rem;
-
-
-  /**
-  * Footer vertical padding
-  */
-
-  --footer-padding-vertical-desktop: var(--space-small);
-  --footer-padding-vertical-tablet: var(--space-xsmall);
-  --footer-padding-vertical-mobile: var(--space-xxsmall);
 
 
   /**
