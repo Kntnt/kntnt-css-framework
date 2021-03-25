@@ -38,14 +38,14 @@
    *  Font size
    */
 
-  --font-size-small-2: 0.6rem;
-  --font-size-small-1: 0.8rem;
+  --font-size-xxsmall: 0.6rem;
+  --font-size-xsmall: 0.8rem;
   --font-size-medium: 1rem;
-  --font-size-large-1: 1.25rem;
-  --font-size-large-2: 1.6rem;
-  --font-size-large-3: 2rem;
-  --font-size-large-4: 2.5rem;
-  --font-size-large-5: 3rem;
+  --font-size-large: 1.25rem;
+  --font-size-xlarge: 1.6rem;
+  --font-size-xxlarge: 2rem;
+  --font-size-huge: 2.5rem;
+  --font-size-xhuge: 3rem;
 
 
   /**

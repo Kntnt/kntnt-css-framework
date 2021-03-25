@@ -221,15 +221,50 @@ not(table).aligncenter {
 
 
 /**
- *  Debug tool: Outline elements
+ * Kicker and deck for H1. Kicker is the smaller heading above a main heading,
+ * and deck is the smaller heading below a main heading. Example of usage:;
+ * <h1><span class="kicker">KICKER: </span>HEADING<span class="deck"> DECK</span></h1>
  */
 
-.debug {
-  outline: 1px solid red;
+h1 > .kicker {
+  display: block;
+  margin-bottom: var(--h1-kicker-space);
+  font-family: var(--h1-kicker-font-family);
+  font-size: var(--h1-kicker-font-size);
+  font-weight: var(--h1-kicker-font-weight);
+  font-style: var(--h1-kicker-font-style);
+  color: var(--h1-kicker-color);
+}
+
+h1 > .deck {
+  display: block;
+  margin-top: var(--h1-deck-space);
+  font-family: var(--h1-deck-font-family);
+  font-size: var(--h1-deck-font-size);
+  font-weight: var(--h1-deck-font-weight);
+  font-style: var(--h1-deck-font-style);
+  color: var(--h1-deck-color);
 }
 
 
 
+/**
+ * Lead. The opening paragraph of an article that summarizes its main ideas.
+ */
+
+.lead {
+  margin-top: var(--lead-margin-top);
+  margin-bottom: var(--lead-margin-bottom);
+  font-family: var(--lead-font-family);
+  font-size: var(--lead-font-size);
+  font-weight: var(--lead-font-weight);
+  font-style: var(--lead-font-style);
+  color: var(--lead-color);
+} 
 
 
+/**
+ * Byline and dateline
+ */
 
+/* TODO */

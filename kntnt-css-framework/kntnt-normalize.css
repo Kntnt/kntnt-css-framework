@@ -82,7 +82,10 @@ p + p {
   margin-top: var(--text-distance-paragraph);
 }
 
-h1 + p,
+h1 + p {
+  margin-top: var(--h1-distance-paragraph);  
+}
+
 h2 + p,
 h3 + p,
 h4 + p,
