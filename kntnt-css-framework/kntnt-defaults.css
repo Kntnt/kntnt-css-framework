@@ -42,7 +42,7 @@
     --header-shrunken-padding-vertical: var(--space-small);
 
     /* Footer vertical padding */
-    --footer-padding-vertical: var(--space-small);
+    --bottombar-padding-vertical: var(--space-small);
 
   }
 
@@ -64,7 +64,7 @@
     --header-content-height-max: 2.5rem;
     --header-padding-vertical: var(--space-small);
     --header-shrunken-padding-vertical: var(--space-xsmall);
-    --footer-padding-vertical: var(--space-xsmall);
+    --bottombar-padding-vertical: var(--space-xsmall);    
   }
 
 }
@@ -83,7 +83,7 @@
     --header-content-height-max: 2rem;
     --header-padding-vertical: var(--space-xsmall);
     --header-shrunken-padding-vertical: var(--space-xxsmall);
-    --footer-padding-vertical: var(--space-xxsmall);    
+    --bottombar-padding-vertical: var(--space-xxsmall);    
   }
 
 }
@@ -155,7 +155,7 @@
   --bottombar-font-size: var(--font-size-small-2);
   --bottombar-font-weight: var(--font-weight-normal);
   --bottombar-font-style: normal;
-  --bottombar-color: var(--white);
+  --bottombar-color: var(--gray-vi);
   --bottombar-background-color: var(--black);
 
 

@@ -26,7 +26,7 @@ body > :not(header):not(footer) > * {
 
 
 /**
- * Fix the height for the top bar and heading.
+ * Fixate the height for the top bar and header.
  */
 
 body > header {
@@ -39,11 +39,11 @@ body > header > * {
   align-items: center;
 }
 
-body > header > :nth-child(1) {
+body > header > :first-child {
   height: var(--topbar-height);
 }
 
-body > header > :nth-child(2) {
+body > header > :last-child {
   height: var(--header-height);
 }
 
@@ -53,18 +53,35 @@ body > header > * > * {
 
 
 /**
- * Header and footer section has less vertical padding than body sections
- * and protrude on desktop.
+ * Topbar, header and bottombar (but not footer) has less vertical padding
+ * than other sections.
  */
 
-body > header > * > * {
-  padding: var(--header-shrunken-padding-vertical) var(--row-padding);
+body > header > :first-child > * {
+  padding-top: var(--header-shrunken-padding-vertical);
+  padding-bottom: var(--header-shrunken-padding-vertical);
 }
 
+body > header > :last-child > * {
+  padding-top: var(--header-shrunken-padding-vertical);
+  padding-bottom: var(--header-shrunken-padding-vertical);
+}
+
+body > footer > :last-child > * {
+  padding-top: var(--bottombar-padding-vertical);
+  padding-bottom: var(--bottombar-padding-vertical);
+}
+
+
+/**
+ * Header and footer protrude on desktop.
+ */
+
+body > header > * > *,
 body > footer > * > * {
-  padding: var(--footer-padding-vertical) var(--row-padding);
+  padding-left: var(--row-padding);
+  padding-right: var(--row-padding);
 }
-
 
 
 /**
@@ -79,8 +96,8 @@ body > footer > * > * {
     top: calc(var(--header-content-height-max) + 2 * var(--header-shrunken-padding-vertical) - var(--topbar-height) - var(--header-height));
   }
 
-  body > header.sticky > :nth-child(2) > *,
-  body > header.sticky-desktop > :nth-child(2) > * {
+  body > header.sticky > :last-child > *,
+  body > header.sticky-desktop > :last-child > * {
     position: sticky;
     top: 0;
   }
@@ -95,8 +112,8 @@ body > footer > * > * {
     top: calc(var(--header-content-height-max) + 2 * var(--header-shrunken-padding-vertical) - var(--topbar-height) - var(--header-height));
   }
 
-  body > header.sticky > :nth-child(2) > *,
-  body > header.sticky-tablet > :nth-child(2) > * {
+  body > header.sticky > :last-child > *,
+  body > header.sticky-tablet > :last-child > * {
     position: sticky;
     top: 0;
   }
@@ -111,8 +128,8 @@ body > footer > * > * {
     top: calc(var(--header-content-height-max) + 2 * var(--header-shrunken-padding-vertical) - var(--topbar-height) - var(--header-height));
   }
 
-  body > header.sticky > :nth-child(2) > *,
-  body > header.sticky-mobile > :nth-child(2) > * {
+  body > header.sticky > :last-child > *,
+  body > header.sticky-mobile > :last-child > * {
     position: sticky;
     top: 0;
   }
