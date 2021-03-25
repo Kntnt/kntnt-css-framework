@@ -53,8 +53,31 @@ body > header > :nth-child(2) {
 
 
 /**
- * TODO: STYLE FOOTER
+ * Style footer
  */
+
+body > footer > :nth-child(1) {
+  color: var(--footer-color);
+  background-color: var(--footer-background-color);
+  font-family: var(--footer-font-family);
+  font-size: var(--footer-font-size);
+  font-weight: var(--footer-font-weight);
+  font-style: var(--footer-font-style);
+}
+
+
+/**
+ * Style bottombar
+ */
+
+body > footer > :nth-child(2) {
+  color: var(--bottombar-color);
+  background-color: var(--bottombar-background-color);
+  font-family: var(--bottombar-font-family);
+  font-size: var(--bottombar-font-size);
+  font-weight: var(--bottombar-font-weight);
+  font-style: var(--bottombar-font-style);
+}
 
 
 /**
