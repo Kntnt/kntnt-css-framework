@@ -143,7 +143,8 @@ body > footer > * > * {
 
 html,
 body {
-  height: 100vh;
+  height: 100%;
+  overflow: auto;
 }
 
 body {
