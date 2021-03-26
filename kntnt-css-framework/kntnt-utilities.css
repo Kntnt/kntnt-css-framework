@@ -161,12 +161,20 @@ not(table).aligncenter {
  * Panels
  */
 
-.panel * {
+.panel,
+.panel.transparent {
+  background-color: transparent;
   color: inherit;
 }
 
-.panel a {
-  text-decoration-color: inherit;
+.panel.black {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.panel.white {
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .panel.gray-dark {
@@ -197,6 +205,14 @@ not(table).aligncenter {
 .panel.color-alert-light {
   background-color: var(--color-alert-light);
   color: var(--white);
+}
+
+.panel * {
+  color: inherit;
+}
+
+.panel a {
+  text-decoration-color: inherit;
 }
 
 
