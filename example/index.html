@@ -1,175 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Kntnt CSS Framework</title>
-  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="../kntnt-css-framework/kntnt-constants.css">
-  <link rel="stylesheet" href="../kntnt-css-framework/kntnt-colors.css">
-  <link rel="stylesheet" href="../kntnt-css-framework/kntnt-defaults.css">
-  <link rel="stylesheet" href="../kntnt-css-framework/kntnt-normalize.css">
-  <link rel="stylesheet" href="../kntnt-css-framework/kntnt-page-layout.css">
-  <link rel="stylesheet" href="../kntnt-css-framework/kntnt-page-styles.css">
-  <link rel="stylesheet" href="../kntnt-css-framework/kntnt-content.css">
-  <link rel="stylesheet" href="../kntnt-css-framework/kntnt-wordpress.css">
-  <link rel="stylesheet" href="../kntnt-css-framework/kntnt-utilities.css">
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://kit.fontawesome.com/00af4a7a7f.js" crossorigin="anonymous"></script>
-</head>
-<body><!-- Kntnt CSS Framework (KCF) assumes that <body> are structured as described below. -->
-  <header class="shadow sticky"><!-- The first child of <body> can be <header>. It consists of two <div>:s that each corresponds to a "header row". -->
-    <div id="topbar"><!-- The first header row is a top bar. -->
-      <div><!-- Each non-empty row must contain a single element (e.g. <div>) wrapping the actutal content of the row. -->
-        <a href="https://github.com/Kntnt/kntnt-css-framework">Download the code from GitHub</a>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Kntnt CSS Framework</title>
+    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../kntnt-css-framework/kntnt-constants.css">
+    <link rel="stylesheet" href="../kntnt-css-framework/kntnt-colors.css">
+    <link rel="stylesheet" href="../kntnt-css-framework/kntnt-defaults.css">
+    <link rel="stylesheet" href="../kntnt-css-framework/kntnt-normalize.css">
+    <link rel="stylesheet" href="../kntnt-css-framework/kntnt-page-layout.css">
+    <link rel="stylesheet" href="../kntnt-css-framework/kntnt-page-styles.css">
+    <link rel="stylesheet" href="../kntnt-css-framework/kntnt-content.css">
+    <link rel="stylesheet" href="../kntnt-css-framework/kntnt-wordpress.css">
+    <link rel="stylesheet" href="../kntnt-css-framework/kntnt-utilities.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/00af4a7a7f.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="shadow sticky">
+      <div id="topbar">
+        <div>
+          <a href="https://github.com/Kntnt/kntnt-css-framework">Download the code from GitHub</a>
+        </div>
       </div>
-    </div>
-    <div id="header"><!-- The second header row is the actual header where icon, menu etcetera usually exists. -->
-      <div><!-- Each non-empty row must contain a single element (e.g. <div>) wrapping the actutal content of the row. -->
-        <figure>
-          <a href="https://github.com/Kntnt/kntnt-css-framework">
+      <div id="header">
+        <div>
+          <figure>
+            <a href="https://github.com/Kntnt/kntnt-css-framework">
             <img class="no-shadow" srcset="logo-1x.png, logo-2x.png 2x, logo-3x.png 3x" src="logo-3x.png" alt="Kntnt logo" height="60">
-          </a>
-        </figure>
-        <nav>
+            </a>
+          </figure>
+          <nav>
             <ul>
               <li><a href="https://github.com/Kntnt/kntnt-css-framework">GitHub Project</a></li>
               <li><a href="https://github.com/Kntnt/kntnt-css-framework/blob/main/examples/layout-example.html">Layout example</a></li>
               <li><a href="https://github.com/Kntnt/kntnt-css-framework/blob/main/examples/content-example.html">Content example</a></li>
             </ul>
-        </nav>        
+          </nav>
+        </div>
       </div>
+    </header>
+    <div>
+      <aside class="panel color-alert-light">
+        <div>
+          <p>The only interesting with this web page is its <a href="https://github.com/Kntnt/kntnt-css-framework/blob/main/example/index.html">source code</a> which shows how to use KCF.</p>
+        </div>
+      </aside>
     </div>
-  </header>
-  <aside class="panel color-alert-light"><!-- The <main>-element may be preceded by zeror or more of <article>, <aside>, <nav>, <section> and <div>, with for instance a message. -->
-    <div><!-- Each of the above mentioned elements consists of one or more "content rows", each represented by a sectioning element (except <header> and <footer>) or a <div>. -->
-      <p>The only interesting with this web page is its <a href="https://github.com/Kntnt/kntnt-css-framework/blob/main/example/index.html">source code</a> which shows how to use KCF.</p>
-    </div>
-  </aside>
-  <main><!-- Between the <header> and the <footer>, there should be exactly one <main> wrapping the main content. -->
-    <article id="article"><!-- The <main>-element consists of one or more "main rows", each represented by a sectioning element (e.g. <article> and <aside>) or a <div>. -->
-      <div><!-- Each non-empty row must contain a single element (e.g. <div>) wrapping the actutal content of the row. -->
-        <h1><span class="kicker">For developers: </span>Kntnt CSS Framework<span class="deck"> A foundation for modern web sites</span></h1>
-        <p class="lead"><dfn>Kntnt CSS Framework</dfn> (<dfn title="Kntnt CSS Framework"><abbr>KCF</abbr></dfn>) is a comprehensive set of stylsheets that makes it easier to build web sites. This document is intended as an example of how it can be used.</p>
-        <p>KCF is a set of <dfn>cascading style sheets</dfn> (<dfn title="Cascading Style Sheet"><abbr>CSS</abbr></dfn>) that together make it possible to build a website relatively quickly by chiefly overriding default values and using classes.</p>
-        <p>The framework can be used with <a href="https://oxygenbuilder.com/">Oxygen Builder</a> for WordPress. But there is no dependency or other connection to that tool at all, so it works perfectly with other tools or for writing code by hand.</p>
-        <h2>Different</h2>
-        <p>There are many CSS frameworks and similar solutions out there. The arguably most known is <a href="https://getbootstrap.com/">Bootstrap</a>. It's a fantastic toolkit "featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins."</p>
-        <p>For better or worse, KCF is far from being as complete and competent as Bootstrap. KCF is focusing on providing a foundation with sane defaults that can be overridden with pure CSS and useful classes that can be used to accomplish everyday tasks.</p>
-        <aside class="panel color-primary-light"><!-- An aside within the article. -->
+    <main>
+      <div>
+        <article id="article">
           <div>
-            <p>Kntnt CSS Framework is developed by <a href="https://www.kntnt.se">Kntnt</a> – a Swedish sales, marketing and web technology agency.</p>
+            <h1><span class="kicker">For developers: </span>Kntnt CSS Framework<span class="deck"> A foundation for modern web sites</span></h1>
+            <p class="lead"><dfn>Kntnt CSS Framework</dfn> (<dfn title="Kntnt CSS Framework"><abbr>KCF</abbr></dfn>) is a comprehensive set of stylsheets that makes it easier to build web sites. This document is intended as an example of how it can be used.</p>
+            <p>KCF is a set of <dfn>cascading style sheets</dfn> (<dfn title="Cascading Style Sheet"><abbr>CSS</abbr></dfn>) that together make it possible to build a website relatively quickly by chiefly overriding default values and using classes.</p>
+            <p>The framework can be used with <a href="https://oxygenbuilder.com/">Oxygen Builder</a> for WordPress. But there is no dependency or other connection to that tool at all, so it works perfectly with other tools or for writing code by hand.</p>
+            <h2>Different</h2>
+            <p>There are many CSS frameworks and similar solutions out there. The arguably most known is <a href="https://getbootstrap.com/">Bootstrap</a>. It's a fantastic toolkit "featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins."</p>
+            <p>For better or worse, KCF is far from being as complete and competent as Bootstrap. KCF is focusing on providing a foundation with sane defaults that can be overridden with pure CSS and useful classes that can be used to accomplish everyday tasks.</p>
+            <aside class="panel color-primary-light">
+              <!-- An aside within the article. -->
+              <div>
+                <p>Kntnt CSS Framework is developed by <a href="https://www.kntnt.se">Kntnt</a> – a Swedish sales, marketing and web technology agency.</p>
+              </div>
+            </aside>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus integer feugiat scelerisque varius. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. At varius vel pharetra vel turpis nunc eget lorem dolor. Ut sem nulla pharetra diam. Tincidunt vitae semper quis lectus nulla at volutpat diam ut.</p>
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Orci ac auctor augue mauris augue. Elit duis tristique sollicitudin nibh. Duis convallis convallis tellus id. Porttitor massa id neque aliquam vestibulum. Adipiscing elit pellentesque habitant morbi tristique senectus et netus. Enim tortor at auctor urna nunc id cursus. Amet luctus venenatis lectus magna fringilla.</p>
+            <p>Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Rhoncus urna neque viverra justo nec. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Viverra mauris in aliquam sem. Eget lorem dolor sed viverra ipsum. Lorem ipsum dolor sit amet. Viverra suspendisse potenti nullam ac tortor vitae. Amet commodo nulla facilisi nullam vehicula ipsum. Vulputate eu scelerisque felis imperdiet proin fermentum. Consequat id porta nibh venenatis cras sed felis eget velit. Vitae justo eget magna fermentum iaculis.</p>
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Natoque penatibus et magnis dis parturient montes nascetur. Augue interdum velit euismod in pellentesque massa. Nibh sed pulvinar proin gravida hendrerit lectus a. Adipiscing enim eu turpis egestas pretium aenean. Justo laoreet sit amet cursus. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Imperdiet proin fermentum leo vel orci porta non.</p>
+            <p>Sed id semper risus in. Cursus risus at ultrices mi. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Mi tempus imperdiet nulla malesuada.</p>
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Pellentesque sit amet porttitor eget dolor. Elit eget gravida cum sociis. Gravida cum sociis natoque penatibus et magnis. Libero nunc consequat interdum varius sit amet. Purus semper eget duis at tellus at. At consectetur lorem donec massa. Arcu dui vivamus arcu felis bibendum. Senectus et netus et malesuada fames ac. Gravida quis blandit turpis cursus in. Vivamus at augue eget arcu dictum varius duis at consectetur. Sit amet consectetur adipiscing elit duis. Vel pretium lectus quam id leo in vitae turpis. Ut morbi tincidunt augue interdum velit euismod in pellentesque. Facilisis sed odio morbi quis commodo odio. Lorem ipsum dolor sit amet consectetur.</p>
+            <p>Tortor posuere ac ut consequat semper viverra nam libero justo. Sed sed risus pretium quam vulputate dignissim. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Quam quisque id diam vel quam elementum pulvinar. Orci dapibus ultrices in iaculis nunc. Lorem sed risus ultricies tristique nulla aliquet enim tortor.</p>
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Iaculis nunc sed augue lacus viverra vitae congue. Sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Quisque sagittis purus sit amet volutpat consequat mauris. Odio euismod lacinia at quis risus sed vulputate odio. Feugiat nibh sed pulvinar proin gravida. Non consectetur a erat nam. Amet massa vitae tortor condimentum lacinia quis vel eros. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Augue mauris augue neque gravida in fermentum et sollicitudin ac. Tellus integer feugiat scelerisque varius morbi enim.</p>
+            <h2>Lorem ipsum dolor sit amet</h2>
+            <p>Quis commodo odio aenean sed adipiscing. Vulputate dignissim suspendisse in est ante.</p>
+            <p>Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Vulputate ut pharetra sit amet aliquam. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Velit dignissim sodales ut eu. Sagittis vitae et leo duis ut diam. Consectetur purus ut faucibus pulvinar elementum. Faucibus turpis in eu mi bibendum neque egestas congue. Diam quis enim lobortis scelerisque. A pellentesque sit amet porttitor eget dolor morbi non arcu. Dignissim enim sit amet venenatis urna. Justo donec enim diam vulputate ut pharetra. Morbi tempus iaculis urna id volutpat lacus laoreet. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus.</p>
+            <footer>
+              <aside class="panel color-primary-dark">
+                <div>
+                  <h2>Author</h2>
+                  <p>This amazing text was written by yours truly <a href="https://github.com/TBarregren">TBarregren</a>.</p>
+                </div>
+              </aside>
+            </footer>
+          </div>
+        </article>
+        <aside class="panel white">
+          <div>
+            <h2>Just an example</h2>
+            <p>This is a unique aside of the <a href="#">page</a> (not the artcile).</p>
           </div>
         </aside>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tellus integer feugiat scelerisque varius. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. At varius vel pharetra vel turpis nunc eget lorem dolor. Ut sem nulla pharetra diam. Tincidunt vitae semper quis lectus nulla at volutpat diam ut.</p>
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>Orci ac auctor augue mauris augue. Elit duis tristique sollicitudin nibh. Duis convallis convallis tellus id. Porttitor massa id neque aliquam vestibulum. Adipiscing elit pellentesque habitant morbi tristique senectus et netus. Enim tortor at auctor urna nunc id cursus. Amet luctus venenatis lectus magna fringilla.</p>
-        <p>Molestie ac feugiat sed lectus vestibulum mattis ullamcorper velit. Rhoncus urna neque viverra justo nec. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh sit. Viverra mauris in aliquam sem. Eget lorem dolor sed viverra ipsum. Lorem ipsum dolor sit amet. Viverra suspendisse potenti nullam ac tortor vitae. Amet commodo nulla facilisi nullam vehicula ipsum. Vulputate eu scelerisque felis imperdiet proin fermentum. Consequat id porta nibh venenatis cras sed felis eget velit. Vitae justo eget magna fermentum iaculis.</p>
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>Natoque penatibus et magnis dis parturient montes nascetur. Augue interdum velit euismod in pellentesque massa. Nibh sed pulvinar proin gravida hendrerit lectus a. Adipiscing enim eu turpis egestas pretium aenean. Justo laoreet sit amet cursus. Suspendisse faucibus interdum posuere lorem ipsum dolor sit amet consectetur. Imperdiet proin fermentum leo vel orci porta non.</p>
-        <p>Sed id semper risus in. Cursus risus at ultrices mi. Amet facilisis magna etiam tempor orci eu lobortis elementum nibh. Lorem dolor sed viverra ipsum nunc aliquet bibendum. Mi tempus imperdiet nulla malesuada.</p>
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>Pellentesque sit amet porttitor eget dolor. Elit eget gravida cum sociis. Gravida cum sociis natoque penatibus et magnis. Libero nunc consequat interdum varius sit amet. Purus semper eget duis at tellus at. At consectetur lorem donec massa. Arcu dui vivamus arcu felis bibendum. Senectus et netus et malesuada fames ac. Gravida quis blandit turpis cursus in. Vivamus at augue eget arcu dictum varius duis at consectetur. Sit amet consectetur adipiscing elit duis. Vel pretium lectus quam id leo in vitae turpis. Ut morbi tincidunt augue interdum velit euismod in pellentesque. Facilisis sed odio morbi quis commodo odio. Lorem ipsum dolor sit amet consectetur.</p>
-        <p>Tortor posuere ac ut consequat semper viverra nam libero justo. Sed sed risus pretium quam vulputate dignissim. Sapien et ligula ullamcorper malesuada proin libero nunc consequat. Lobortis scelerisque fermentum dui faucibus in ornare quam viverra. Quam quisque id diam vel quam elementum pulvinar. Orci dapibus ultrices in iaculis nunc. Lorem sed risus ultricies tristique nulla aliquet enim tortor.</p>
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>Iaculis nunc sed augue lacus viverra vitae congue. Sed vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Felis imperdiet proin fermentum leo vel orci porta non pulvinar. Quisque sagittis purus sit amet volutpat consequat mauris. Odio euismod lacinia at quis risus sed vulputate odio. Feugiat nibh sed pulvinar proin gravida. Non consectetur a erat nam. Amet massa vitae tortor condimentum lacinia quis vel eros. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Augue mauris augue neque gravida in fermentum et sollicitudin ac. Tellus integer feugiat scelerisque varius morbi enim.</p>
-        <h2>Lorem ipsum dolor sit amet</h2>
-        <p>Quis commodo odio aenean sed adipiscing. Vulputate dignissim suspendisse in est ante.</p>
-        <p>Egestas quis ipsum suspendisse ultrices gravida dictum fusce. Vulputate ut pharetra sit amet aliquam. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Velit dignissim sodales ut eu. Sagittis vitae et leo duis ut diam. Consectetur purus ut faucibus pulvinar elementum. Faucibus turpis in eu mi bibendum neque egestas congue. Diam quis enim lobortis scelerisque. A pellentesque sit amet porttitor eget dolor morbi non arcu. Dignissim enim sit amet venenatis urna. Justo donec enim diam vulputate ut pharetra. Morbi tempus iaculis urna id volutpat lacus laoreet. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus.</p>
       </div>
-    </article>
-    <aside class="panel color-primary-dark"><!-- Another examle of a main row. -->
+    </main>
+    <aside class="panel gray-dark">
       <div>
-        <h2>Author</h2>
-        <p>This amazing text was written by yours truly <a href="https://github.com/TBarregren">TBarregren</a>.</p>
+        <h2>Just another example</h2>
+        <p>Here is another <a href="#">link</a>.</p>
+        <p>Zoom out and notice how the footer stay at the bottom of the screen.</p>
       </div>
     </aside>
-</main>
-  <aside class="panel gray-dark"><!-- The <main>-element may be followed by zeror or more of <article>, <aside>, <nav>, <section> and <div>, with for instance  contain related articles, comment, call-to-actions etcetera. -->
-    <div><!-- Each of the above mentioned elements consists of one or more "content rows", each represented by a sectioning element (except <header> and <footer>) or a <div>. -->
-      <h2>Just an example</h2>
-      <p>Here is another <a href="#">link</a>.</p>
-      <p>Zoom out and notice how the footer stas at the bottom of the screen.</p>
-    </div>
-  </aside>
-  <div><!-- Intentionally left blank --></div><!-- The child of <body> just preceding <footer> will grow till the footer sit at the bottom of the screen. -->
-  <footer><!-- The last child of <body> can be <footer>. It consists of three <div>:s that each corresponds to a "footer row". -->
-    <div id="footer"><!-- The second footer row is the actual footer. It's typically used fo a short description of the website and a sitemap. -->
-      <div><!-- Each non-empty row must contain a single element (e.g. <div>) wrapping the actutal content of the row. -->
+    <div><!-- Intentionally left blank --></div>
+    <footer>
+      <div id="footer">
         <div>
-          <figure>
-            <a href="https://github.com/Kntnt/kntnt-css-framework">
+          <div>
+            <figure>
+              <a href="https://github.com/Kntnt/kntnt-css-framework">
               <img class="no-shadow" srcset="logo-1x.png, logo-2x.png 2x, logo-3x.png 3x" src="logo-3x.png" alt="Kntnt logo" height="60">
-            </a>
-          </figure>
-          <p>Kntnt (pronounced content) is a consulting company in marketing communication and sales. We help companies and organizations to strengthen brand, drive demand or generate inbound leads with content marketing.</p>
-          <aside id="social-media">
-            <a href="https://www.linkedin.com/company/kntnt" target="_self" rel="noopener noreferrer"><span class="fab fa-linkedin-in"></span></a>
-            <a href="https://www.facebook.com/Kntnt.se" target="_self" rel="noopener noreferrer"><span class="fab fa-facebook-f"></span></a>
-            <a href="https://twitter.com/kntnt_se" target="_self" rel="noopener noreferrer"><span class="fab fa-twitter"></span></a>
-            <a href="https://open.spotify.com/show/0yifu47BVQqTArn5AOCTAP" target="_self" rel="noopener noreferrer"><span class="fab fa-spotify"></span></a>
-            <a href="https://www.youtube.com/kntnt" target="_self" rel="noopener noreferrer"><span class="fab fa-youtube"></span></a>
-            <a href="https://www.kntnt.se/feed" target="_self" rel="noopener noreferrer"><span class="fas fa-rss"></span></a>
-          </aside>
+              </a>
+            </figure>
+            <p>Kntnt (pronounced content) is a consulting company in marketing communication and sales. We help companies and organizations to strengthen brand, drive demand or generate inbound leads with content marketing.</p>
+            <aside id="social-media">
+              <a href="https://www.linkedin.com/company/kntnt" target="_self" rel="noopener noreferrer"><span class="fab fa-linkedin-in"></span></a>
+              <a href="https://www.facebook.com/Kntnt.se" target="_self" rel="noopener noreferrer"><span class="fab fa-facebook-f"></span></a>
+              <a href="https://twitter.com/kntnt_se" target="_self" rel="noopener noreferrer"><span class="fab fa-twitter"></span></a>
+              <a href="https://open.spotify.com/show/0yifu47BVQqTArn5AOCTAP" target="_self" rel="noopener noreferrer"><span class="fab fa-spotify"></span></a>
+              <a href="https://www.youtube.com/kntnt" target="_self" rel="noopener noreferrer"><span class="fab fa-youtube"></span></a>
+              <a href="https://www.kntnt.se/feed" target="_self" rel="noopener noreferrer"><span class="fas fa-rss"></span></a>
+            </aside>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="https://www.kntnt.se/">Services</a>
+                <ul>
+                  <li><a href="https://www.kntnt.se/tjanster/lopande-produktion">Content marketing</a></li>
+                  <li><a href="https://www.kntnt.se/tjanster/digital-plattform">Lead generation and nurturing</a></li>
+                  <li><a href="https://www.kntnt.se/tjanster/digital-plattform">Measurement an optimization</a></li>
+                  <li><a href="https://www.kntnt.se/tjanster/digital-plattform">Web technology</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Benefits</a>
+                <ul>
+                  <li><a href="#">Management</a></li>
+                  <li><a href="#">Sales</a></li>
+                  <li><a href="#">Marketing</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Content</a>
+                <ul>
+                  <li><a href="https://www.kntnt.se/magasin">Kntnt Magazine</a></li>
+                  <li><a href="https://www.kntnt.se/radio">Kntnt Podcast</a></li>
+                  <li><a href="https://www.kntnt.se/tv">Kntnt TV</a></li>
+                  <li><a href="https://www.kntnt.se/event">Kntnt Event</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="https://www.kntnt.se/om">About</a>
+                <ul>
+                  <li><a href="https://www.kntnt.se/kontakta#">Contact us</a></li>
+                  <li><a href="https://www.kntnt.se/om">Why we exists</a></li>
+                  <li><a href="https://www.kntnt.se/om">How we operate</a></li>
+                  <li><a href="https://www.kntnt.se/om">What we do</a></li>
+                  <li><a href="https://www.kntnt.se/om">History</a></li>
+                  <li><a href="https://www.kntnt.se/om">Team</a></li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav>
-          <ul>
-            <li>
-              <a href="https://www.kntnt.se/">Services</a>
-              <ul>
-                <li><a href="https://www.kntnt.se/tjanster/lopande-produktion">Content marketing</a></li>
-                <li><a href="https://www.kntnt.se/tjanster/digital-plattform">Lead generation and nurturing</a></li>
-                <li><a href="https://www.kntnt.se/tjanster/digital-plattform">Measurement an optimization</a></li>
-                <li><a href="https://www.kntnt.se/tjanster/digital-plattform">Web technology</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Benefits</a>
-              <ul>
-                <li><a href="#">Management</a></li>
-                <li><a href="#">Sales</a></li>
-                <li><a href="#">Marketing</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Content</a>
-              <ul>
-                <li><a href="https://www.kntnt.se/magasin">Kntnt Magazine</a></li>
-                <li><a href="https://www.kntnt.se/radio">Kntnt Podcast</a></li>
-                <li><a href="https://www.kntnt.se/tv">Kntnt TV</a></li>
-                <li><a href="https://www.kntnt.se/event">Kntnt Event</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="https://www.kntnt.se/om">About</a>
-              <ul>
-                <li><a href="https://www.kntnt.se/kontakta#">Contact us</a></li>
-                <li><a href="https://www.kntnt.se/om">Why we exists</a></li>
-                <li><a href="https://www.kntnt.se/om">How we operate</a></li>
-                <li><a href="https://www.kntnt.se/om">What we do</a></li>
-                <li><a href="https://www.kntnt.se/om">History</a></li>
-                <li><a href="https://www.kntnt.se/om">Team</a></li>
-              </ul>
-            </li>
-          </ul>
-        </nav>
       </div>
-    </div>
-    <div id="bottombar"><!-- The their and last footer row is a bottom bar where typically legal notices etcetera is shown. -->
-      <div><!-- Each non-empty row must contain a single element (e.g. <div>) wrapping the actutal content of the row. -->
+      <div id="bottombar">
         <div>
-          <p>Kntnt CSS Framework is developed by Kntnt Sweden AB.</p>
-          <p>This site uses cookies. You choose if you accept cookies. Read more in our <a href="#">privacy policy</a>.</p>
-          <p>Kntnt Sweden AB is registred in Göteborg and has VAT-number SE556886295601.</p>
+          <div>
+            <p>Kntnt CSS Framework is developed by Kntnt Sweden AB.</p>
+            <p>This site uses cookies. You choose if you accept cookies. Read more in our <a href="#">privacy policy</a>.</p>
+            <p>Kntnt Sweden AB is registred in Göteborg and has VAT-number SE556886295601.</p>
+          </div>
+          <address>
+            <div>Kntnt Sweden AB</div>
+            <div><a href="https://goo.gl/maps/UFBcnycVRNx" target="_blank" rel="noopener noreferrer">Bror Nilssons gata 12 | 417 55 Göteborg | Sweden</a></div>
+            <div><a href="+4631510300">+46 31 510 300</a> | <a href="mailto:info@kntnt.com">info@kntnt.com</a></div>
+          </address>
         </div>
-        <address>
-          <div>Kntnt Sweden AB</div>
-          <div><a href="https://goo.gl/maps/UFBcnycVRNx" target="_blank" rel="noopener noreferrer">Bror Nilssons gata 12 | 417 55 Göteborg | Sweden</a></div>
-          <div><a href="+4631510300">+46 31 510 300</a> | <a href="mailto:info@kntnt.com">info@kntnt.com</a></div>
-        </address>
       </div>
-    </div>
-  </footer>
-</body>
+    </footer>
+  </body>
 </html>
