@@ -13,9 +13,7 @@
  * Center content
  */
 
-body > header > * > * ,
-body > footer > * > * ,
-body > :not(header):not(footer) > *  {
+body > * > * > * {
   --padding-horizontal: calc(var(--row-padding) + var(--row-protruding));
   width: 100%;
   max-width: calc(var(--content-width) + 2 * var(--padding-horizontal));
