@@ -154,3 +154,15 @@ body > :nth-last-child(2) {
 body > footer {
   flex-shrink: 0;
 }
+
+
+/**
+ * Disable empty rows in header and footer.
+ */ 
+
+body > header > :first-child: > :empty,
+body > header > :last-child: > :empty,
+body > footer > :first-child: > :empty,
+body > footer > :last-child: > :empty {
+  display: none;
+}
