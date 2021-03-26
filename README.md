@@ -60,5 +60,5 @@ The `…` between `<main>` and `</main>` represents content that *is unique* for
 
 ## Example
 
-The file [example-1.html](https://github.com/Kntnt/kntnt-css-framework/blob/main/example/example-1.html) shows how KCF can be used.
+The file [example-1.html](https://github.com/Kntnt/kntnt-css-framework/blob/main/examples/example-1.html) shows how KCF can be used.
 
