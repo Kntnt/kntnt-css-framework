@@ -141,12 +141,6 @@ body > footer > * > * {
  * Push footer to bottom.
  */
 
-html,
-body {
-  height: 100%;
-  overflow: auto;
-}
-
 body {
   display: flex;
   flex-direction: column;

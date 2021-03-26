@@ -37,6 +37,18 @@
 
 
 /**
+ * Required for some thngs to work, including "sticky header"
+ * and "push footer to bottom".
+ */
+ 
+html,
+body {
+  height: 100%;
+  overflow: auto;
+}
+
+
+/**
  *  Consistent vertical spacing
  */
 
