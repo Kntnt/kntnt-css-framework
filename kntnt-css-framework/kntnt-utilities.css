@@ -161,8 +161,11 @@ not(table).aligncenter {
  * Panels
  */
 
-.panel a {
+.panel * {
   color: inherit;
+}
+
+.panel a {
   text-decoration-color: inherit;
 }
 
