@@ -21,48 +21,44 @@ Kntnt CSS Framework is developed by [Kntnt](https://www.kntnt.se) – a Swedish 
 The document root must have following content:
 
     <body>
-      <header>…</header>
+      <header>
+        <div>
+          <div>…</div>
+        </div>
+        <div>
+          <div>…</div>
+        </div>
+      </header>
       ⋮
       <main>…</main>
       ⋮
-      <footer>…</footer>
+      <footer>
+        <div>
+          <div>…</div>
+        </div>
+        <div>
+          <div>…</div>
+        </div>
+      </footer>
     </body>
 
-The `⋮` before and after `<main>…</main>` represents optional content that is *not unique* for the page. Typically, the first `⋮` is used for a important message shown on all pages, while the last `⋮` is used for gallery with related articles and similar. The `…` between `<main>` and `</main>` represents mandotary content that *is unique* for the page. Both `…` between `<main>` and `</main>` and non-emty `⋮` must have following structure:
+In `<header>…</header>`, the first `…` is the topbar's content (e.g. with shortcut links to essential pages), and the second `…` is the content of the actual header (w.g. with logo and navigation).
 
-    <div>
+In `<footer>…</footer>`, the first `…` is the actual footer's content (e.g. with sitemap and social media icons), and the second `…` is the content of the bottombar (e.g. with copyright notice and legal disclaimers).
+
+Replace `…` with nothing (i.e. `<div></div>`) to disable a row in in `<header>…</header>` or `<footer>…</footer>`.
+
+The `⋮` before and after `<main>…</main>` represents content that is *not unique* for the page. Typically, the first `⋮` is used for a important message shown on all pages, while the last `⋮` is used for gallery with related articles and similar. Each `⋮` is optional. If present, it must consists of at least one pair of outer and inner wrapper:
+
       <section>
-        <div>CONTENT OF SECTION 1 IN DIV 1</div>
+        <div>…</div>
       </section>
-      ⋮
-      <section>
-        <div>CONTENT OF SECTION i IN DIV 1</div>
-      </section>
-    </div>
-    ⋮
-    <div>
-      <section>
-        <div>CONTENT OF SECTION 1 IN DIV 2</div>
-      </section>
-      ⋮
-      <section>
-        <div>CONTENT OF SECTION j IN DIV n</div>
-      </section>
-    </div>
 
-Any semantic element (`<section>`, `<aside>`, `<article>` and `<nav>`), can be used where `<section>` is used above. If no semantic element can be used in [inteded way](https://www.smashingmagazine.com/2013/01/the-importance-of-sections/), use `<div>` instead.
+The outer wrapper, i.e. `<section>…</section>` above, should be a semantic element (i.e. `<section>`, `<aside>`, `<article>` and `<nav>`). If no semantic element can be used in [inteded way](https://www.smashingmagazine.com/2013/01/the-importance-of-sections/), use `<div>` instead. Replace `…` with content.
 
-Replace `…` between in `<header>…</header>` and `<footer>…</footer>` with following content:
+The `…` between `<main>` and `</main>` represents content that *is unique* for the page. Typically, this is where the main content of the page, e.g. a blogpost or article, goes. It must consists of at least one pair of outer and inner wrapper described above.
 
-    <div>
-      <div>CONTENT OF ROW 1</div>
-    </div>
-    <div>
-      <div>CONTENT OF ROW 2</div>
-    </div>
+## Example
 
-In the header, the first `…` is the topbar's content (e.g. with shortcut links to essential pages), and the second `…` is the content of the actual header (w.g. with logo and navigation).
+The file [example-1.html](https://github.com/Kntnt/kntnt-css-framework/blob/main/example/example-1.html) shows how KCF can be used.
 
-In the footer, the first `…` is the actual footer's content (e.g. with sitemap and social media icons), and the second `…` is the content of the bottombar (e.g. with copyright notice and legal disclaimers).
-
-Replace `…` with nothing (i.e. `<div></div>`) to disable a rows in in `<header>…</header>` or `<footer>…</footer>`.
