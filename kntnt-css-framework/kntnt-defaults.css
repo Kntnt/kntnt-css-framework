@@ -287,17 +287,6 @@
 
 
   /**
-   * Defaults for lead
-   */
-  --lead-margin-top: var(--block-indent);
-  --lead-margin-bottom: var(--block-indent);
-  --lead-font-family: var(--h1-font-family);
-  --lead-font-size: var(--text-font-size);
-  --lead-font-weight: var(--font-weight-semi-bold);
-  --lead-font-style: var(--text-font-style);
-  --lead-color: var(--gray-iii);
-
-  /**
    *  Defaults for table
    */
 
@@ -356,5 +345,37 @@
   --button-hover-color: var(--color-primary-accentuated);
   --button-hover-background-color: var(--extra-white);
 
+
+  /**
+   * Monospace text
+   */
+  --monospace-background: var(--gray-x);
+  --pre-padding: var(--space-medium);
+  --pre-background-color: var(--gray-x);
+
+
+  /**
+   * Defaults for lead
+   */
+  --lead-margin-top: var(--block-indent);
+  --lead-margin-bottom: var(--block-indent);
+  --lead-font-family: var(--h1-font-family);
+  --lead-font-size: var(--text-font-size);
+  --lead-font-weight: var(--font-weight-semi-bold);
+  --lead-font-style: var(--text-font-style);
+  --lead-color: var(--gray-iii);
+
+
+  /**
+   * Defaults for byline
+   */
+  --byline-vertical-padding: var(--space-xsmall);
+  --byline-border: 1px solid var(--gray-iii);
+  --byline-font-family: var(--font-stack-sans);
+  --byline-font-size: var(--font-size-small);
+  --byline-font-weight: var(--font-weight-normal);
+  --byline-font-style: normal;
+  --byline-color: var(--text-color);
+  --byline-separator: ' • ';
 
 }
