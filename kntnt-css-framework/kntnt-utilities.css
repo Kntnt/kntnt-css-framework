@@ -197,7 +197,33 @@ h1 > .deck {
   font-weight: var(--lead-font-weight);
   font-style: var(--lead-font-style);
   color: var(--lead-color);
-} 
+}
+
+
+/**
+ * Byline
+ */
+
+.byline {
+  padding: var(--byline-vertical-padding) 0;
+  border-top: var(--byline-border);
+  border-bottom: var(--byline-border);
+  font-family: var(--byline-font-family);
+  font-size: var(--byline-font-size);
+  font-weight: var(--byline-font-weight);
+  font-style: var(--byline-font-style);
+  line-height: 1;
+  color: var(--byline-color);
+}
+
+.byline :not(:last-child):after {
+  content: var(--byline-separator);
+}
+
+.byline a:not(:hover):not(:focus):not(:active) {
+  color: inherit;
+}
+
 
 
 /**
