@@ -14,12 +14,9 @@
  */
 
 body {
-  color: var(--text-color);
-  background-color: var(--text-background-color);
   font-family: var(--text-font-family);
-  font-size: var(--text-font-size);
-  font-weight: var(--text-font-weight);
-  font-style: var(--text-font-style);
+  background-color: var(--text-background-color);
+  color: var(--text-color);
 }
 
 

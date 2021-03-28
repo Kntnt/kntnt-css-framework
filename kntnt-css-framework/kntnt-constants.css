@@ -14,18 +14,6 @@
 
 
   /**
-   *  Spacing
-   */
-
-  --space-xxsmall: 0.1rem;
-  --space-xsmall: 0.2rem;
-  --space-small: 0.5rem;
-  --space-medium: 1rem;
-  --space-large: 2rem;
-  --space-xlarge: 4rem;
-
-
-  /**
    *  System font stacks
    */
 
@@ -35,18 +23,34 @@
 
 
   /**
-   *  Font size
+   * Font size. Please notice that they are relative to the font size of
+   * the text container's font size.
    */
 
-  --font-size-xxsmall: 0.6rem;
-  --font-size-xsmall: 0.8rem;
-  --font-size-medium: 1rem;
-  --font-size-large: 1.25rem;
-  --font-size-xlarge: 1.6rem;
-  --font-size-xxlarge: 2rem;
-  --font-size-huge: 2.5rem;
-  --font-size-xhuge: 3rem;
+  --font-size-xxsmall: 0.5000em;
+  --font-size-xsmall: 0.6300em;
+  --font-size-small: 0.7937em;
+  --font-size-medium: 1.0000em;
+  --font-size-large: 1.2599em;
+  --font-size-xlarge: 1.5874em;
+  --font-size-xxlarge: 2.0000em;
+  --font-size-big: 2.5198em;
+  --font-size-xbig: 3.1748em;
 
+
+  /**
+   * Font size relative the text container's font size.
+   */
+  
+  --font-size-xxsmaller: 50.00%;
+  --font-size-xsmaller: 63.00%;
+  --font-size-smaller: 79.37%;
+  --font-size-larger: 125.99%;
+  --font-size-xlarger: 158.74%;
+  --font-size-xxlarger: 200.00%;
+  --font-size-biger: 251.98%;
+  --font-size-xbiger: 317.48%;
+  
 
   /**
    *  Font weights
@@ -62,6 +66,18 @@
   --font-weight-extra-bold: 800;
   --font-weight-black: 900;
   --font-weight-extra-black: 950;
+
+
+  /**
+   *  Spacing
+   */
+
+  --space-xxsmall: 0.125rem;
+  --space-xsmall: 0.25rem;
+  --space-small: 0.5rem;
+  --space-medium: 1rem;
+  --space-large: 2rem;
+  --space-xlarge: 4rem;
 
 
    /**

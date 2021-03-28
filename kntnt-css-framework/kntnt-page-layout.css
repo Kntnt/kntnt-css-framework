@@ -10,6 +10,19 @@
 
 
 /**
+ * A page is build of "super-rows" (e.g. <header>, main>, <aside> and
+ * <footer>), each with one or more "rows" (e.g. "topbar" and "header").
+ * By default, both super-rows and rows stack on each other without space
+ * between.
+ */
+
+body > *,
+body > * > * {
+  margin-top: 0;
+}
+
+
+/**
  * Center content
  */
 

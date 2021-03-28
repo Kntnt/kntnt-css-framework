@@ -6,6 +6,16 @@
  */
 
 
+/**
+ * Paragraphs
+ */
+
+p {
+  font-size: var(--text-font-size);
+  font-weight: var(--text-font-weight);
+  font-style: var(--text-font-style);
+  line-height: var(--text-line-height);
+}
 
 /**
  * Links
@@ -17,7 +27,6 @@ a {
   transition-property: color, text-decoration-color;
   transition-duration: var(--swiftly);
   transition-timing-function: ease;
-  : text-decoration-color var(--swiftly) ease-in-out;
  }
 
 a:hover,
@@ -29,7 +38,7 @@ a:active {
 
 
 /**
- *  Headings
+ *  Main header on page
  */
 
 h1 {
@@ -38,7 +47,13 @@ h1 {
   font-size: var(--h1-font-size);
   font-weight: var(--h1-font-weight);
   font-style: var(--h1-font-style);
+  line-height: var(--h1-line-height);
 }
+
+
+/**
+ *  Subheading in text
+ */
 
 h2 {
   color: var(--h2-color);
@@ -46,7 +61,13 @@ h2 {
   font-size: var(--h2-font-size);
   font-weight: var(--h2-font-weight);
   font-style: var(--h2-font-style);
+  line-height: var(--h2-line-height);
 }
+
+
+/**
+ *  Sub-subheading in text
+ */
 
 h3 {
   color: var(--h3-color);
@@ -54,7 +75,13 @@ h3 {
   font-size: var(--h3-font-size);
   font-weight: var(--h3-font-weight);
   font-style: var(--h3-font-style);
+  line-height: var(--h3-line-height);
 }
+
+
+/**
+ *  Sub-subheading in text, alternative style
+ */
 
 h4 {
   color: var(--h4-color);
@@ -62,7 +89,13 @@ h4 {
   font-size: var(--h4-font-size);
   font-weight: var(--h4-font-weight);
   font-style: var(--h4-font-style);
+  line-height: var(--h4-line-height);
 }
+
+
+/**
+ *  Short text used like a heading, e.g. a question in a Q&A-article.
+ */
 
 h5 {
   color: var(--h5-color);
@@ -70,14 +103,7 @@ h5 {
   font-size: var(--h5-font-size);
   font-weight: var(--h5-font-weight);
   font-style: var(--h5-font-style);
-}
-
-h6 {
-  color: var(--h6-color);
-  font-family: var(--h6-font-family);
-  font-size: var(--h6-font-size);
-  font-weight: var(--h6-font-weight);
-  font-style: var(--h6-font-style);
+  line-height: var(--h5-line-height);
 }
 
 
@@ -87,9 +113,13 @@ h6 {
 
 h6 {
   display: inline-block;
-  margin: var(--text-distance-paragraph) 0 0 0;
+  margin: var(--vertical-space-paragraph) 0 0 0;
+  font-family: var(--h6-font-family);
   font-size: var(--text-font-size);
-  font-weight: bold;
+  font-weight: var(--h6-font-weight);
+  font-style: var(--h6-font-style);
+  line-height: var(--text-line-height);
+  color: var(--h6-color);
 }
 
 h6 + p {
@@ -101,14 +131,66 @@ h6 + *::after {
   white-space: pre-wrap;
 }
 
+:not(p) + h6,
+:not(p) + h6 + p {
+  margin-top: var(--vertical-space-block);
+}
+
+p + h6,
+p + h6 + p {
+  margin-top: var(--vertical-space-paragraph);
+}
+
+
+/**
+ * Block quote
+ */
+
+blockquote {
+  font-family: var(--blockquote-font-family);
+  font-size: var(--blockquote-font-size);
+  font-weight: var(--blockquote-font-weight);
+  font-style: var(--blockquote-font-style);
+  margin-left: var(--block-indent);
+  margin-right: var(--block-indent);
+  border-left: var(--blockquote-bar-width) var(--blockquote-bar) var(--blockquote-bar-color);
+  padding-left: var(--blockquote-bar-indent);
+}
+
+blockquote p {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+}
+
+figure > blockquote + figcaption {
+  margin-left: calc(var(--block-indent) + var(--blockquote-bar-width) + var(--blockquote-bar-indent));
+  margin-right: var(--block-indent);
+}
+
+
+/**
+ * Figures
+ */
+
+figure > figcaption {
+  margin-top: var(--vertical-space-caption);
+  font-family: var(--caption-font-family);
+  font-size: var(--caption-font-size);
+  font-weight: var(--caption-font-weight);
+  font-style: var(--caption-font-style);
+} 
+
+
 
 /**
  * Images
  */
 
- img {
+img {
   box-shadow: var(--shadow);
- }
+}
 
 
 /**
@@ -119,7 +201,7 @@ table {
   table-layout: auto;
   border-collapse: separate;
   border-spacing: var(--table-cell-gutter);
-  margin: var(--text-distance-box);
+  margin: var(--vertical-space-block);
   box-shadow: var(--shadow);
 }
 
@@ -138,7 +220,7 @@ thead > tr > td {
 
 th,
 td {
-  font-size: var(--font-size-table);
+  font-size: var(--table-font-size);
   padding: var(--table-cell-padding-vertical) var(--table-cell-padding-horizontal);
 }
 
@@ -157,23 +239,8 @@ tr:nth-child(even) {
   background-color: var(--table-row-hovering-background-color);
 }
 
-
-/**
- *  Figure and table captions
- */
-
-.wp-caption .wp-caption-text,
 table caption {
-  text-align: left;
-  font-size: var(--font-size-caption);
-}
-
-.wp-caption .wp-caption-text {
-  margin: var(--box-distance-caption) 0 0 0;
-}
-
-table caption {
-  margin: 0 var(--table-cell-gutter) var(--box-distance-caption) var(--table-cell-gutter);
+  margin: 0 var(--table-cell-gutter) var(--vertical-space-caption) var(--table-cell-gutter);
 }
 
 
@@ -210,6 +277,9 @@ table caption {
 }
 
 
+/**
+ * Aside within article.
+ */
 
 
 
@@ -218,7 +288,7 @@ table caption {
  */
 
 hr {
-  margin: calc(0px - var(--text-distance-box)) 0 0 0;
+  margin: calc(0px - var(--vertical-space-block)) 0 0 0;
   border: none;
   clear: both;
 }

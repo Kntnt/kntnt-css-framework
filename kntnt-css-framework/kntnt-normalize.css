@@ -37,65 +37,112 @@
 
 
 /**
- * Required for some thngs to work, including "sticky header"
+ * Required for some things to work, including "pull", "sticky header"
  * and "push footer to bottom".
  */
- 
+
 html,
 body {
   height: 100%;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 
 /**
- *  Consistent vertical spacing
+ * Vertical spacing is based on the principle that block-level elements is
+ * responsible to keep vertical distance to adjacent block-level element
+ * predecessor and not have any other margins.
  */
 
+address,
+article,
+aside,
 blockquote,
+dd,
+details,
+dialog,
+div,
 dl,
+dt,
+fieldset,
+figcaption,
 figure,
+footer,
+form,
 h1,
 h2,
 h3,
 h4,
 h5,
 h6,
+header,
 hr,
+li,
+main,
+nav,
 ol,
 p,
 pre,
+section,
 table,
-ul,
-video {
+ul {
   margin: 0;
 }
 
-blockquote + *,
-dl + *,
-figure + *,
-h1 + *,
-h2 + *,
-h3 + *,
-h4 + *,
-h5 + *,
-h6 + *,
-hr + *,
-ol + *,
-p + *,
-pre + *,
-table + *,
-ul + *,
-video + * {
-  margin-top: var(--text-distance-box);
+* + address,
+* + article,
+* + aside,
+* + blockquote,
+* + dd,
+* + details,
+* + dialog,
+* + div,
+* + dl,
+* + dt,
+* + fieldset,
+* + figcaption,
+* + figure,
+* + footer,
+* + form,
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6,
+* + header,
+* + hr,
+* + li,
+* + main,
+* + nav,
+* + ol,
+* + p,
+* + pre,
+* + section,
+* + table,
+* + ul {
+  margin-top: var(--vertical-space-block);
 }
 
 p + p {
-  margin-top: var(--text-distance-paragraph);
+  margin-top: var(--vertical-space-paragraph);
+}
+
+li + li {
+  margin-top: var(--vertical-space-list-item);    
+}
+
+dt + dd {
+  margin-top: var(--vertical-space-definition-item-heading);  
+}
+
+dd + dt {
+  margin-top: var(--vertical-space-definition-item);    
 }
 
 h1 + p {
-  margin-top: var(--h1-distance-paragraph);  
+  margin-top: var(--vertical-space-paragraph-h1);  
 }
 
 h2 + p,
@@ -103,7 +150,7 @@ h3 + p,
 h4 + p,
 h5 + p,
 h6 + p {
-  margin-top: var(--heading-distance-paragraph);
+  margin-top: var(--vertical-space-paragraph-heading);
 }
 
 
@@ -128,13 +175,23 @@ address {
 }
 
 
-/**
- * Nicolas Gallagher's normalize.css (which must should be loaded before this
- * file) sets <small> to be 20 % smaller than the font size. For symmetry, we
- * set <big> to be 20 % larger.
+/*
+ * Make <small>, <big>, <sub>, <sup> use the constants.
  */
+small {
+  font-size: var(--font-size-smaller);
+}
+
 big {
-  font-size: 1.2em;
+  font-size: var(--font-size-larger);
+}
+
+sub {
+  font-size: var(--font-size-xsmaller);
+}
+
+sup {
+  font-size: var(--font-size-xsmaller);
 }
 
 

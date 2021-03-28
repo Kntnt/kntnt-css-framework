@@ -16,6 +16,23 @@ body.admin-bar {
 
 
 /**
+ * Captions
+ */
+
+.wp-caption .wp-caption-text,
+table caption {
+  text-align: left;
+  font-size: var(--caption);
+}
+
+.wp-caption .wp-caption-text {
+  margin: var(--vertical-space-caption) 0 0 0;
+}
+
+
+
+
+/**
  * Embeds
  */
 
@@ -23,7 +40,7 @@ body.admin-bar {
 .wp-audio-shortcode,
 .fluid-width-video-wrapper,
 .rll-youtube-player {
-  margin: var(--text-distance-box) 0;
+  margin: var(--vertical-space-block) 0;
   clear: both; /* Escape floats */
 }
 

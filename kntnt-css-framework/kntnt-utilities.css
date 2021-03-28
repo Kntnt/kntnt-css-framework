@@ -20,88 +20,6 @@
 
 
 /**
- *  Center children horizontally or vertically, respectively.
- */
-
-.center-children-horizontally,
-.center-children-vertically {
-  display: flex;
-}
-
-.center-children-horizontally {
-  justify-content: center;
-}
-
-.center-children-vertically {
-  align-items: center;
-}
-
-
-/**
- *  Align horizontally
- */
-
-.left,
-.right {
-  width: 33%;
-}
-
-.center {
-  width: 67%;
-}
-
-.left,
-.alignleft {
-  float: left;
-}
-
-.right,
-.alignright {
-  float:right;
-}
-
-.center,
-.aligncenter {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-not(table).center,
-not(table).aligncenter {
-  display: block;
-}
-
-.indent {
-  margin-left: var(--box-indent);
-  width: auto;
-}
-
-
-/**
- *  Set width
- */
-
-.wide,
-.width-100 {
-  width: 100%;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.width-67 {
-  width: 67%;
-}
-
-.width-50 {
-  width: 50%;
-}
-
-.width-33 {
-  width: 33%;
-}
-
-
-/**
  *  Children and descendants, respectively, inherits this elemenet's color
  */
 
@@ -283,7 +201,8 @@ h1 > .deck {
 
 
 /**
- * Byline and dateline
+ *
  */
-
-/* TODO */
+.debug {
+  outline: 1px solid red;
+}
