@@ -348,3 +348,35 @@ hr.fleuron::after {
   content: "\2766";
   display: inline;
 }
+
+
+/**
+ * Monospace text
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: var(--font-stack-mono);
+  font-size: var(--font-size-smaller); /* Fakes font-size-adjust */  
+}
+
+code,
+kbd,
+samp {
+  background-color: var(--monospace-background);
+}
+
+pre {
+  padding: var(--pre-padding);
+  background-color: var(--pre-background-color);
+  white-space: pre-wrap;
+}
+
+pre code,
+pre kbd,
+pre pre,
+pre samp {
+  font-size: 100%;
+}
