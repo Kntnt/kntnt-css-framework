@@ -53,534 +53,534 @@
     <main>
       <article id="article">
         <div>
-            <h1>
-              <span class="kicker">For developers:</span>
-              Kntnt CSS Framework
-              <span class="deck">— A foundation for modern web sites</span>
-            </h1>
-            <p class="lead">This is the lead paragraph. It should summarize the content of the article without revealing too much. The purpose is to give the reader enough so she can decide if the article is relevant and to entice her to read on.</p>
-            <div class="byline">
-              <time datetime="2021-03-28">March 28, 2021</time>
-              <a href="https://github.com/TBarregren">Thomas Barregren</a>
-            </div>
-            <p>This is the very first paragraph in the body text. It should not be a headline, an image, a table or the like, but just a piece of text. The reason is that this comes directly after the byline. It simply does not look good with anything other than text directly after the byline. A single piece looks best. Then a subheading.</p>
-            <h2>What is Kntnt CSS Framework</h2>
-            <p>Kntnt CSS Framework (KCF) is a comprehensive set of stylesheets that make it easy to build a website relatively quickly by chiefly overriding default values and using classes.</p>
-            <p>The framework can be used with <a href='https://oxygenbuilder.com/'>Oxygen Builder</a> for <a href='https://wordpress.org/'>WordPress</a>. But there is no dependency on either tool, so it works perfectly well with other tools or for handwritten code.</p>
-            <h2>Different</h2>
-            <p>There are many CSS frameworks and similar solutions out there. The arguably most known is <a href='https://getbootstrap.com/'>Bootstrap</a>. It&#39;s a fantastic toolkit &quot;featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.&quot;</p>
-            <p>For better or worse, KCF is far from being a complete and competent as Bootstrap. KCF is focusing on providing a foundation with sane defaults that can be overridden with pure CSS and useful classes that can be used to accomplish everyday tasks.</p>
-            <aside class="banner panel color-primary-light">
-              <div>
-                <h2>Developer</h2>
-                <p>Kntnt CSS Framework is developed by <a href="https://www.kntnt.se">Kntnt</a> – a Swedish sales, marketing and web technology agency.</p>
-              </div>
-            </aside>
-            <h2>How to use it</h2>
-            <p>The document root must have following content:</p>
-            <pre><code>&lt;body&gt;
-              &lt;header&gt;
-                &lt;div&gt;
-                  &lt;div&gt;…&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div&gt;
-                  &lt;div&gt;…&lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/header&gt;
-              ⋮
-              &lt;main&gt;…&lt;/main&gt;
-              ⋮
-              &lt;footer&gt;
-                &lt;div&gt;
-                  &lt;div&gt;…&lt;/div&gt;
-                &lt;/div&gt;
-                &lt;div&gt;
-                  &lt;div&gt;…&lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/footer&gt;
-            &lt;/body&gt;
-            </code></pre>
-            <p>In <code>&lt;header&gt;…&lt;/header&gt;</code>, the first <code>…</code> is the topbar&#39;s content (e.g. with shortcut links to essential pages), and the second <code>…</code> is the content of the actual header (w.g. with logo and navigation).</p>
-            <p>In <code>&lt;footer&gt;…&lt;/footer&gt;</code>, the first <code>…</code> is the actual footer&#39;s content (e.g. with sitemap and social media icons), and the second <code>…</code> is the content of the bottombar (e.g. with copyright notice and legal disclaimers).</p>
-            <p>Replace <code>…</code> with nothing (i.e. <code>&lt;div&gt;&lt;/div&gt;</code>) to disable a row in in <code>&lt;header&gt;…&lt;/header&gt;</code> or <code>&lt;footer&gt;…&lt;/footer&gt;</code>.</p>
-            <p>The <code>⋮</code> before and after <code>&lt;main&gt;…&lt;/main&gt;</code> represents content that is <em>not unique</em> for the page. Typically, the first <code>⋮</code> is used for an important message shown on all pages, while the last <code>⋮</code> is used for a gallery with related articles or similar. Each <code>⋮</code> is optional. If present, it must consist of at least one pair of outer and inner wrapper:</p>
-            <pre><code>  &lt;section&gt;
-                &lt;div&gt;…&lt;/div&gt;
-              &lt;/section&gt;
-            </code></pre>
-            <p>The outer wrapper, i.e. <code>&lt;section&gt;…&lt;/section&gt;</code> above, should be a semantic element (i.e. <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;article&gt;</code> and <code>&lt;nav&gt;</code>). If no semantic element can be used in <a href='https://www.smashingmagazine.com/2013/01/the-importance-of-sections/'>inteded way</a>, use <code>&lt;div&gt;</code> instead. Replace <code>…</code> with content.</p>
-            <p>The <code>…</code> between <code>&lt;main&gt;</code> and <code>&lt;/main&gt;</code> represents content that <em>is unique</em> for the page. Typically, this is where the page&#39;s main content, e.g. a blog post or article, goes. It must consist of at least one pair of outer and inner wrapper described above.</p>
-            <h2>Article</h2>
-            <p>For a page like this, with an article, blog post or similar, <code>&lt;main&gt;…&lt;/main&gt;</code> should contain one <code>&lt;article&gt;&lt;div&gt;…&lt;/div&gt;&lt;/article&gt;</code> where <code>…</code> is the content of the article.</p>
-            <pre><code>&lt;article&gt;
-              &lt;div&gt;
-                ⋮    
-              &lt;/div&gt;
-            &lt;/article&gt;
-            </code></pre>
-            <h2>Headline</h2>
-            <p>The headline is wrapped by <code>&lt;h1&gt;…&lt;/h1&gt;</code>.</p>
-            <pre><code>&lt;h1&gt;
-              Kntnt CSS Framework
-            &lt;/h1&gt;
-            </code></pre>
-            <p>You can add a <em>kicker</em> or <em>standfirst</em> by wrapping it in <code>&lt;span class=&quot; kicker&quot;&gt;…&lt;/span&gt;</code> and insert it in <code>&lt;h1&gt;…&lt;/h1&gt;</code> before the headline with white space or linefeed in-between.</p>
-            <pre><code>&lt;h1&gt;
-              &lt;span class=&quot;kicker&quot;&gt;For developers:&lt;/span&gt;
-              Kntnt CSS Framework
-            &lt;/h1&gt;
-            </code></pre>
-            <p>You can add a <em>deck</em> or <em>subhead</em> by wrapping it in <code>&lt;span class=&quot;deck&quot;&gt;…&lt;/span&gt;</code>and insert it in <code>&lt;h1&gt;…&lt;/h1&gt;</code> after the headline with white a space or linefeed in-between.</p>
-            <pre><code>&lt;h1&gt;
-              Kntnt CSS Framework
-              &lt;span class=&quot;deck&quot;&gt;— A foundation for modern web sites&lt;/span&gt;
-            &lt;/h1&gt;
-            </code></pre>
-            <p>Although not recommended, you can add both kicker and deck to a headline.</p>
-            <pre><code>&lt;h1&gt;
-              &lt;span class=&quot;kicker&quot;&gt;For developers:&lt;/span&gt;
-              Kntnt CSS Framework
-              &lt;span class=&quot;deck&quot;&gt;— A foundation for modern web sites&lt;/span&gt;
-            &lt;/h1&gt;
-            </code></pre>
-            <h2>Lead</h2>
-            <p>Use the class <code>lead</code> on the lead paragraph to make it stand out.</p>
-            <pre><code>&lt;p class=&quot;lead&quot;&gt;
-              This is the lead paragraph. It should summarize the content of the article without revealing too much. The purpose is to give the reader enough so she can decide if the article is relevant and to entice her to read on
-            &lt;/p&gt;
-            </code></pre>
-            <h2>Byline</h2>
-            <p>The byline consists of a <code>&lt;div class= &quot;byline&quot;&gt;…&lt;/div&gt;</code> wrapping one or more of the following parts in order of your choice:</p>
-            <p>The author wrapped by either <code>&lt;a&gt;…&lt;/a&gt;</code> or  <code>&lt;span&gt;…&lt;/span&gt;</code>, depending on whether the name should be a link or not.</p>
-            <pre><code>&lt;a href=&quot;https://github.com/TBarregren&quot;&gt;Thomas Barregren&lt;/a&gt;
-            </code></pre>
-            <p>The date when the article was published, wrapped in by <code>&lt;time&gt;…&lt;/time&gt;</code>.</p>
-            <pre><code>&lt;time datetime=&quot;2021-03-28&quot;&gt;March 28, 2021&lt;/time&gt;
-            </code></pre>
-            <p>A word or short phrase that categorize the article, wrapped by either <code>&lt;a&gt;…&lt;/a&gt;</code> or <code>&lt;span&gt;…&lt;/span&gt;</code>, depending on whether the category should be a link or not.</p>
-            <pre><code>&lt;a href=&quot;/news&quot;&gt;News&lt;/a&gt;
-            </code></pre>
-            <p>The result should lookk something like this:</p>
-            <pre><code>&lt;div class=&quot;byline&quot;&gt;
-              &lt;time datetime=&quot;2021-03-28&quot;&gt;March 28, 2021&lt;/time&gt;
-              &lt;a href=&quot;https://github.com/TBarregren&quot;&gt;Thomas Barregren&lt;/a&gt;
-              &lt;a href=&quot;/news&quot;&gt;News&lt;/a&gt;
-            &lt;/div&gt;
-            </code></pre>
-            <p>Notice that there are no separation characters (e.g. | or •) between the elements. The separators between the elements are inserted by CSS.</p>
-            <h2>Headings</h2>
-            <p>Headings are used to divide a text into sections and explain what the section is about. In academic papers, technical reports, textbooks and similar, it can be beneficial to subdivide sections into subsections and further subdivide the subsections into sub-sub sections and so forth. The design of headings usually adapts to the hierarchy thus created. Usually, the headline has a visual hierarchy, where the heading of a subsection is visually &quot;less&quot; than its section&#39;s heading. To that end, <abbr>HTML</abbr> supports headings on six levels. These are <code>&lt;h1&gt;…&lt;/h1&gt;</code>, <code>&lt;h2&gt;…&lt;/h2&gt;</code> and so on to <code>&lt;h6&gt;…&lt;/h6&gt;</code>. </p>
-            <h3>Don’t use <code>&lt;h1&gt;</code></h3>
-            <p>Don’t use <code>&lt;h1&gt;…&lt;/h1&gt;</code> within your text. It should only be used in the headline described above.</p>
-            <h3>Shun academic headings</h3>
-            <p>Academic texts, reports and many books use intermediate headings at different levels. They are divided into chapters. Each chapter is divided into larger masses of text which in turn are divided into smaller ones which may be divided into even smaller ones, and so on down to paragraphs. Above each division (except for paragraphs) is a heading whose design (for example, size) reflects the division&#39;s place in an imaginary hierarchy. These headings are written to summarize everything that falls under them.</p>
-            <p>Compare that with how newspapers and magazines use headlines. Usually, they only have subheadings, and they are used less as a summary of that particular subsection but more as a lead into what comes next.</p>
-            <p>I do not know if the different ways have any recognized names, but for the sake of reasoning, we can call them <em>academic headings</em> and <em>journalistic headings</em>, respectively. Of the two, I strongly encourage you to use journalistic headings on the web even when the text has an inherent hierarchical structure.</p>
-            <h3>Subheading</h3>
-            <p>A subheading is created by wrapping the heading with <code>&lt;h2&gt;…&lt;/h2&gt;</code>. In most cases, this is the only heading you will use.</p>
-            <h3>Sub-subheading</h3>
-            <p>Despite my general advice, there are situations where it is beneficial for the reader to use sub-subheadings. So, therefore, KCF supports both subheadings and sub-subheadings. The last three headings were sub-subheadings.</p>
-            <p>A sub-subheading is created by wrapping the heading with <code>&lt;h3&gt;…&lt;/h3&gt;</code>.</p>
-            <h3>Paragraph headings</h3>
-            <p>In KCF, <code>&lt;h4&gt;…&lt;/h4&gt;</code> through <code>&lt;h6&gt;…&lt;/h6&gt;</code> also represents headings, but outside of the hierarchy established by <code>&lt;h1&gt;…&lt;/h1&gt;</code> through <code>&lt;h3&gt;…&lt;/h3&gt;</code>. These act as headings for the particual paragraph (or possible few paragraphs) that follow.</p>
-            <h4>General paragraph heading</h4>
-            <p>The heading above is an example of a paragraph heading. It is created by wrapping the heading in <code>&lt;h4&gt;…&lt;/h4&gt;</code>. It is intended for situations where it&#39;s beneficial for the reader to get some help to identify a paragraph among many that talks about a specific topic or similar uses.</p>
-            <h3>Question type heading</h3>
-            <p>In-text with questions and answers, e.g. transcribed interviews and FAQ:s, the questions are natural to use as headings. You can use <code>&lt;h5&gt;…&lt;/h5&gt;</code> to markup your questions in these and similar circumstances. Here is a couple of examples:</p>
-            <h5>Who are you?</h5>
-            <p>My name is Thomas. I&#39;m co-owner of Kntnt – a Swedish sales, marketing and web technology agency. We help companies and organizations to strengthen their brand, drive demand and generate inbound leads with content marketing on the web.</p>
-            <h5>Why did you develop KCF?</h5>
-            <p>We build online magazines for our clients. That&#39;s a central piece in the larger puzzle of attracting potential clients, winning their trust, and converting them to customers. These online magazines are built on a common foundation, which includes re-usable HTML, CSS and JS. Previously, we used <a href='http://lesscss.org/'>Less</a> to make customization of the CSS. I prefer Less above <a href='https://sass-lang.com/'>Sass</a> since it&#39;s leaner. I like to keep things as lean and straightforward as possible. And that got me thinking of using CSS built-in capabilities, such as <code>var()</code>, <code>calc()</code>, <code>max()</code> and <code>min()</code>, to make our workflow even easier and leaner. That resulted in KCF.</p>
-            <h3>Run-in heading</h3>
-            <p>H6 gives a <em>run-in heading</em>. It is a heading at the beginning of a paragraph. It can be used, for instance, as an alternative to a description list or unordered list.</p>
-            <h6>First point.</h6>
-            <p>This is an example of how it looks when <code>&lt;h6&gt;…&lt;/h6&gt;</code> is used to make paragraphs look like a listing of some sort. Each &quot;point&quot; starts with a heading, which is wrapped by <code>&lt;h6&gt;…&lt;/h6&gt;</code> and then followed by the actual paragraph.</p>
-            <h6>Second point.</h6>
-            <p>This approach is better than just using bold or italic font since it provides semantics of importance for search engines and other &quot;machine readers&quot;.</p>
-            <h6>Third and last point.</h6>
-            <p>Usually, headings don&#39;t end with punctuation other than an exclamation mark or question mark. Run-in headers are different. Here it could be beneficial to use a dot or colon or maybe even a dash.</p>
-            <h2>Unordered lists</h2>
-            <p>An <em>unordered list</em> is a list of items without implied order.</p>
-            <p>Following is an example of how to create an unordered list of Swedish kings that have ruled during the 20th century:</p>
-            <pre><code>&lt;ul&gt;
-              &lt;li&gt;Oscar II&lt;/li&gt;
-              &lt;li&gt;Gustav V&lt;/li&gt;
-              &lt;li&gt;Gustav VI Adolf&lt;/li&gt;
-              &lt;li&gt;Carl XVI Gustaf&lt;/li&gt;
-            &lt;/ul&gt;
-            </code></pre>
-            <p>The result looks like this:</p>
-            <ul>
-            <li>Oscar II</li>
-            <li>Gustav V</li>
-            <li>Gustav VI Adolf</li>
-            <li>Carl XVI Gustaf</li>
+<h1>
+  <span class="kicker">For developers:</span>
+  Kntnt CSS Framework
+  <span class="deck">— A foundation for modern web sites</span>
+</h1>
+<p class="lead">This is the lead paragraph. It should summarize the content of the article without revealing too much. The purpose is to give the reader enough so she can decide if the article is relevant and to entice her to read on.</p>
+<div class="byline">
+  <time datetime="2021-03-28">March 28, 2021</time>
+  <a href="https://github.com/TBarregren">Thomas Barregren</a>
+</div>
+<p>This is the very first paragraph in the body text. It should not be a headline, an image, a table or the like, but just a piece of text. The reason is that this comes directly after the byline. It simply does not look good with anything other than text directly after the byline. A single piece looks best. Then a subheading.</p>
+<h2>What is Kntnt CSS Framework</h2>
+<p>Kntnt CSS Framework (KCF) is a comprehensive set of stylesheets that make it easy to build a website relatively quickly by chiefly overriding default values and using classes.</p>
+<p>The framework can be used with <a href='https://oxygenbuilder.com/'>Oxygen Builder</a> for <a href='https://wordpress.org/'>WordPress</a>. But there is no dependency on either tool, so it works perfectly well with other tools or for handwritten code.</p>
+<h2>Different</h2>
+<p>There are many CSS frameworks and similar solutions out there. The arguably most known is <a href='https://getbootstrap.com/'>Bootstrap</a>. It&#39;s a fantastic toolkit &quot;featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.&quot;</p>
+<p>For better or worse, KCF is far from being a complete and competent as Bootstrap. KCF is focusing on providing a foundation with sane defaults that can be overridden with pure CSS and useful classes that can be used to accomplish everyday tasks.</p>
+<aside class="banner panel color-primary-light">
+  <div>
+    <h2>Developer</h2>
+    <p>Kntnt CSS Framework is developed by <a href="https://www.kntnt.se">Kntnt</a> – a Swedish sales, marketing and web technology agency.</p>
+  </div>
+</aside>
+<h2>How to use it</h2>
+<p>The document root must have following content:</p>
+<pre><code>&lt;body&gt;
+  &lt;header&gt;
+    &lt;div&gt;
+      &lt;div&gt;…&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;div&gt;…&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/header&gt;
+  ⋮
+  &lt;main&gt;…&lt;/main&gt;
+  ⋮
+  &lt;footer&gt;
+    &lt;div&gt;
+      &lt;div&gt;…&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt;
+      &lt;div&gt;…&lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+&lt;/body&gt;
+</code></pre>
+<p>In <code>&lt;header&gt;…&lt;/header&gt;</code>, the first <code>…</code> is the topbar&#39;s content (e.g. with shortcut links to essential pages), and the second <code>…</code> is the content of the actual header (w.g. with logo and navigation).</p>
+<p>In <code>&lt;footer&gt;…&lt;/footer&gt;</code>, the first <code>…</code> is the actual footer&#39;s content (e.g. with sitemap and social media icons), and the second <code>…</code> is the content of the bottombar (e.g. with copyright notice and legal disclaimers).</p>
+<p>Replace <code>…</code> with nothing (i.e. <code>&lt;div&gt;&lt;/div&gt;</code>) to disable a row in in <code>&lt;header&gt;…&lt;/header&gt;</code> or <code>&lt;footer&gt;…&lt;/footer&gt;</code>.</p>
+<p>The <code>⋮</code> before and after <code>&lt;main&gt;…&lt;/main&gt;</code> represents content that is <em>not unique</em> for the page. Typically, the first <code>⋮</code> is used for an important message shown on all pages, while the last <code>⋮</code> is used for a gallery with related articles or similar. Each <code>⋮</code> is optional. If present, it must consist of at least one pair of outer and inner wrapper:</p>
+<pre><code>  &lt;section&gt;
+    &lt;div&gt;…&lt;/div&gt;
+  &lt;/section&gt;
+</code></pre>
+<p>The outer wrapper, i.e. <code>&lt;section&gt;…&lt;/section&gt;</code> above, should be a semantic element (i.e. <code>&lt;section&gt;</code>, <code>&lt;aside&gt;</code>, <code>&lt;article&gt;</code> and <code>&lt;nav&gt;</code>). If no semantic element can be used in <a href='https://www.smashingmagazine.com/2013/01/the-importance-of-sections/'>inteded way</a>, use <code>&lt;div&gt;</code> instead. Replace <code>…</code> with content.</p>
+<p>The <code>…</code> between <code>&lt;main&gt;</code> and <code>&lt;/main&gt;</code> represents content that <em>is unique</em> for the page. Typically, this is where the page&#39;s main content, e.g. a blog post or article, goes. It must consist of at least one pair of outer and inner wrapper described above.</p>
+<h2>Article</h2>
+<p>For a page like this, with an article, blog post or similar, <code>&lt;main&gt;…&lt;/main&gt;</code> should contain one <code>&lt;article&gt;&lt;div&gt;…&lt;/div&gt;&lt;/article&gt;</code> where <code>…</code> is the content of the article.</p>
+<pre><code>&lt;article&gt;
+  &lt;div&gt;
+    ⋮    
+  &lt;/div&gt;
+&lt;/article&gt;
+</code></pre>
+<h2>Headline</h2>
+<p>The headline is wrapped by <code>&lt;h1&gt;…&lt;/h1&gt;</code>.</p>
+<pre><code>&lt;h1&gt;
+  Kntnt CSS Framework
+&lt;/h1&gt;
+</code></pre>
+<p>You can add a <em>kicker</em> or <em>standfirst</em> by wrapping it in <code>&lt;span class=&quot; kicker&quot;&gt;…&lt;/span&gt;</code> and insert it in <code>&lt;h1&gt;…&lt;/h1&gt;</code> before the headline with white space or linefeed in-between.</p>
+<pre><code>&lt;h1&gt;
+  &lt;span class=&quot;kicker&quot;&gt;For developers:&lt;/span&gt;
+  Kntnt CSS Framework
+&lt;/h1&gt;
+</code></pre>
+<p>You can add a <em>deck</em> or <em>subhead</em> by wrapping it in <code>&lt;span class=&quot;deck&quot;&gt;…&lt;/span&gt;</code>and insert it in <code>&lt;h1&gt;…&lt;/h1&gt;</code> after the headline with white a space or linefeed in-between.</p>
+<pre><code>&lt;h1&gt;
+  Kntnt CSS Framework
+  &lt;span class=&quot;deck&quot;&gt;— A foundation for modern web sites&lt;/span&gt;
+&lt;/h1&gt;
+</code></pre>
+<p>Although not recommended, you can add both kicker and deck to a headline.</p>
+<pre><code>&lt;h1&gt;
+  &lt;span class=&quot;kicker&quot;&gt;For developers:&lt;/span&gt;
+  Kntnt CSS Framework
+  &lt;span class=&quot;deck&quot;&gt;— A foundation for modern web sites&lt;/span&gt;
+&lt;/h1&gt;
+</code></pre>
+<h2>Lead</h2>
+<p>Use the class <code>lead</code> on the lead paragraph to make it stand out.</p>
+<pre><code>&lt;p class=&quot;lead&quot;&gt;
+  This is the lead paragraph. It should summarize the content of the article without revealing too much. The purpose is to give the reader enough so she can decide if the article is relevant and to entice her to read on
+&lt;/p&gt;
+</code></pre>
+<h2>Byline</h2>
+<p>The byline consists of a <code>&lt;div class= &quot;byline&quot;&gt;…&lt;/div&gt;</code> wrapping one or more of the following parts in order of your choice:</p>
+<p>The author wrapped by either <code>&lt;a&gt;…&lt;/a&gt;</code> or  <code>&lt;span&gt;…&lt;/span&gt;</code>, depending on whether the name should be a link or not.</p>
+<pre><code>&lt;a href=&quot;https://github.com/TBarregren&quot;&gt;Thomas Barregren&lt;/a&gt;
+</code></pre>
+<p>The date when the article was published, wrapped in by <code>&lt;time&gt;…&lt;/time&gt;</code>.</p>
+<pre><code>&lt;time datetime=&quot;2021-03-28&quot;&gt;March 28, 2021&lt;/time&gt;
+</code></pre>
+<p>A word or short phrase that categorize the article, wrapped by either <code>&lt;a&gt;…&lt;/a&gt;</code> or <code>&lt;span&gt;…&lt;/span&gt;</code>, depending on whether the category should be a link or not.</p>
+<pre><code>&lt;a href=&quot;/news&quot;&gt;News&lt;/a&gt;
+</code></pre>
+<p>The result should lookk something like this:</p>
+<pre><code>&lt;div class=&quot;byline&quot;&gt;
+  &lt;time datetime=&quot;2021-03-28&quot;&gt;March 28, 2021&lt;/time&gt;
+  &lt;a href=&quot;https://github.com/TBarregren&quot;&gt;Thomas Barregren&lt;/a&gt;
+  &lt;a href=&quot;/news&quot;&gt;News&lt;/a&gt;
+&lt;/div&gt;
+</code></pre>
+<p>Notice that there are no separation characters (e.g. | or •) between the elements. The separators between the elements are inserted by CSS.</p>
+<h2>Headings</h2>
+<p>Headings are used to divide a text into sections and explain what the section is about. In academic papers, technical reports, textbooks and similar, it can be beneficial to subdivide sections into subsections and further subdivide the subsections into sub-sub sections and so forth. The design of headings usually adapts to the hierarchy thus created. Usually, the headline has a visual hierarchy, where the heading of a subsection is visually &quot;less&quot; than its section&#39;s heading. To that end, <abbr>HTML</abbr> supports headings on six levels. These are <code>&lt;h1&gt;…&lt;/h1&gt;</code>, <code>&lt;h2&gt;…&lt;/h2&gt;</code> and so on to <code>&lt;h6&gt;…&lt;/h6&gt;</code>. </p>
+<h3>Don’t use <code>&lt;h1&gt;</code></h3>
+<p>Don’t use <code>&lt;h1&gt;…&lt;/h1&gt;</code> within your text. It should only be used in the headline described above.</p>
+<h3>Shun academic headings</h3>
+<p>Academic texts, reports and many books use intermediate headings at different levels. They are divided into chapters. Each chapter is divided into larger masses of text which in turn are divided into smaller ones which may be divided into even smaller ones, and so on down to paragraphs. Above each division (except for paragraphs) is a heading whose design (for example, size) reflects the division&#39;s place in an imaginary hierarchy. These headings are written to summarize everything that falls under them.</p>
+<p>Compare that with how newspapers and magazines use headlines. Usually, they only have subheadings, and they are used less as a summary of that particular subsection but more as a lead into what comes next.</p>
+<p>I do not know if the different ways have any recognized names, but for the sake of reasoning, we can call them <em>academic headings</em> and <em>journalistic headings</em>, respectively. Of the two, I strongly encourage you to use journalistic headings on the web even when the text has an inherent hierarchical structure.</p>
+<h3>Subheading</h3>
+<p>A subheading is created by wrapping the heading with <code>&lt;h2&gt;…&lt;/h2&gt;</code>. In most cases, this is the only heading you will use.</p>
+<h3>Sub-subheading</h3>
+<p>Despite my general advice, there are situations where it is beneficial for the reader to use sub-subheadings. So, therefore, KCF supports both subheadings and sub-subheadings. The last three headings were sub-subheadings.</p>
+<p>A sub-subheading is created by wrapping the heading with <code>&lt;h3&gt;…&lt;/h3&gt;</code>.</p>
+<h3>Paragraph headings</h3>
+<p>In KCF, <code>&lt;h4&gt;…&lt;/h4&gt;</code> through <code>&lt;h6&gt;…&lt;/h6&gt;</code> also represents headings, but outside of the hierarchy established by <code>&lt;h1&gt;…&lt;/h1&gt;</code> through <code>&lt;h3&gt;…&lt;/h3&gt;</code>. These act as headings for the particual paragraph (or possible few paragraphs) that follow.</p>
+<h4>General paragraph heading</h4>
+<p>The heading above is an example of a paragraph heading. It is created by wrapping the heading in <code>&lt;h4&gt;…&lt;/h4&gt;</code>. It is intended for situations where it&#39;s beneficial for the reader to get some help to identify a paragraph among many that talks about a specific topic or similar uses.</p>
+<h3>Question type heading</h3>
+<p>In-text with questions and answers, e.g. transcribed interviews and FAQ:s, the questions are natural to use as headings. You can use <code>&lt;h5&gt;…&lt;/h5&gt;</code> to markup your questions in these and similar circumstances. Here is a couple of examples:</p>
+<h5>Who are you?</h5>
+<p>My name is Thomas. I&#39;m co-owner of Kntnt – a Swedish sales, marketing and web technology agency. We help companies and organizations to strengthen their brand, drive demand and generate inbound leads with content marketing on the web.</p>
+<h5>Why did you develop KCF?</h5>
+<p>We build online magazines for our clients. That&#39;s a central piece in the larger puzzle of attracting potential clients, winning their trust, and converting them to customers. These online magazines are built on a common foundation, which includes re-usable HTML, CSS and JS. Previously, we used <a href='http://lesscss.org/'>Less</a> to make customization of the CSS. I prefer Less above <a href='https://sass-lang.com/'>Sass</a> since it&#39;s leaner. I like to keep things as lean and straightforward as possible. And that got me thinking of using CSS built-in capabilities, such as <code>var()</code>, <code>calc()</code>, <code>max()</code> and <code>min()</code>, to make our workflow even easier and leaner. That resulted in KCF.</p>
+<h3>Run-in heading</h3>
+<p>H6 gives a <em>run-in heading</em>. It is a heading at the beginning of a paragraph. It can be used, for instance, as an alternative to a description list or unordered list.</p>
+<h6>First point.</h6>
+<p>This is an example of how it looks when <code>&lt;h6&gt;…&lt;/h6&gt;</code> is used to make paragraphs look like a listing of some sort. Each &quot;point&quot; starts with a heading, which is wrapped by <code>&lt;h6&gt;…&lt;/h6&gt;</code> and then followed by the actual paragraph.</p>
+<h6>Second point.</h6>
+<p>This approach is better than just using bold or italic font since it provides semantics of importance for search engines and other &quot;machine readers&quot;.</p>
+<h6>Third and last point.</h6>
+<p>Usually, headings don&#39;t end with punctuation other than an exclamation mark or question mark. Run-in headers are different. Here it could be beneficial to use a dot or colon or maybe even a dash.</p>
+<h2>Unordered lists</h2>
+<p>An <em>unordered list</em> is a list of items without implied order.</p>
+<p>Following is an example of how to create an unordered list of Swedish kings that have ruled during the 20th century:</p>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;Oscar II&lt;/li&gt;
+  &lt;li&gt;Gustav V&lt;/li&gt;
+  &lt;li&gt;Gustav VI Adolf&lt;/li&gt;
+  &lt;li&gt;Carl XVI Gustaf&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+<p>The result looks like this:</p>
+<ul>
+<li>Oscar II</li>
+<li>Gustav V</li>
+<li>Gustav VI Adolf</li>
+<li>Carl XVI Gustaf</li>
 
-            </ul>
-            <p>The character before each item can be changed by adding a class either to the <code>&lt;ul&gt;</code>-element or to an individual <code>&lt;li&gt;</code>-element. Following classes are available:</p>
-            <ul>
-              <li class="none"><code>none</code></li>
-              <li class="disc"><code>disc</code></li>
-              <li class="circle"><code>circle</code></li>
-              <li class="square"><code>square</code></li>
-            </ul>
-            <h2>Ordered lists</h2>
-            <p>An <em>ordered list</em> is a list of items with implied order (e.g. by number).</p>
-            <p>Following is an example of how to create an ordered list of the top three places in the Swedish selection for the Eurovision Song Contest 2018:</p>
-            <pre><code>&lt;ol&gt;
-              &lt;li&gt;Dance You Off med Benjamin Ingrosso&lt;/li&gt;
-              &lt;li&gt;Every Single Day med Felix Sandman&lt;/li&gt;
-              &lt;li&gt;My Turn med John Lundvik&lt;/li&gt;
-            &lt;/ol&gt;
-            </code></pre>
-            <p>The result looks like this:</p>
-            <ol>
-              <li>Dance You Off med Benjamin Ingrosso</li>
-              <li>Every Single Day med Felix Sandman</li>
-              <li>My Turn med John Lundvik</li>
-            </ol>
-            <p>The numerals before each item can be changed by adding a class either to the <code>&lt;ul&gt;</code>-element or to an individual <code>&lt;li&gt;</code>-element. Following classes are available:</p>
-            <ol>
-              <li class="none"><code>none</code></li>
-              <li class="decimal"><code>decimal</code></li>
-              <li class="decimal-leading-zero"><code>decimal-leading-zero</code></li>
-              <li class="roman"><code>roman</code></li>
-              <li class="roman-upper"><code>roman-upper</code></li>
-              <li class="latin"><code>latin</code></li>
-              <li class="latin-upper"><code>latin-upper</code></li>
-              <li class="greek"><code>greek</code></li>
-            </ol>
-            <h2>Nested lists</h2>
-            <p>It is possible to place a list inside another list. This is what it might look like:</p>
-            <ul>
-            <li><p>Item 1</p>
-            </li>
-            <li><p>Item 2</p>
-            <ul>
-            <li><p>Item 2.1</p>
-            </li>
-            <li><p>Item 2.2</p>
-            <ul>
-            <li><p>Item 2.2.1</p>
-            <ol>
-            <li>Item 2.2.1.1</li>
-            <li>Item 2.2.1.2</li>
-            <li>Item 2.2.1.3</li>
+</ul>
+<p>The character before each item can be changed by adding a class either to the <code>&lt;ul&gt;</code>-element or to an individual <code>&lt;li&gt;</code>-element. Following classes are available:</p>
+<ul>
+  <li class="none"><code>none</code></li>
+  <li class="disc"><code>disc</code></li>
+  <li class="circle"><code>circle</code></li>
+  <li class="square"><code>square</code></li>
+</ul>
+<h2>Ordered lists</h2>
+<p>An <em>ordered list</em> is a list of items with implied order (e.g. by number).</p>
+<p>Following is an example of how to create an ordered list of the top three places in the Swedish selection for the Eurovision Song Contest 2018:</p>
+<pre><code>&lt;ol&gt;
+  &lt;li&gt;Dance You Off med Benjamin Ingrosso&lt;/li&gt;
+  &lt;li&gt;Every Single Day med Felix Sandman&lt;/li&gt;
+  &lt;li&gt;My Turn med John Lundvik&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+<p>The result looks like this:</p>
+<ol>
+  <li>Dance You Off med Benjamin Ingrosso</li>
+  <li>Every Single Day med Felix Sandman</li>
+  <li>My Turn med John Lundvik</li>
+</ol>
+<p>The numerals before each item can be changed by adding a class either to the <code>&lt;ul&gt;</code>-element or to an individual <code>&lt;li&gt;</code>-element. Following classes are available:</p>
+<ol>
+  <li class="none"><code>none</code></li>
+  <li class="decimal"><code>decimal</code></li>
+  <li class="decimal-leading-zero"><code>decimal-leading-zero</code></li>
+  <li class="roman"><code>roman</code></li>
+  <li class="roman-upper"><code>roman-upper</code></li>
+  <li class="latin"><code>latin</code></li>
+  <li class="latin-upper"><code>latin-upper</code></li>
+  <li class="greek"><code>greek</code></li>
+</ol>
+<h2>Nested lists</h2>
+<p>It is possible to place a list inside another list. This is what it might look like:</p>
+<ul>
+<li><p>Item 1</p>
+</li>
+<li><p>Item 2</p>
+<ul>
+<li><p>Item 2.1</p>
+</li>
+<li><p>Item 2.2</p>
+<ul>
+<li><p>Item 2.2.1</p>
+<ol>
+<li>Item 2.2.1.1</li>
+<li>Item 2.2.1.2</li>
+<li>Item 2.2.1.3</li>
 
-            </ol>
-            </li>
-            <li><p>Item 2.2.2</p>
-            </li>
+</ol>
+</li>
+<li><p>Item 2.2.2</p>
+</li>
 
-            </ul>
-            </li>
-            <li><p>Item 2.3</p>
-            </li>
+</ul>
+</li>
+<li><p>Item 2.3</p>
+</li>
 
-            </ul>
-            </li>
-            <li><p>Item 3</p>
-            </li>
+</ul>
+</li>
+<li><p>Item 3</p>
+</li>
 
-            </ul>
-            <h2>Description list</h2>
-            <p>A <em>description list</em> is a list of groups of terms (each wrapped by <code>&lt;dt&gt;…&lt;/dt&gt;</code>) followed by a group of descriptions (each wrapped by <code>&lt;dd&gt;&lt;/dd&gt;</code>). It&#39;s often used for key-value tables, e.g. glossary or metadata.</p>
-            <p>Following is an example of how description list can be used to describe some Swedish apples:</p>
-            <pre><code>&lt;dl&gt;
+</ul>
+<h2>Description list</h2>
+<p>A <em>description list</em> is a list of groups of terms (each wrapped by <code>&lt;dt&gt;…&lt;/dt&gt;</code>) followed by a group of descriptions (each wrapped by <code>&lt;dd&gt;…&lt;/dd&gt;</code>). It&#39;s often used for key-value tables, e.g. glossary or metadata.</p>
+<p>Following is an example of how description list can be used to describe some Swedish apples:</p>
+<pre><code>&lt;dl&gt;
 
-              &lt;dt&gt;Aroma&lt;/dt&gt;
-              &lt;dd&gt;Aroma is round in shape and has a greenish-yellow to yellow colour with red streaks. Aroma ripens in late September through December and sometimes longer. Suitable for growing in zones 1-4.&lt;/dd&gt;
+  &lt;dt&gt;Aroma&lt;/dt&gt;
+  &lt;dd&gt;Aroma is round in shape and has a greenish-yellow to yellow colour with red streaks. Aroma ripens in late September through December and sometimes longer. Suitable for growing in zones 1-4.&lt;/dd&gt;
 
-              &lt;dt&gt;Katja&lt;/dt&gt;
-              &lt;dd&gt;The size is medium, and the colour is green to yellow. If the fruit has been in the sun, it can be almost completely covered in a warm red colour. Katja matures from August to November and is suitable for growing in zones 1-4.&lt;/dd&gt;
-              
-              &lt;dt&gt;Transparente blanche&lt;/dt&gt;
-              &lt;dd&gt;The color is yellowish white and medium in size. The apple ripens from mid-August and can be grown in zones 1-6&lt;/dd&gt;
+  &lt;dt&gt;Katja&lt;/dt&gt;
+  &lt;dd&gt;The size is medium, and the colour is green to yellow. If the fruit has been in the sun, it can be almost completely covered in a warm red colour. Katja matures from August to November and is suitable for growing in zones 1-4.&lt;/dd&gt;
+  
+  &lt;dt&gt;Transparente blanche&lt;/dt&gt;
+  &lt;dd&gt;The color is yellowish white and medium in size. The apple ripens from mid-August and can be grown in zones 1-6&lt;/dd&gt;
 
-            &lt;/dl&gt;
-            </code></pre>
-            <p>The result looks like this:</p>
-            <dl>
-              <dt>Aroma</dt>
-              <dd>Aroma is round in shape and has a greenish yellow to yellow color with red streaks. Aroma ripens in late September through December and sometimes longer. Suitable for growing in zones 1-4.</dd>
-              <dt>Katja</dt>
-              <dd>The size is medium and the color is basically green to yellow. If the fruit has been in the sun, it can be almost completely covered in a warm red color. Katja matures from August to November and is suitable for growing in zones 1-4.</dd>
-              <dt>Transparente blanche</dt>
-              <dd>The color is yellowish white and medium in size. The apple ripens from mid-August and can be grown in zones 1-6</dd>
-            </dl>
-            <p>The following shows how many terms can share the same description:</p>
-            <pre><code>&lt;dl&gt;
+&lt;/dl&gt;
+</code></pre>
+<p>The result looks like this:</p>
+<dl>
+  <dt>Aroma</dt>
+  <dd>Aroma is round in shape and has a greenish yellow to yellow color with red streaks. Aroma ripens in late September through December and sometimes longer. Suitable for growing in zones 1-4.</dd>
+  <dt>Katja</dt>
+  <dd>The size is medium and the color is basically green to yellow. If the fruit has been in the sun, it can be almost completely covered in a warm red color. Katja matures from August to November and is suitable for growing in zones 1-4.</dd>
+  <dt>Transparente blanche</dt>
+  <dd>The color is yellowish white and medium in size. The apple ripens from mid-August and can be grown in zones 1-6</dd>
+</dl>
+<p>The following shows how many terms can share the same description:</p>
+<pre><code>&lt;dl&gt;
 
-              &lt;dt&gt;Aroma&lt;/dt&gt;
-              &lt;dt&gt;Katja&lt;/dt&gt;
-              &lt;dt&gt;Transparente blanche&lt;/dt&gt;
-              &lt;dd&gt;Swedish apples&lt;/dd&gt;
-              
-              &lt;dt&gt;Clara Frijs&lt;/dt&gt;
-              &lt;dt&gt;Greve Moltke&lt;/dt&gt;
-              &lt;dd&gt;Danish pears&lt;/dd&gt;
-              
-            &lt;/dl&gt;
-            </code></pre>
-            <p>This is how it looks like:</p>
-            <dl>
-              <dt>Aroma</dt>
-              <dt>Katja</dt>
-              <dt>Transparente blanche</dt>
-              <dd>Swedish apples</dd>
-              <dt>Carola</dt>
-              <dt>Clara Frijs</dt>
-              <dt>Greve Moltke</dt>
-              <dd>Danish pears</dd>
-            </dl>
-            <p>Finally, one term can have several descriptions:</p>
-            <pre><code>&lt;dl&gt;
+  &lt;dt&gt;Aroma&lt;/dt&gt;
+  &lt;dt&gt;Katja&lt;/dt&gt;
+  &lt;dt&gt;Transparente blanche&lt;/dt&gt;
+  &lt;dd&gt;Swedish apples&lt;/dd&gt;
+  
+  &lt;dt&gt;Clara Frijs&lt;/dt&gt;
+  &lt;dt&gt;Greve Moltke&lt;/dt&gt;
+  &lt;dd&gt;Danish pears&lt;/dd&gt;
+  
+&lt;/dl&gt;
+</code></pre>
+<p>This is how it looks like:</p>
+<dl>
+  <dt>Aroma</dt>
+  <dt>Katja</dt>
+  <dt>Transparente blanche</dt>
+  <dd>Swedish apples</dd>
+  <dt>Carola</dt>
+  <dt>Clara Frijs</dt>
+  <dt>Greve Moltke</dt>
+  <dd>Danish pears</dd>
+</dl>
+<p>Finally, one term can have several descriptions:</p>
+<pre><code>&lt;dl&gt;
 
-              &lt;dt&gt;Carola&lt;/dt&gt;
-              &lt;dd&gt;A Swedish apple variety.&lt;/dd&gt;
-              &lt;dd&gt;A Swedish artist who has won the European Song Contest.&lt;/dd&gt;
+  &lt;dt&gt;Carola&lt;/dt&gt;
+  &lt;dd&gt;A Swedish apple variety.&lt;/dd&gt;
+  &lt;dd&gt;A Swedish artist who has won the European Song Contest.&lt;/dd&gt;
 
-              &lt;dt&gt;Moltke&lt;/dt&gt;
-              &lt;dd&gt;A Danish apple variety.&lt;/dd&gt;
-              &lt;dd&gt;A Dansih duke born 1785 and died 1864.&lt;/dd&gt;
+  &lt;dt&gt;Moltke&lt;/dt&gt;
+  &lt;dd&gt;A Danish apple variety.&lt;/dd&gt;
+  &lt;dd&gt;A Dansih duke born 1785 and died 1864.&lt;/dd&gt;
 
-            &lt;/dl&gt;
-            </code></pre>
-            <p>This is how it looks like:</p>
-            <dl>
-              <dt>Carola</dt>
-              <dd>A Swedish apple variety.</dd>
-              <dd>A Swedish artist who has won the European Song Contest.</dd>
-              <dt>Moltke</dt>
-              <dd>A Danish apple variety.</dd>
-              <dd>A Danish duke who gave named to an apple variety.</dd>
-            </dl>
-            <h2>Tables</h2>
-            <p>For more complicated layouts than lists, a <em>table</em> can be used.</p>
-            <p>This example shows how to use <code>&lt;table&gt;…&lt;/table&gt;</code> to present the three smalles municipals of Sweden:</p>
-            <pre><code>&lt;table&gt;
-                &lt;caption&gt;Population in Sweden&#39;s three smallest municipalities&lt;/caption&gt;
-                &lt;thead&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;Municipality&lt;/td&gt;
-                        &lt;td&gt;Population&lt;/td&gt;
-                    &lt;/tr&gt;
-                &lt;/thead&gt;
-                &lt;tbody&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;Bjurholm&lt;/td&gt;
-                        &lt;td&gt;2 387&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;Sorsele&lt;/td&gt;
-                        &lt;td&gt;2 442&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;Dorotea&lt;/td&gt;
-                        &lt;td&gt;2 498&lt;/td&gt;
-                    &lt;/tr&gt;
-                &lt;/tbody&gt;
-            &lt;/table&gt;
-            </code></pre>
-            <p>This is how it looks:</p>
-            <table>
-                <caption>Population in Sweden's three smallest municipalities</caption>
-                <thead>
-                    <tr>
-                        <td>Municipality</td>
-                        <td>Population</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Bjurholm</td>
-                        <td>2 387</td>
-                    </tr>
-                    <tr>
-                        <td>Sorsele</td>
-                        <td>2 442</td>
-                    </tr>
-                    <tr>
-                        <td>Dorotea</td>
-                        <td>2 498</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Notice that <code>&lt;caption&gt;…&lt;/caption&gt;</code> wraps the table caption. It <em>must</em> be the first descendant of the <code>&lt;table&gt;…&lt;/table&gt;</code>.</p>
-            <p>By default, the caption is printed above the table. If you prefer to have it at the bottom, don&#39;t move <code>&lt;caption&gt;…&lt;/caption&gt;</code>.  Just add the class <code>underneath</code>. Here is an example:</p>
-            <pre><code>&lt;table class=&quot;alignright&quot;&gt;
-                &lt;caption class=&quot;underneath&quot;&gt;Tabell där två celler är sammanslagna horisontellt och två celler är sammanslagna vertikalt.&lt;/caption&gt;
-                &lt;tbody&gt;
-                    &lt;tr&gt;
-                        &lt;th&gt;Namn&lt;/th&gt;
-                        &lt;th colspan=&quot;2&quot;&gt;Telefonnummer&lt;/th&gt;
-                    &lt;/tr&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;Adam&lt;/td&gt;
-                        &lt;td rowspan=&quot;2&quot;&gt;010-203040&lt;/td&gt;
-                        &lt;td&gt;010-506070&lt;/td&gt;
-                    &lt;/tr&gt;
-                    &lt;tr&gt;
-                        &lt;td&gt;Berit&lt;/td&gt;
-                        &lt;td colspan=&quot;2&quot;&gt;090-807060&lt;/td&gt;
-                    &lt;/tr&gt;
-                &lt;/tbody&gt;
-            &lt;/table&gt;
-            </code></pre>
-            <p>Now, the caption is at the bottom of the table:</p>
-            <table class="alignright">
-                <caption class="underneath">Tabell där två celler är sammanslagna horisontellt och två celler är sammanslagna vertikalt.</caption>
-                <tbody>
-                    <tr>
-                        <th>Namn</th>
-                        <th colspan="2">Telefonnummer</th>
-                    </tr>
-                    <tr>
-                        <td>Adam</td>
-                        <td rowspan="2">010-203040</td>
-                        <td>010-506070</td>
-                    </tr>
-                    <tr>
-                        <td>Berit</td>
-                        <td colspan="2">090-807060</td>
-                    </tr>
-                </tbody>
-            </table>
-            <p>Using <code>&lt;caption&gt;…&lt;/caption&gt;</code> is the recommended way to add a caption to a table. But it&#39;s possible to use the more generic form presented next.</p>
-            <h2>Figures and captions</h2>
-            <p>Illustrations, diagrams, photos, video, audio, code listings and similar things referenced in the text, but can be moved to another part of the page without affecting the meaning of the content, should be wrapped by <code>&lt;figure&gt;…&lt;/figure&gt;</code>.</p>
-            <p>Such self-contained content usually has a caption. This option should be wrapped by <code>&lt;figcaption&gt;…&lt;/figcaption&gt;</code> and put either as the first or the last descendant of <code>&lt;figure&gt;…&lt;/figure&gt;</code>.</p>
-            <p>Following is a typically use:</p>
-            <pre><code>&lt;figure&gt;
-              &lt;img src=&quot;image-900.jpg&quot;&gt;
-              &lt;figcaption&gt;Photo: Bessi.&lt;/figcaption&gt;
-            &lt;/figure&gt;
-            </code></pre>
-            <p>This is the result of the above code.</p>
-            <figure>
-              <img src="image-900.jpg">
-              <figcaption>Photo: Bessi.</figcaption>
-            </figure>
-            <p>Notice that <code>&lt;figcaption&gt;…&lt;/figcaption&gt;</code> <em>must</em> be either the first or the last descendant of <code>&lt;figure&gt;…&lt;/figure&gt;</code>. Its placement determines if the caption is shown above or below, respectively, the content. This is how the above image looks if <code>&lt;figcaption&gt;…&lt;/figcaption&gt;</code> is moved to the top.</p>
-            <figure>
-              <figcaption>Photo: Bessi.</figcaption>
-              <img src="image-900.jpg">
-            </figure>
-			<h2>Images</h2>
-			<p>But we will not touch on much of this. The purpose of this text is to show you how to use KCF. When it comes to pictures, there is not much to say specifically about them.</p>
-			<p>But I will offer some advice:</p>
-			<h4>Image file format</h4>
-			<p>Use WebP or JPEG for photographs. Use WebP, PNG-8 or GIF for illustrations with few colours, no large tinted surfaces or alpha channel. Use WebP or PNG-24 for illustrations with many colours, large tinted surfaces or alpha channel.</p>
-			<h4>Crop</h4>
-			<p>As a rule of thumb, crop images to the classic proportions of 3:2 (landscape) or 2:3 (portrait) if you don&#39;t need a more specific crop.</p>
-			<h4>Resizing</h4>
-			<p>Resize the cropped image to all possible image sized used by KCF:</p>
-			<figure>
-			    <table>
-			        <thead>
-			            <tr>
-			                <th>Landscape</th>
-			                <th>Portrait</th>
-			            </tr>
-			        </thead>
-			        <tbody>
-			            <tr>
-			                <td>1920 × 1280</td>
-			                <td>1920 × 2880</td>
-			            </tr>
-			            <tr>
-			                <td>1060 × 707</td>
-			                <td>1060 × 1590</td>
-			            </tr>
-			            <tr>
-			                <td>900 × 600</td>
-			                <td>900 × 1350</td>
-			            </tr>
-			            <tr>
-			                <td>600 × 400</td>
-			                <td>600 × 900</td>
-			            </tr>
-			            <tr>
-			                <td>450 × 300</td>
-			                <td>450 × 675</td>
-			            </tr>
-			            <tr>
-			                <td>300 × 200</td>
-			                <td>300 × 450</td>
-			            </tr>
-			            <tr>
-			                <td>225 × 150</td>
-			                <td>225 × 338</td>
-			            </tr>
-			        </tbody>
-			    </table>
-			</figure>
-			<h4>Save images</h4>
-			<p>Save the different sizes with names that end with dash and the width. For instance, if the original image file is named <code>image.jpg</code>, name the resulting image files as follows:</p>
-			<ul>
-			    <li><code>image-1920.jpg</code></li>
-			    <li><code>image-1060.jpg</code></li>
-			    <li><code>image-900.jpg</code></li>
-			    <li><code>image-600.jpg</code></li>
-			    <li><code>image-450.jpg</code></li>
-			    <li><code>image-300.jpg</code></li>
-			    <li><code>image-225.jpg</code></li>
+&lt;/dl&gt;
+</code></pre>
+<p>This is how it looks like:</p>
+<dl>
+  <dt>Carola</dt>
+  <dd>A Swedish apple variety.</dd>
+  <dd>A Swedish artist who has won the European Song Contest.</dd>
+  <dt>Moltke</dt>
+  <dd>A Danish apple variety.</dd>
+  <dd>A Danish duke who gave named to an apple variety.</dd>
+</dl>
+<h2>Tables</h2>
+<p>For more complicated layouts than lists, a <em>table</em> can be used.</p>
+<p>This example shows how to use <code>&lt;table&gt;…&lt;/table&gt;</code> to present the three smalles municipals of Sweden:</p>
+<pre><code>&lt;table&gt;
+    &lt;caption&gt;Population in Sweden&#39;s three smallest municipalities&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Municipality&lt;/td&gt;
+            &lt;td&gt;Population&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Bjurholm&lt;/td&gt;
+            &lt;td&gt;2 387&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Sorsele&lt;/td&gt;
+            &lt;td&gt;2 442&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Dorotea&lt;/td&gt;
+            &lt;td&gt;2 498&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<p>This is how it looks:</p>
+<table>
+    <caption>Population in Sweden's three smallest municipalities</caption>
+    <thead>
+        <tr>
+            <td>Municipality</td>
+            <td>Population</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Bjurholm</td>
+            <td>2 387</td>
+        </tr>
+        <tr>
+            <td>Sorsele</td>
+            <td>2 442</td>
+        </tr>
+        <tr>
+            <td>Dorotea</td>
+            <td>2 498</td>
+        </tr>
+    </tbody>
+</table>
+<p>Notice that <code>&lt;caption&gt;…&lt;/caption&gt;</code> wraps the table caption. It <em>must</em> be the first descendant of the <code>&lt;table&gt;…&lt;/table&gt;</code>.</p>
+<p>By default, the caption is printed above the table. If you prefer to have it at the bottom, don&#39;t move <code>&lt;caption&gt;…&lt;/caption&gt;</code>.  Just add the class <code>underneath</code>. Here is an example:</p>
+<pre><code>&lt;table class=&quot;alignright&quot;&gt;
+    &lt;caption class=&quot;underneath&quot;&gt;Tabell där två celler är sammanslagna horisontellt och två celler är sammanslagna vertikalt.&lt;/caption&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Namn&lt;/th&gt;
+            &lt;th colspan=&quot;2&quot;&gt;Telefonnummer&lt;/th&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Adam&lt;/td&gt;
+            &lt;td rowspan=&quot;2&quot;&gt;010-203040&lt;/td&gt;
+            &lt;td&gt;010-506070&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Berit&lt;/td&gt;
+            &lt;td colspan=&quot;2&quot;&gt;090-807060&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+<p>Now, the caption is at the bottom of the table:</p>
+<table class="alignright">
+    <caption class="underneath">Tabell där två celler är sammanslagna horisontellt och två celler är sammanslagna vertikalt.</caption>
+    <tbody>
+        <tr>
+            <th>Namn</th>
+            <th colspan="2">Telefonnummer</th>
+        </tr>
+        <tr>
+            <td>Adam</td>
+            <td rowspan="2">010-203040</td>
+            <td>010-506070</td>
+        </tr>
+        <tr>
+            <td>Berit</td>
+            <td colspan="2">090-807060</td>
+        </tr>
+    </tbody>
+</table>
+<p>Using <code>&lt;caption&gt;…&lt;/caption&gt;</code> is the recommended way to add a caption to a table. But it&#39;s possible to use the more generic form presented next.</p>
+<h2>Figures and captions</h2>
+<p>Illustrations, diagrams, photos, video, audio, code listings and similar things referenced in the text, but can be moved to another part of the page without affecting the meaning of the content, should be wrapped by <code>&lt;figure&gt;…&lt;/figure&gt;</code>.</p>
+<p>Such self-contained content usually has a caption. This option should be wrapped by <code>&lt;figcaption&gt;…&lt;/figcaption&gt;</code> and put either as the first or the last descendant of <code>&lt;figure&gt;…&lt;/figure&gt;</code>.</p>
+<p>Following is a typically use:</p>
+<pre><code>&lt;figure&gt;
+  &lt;img src=&quot;image-450.jpg&quot;&gt;
+  &lt;figcaption&gt;Photo: Bessi.&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+<p>This is the result of the above code.</p>
+<figure>
+  <img src="image-450.jpg">
+  <figcaption>Artist: Bessi.</figcaption>
+</figure>
+<p>Notice that <code>&lt;figcaption&gt;…&lt;/figcaption&gt;</code> <em>must</em> be either the first or the last descendant of <code>&lt;figure&gt;…&lt;/figure&gt;</code>. Its placement determines if the caption is shown above or below, respectively, the content. This is how the above image looks if <code>&lt;figcaption&gt;…&lt;/figcaption&gt;</code> is moved to the top.</p>
+<figure>
+  <figcaption>Artist: Bessi.</figcaption>
+  <img src="image-450.jpg">
+</figure>
+<h2>Images</h2>
+<p>But we will not touch on much of this. The purpose of this text is to show you how to use KCF. When it comes to pictures, there is not much to say specifically about them.</p>
+<p>But I will offer some advice:</p>
+<h4>Image file format</h4>
+<p>Use WebP or JPEG for photographs. Use WebP, PNG-8 or GIF for illustrations with few colours, no large tinted surfaces or alpha channel. Use WebP or PNG-24 for illustrations with many colours, large tinted surfaces or alpha channel.</p>
+<h4>Crop</h4>
+<p>As a rule of thumb, crop images to the classic proportions of 3:2 (landscape) or 2:3 (portrait) if you don&#39;t need a more specific crop.</p>
+<h4>Resizing</h4>
+<p>Resize the cropped image to all possible image sized used by KCF:</p>
+<figure>
+    <table>
+        <thead>
+            <tr>
+                <th>Landscape</th>
+                <th>Portrait</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1920 × 1280</td>
+                <td>1920 × 2880</td>
+            </tr>
+            <tr>
+                <td>1060 × 707</td>
+                <td>1060 × 1590</td>
+            </tr>
+            <tr>
+                <td>900 × 600</td>
+                <td>900 × 1350</td>
+            </tr>
+            <tr>
+                <td>600 × 400</td>
+                <td>600 × 900</td>
+            </tr>
+            <tr>
+                <td>450 × 300</td>
+                <td>450 × 675</td>
+            </tr>
+            <tr>
+                <td>300 × 200</td>
+                <td>300 × 450</td>
+            </tr>
+            <tr>
+                <td>225 × 150</td>
+                <td>225 × 338</td>
+            </tr>
+        </tbody>
+    </table>
+</figure>
+<h4>Save images</h4>
+<p>Save the different sizes with names that end with dash and the width. For instance, if the original image file is named <code>image.jpg</code>, name the resulting image files as follows:</p>
+<ul>
+    <li><code>image-1920.jpg</code></li>
+    <li><code>image-1060.jpg</code></li>
+    <li><code>image-900.jpg</code></li>
+    <li><code>image-600.jpg</code></li>
+    <li><code>image-450.jpg</code></li>
+    <li><code>image-300.jpg</code></li>
+    <li><code>image-225.jpg</code></li>
 
-			</ul>
-			<p>You should save these files at near maximum quality. In the next step, we will compress them further.</p>
-			<h4>Compression</h4>
-			<p>Run the saved images through one of following image optimization software:</p>
-			<dl>
-			    <dt>Linux</dt>
-			    <dd><a href="https://trimage.org/">Trimage</a></dd>
-			    <dt>Mac OS X</dt>
-			    <dd><a href="https://imageoptim.com/mac">ImageOptim</a></dd>
-			    <dt>Windows</dt>
-			    <dd><a href="https://css-ig.net/pingo">Pingo</a></dd>
-			</dl>
-			<p>PNG and GIF are not lossy in themselves, but the above-suggested software can do lossy compression if you allow it. Do that.</p>
-			<p>Don&#39;t fear lossy compression. Try to compress the images as much as you can. As long as you can&#39;t see any quality losses, its okay.</p>
-			<p>Make sure no file, not even the largest ones, are bigger than 2MB. Preferably, they should be much smaller.</p>
-			<h6>Include images</h6>
-			<p>After uploading the images, its time to use them. Following code is not optimal, but better</p>
-			<pre><code>&lt;img srcset=&quot;image-225.jpg 225w,
-			             image-300.jpg 300w,
-			             image-450.jpg 450w,
-			             image-600.jpg 600w,
-			             image-900.jpg 900w,
-			             image-1060.jpg 1060w,
-			             image-1920.jpg 1920w&quot;
-			     sizes=&quot;(max-width: 1920px) 100vw, 1920px&quot;
-			     src=&quot;image-1920.jpg&quot;
-			     loading=&quot;lazy&quot;
-			     alt=&quot;Hot air balloon over sea at blue hour&quot;&gt;
-			</code></pre>
-			<p>The result looks like this:</p>
-			<p><img srcset="image-225.jpg 225w,
-			             image-300.jpg 300w,
-			             image-450.jpg 450w,
-			             image-600.jpg 600w,
-			             image-900.jpg 900w,
-			             image-1060.jpg 1060w,
-			             image-1920.jpg 1920w" sizes="(max-width: 1920px) 100vw, 1920px" src="image-1920.jpg" loading="lazy" alt="Hot air balloon over sea at blue hour"></p>
-            <h2>Quotes</h2>
-            <p>TODO</p>
-            <h2>Horizontal lines and dinkuses</h2>
-            <p>TODO</p>
-            <h2>Positioning and sizing</h2>
-            <p>TODO</p>
-            <h2>Aside</h2>
-            <p>TODO</p>
-            <h2>Miscellaneous classes</h2>
-            <p>TODO</p>
-          <footer>
-            <aside class="panel transparent">
-              <div>
-                <h2>Author</h2>
-                <p>This amazing text was written by yours truly <a href="https://github.com/TBarregren">TBarregren</a>.</p>
-              </div>
-            </aside>
-          </footer>
+</ul>
+<p>You should save these files at near maximum quality. In the next step, we will compress them further.</p>
+<h4>Compression</h4>
+<p>Run the saved images through one of following image optimization software:</p>
+<dl>
+    <dt>Linux</dt>
+    <dd><a href="https://trimage.org/">Trimage</a></dd>
+    <dt>Mac OS X</dt>
+    <dd><a href="https://imageoptim.com/mac">ImageOptim</a></dd>
+    <dt>Windows</dt>
+    <dd><a href="https://css-ig.net/pingo">Pingo</a></dd>
+</dl>
+<p>PNG and GIF are not lossy in themselves, but the above-suggested software can do lossy compression if you allow it. Do that.</p>
+<p>Don&#39;t fear lossy compression. Try to compress the images as much as you can. As long as you can&#39;t see any quality losses, its okay.</p>
+<p>Make sure no file, not even the largest ones, are bigger than 2MB. Preferably, they should be much smaller.</p>
+<h6>Include images</h6>
+<p>After uploading the images, its time to use them. Following code is not optimal, but better</p>
+<pre><code>&lt;img srcset=&quot;image-225.jpg 225w,
+             image-300.jpg 300w,
+             image-450.jpg 450w,
+             image-600.jpg 600w,
+             image-900.jpg 900w,
+             image-1060.jpg 1060w,
+             image-1920.jpg 1920w&quot;
+     sizes=&quot;(max-width: 1920px) 100vw, 1920px&quot;
+     src=&quot;image-1920.jpg&quot;
+     loading=&quot;lazy&quot;
+     alt=&quot;Hot air balloon over sea at blue hour&quot;&gt;
+</code></pre>
+<p>The result looks like this:</p>
+<p><img srcset="image-225.jpg 225w,
+             image-300.jpg 300w,
+             image-450.jpg 450w,
+             image-600.jpg 600w,
+             image-900.jpg 900w,
+             image-1060.jpg 1060w,
+             image-1920.jpg 1920w" sizes="(max-width: 1920px) 100vw, 1920px" src="image-1920.jpg" loading="lazy" alt="Hot air balloon over sea at blue hour"></p>
+<h2>Quotes</h2>
+<p>TODO</p>
+<h2>Horizontal lines and dinkuses</h2>
+<p>TODO</p>
+<h2>Positioning and sizing</h2>
+<p>TODO</p>
+<h2>Aside</h2>
+<p>TODO</p>
+<h2>Miscellaneous classes</h2>
+<p>TODO</p>
+<footer>
+<aside class="panel transparent">
+  <div>
+    <h2>Author</h2>
+    <p>This amazing text was written by yours truly <a href="https://github.com/TBarregren">TBarregren</a>.</p>
+  </div>
+</aside>
+</footer>
         </div>
       </article>
       <aside class="panel color-primary-dark">
