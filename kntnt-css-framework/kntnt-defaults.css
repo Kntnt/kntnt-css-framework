@@ -352,7 +352,7 @@
    */
   --monospace-background: var(--gray-x);
   --pre-padding: var(--space-medium);
-  --pre-shadow: var(--shadow);
+  --pre-shadow: none;
 
 
   /**
