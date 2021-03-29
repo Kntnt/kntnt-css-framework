@@ -16,23 +16,6 @@ body.admin-bar {
 
 
 /**
- * Captions
- */
-
-.wp-caption .wp-caption-text,
-table caption {
-  text-align: left;
-  font-size: var(--caption);
-}
-
-.wp-caption .wp-caption-text {
-  margin: var(--vertical-space-caption) 0 0 0;
-}
-
-
-
-
-/**
  * Embeds
  */
 
