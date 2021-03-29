@@ -183,9 +183,9 @@
    *  Defaults for h1
    */
 
-  --h1-font-family: var(--font-stack-serif);
+  --h1-font-family: var(--font-stack-sans);
   --h1-font-size: var(--font-size-xxlarge);
-  --h1-font-weight: var(--font-weight-semi-bold);
+  --h1-font-weight: var(--font-weight-bold);
   --h1-font-style: normal;
   --h1-line-height: 1.25;
   --h1-color: var(--gray-ii);
@@ -198,7 +198,7 @@
   --h1-kicker-space: 0.25em;
   --h1-kicker-font-family: var(--h1-font-family);
   --h1-kicker-font-size: 0.5em;
-  --h1-kicker-font-weight: var(--font-weight-semi-bold);
+  --h1-kicker-font-weight: var(--font-weight-medium);
   --h1-kicker-font-style: normal;
   --h1-kicker-color: var(--gray-ii);
 
@@ -210,7 +210,7 @@
   --h1-deck-space: 0.25em;
   --h1-deck-font-family: var(--h1-font-family);
   --h1-deck-font-size: 0.63em;
-  --h1-deck-font-weight: var(--font-weight-semi-bold);
+  --h1-deck-font-weight: var(--font-weight-medium);
   --h1-deck-font-style: normal;
   --h1-deck-color: var(--gray-ii);
 
@@ -246,7 +246,7 @@
 
   --h3-font-family: var(--font-stack-sans);
   --h3-font-size: var(--font-size-large);
-  --h3-font-weight: var(--font-weight-semi-bold);
+  --h3-font-weight: var(--font-weight-medium);
   --h3-font-style: normal;
   --h3-line-height: 1.25;
   --h3-color: var(--gray-ii);
@@ -256,11 +256,11 @@
    *  Defaults for h4
    */
 
-  --h4-font-family: var(--h3-font-family);
-  --h4-font-size: var(--h3-font-size);
-  --h4-font-weight: var(--text-font-weight);
+  --h4-font-family: var(--text-font-family);
+  --h4-font-size: var(--text-font-size);
+  --h4-font-weight: var(--font-weight-medium);
   --h4-font-style: italic;
-  --h4-line-height: var(--h2-line-height);
+  --h4-line-height: var(--text-line-height);
   --h4-color: var(--gray-ii);
 
 
@@ -351,7 +351,6 @@
    */
   --monospace-background: var(--gray-x);
   --pre-padding: var(--space-medium);
-  --pre-background-color: var(--gray-x);
 
 
   /**
@@ -359,9 +358,9 @@
    */
   --lead-margin-top: var(--block-indent);
   --lead-margin-bottom: var(--block-indent);
-  --lead-font-family: var(--h1-font-family);
+  --lead-font-family: var(--text-font-family);
   --lead-font-size: var(--text-font-size);
-  --lead-font-weight: var(--font-weight-semi-bold);
+  --lead-font-weight: var(--font-weight-bold);
   --lead-font-style: var(--text-font-style);
   --lead-color: var(--gray-iii);
 
