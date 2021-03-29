@@ -104,9 +104,10 @@
   --vertical-space-paragraph-h1: var(--space-medium);
   --vertical-space-paragraph-heading: var(--space-xsmall);
   --vertical-space-list-item:var(--space-small);
-  --vertical-space-definition-item:var(--space-small);
-  --vertical-space-definition-item-heading:var(--space-xsmall);
+  --vertical-space-dl-term: var(--space-medium);
+  --vertical-space-dl-description: var(--space-xsmall);
   --vertical-space-caption: var(--space-xsmall);
+
 
 
   /**
@@ -306,6 +307,24 @@
   --table-cell-padding-vertical: var(--space-xsmall);
   --table-cell-padding-horizontal: var(--space-small);
   --table-shadow: var(--shadow);
+
+
+  /**
+   * Description list
+   */
+
+  --dl-term-font-family: var(--text-font-family);
+  --dl-term-font-size: var(--text-font-size);
+  --dl-term-font-weight: var(--font-weight-semi-bold);
+  --dl-term-font-style: var(--text-font-style);
+  --dl-term-line-height: var(--text-line-height);
+  --dl-term-color: var(--text-color);
+  --dl-description-font-family: var(--text-font-family);
+  --dl-description-font-size: var(--text-font-size);
+  --dl-description-font-weight: var(--text-font-weight);
+  --dl-description-font-style: var(--text-font-style);
+  --dl-description-line-height: var(--text-line-height);
+  --dl-description-color: var(--text-color);
 
 
   /**

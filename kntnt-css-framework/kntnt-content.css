@@ -463,3 +463,40 @@ li.greek {
   list-style-type: lower-greek;
 }
 
+
+/**
+ * Description list
+ */
+
+dl {
+  padding-left: var(--block-indent);  
+}
+
+dt {
+  font-family: var(--dl-term-font-family);
+  font-size: var(--dl-term-font-size);
+  font-weight: var(--dl-term-font-weight);
+  font-style: var(--dl-term-font-style);
+  line-height: var(--dl-term-line-height);
+  color: var(--dl-term-color);
+}
+
+:not(dt) + dt {
+  margin-top: var(--vertical-space-dl-term);
+}
+
+dd {
+  font-family: var(--dl-description-font-family);
+  font-size: var(--dl-description-font-size);
+  font-weight: var(--dl-description-font-weight);
+  font-style: var(--dl-description-font-style);
+  line-height: var(--dl-description-line-height);
+  color: var(--dl-description-color);
+  padding-left: var(--block-indent);
+}
+
+dd:not(:first-child) {
+  margin-top: var(--vertical-space-dl-description);
+}
+
+
