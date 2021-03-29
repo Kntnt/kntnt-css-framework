@@ -171,20 +171,6 @@ figure > blockquote + figcaption {
 
 
 /**
- * Figures
- */
-
-figure > figcaption {
-  margin-top: var(--vertical-space-caption);
-  font-family: var(--caption-font-family);
-  font-size: var(--caption-font-size);
-  font-weight: var(--caption-font-weight);
-  font-style: var(--caption-font-style);
-} 
-
-
-
-/**
  * Images
  */
 
@@ -201,13 +187,8 @@ table {
   table-layout: auto;
   border-collapse: separate;
   border-spacing: var(--table-cell-gutter);
-  margin: var(--vertical-space-block);
+  margin: var(--vertical-space-block) 0 var(--vertical-space-block) var(--block-indent);
   box-shadow: var(--shadow);
-}
-
-table.alignright,
-table.alignleft {
-  width: 50%;
 }
 
 tr > th,
@@ -240,8 +221,44 @@ tr:nth-child(even) {
 }
 
 table caption {
+  font-family: var(--caption-font-family);
+  font-size: var(--caption-font-size);
+  font-weight: var(--caption-font-weight);
+  font-style: var(--caption-font-style);
+  text-align: left;
+}
+
+table caption:not(.underneath) {
+  caption-side: top;
   margin: 0 var(--table-cell-gutter) var(--vertical-space-caption) var(--table-cell-gutter);
 }
+
+table caption.underneath {
+  caption-side: bottom;
+  margin: var(--vertical-space-caption) var(--table-cell-gutter) 0 var(--table-cell-gutter);
+}
+
+
+/**
+ * Figure
+ */
+
+figure {
+  display: inline-grid;
+  margin: var(--vertical-space-block) 0 var(--vertical-space-block) var(--block-indent);  
+}
+
+figure > * {
+    margin: 0;
+}
+
+figure > figcaption {
+  margin-top: var(--vertical-space-caption);
+  font-family: var(--caption-font-family);
+  font-size: var(--caption-font-size);
+  font-weight: var(--caption-font-weight);
+  font-style: var(--caption-font-style);
+} 
 
 
 /**
@@ -360,17 +377,11 @@ pre,
 samp {
   font-family: var(--font-stack-mono);
   font-size: var(--font-size-smaller); /* Fakes font-size-adjust */  
-}
-
-code,
-kbd,
-samp {
   background-color: var(--monospace-background);
 }
 
 pre {
   padding: var(--pre-padding);
-  background-color: var(--pre-background-color);
   white-space: pre-wrap;
 }
 
@@ -378,5 +389,71 @@ pre code,
 pre kbd,
 pre pre,
 pre samp {
+  background-color: transparent;
   font-size: 100%;
 }
+
+
+/**
+ * Unordered and ordered lists
+ */
+
+
+ul.none,
+ol.none,
+li.none {
+  list-style-type: none;
+}
+
+ul,
+ul.disc,
+li.disc {
+  list-style-type: disc;
+}
+
+ul.circle,
+li.circle {
+  list-style-type: circle;
+}
+
+ul.square,
+li.square {
+  list-style-type: square;
+}
+
+ol,
+ol.decimal,
+li.decimal {
+  list-style-type: decimal;
+}
+
+ol.decimal-leading-zero,
+li.decimal-leading-zero {
+  list-style-type: decimal-leading-zero;
+}
+
+ol.roman,
+li.roman {
+  list-style-type: lower-roman;
+}
+
+ol.roman-upper,
+li.roman-upper {
+  list-style-type: upper-roman;
+}
+
+ol.latin,
+li.latin {
+  list-style-type: lower-alpha;
+}
+
+ol.latin-upper,
+li.latin-upper {
+  list-style-type: upper-alpha;
+}
+
+ol.greek,
+li.greek {
+  list-style-type: lower-greek;
+}
+
