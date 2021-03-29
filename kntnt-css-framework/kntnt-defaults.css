@@ -305,6 +305,7 @@
   --table-cell-gutter: var(--space-xxsmall);
   --table-cell-padding-vertical: var(--space-xsmall);
   --table-cell-padding-horizontal: var(--space-small);
+  --table-shadow: var(--shadow);
 
 
   /**
@@ -351,6 +352,7 @@
    */
   --monospace-background: var(--gray-x);
   --pre-padding: var(--space-medium);
+  --pre-shadow: var(--shadow);
 
 
   /**
@@ -376,5 +378,13 @@
   --byline-font-style: normal;
   --byline-color: var(--text-color);
   --byline-separator: ' • ';
+
+
+  /**
+   * Defaults for images
+   */ 
+
+  --image-shadow: var(--shadow);
+
 
 }
