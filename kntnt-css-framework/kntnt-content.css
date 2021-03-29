@@ -393,6 +393,17 @@ pre samp {
  * Unordered and ordered lists
  */
 
+ ul,
+ ol {
+  padding-inline-start: var(--space-large);
+ }
+
+ ul ul,
+ ul ol,
+ ol ul,
+ ol, ol {
+  margin-top: var(--vertical-space-list-item);
+ }
 
 ul.none,
 ol.none,
