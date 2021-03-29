@@ -466,62 +466,103 @@
               <figcaption>Photo: Bessi.</figcaption>
               <img src="image-900.jpg">
             </figure>
-            <h2>Images</h2>
-            <p>But we will not touch on much of this. The purpose of this text is to show you how to use KCF. When it comes to pictures, there is not much to say specifically about them.</p>
-            <p>But I will offer some advice:</p>
-            <h4>Image file format</h4>
-            <p>Use JPEG for photographs. Use GIF or PNG-8 for illustrations with few colours, no large tinted surfaces or alpha channel. Use PNG-24 only for small images.</p>
-            <h4>Crop</h4>
-            <p>As a rule of thumb, crop images to the classic proportions of 3:2 (landscape) or 2:3 (portrait) if you don&#39;t need a more specific crop.</p>
-            <h4>Resizing</h4>
-            <p>Resize the cropped image to the following sizes.</p>
-            <figure><table>
-            <thead>
-            <tr><th>Landscape</th><th>Portrait</th></tr></thead>
-            <tbody><tr><td>1920 × 1280</td><td>1920 × 2880</td></tr><tr><td>1062 × 708</td><td>1060 × 1590</td></tr><tr><td>900 × 600</td><td>900 × 1350</td></tr><tr><td>450 × 300</td><td>450 × 675</td></tr><tr><td>300 × 200</td><td>300 × 450</td></tr></tbody>
-            </table></figure>
-            <h4>Save images</h4>
-            <p>Save the different sizes with names that end with dash and the width. For instance, if the original image file is named <code>image.jpg</code>, name the resulting image files as follows:</p>
-            <ul>
-            <li><code>image-1920.jpg</code></li>
-            <li><code>image-1062.jpg</code></li>
-            <li><code>image-900.jpg</code></li>
-            <li><code>image-450.jpg</code></li>
-            <li><code>image-225.jpg</code></li>
+			<h2>Images</h2>
+			<p>But we will not touch on much of this. The purpose of this text is to show you how to use KCF. When it comes to pictures, there is not much to say specifically about them.</p>
+			<p>But I will offer some advice:</p>
+			<h4>Image file format</h4>
+			<p>Use WebP or JPEG for photographs. Use WebP, PNG-8 or GIF for illustrations with few colours, no large tinted surfaces or alpha channel. Use WebP or PNG-24 for illustrations with many colours, large tinted surfaces or alpha channel.</p>
+			<h4>Crop</h4>
+			<p>As a rule of thumb, crop images to the classic proportions of 3:2 (landscape) or 2:3 (portrait) if you don&#39;t need a more specific crop.</p>
+			<h4>Resizing</h4>
+			<p>Resize the cropped image to all possible image sized used by KCF:</p>
+			<figure>
+			    <table>
+			        <thead>
+			            <tr>
+			                <th>Landscape</th>
+			                <th>Portrait</th>
+			            </tr>
+			        </thead>
+			        <tbody>
+			            <tr>
+			                <td>1920 × 1280</td>
+			                <td>1920 × 2880</td>
+			            </tr>
+			            <tr>
+			                <td>1060 × 707</td>
+			                <td>1060 × 1590</td>
+			            </tr>
+			            <tr>
+			                <td>900 × 600</td>
+			                <td>900 × 1350</td>
+			            </tr>
+			            <tr>
+			                <td>600 × 400</td>
+			                <td>600 × 900</td>
+			            </tr>
+			            <tr>
+			                <td>450 × 300</td>
+			                <td>450 × 675</td>
+			            </tr>
+			            <tr>
+			                <td>300 × 200</td>
+			                <td>300 × 450</td>
+			            </tr>
+			            <tr>
+			                <td>225 × 150</td>
+			                <td>225 × 338</td>
+			            </tr>
+			        </tbody>
+			    </table>
+			</figure>
+			<h4>Save images</h4>
+			<p>Save the different sizes with names that end with dash and the width. For instance, if the original image file is named <code>image.jpg</code>, name the resulting image files as follows:</p>
+			<ul>
+			    <li><code>image-1920.jpg</code></li>
+			    <li><code>image-1060.jpg</code></li>
+			    <li><code>image-900.jpg</code></li>
+			    <li><code>image-600.jpg</code></li>
+			    <li><code>image-450.jpg</code></li>
+			    <li><code>image-300.jpg</code></li>
+			    <li><code>image-225.jpg</code></li>
 
-            </ul>
-            <p>You should save these files at near maximum quality. In the next step, we will compress them further.</p>
-            <h4>Compression</h4>
-            <p>Run the saved images through one of following image optimization software:</p>
-            <dl>
-              <dt>Linux</dt>
-              <dd><a href="https://trimage.org/">Trimage</a></dd>
-              <dt>Mac OS X</dt>
-              <dd><a href="https://imageoptim.com/mac">ImageOptim</a></dd>
-              <dt>Windows</dt>
-              <dd><a href="https://css-ig.net/pingo">Pingo</a></dd>
-            </dl>
-            <p>JPEG is lossy by its nature. PNG and GIF are not lossy in themselves, but the above-suggested software can do lossy compression if you allow it. Do that.</p>
-            <p>Don&#39;t fear lossy compression. Try to compress the images as much as you can. As long as you can&#39;t see any quality losses, its okay.</p>
-            <p>Make sure no file, not even the largest ones, are bigger than 2MB. Preferably, they should be much smaller.</p>
-            <h6>Uplad images</h6>
-            <p>Now, upload the images and to your server, and use following code to include them:</p>
-            <pre><code>&lt;img srcset=&quot;image-300.jpg 300w,
-                         image-450.jpg 450w,
-                         image-900.jpg 900w,
-                         image-1060.jpg 1060w,
-                         image-1920.jpg 1920w&quot;
-                 src=&quot;image-1920.jpg&quot;
-                 alt=&quot;Hot air balloon over sea at blue hour&quot;&gt;
-            </code></pre>
-            <p>The result looks like this:</p>
-            <p><img srcset="image-300.jpg 300w,
-                         image-450.jpg 450w,
-                         image-900.jpg 900w,
-                         image-1060.jpg 1060w,
-                         image-1920.jpg 1920w"
-                 src="image-1920.jpg"
-                 alt="Hot air balloon over sea at blue hour"></p>
+			</ul>
+			<p>You should save these files at near maximum quality. In the next step, we will compress them further.</p>
+			<h4>Compression</h4>
+			<p>Run the saved images through one of following image optimization software:</p>
+			<dl>
+			    <dt>Linux</dt>
+			    <dd><a href="https://trimage.org/">Trimage</a></dd>
+			    <dt>Mac OS X</dt>
+			    <dd><a href="https://imageoptim.com/mac">ImageOptim</a></dd>
+			    <dt>Windows</dt>
+			    <dd><a href="https://css-ig.net/pingo">Pingo</a></dd>
+			</dl>
+			<p>PNG and GIF are not lossy in themselves, but the above-suggested software can do lossy compression if you allow it. Do that.</p>
+			<p>Don&#39;t fear lossy compression. Try to compress the images as much as you can. As long as you can&#39;t see any quality losses, its okay.</p>
+			<p>Make sure no file, not even the largest ones, are bigger than 2MB. Preferably, they should be much smaller.</p>
+			<h6>Include images</h6>
+			<p>After uploading the images, its time to use them. Following code is not optimal, but better</p>
+			<pre><code>&lt;img srcset=&quot;image-225.jpg 225w,
+			             image-300.jpg 300w,
+			             image-450.jpg 450w,
+			             image-600.jpg 600w,
+			             image-900.jpg 900w,
+			             image-1060.jpg 1060w,
+			             image-1920.jpg 1920w&quot;
+			     sizes=&quot;(max-width: 1920px) 100vw, 1920px&quot;
+			     src=&quot;image-1920.jpg&quot;
+			     loading=&quot;lazy&quot;
+			     alt=&quot;Hot air balloon over sea at blue hour&quot;&gt;
+			</code></pre>
+			<p>The result looks like this:</p>
+			<p><img srcset="image-225.jpg 225w,
+			             image-300.jpg 300w,
+			             image-450.jpg 450w,
+			             image-600.jpg 600w,
+			             image-900.jpg 900w,
+			             image-1060.jpg 1060w,
+			             image-1920.jpg 1920w" sizes="(max-width: 1920px) 100vw, 1920px" src="image-1920.jpg" loading="lazy" alt="Hot air balloon over sea at blue hour"></p>
             <h2>Quotes</h2>
             <p>TODO</p>
             <h2>Horizontal lines and dinkuses</h2>
