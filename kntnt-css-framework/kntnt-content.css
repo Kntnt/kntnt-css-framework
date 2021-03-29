@@ -175,7 +175,7 @@ figure > blockquote + figcaption {
  */
 
 img {
-  box-shadow: var(--shadow);
+  box-shadow: var(--image-shadow);
 }
 
 
@@ -188,7 +188,7 @@ table {
   border-collapse: separate;
   border-spacing: var(--table-cell-gutter);
   margin: var(--vertical-space-block) 0 var(--vertical-space-block) var(--block-indent);
-  box-shadow: var(--shadow);
+  box-shadow: var(--table-shadow);
 }
 
 tr > th,
@@ -245,7 +245,7 @@ table caption.underneath {
 
 figure {
   display: inline-grid;
-  margin: var(--vertical-space-block) 0 var(--vertical-space-block) var(--block-indent);  
+  margin: var(--vertical-space-block) 0 var(--vertical-space-block) var(--block-indent);
 }
 
 figure > * {
@@ -292,12 +292,6 @@ figure > figcaption {
   margin-left: 0.5em;
   text-decoration: none;
 }
-
-
-/**
- * Aside within article.
- */
-
 
 
 /**
@@ -383,6 +377,7 @@ samp {
 pre {
   padding: var(--pre-padding);
   white-space: pre-wrap;
+  box-shadow: var(--pre-shadow);
 }
 
 pre code,
