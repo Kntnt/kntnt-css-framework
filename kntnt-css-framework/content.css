@@ -198,10 +198,6 @@ body > footer table {
  * Figure
  */
 
-figure {
-  display: inline-grid;
-}
-
 figure > * {
     margin: 0;
 }
