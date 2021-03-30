@@ -594,6 +594,34 @@
              images/image-600.jpg 600w,
              images/image-900.jpg 900w,
              images/image-1060.jpg 1060w,
+             images/image-1920.jpg 1920w" sizes="(max-width: 1920px) 100vw, 1920px" src="images/image-1920.jpg" loading="lazy" alt="Hot air balloon over sea at blue hour">
+<h2>Inline quotes</h2>
+<p>A quote inside a text is called an <em>inline quote</em>. A such begins and ends with quotation marks. Although you can enter them yourself, it is higly recommeded to let the web browser do it for you. Most people don’t know how to produce typographic correct quotation marks on their keyboards, and end up using the inch-symbol &quot;like this&quot; instead of proper quotation marks “like this”. Modern web browsers insert correct quotation marks for tha language set with the <code>lang</code> attribute. What’s correct quotation marks varies from language to language. Some examples:</p>
+<ul style="font-family: var(--font-stack-serif)">
+<li lang="fr"><q>Ceci est une citation française</q></li>
+<li lang="de"><q>Dies ist ein deutsches Zitat</q></li>
+<li lang="pl"><q>To jest polski cytat</q></li>
+<li lang="sv"><q>Detta är ett svenskt citat</q></li>
+<li lang="en"><q>This is an English quote</q></li>
+</ul>
+<p>To allow the web browser to insert quotation marks for you, wrap the quote with <code>&lt;q&gt;…&lt;/q&gt;</code>. Don’t write quotation marks yourself. This is an example of how to do it:</p>
+<pre><code>&lt;p&gt;When Dave asks HAL to open the pod bay door, HAL answers: &lt;q&gt;I’m sorry, Dave. I’m afraid I can’t do that.&lt;/q&gt;&lt;/p&gt;
+</code></pre>
+<p>The result looks like this:</p>
+<figure><p><samp>When Dave asks HAL to open the pod bay door, HAL answers: <q>I’m sorry, Dave. I’m afraid I can’t do that.</q></samp></p></figure>
+<p>Another advantage of using <code>&lt;q&gt;…&lt;/q&gt;</code> is that you can add a machine-readable link to the source with the <code>cite</code> attribute. Here is an example:</p>
+<pre><code>&lt;p&gt;When Dave asks HAL to open the pod bay door, HAL answers: &lt;q cite=&quot;https://www.imdb.com/title/tt0062622/quotes/qt0396921&quot;&gt; I’m sorry, Dave. I’m afraid I can’t do that.&lt;/q&gt;&lt;/p&gt;
+</code></pre>
+<p>The URL is not rendered:</p>
+<figure><p><samp>When Dave asks HAL to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do that.</q></samp></p></figure>
+<aside class="panel color-alert-light">
+  <p>Don't use <code>&lt;q&gt;…&lt;/q&gt;</code> for other purposes than quotes. For sarcasm and similar applications of quotation marks, you must write the correct quotation marks yourself.</p>
+</aside>
+
+
+
+
+
 <h2>Horizontal lines and dinkuses</h2>
 <p>TODO</p>
 <h2>Positioning and sizing</h2>
