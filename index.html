@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
     <title>Kntnt CSS Framework</title>
-    <link rel="shortcut icon" type="image/png" href="demo-images/favicon.png"/>
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
     <link rel="stylesheet" href="normalize.css/normalize.css">
-    <link rel="stylesheet" href="kcf/constants.css">
-    <link rel="stylesheet" href="kcf/colors.css">
-    <link rel="stylesheet" href="kcf/defaults.css">
-    <link rel="stylesheet" href="kcf/normalize.css">
-    <link rel="stylesheet" href="kcf/page-layout.css">
-    <link rel="stylesheet" href="kcf/page-styles.css">
-    <link rel="stylesheet" href="kcf/content.css">
-    <link rel="stylesheet" href="kcf/wordpress.css">
-    <link rel="stylesheet" href="kcf/utilities.css">
-    <link rel="stylesheet" href="kcf/utilities-aside.css">
+    <link rel="stylesheet" href="kntnt-css-framework/constants.css">
+    <link rel="stylesheet" href="kntnt-css-framework/colors.css">
+    <link rel="stylesheet" href="kntnt-css-framework/defaults.css">
+    <link rel="stylesheet" href="kntnt-css-framework/normalize.css">
+    <link rel="stylesheet" href="kntnt-css-framework/page-layout.css">
+    <link rel="stylesheet" href="kntnt-css-framework/page-styles.css">
+    <link rel="stylesheet" href="kntnt-css-framework/content.css">
+    <link rel="stylesheet" href="kntnt-css-framework/utilities.css">
+    <link rel="stylesheet" href="kntnt-css-framework/utilities-aside.css">
+    <link rel="stylesheet" href="kntnt-css-framework/wordpress.css">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/00af4a7a7f.js" crossorigin="anonymous"></script>
   </head>
@@ -30,7 +30,7 @@
         <div>
           <figure>
             <a href="https://github.com/Kntnt/kntnt-css-framework">
-            <img class="no-shadow" srcset="demo-images/logo-1x.png, demo-images/logo-2x.png 2x, demo-images/logo-3x.png 3x" src="demo-images/logo-3x.png" alt="Kntnt logo" height="60">
+            <img class="no-shadow" srcset="images/logo-1x.png, images/logo-2x.png 2x, images/logo-3x.png 3x" src="images/logo-3x.png" alt="Kntnt logo" height="60">
             </a>
           </figure>
           <nav>
@@ -77,24 +77,30 @@
   </div>
 </aside>
 <h2>How to use it</h2>
-<p>To use KCF, you must  <a href='https://github.com/Kntnt/kntnt-css-framework/archive/refs/heads/main.zip'>download</a> it, unpack the downloaded zip-file, locate the directory named <code>kcf</code> and move it to the root of your web site. Finally, you need to make sure that the HTML-pages served from your site has following content:</p>
+<p>Star by installing KCF on your site:</p>
+<ol>
+<li><a href='https://github.com/Kntnt/kntnt-css-framework/archive/refs/heads/main.zip'>Download KCF</a></li>
+<li>Unpack the downloaded zip-file</li>
+<li>Locate the directory named <code>kntnt-css-framework</code>, which is inside the unpacked directoryand, and move it to the root of your web site.</li>
+</ol>
+<p>Now you are ready to use KCF. Use following template for your web pages:</p>
 <pre><code>&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;…&quot;&gt;
 &lt;head&gt;
   &lt;meta charset=&quot;UTF-8&quot;&gt;
   &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width&quot;&gt;
   &lt;title&gt;…&lt;/title&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;/normalize.css/normalize.css&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;/kcf/constants.css&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;/kcf/colors.css&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;/kcf/defaults.css&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;/kcf/normalize.css&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;/kcf/layout.css&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;/kcf/page-styles.css&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;/kcf/content.css&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;/kcf/utilities.css&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;/kcf/aside.css&quot;&gt;
-  &lt;link rel=&quot;stylesheet&quot; href=&quot;/kcf/wordpress.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;normalize.css/normalize.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;kntnt-css-framework/constants.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;kntnt-css-framework/colors.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;kntnt-css-framework/defaults.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;kntnt-css-framework/normalize.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;kntnt-css-framework/page-layout.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;kntnt-css-framework/page-styles.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;kntnt-css-framework/content.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;kntnt-css-framework/utilities.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;kntnt-css-framework/utilities-aside.css&quot;&gt;
+  &lt;link rel=&quot;stylesheet&quot; href=&quot;kntnt-css-framework/wordpress.css&quot;&gt;
   &lt;link rel=&quot;stylesheet&quot; href=&quot;…&quot;&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -123,7 +129,7 @@
 <p>Replace <code>…</code> in <code>&lt;html lang=&quot;…”&gt;</code> with a <a href='https://www.ietf.org/rfc/bcp/bcp47.txt'>valid IETF identifying language tag</a>, e.g. <code>en</code>, describing the language used by the majority of the content of the page.</p>
 <p>Replace <code>…</code> in <code>&lt;title&gt;…&lt;/title&gt;</code> with the title you want to show in search engines’ result pages and web browsers tabs and title bars.</p>
 <p>Replace <code>…</code> in <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;…”&gt;</code> with a relative or ab asolute URL to your stylesheet. Take a look at <a href='https://github.com/Kntnt/kntnt-css-framework/blob/main/examples/styles.css'>this page’s stylesheet</a> for inspiration.</p>
-<p>If you don’t plan to use KCF with WordPress, remove the line <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/kcf/wordpress.css&quot;&gt;</code>.</p>
+<p>If you don’t plan to use KCF with WordPress, remove the line <code>&lt;link rel=&quot;stylesheet&quot; href=&quot;../kntnt-css-framework/kntnt-wordpress.css&quot;&gt;</code>.</p>
 <p>In <code>&lt;header&gt;…&lt;/header&gt;</code>, the first <code>…</code> is the topbar&#39;s content (e.g. with shortcut links to essential pages), and the second <code>…</code> is the content of the actual header (w.g. with logo and navigation).</p>
 <p>In <code>&lt;footer&gt;…&lt;/footer&gt;</code>, the first <code>…</code> is the actual footer&#39;s content (e.g. with sitemap and social media icons), and the second <code>…</code> is the content of the bottombar (e.g. with copyright notice and legal disclaimers).</p>
 <p>Replace <code>…</code> with nothing (i.e. <code>&lt;div&gt;&lt;/div&gt;</code>) to disable a row in in <code>&lt;header&gt;…&lt;/header&gt;</code> or <code>&lt;footer&gt;…&lt;/footer&gt;</code>.</p>
@@ -481,13 +487,13 @@
 </code></pre>
 <p>This is the result of the above code.</p>
 <figure>
-  <img src="demo-images/image-450.jpg">
+  <img src="images/image-450.jpg">
   <figcaption>Artist: Bessi.</figcaption>
 </figure>
 <p>Notice that <code>&lt;figcaption&gt;…&lt;/figcaption&gt;</code> <em>must</em> be either the first or the last descendant of <code>&lt;figure&gt;…&lt;/figure&gt;</code>. Its placement determines if the caption is shown above or below, respectively, the content. This is how the above image looks if <code>&lt;figcaption&gt;…&lt;/figcaption&gt;</code> is moved to the top.</p>
 <figure>
   <figcaption>Artist: Bessi.</figcaption>
-  <img src="demo-images/image-450.jpg">
+  <img src="images/image-450.jpg">
 </figure>
 <h2>Images</h2>
 <p>There are a lot to say about images on the web. That is, however, out of scope of this artcile. Its purpose is to show how to use KCF. But I will offer some advice:</p>
@@ -579,13 +585,13 @@
      alt=&quot;Hot air balloon over sea at blue hour&quot;&gt;
 </code></pre>
 <p>The result looks like this:</p>
-<p><img srcset="demo-images/image-225.jpg 225w,
-             demo-images/image-300.jpg 300w,
-             demo-images/image-450.jpg 450w,
-             demo-images/image-600.jpg 600w,
-             demo-images/image-900.jpg 900w,
-             demo-images/image-1060.jpg 1060w,
-             demo-images/image-1920.jpg 1920w" sizes="(max-width: 1920px) 100vw, 1920px" src="demo-images/image-1920.jpg" loading="lazy" alt="Hot air balloon over sea at blue hour"></p>
+<p><img srcset="images/image-225.jpg 225w,
+             images/image-300.jpg 300w,
+             images/image-450.jpg 450w,
+             images/image-600.jpg 600w,
+             images/image-900.jpg 900w,
+             images/image-1060.jpg 1060w,
+             images/image-1920.jpg 1920w" sizes="(max-width: 1920px) 100vw, 1920px" src="images/image-1920.jpg" loading="lazy" alt="Hot air balloon over sea at blue hour"></p>
 <h2>Quotes</h2>
 <p>TODO</p>
 <h2>Horizontal lines and dinkuses</h2>
@@ -629,7 +635,7 @@
           <div>
             <figure>
               <a href="https://github.com/Kntnt/kntnt-css-framework">
-              <img class="no-shadow" srcset="demo-images/logo-1x.png, demo-images/logo-2x.png 2x, demo-images/logo-3x.png 3x" src="demo-images/logo-3x.png" alt="Kntnt logo" height="60">
+              <img class="no-shadow" srcset="images/logo-1x.png, images/logo-2x.png 2x, images/logo-3x.png 3x" src="images/logo-3x.png" alt="Kntnt logo" height="60">
               </a>
             </figure>
             <p>Kntnt (pronounced content) is a consulting company in marketing communication and sales. We help companies and organizations to strengthen brand, drive demand or generate inbound leads with content marketing.</p>

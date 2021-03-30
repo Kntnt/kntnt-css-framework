@@ -65,12 +65,14 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: 0;
   padding: 0;
 }
 
 #footer > * > :last-child > ul > li {
   margin: 0 0 0 1em;
   list-style-type: none;
+  font-weight: bold;
 }
 
 #footer > * > :last-child > ul > li > a {
@@ -78,12 +80,14 @@
 }
 
 #footer > * > :last-child > ul > li > ul {
+  margin-left: 0;
   padding: 0;
 }
 
 #footer > * > :last-child > ul > li > ul > li {
   margin-top: 1em 0 0 0;
   list-style-type: none;
+  font-weight: normal;
 }
 
 #footer > * > :last-child > ul > li > ul > li > ul {

@@ -143,8 +143,9 @@ p + h6 + p {
 
 
 /**
- * Blocks
+ * Blocks not in page header and footer.
  */
+
 blockquote,
 dl,
 figure,
@@ -153,8 +154,44 @@ ol,
 pre,
 table,
 ul {
-  margin: var(--vertical-space-block) var(--block-indent);
+  /* margin: var(--vertical-space-block) var(--block-indent) 0; */
+  margin-left: var(--block-indent);
+  margin-right: var(--block-indent);
+}
+
+img,
+pre,
+table {
   box-shadow: var(--pre-shadow);
+}
+
+body > header blockquote,
+body > footer blockquote,
+body > header dl,
+body > footer dl,
+body > header figure,
+body > footer figure,
+body > header img,
+body > footer img,
+body > header ol,
+body > footer ol,
+body > header pre,
+body > footer pre,
+body > header table,
+body > footer table,
+body > header ul
+body > footer ul {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+body > header img,
+body > footer img,
+body > header pre,
+body > footer pre,
+body > header table,
+body > footer table {
+  box-shadow: none;
 }
 
 
@@ -302,14 +339,13 @@ dl > dd:not(:first-child) {
 
  ul,
  ol {
-  padding-inline-start: var(--space-large);
+  padding-inline-start: var(--box-padding);
  }
 
- ul ul,
- ul ol,
- ol ul,
- ol, ol {
+ li ul,
+ li ol {
   margin-top: var(--vertical-space-list-item);
+  margin-left: var(--box-padding);
  }
 
 ul.none,
