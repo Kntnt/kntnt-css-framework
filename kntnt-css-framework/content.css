@@ -154,9 +154,8 @@ ol,
 pre,
 table,
 ul {
-  /* margin: var(--vertical-space-block) var(--block-indent) 0; */
+  max-width: calc(100% - 2 * var(--block-indent));
   margin-left: var(--block-indent);
-  margin-right: var(--block-indent);
 }
 
 img,
