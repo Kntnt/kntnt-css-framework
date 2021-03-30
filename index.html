@@ -653,6 +653,112 @@
 <blockquote>
   Mamma said stupid is as stupid does!
 </blockquote>
+<h2>Editing text</h2>
+<p>Many people who write for the web want to forget what they are writing needs to be converted to <abbr title="Hyper Text Markup Language">HTML</abbr> Unfortunately, word processors and text editors are lousy at creating semantically correct <abbr>HTML</abbr> code. Therefore, every web writer should know basic <abbr>HTML</abbr> and be prepared to use it. In this article, there are many examples of what you can do. However, the article is not a course in <abbr>HTML</abbr>. Nevertheless, in this section, we will get acquainted with <abbr>HTML</abbr> elements that are primarily there to give text semantic meaning and graphic style.</p>
+<h5><code>&lt;em&gt;</code>, <code>&lt;dfn&gt;</code>, <code>&lt;cite&gt;</code>, <code>&lt;var&gt;</code> and <code>&lt;i&gt;</code></h5>
+<p>Several HTML elements make the content they wrap rendered italicized. They differ in their semantic meaning. Choose wisely.</p>
+<ul>
+<li><p>Use <code>&lt;em&gt;…&lt;/em&gt;</code> to markup a word or a phrase that need <em>emphasis</em>. Example: This is <em>indeed</em> essential.</p>
+</li>
+<li><p>Use <code>&lt;dfn&gt;…&lt;/dfn&gt;</code> to mark a word or a phrase that is <dfn>defined</dfn>. Example: In this context, <dfn>pilot</dfn> refers to…</p>
+</li>
+<li><p>Use <code>&lt;cite&gt;…&lt;/cite&gt;</code> to markup a <cite>name of a creative work</cite>. Example: Shakespar wrote <cite>Hamlet</cite>.</p>
+</li>
+<li><p>Use <code>&lt;var&gt;…&lt;/var&gt;</code> to markup a letter as a <var>variable</var>. Example: <var>x</var> = 2.</p>
+</li>
+<li><p>Use <code>&lt;i&gt;…&lt;/i&gt;</code> to markup text that need to be differentiated from ormal text. Here are some examples listed in <cite><a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i'>MDN Web Docs</a></cite>:</p>
+<ul>
+<li>Alternative voice or mood</li>
+<li>Taxonomic designations (such as the genus and species &quot;<em>Homo sapiens</em>&quot;)</li>
+<li>Idiomatic terms from another language (such as &quot;<em>et cetera</em>&quot;); these should include the <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes#attr-lang'><code>lang</code></a> attribute to identify the language</li>
+<li>Technical terms</li>
+<li>Transliterations</li>
+<li>Thoughts (such as &quot;She wondered, <em>What is this writer talking about, anyway?</em>&quot;)</li>
+<li>Ship or vessel names in Western writing systems (such as &quot;They searched the docks for the <em>Empress of the Galaxy</em>, the ship to which they were assigned.&quot;)</li>
+
+</ul>
+</li>
+
+</ul>
+<h5><code>&lt;strong&gt;</code> and <code>&lt;b&gt;</code></h5>
+<p>Two HTML elements are rendering their wrapped content with boldface but with different semantic meaning:</p>
+<ul>
+<li>Use <code>&lt;strong&gt;…&lt;/strong&gt;</code> to markup a word or a phrase that need <strong>strong emphasis</strong>. Example: <strong>Warning:</strong> The coffee is hot.</li>
+<li>Use <code>&lt;b&gt;…&lt;/b&gt;</code> to <b>bring attention to</b> to the marked up word or phrase. <cite><a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i'>MDN Web Docs</a></cite> suggest using it for cases like keywords in summary, product names in a review, or other spans of text whose typical presentation would be boldfaced (but not including any special importance).</li>
+
+</ul>
+<h5><code>&lt;mark&gt;</code></h5>
+<p>If you need to <mark>mark or highlight</mark> a portion of a text, wrap it with <code>&lt;mark&gt;…&lt;/mark&gt;</code>.</p>
+<p><b>Example:</b> <dfn>Anaphora</dfn> is a figure of speech in which words repeat at the beginning of successive clauses, phrases, or sentences. Dr Martin Luther King Jr. eminently used anaphora in his famous talk from 1963:</p>
+<figure>
+  <blockquote>
+    <p><mark>I have a dream</mark> that one day down in Alabama, with its vicious racists, with its governor having his lips dripping with the words of interposition and nullification – one day right there in Alabama little black boys and black girls will be able to join hands with little white boys and white girls as sisters and brothers.</p>
+    <p><mark>I have a dream</mark> today.</p>
+    <p><mark>I have a dream</mark> that one day every valley shall be exalted and every hill and mountain shall be made low, the rough places will be made plain, and the crooked places will be made straight, and the glory of the Lord shall be revealed and all flesh shall see it together.</p>
+  </blockquote>
+  <figcaption>– Martin Luther King Jr., <cite>I have a dream</cite>, 1963</figcaption>
+</figure>
+<h5><code>&lt;u&gt;</code> and <code>&lt;s&gt;</code></h5>
+<p>The two elements <code>&lt;u&gt;…&lt;/u&gt;</code> and <code>&lt;s&gt;…&lt;/s&gt;</code> draw a line <u>under</u> and <s>through</s>, respectively, their wrapped content.</p>
+<ul>
+<li>Use <code>&lt;u&gt;…&lt;/u&gt;</code> as an unarticulated annotation of the wrapped text. Example: In this text, <u>speling</u> mistakes are <u>underlned</u>.</li>
+<li>Use <code>&lt;s&gt;…&lt;/s&gt;</code> to show that the wrapped content are no longer relevant or no longer accurate. Example: <s>Use <code>&lt;s&gt;</code> to decorate your text.</s></li>
+
+</ul>
+<h5><code>&lt;ins&gt;</code> and <code>&lt;del&gt;</code></h5>
+<p>Use <code>&lt;ins&gt;…&lt;/ins&gt;</code> and <code>&lt;del&gt;…&lt;/del&gt;</code> to wrap text that has been <ins>inserted</ins> and <del>deleted</del>, respectively.</p>
+<ul>
+<li>Use <code>&lt;ins&gt;…&lt;/ins&gt;</code> to markup text that have been inserted. Example: He has <ins>got</ins> a new coat.</li>
+<li><code>&lt;del&gt;…&lt;/del&gt;</code> to markup text that have been deleted. Example: The gave me his old <del>ugly</del> coat.</li>
+
+</ul>
+<h5><code>&lt;sup&gt;</code> and <code>&lt;sub&gt;</code></h5>
+<p>Use <code>&lt;sup&gt;…&lt;/sup&gt;</code> and <code>&lt;sub&gt;…&lt;/sub&gt;</code> to create <sup>superscript</sup> and <sub>subscript</sub> respectively.</p>
+<ul>
+<li>Use <code>&lt;sup&gt;…&lt;/sup&gt;</code> to display <code>…</code> as superscript. Example: The Pythagorean theorem: <p><var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var></p></li>
+<li>Use <code>&lt;sub&gt;…&lt;/sub&gt;</code> to display <code>…</code> as subscript. Example: <p>Almost every writer&#39;s favorite molecule is
+C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffeine.”</p></li>
+
+</ul>
+<h5><code>&lt;pre&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;kbd&gt;</code> and <code>&lt;samp&gt;</code></h5>
+<p>To represent computer code, input and output and similar, we have <code>&lt;code&gt;</code>, <code>&lt;kbd&gt;</code> and <code>&lt;samp&gt;</code>, respectively.</p>
+<ul>
+<li>Use <code>&lt;code&gt;…&lt;/code&gt;</code> to markup short fragment of <code>computer code</code>. Example: The tag <code>&lt;br&gt;</code> represents line feed.</li>
+<li>Use <code>&lt;kbd&gt;…&lt;/kbd&gt;</code> to illustrate <kbd>k</kbd><kbd>e</kbd><kbd>y</kbd><kbd>s</kbd> on the keyboard. Example: Press <kbd>⌘</kbd> + <kbd>S</kbd> to save.</li>
+<li>Use <code>&lt;samp&gt;…&lt;/samp&gt;</code> to represent a sample output from a computer. Example: If you see <samp>Error</samp> on the screen, something went wrong.</li>
+
+</ul>
+<h5><code>&lt;pre&gt;</code></h5>
+<p>To represent longer text that must appear exactly as preformatted – as if it were written on a typewriter – use <code>&lt;pre&gt;…&lt;/pre&gt;</code>.</p>
+<p>Follwoing HTML code, adapted from  <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre'>MDN Web Docs</a> presentation of <code>&lt;pre&gt;</code> is an example where it&#39;s important to wrap the content in <code>&lt;pre&gt;…&lt;/pre&gt;</code>:</p>
+<pre><code class='language-html' lang='html'>&lt;pre&gt;
+   ----------------------------
+  | I&#39;m an expert in my field. |
+   ----------------------------
+           \   ^__^
+            \  (oo)\_______
+               (__)\       )\/\
+                   ||----w |
+                   ||     ||
+&lt;/pre&gt;
+</code></pre>
+<p>Here is the result:</p>
+<pre>   ----------------------------
+  | I'm an expert in my field. |
+   ----------------------------
+           \   ^__^
+            \  (oo)\_______
+               (__)\       )\/\
+                   ||----w |
+                   ||     ||
+</pre>
+<h5><code>&lt;abbr&gt;</code></h5>
+<p>Use <code>&lt;abbr&gt;…&lt;/abbr&gt;</code> to wrap abbreviations and acronyms.</p>
+<p>It would of course be silly to wrap every <i>e.g.</i>, <i>i.e.</i>, <i>etc</i> and so forth with <code>&lt;abbr&gt;…&lt;/abbr&gt;</code>. Use it instead with the <code>title</code> attribute, as shown below, when introducing an abbreviation or acronyme that might be unknonw for the read.</p>
+<pre><code class='language-html' lang='html'>&lt;p&gt;&lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt; is a markup language used to create the semantics and structure of a web page.&lt;/p&gt;
+</code></pre>
+<p>The result is a discreet marking of the abbreviation, indicating that the users can hover over the abbreviation to see an explanation in a tooltip.</p>
+<figure><p><abbr title="HyperText Markup Language">HTML</abbr> is a markup language used to create the semantics and structure of a web page.</p></figure>
 <h2>Positioning and sizing</h2>
 <p>TODO</p>
 <h2>Aside</h2>
