@@ -617,16 +617,49 @@
 <aside class="panel color-alert-light">
   <p>Don't use <code>&lt;q&gt;…&lt;/q&gt;</code> for other purposes than quotes. For sarcasm and similar applications of quotation marks, you must write the correct quotation marks yourself.</p>
 </aside>
-
-
-
-
-
-<h2>Horizontal lines and dinkuses</h2>
-<p>TODO</p>
+<h2>Blockquotes</h2>
+<p>Longer quotes that are reproduced in a separate paragraph are called <em>block quotes</em>. A such is wrappen in <code>&lt;blockquote&gt;…&lt;/blockquote&gt;</code> as in this example:</p>
+<pre><code class='language-html' lang='html'>&lt;blockquote cite=&quot;https://www.imdb.com/title/tt0109830/&quot;&gt;
+  &lt;p&gt;Mamma said stupid is as stupid does!&lt;/p&gt;
+&lt;/blockquote&gt;
+</code></pre>
+<p>The result looks like this:</p>
+<blockquote cite="https://www.imdb.com/title/tt0109830/">
+  <p>Mamma said stupid is as stupid does!</p>
+</blockquote>
+<p>Notice that the <code>cite</code> attribute isn’t rendered. It’s optional. If included, it must be a URL that designates a source document or message for the information quoted. This attribute is intended to point machines (e.g. search engines) to information explaining the context or the reference for the quote.</p>
+<p>To add a human-readable cite, use following construct:</p>
+<pre><code class='language-html' lang='html'>&lt;figure&gt;
+  &lt;blockquote cite=&quot;https://www.imdb.com/title/tt0109830/&quot;&gt;
+    &lt;p&gt;Mamma said stupid is as stupid does!&lt;/p&gt;
+  &lt;/blockquote&gt;
+  &lt;figcaption&gt;– Forest Gump in the movie &lt;cite&gt;&lt;a href=&quot;https://www.imdb.com/title/tt0109830/&quot;&gt;Forest Gump&lt;/a&gt;&lt;/cite&gt;&lt;/figcaption&gt;
+&lt;/figure&gt;
+</code></pre>
+<p>The result looks like this:</p>
+<figure>
+  <blockquote cite="https://www.imdb.com/title/tt0109830/">
+    <p>Mamma said stupid is as stupid does!</p>
+  </blockquote>
+  <figcaption>– Forest Gump in the movie <cite><a href="https://www.imdb.com/title/tt0109830/">Forest Gump</a></cite></figcaption>
+</figure>
+<p>Note that <code>&lt;cite&gt;…&lt;/cite&gt;</code> encloses the name of the work from which the quote comes. It should <em>not</em> contain the author’s name or anything else.</p>
+<p>For a single paragraph quote, the wrapping <code>&lt;p&gt;…&lt;/p&gt;</code> tags can be omitted:</p>
+<pre><code class='language-html' lang='html'>&lt;blockquote&gt;
+  Mamma said stupid is as stupid does!
+&lt;/blockquote&gt;
+</code></pre>
+<p>The result looks like this:</p>
+<blockquote>
+  Mamma said stupid is as stupid does!
+</blockquote>
 <h2>Positioning and sizing</h2>
 <p>TODO</p>
 <h2>Aside</h2>
+<p>TODO</p>
+<h2>Dealing with floats</h2>
+<p>TODO</p>
+<h2>Horizontal lines and dinkuses</h2>
 <p>TODO</p>
 <h2>Miscellaneous classes</h2>
 <p>TODO</p>

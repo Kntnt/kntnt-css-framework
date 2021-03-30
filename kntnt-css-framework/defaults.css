@@ -341,9 +341,9 @@
    * Defaults for blockquote
    */
   --blockquote-font-family: var(--text-font-family);
-  --blockquote-font-size: var(--font-size-larger);
-  --blockquote-font-weight: var(--font-weight-light);
-  --blockquote-font-style: italic;
+  --blockquote-font-size: var(--font-size-small);
+  --blockquote-font-weight: var(--font-weight-normal);
+  --blockquote-font-style: normal;
   --blockquote-bar: solid;
   --blockquote-bar-width: var(--space-xsmall);
   --blockquote-bar-color: var(--color-primary);

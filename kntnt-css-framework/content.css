@@ -233,7 +233,7 @@ blockquote p {
 }
 
 figure > blockquote + figcaption {
-  margin-left: calc(var(--block-indent) + var(--blockquote-bar-width) + var(--blockquote-bar-indent));
+  margin-left: calc(var(--blockquote-bar-width) + var(--blockquote-bar-indent));
   margin-right: var(--block-indent);
 }
 
