@@ -1,0 +1,88 @@
+/**
+ * Kntnt CSS Framework – https://github.com/Kntnt/kntnt-css-framework
+ *
+ * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
+ * SPDX-License-Identifier: MIT
+ *
+ * IMPORTANT: Don't edit this file. Instead, add your own definitions to
+ * stylesheet loaded after Kntnt CSS Framework. You should override the
+ * variabels that starts with --color-primary-… It's recommended that you
+ * leave the other ones as is.
+ */
+
+
+:root {
+
+
+  /**
+   * Primary color is inteded for links and hovered buttons.
+   * YOU SHOULD OVERRIDE THIS ONE.
+   */
+
+   --color-primary: hsl(130, 70%, 30%);
+
+
+   /**
+    * Accentuated primary color is inteded for buttons and hovered links.
+    */
+
+   --color-primary-accentuated: hsl(130, 70%, 20%);
+
+
+   /**
+    * Dark color is used for
+    */
+   --color-primary-dark: hsl(130, 30%, 50%);
+
+
+   /**
+    * Light color is used for
+    */
+   --color-primary-light: hsl(130, 30%, 80%);
+
+
+  /**
+   * Alert colors inteded forerror messages, alert boxes etcetera.
+   */
+
+  --color-alert: hsl(0, 80%, 40%);
+  --color-alert-accentuated: hsl(0, 100%, 60%);
+  --color-alert-dark: hsl(0, 80%, 30%);
+  --color-alert-light: hsl(0, 70%, 50%);
+
+
+  /**
+   *  Blacks.
+   */
+
+  --black: hsl(0, 0%, 4%);
+  --extra-black: hsl(0, 0%, 0%);
+  --almost-black: hsl(0, 0%, 8%);
+
+
+  /**
+   *  Whites.
+   */
+
+  --white: hsl(0, 0%, 97%);
+  --almost-white: hsl(0, 0%, 95%);
+  --extra-white: hsl(0, 0%, 100%);
+
+
+  /**
+   * Visually linear gray scale.
+   */
+
+  --gray-i: hsl(0, 0%, 11%);
+  --gray-ii: hsl(0, 0%, 19%);
+  --gray-iii: hsl(0, 0%, 28%);
+  --gray-iv: hsl(0, 0%, 37%);
+  --gray-v: hsl(0, 0%, 47%);
+  --gray-vi: hsl(0, 0%, 58%);
+  --gray-vii: hsl(0, 0%, 67%);
+  --gray-viii: hsl(0, 0%, 78%);
+  --gray-ix: hsl(0, 0%, 89%);
+  --gray-x: hsl(0, 0%, 92%);
+
+
+}

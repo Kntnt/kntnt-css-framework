@@ -1,0 +1,100 @@
+/**
+ * Kntnt CSS Framework – https://github.com/Kntnt/kntnt-css-framework
+ *
+ * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
+ * SPDX-License-Identifier: MIT
+ *
+ * IMPORTANT: This stylesheet assumes that HTML documents follow the layout
+ * described in the README file. See https://github.com/Kntnt/kntnt-css-framework
+ */
+
+
+/**
+ *  Body background and font size, color and rendering.
+ */
+
+body {
+  font-family: var(--text-font-family);
+  background-color: var(--text-background-color);
+  color: var(--text-color);
+}
+
+
+/**
+ * Style topbar
+ */
+
+body > header > :nth-child(1) {
+  color: var(--topbar-color);
+  background-color: var(--topbar-background-color);
+  font-family: var(--topbar-font-family);
+  font-size: var(--topbar-font-size);
+  font-weight: var(--topbar-font-weight);
+  font-style: var(--topbar-font-style);
+}
+
+
+/**
+ * Style header
+ */
+
+body > header > :nth-child(2) {
+  color: var(--header-color);
+  background-color: var(--header-background-color);
+  font-family: var(--header-font-family);
+  font-size: var(--header-font-size);
+  font-weight: var(--header-font-weight);
+  font-style: var(--header-font-style);
+}
+
+
+/**
+ * Style footer
+ */
+
+body > footer > :nth-child(1) {
+  color: var(--footer-color);
+  background-color: var(--footer-background-color);
+  font-family: var(--footer-font-family);
+  font-size: var(--footer-font-size);
+  font-weight: var(--footer-font-weight);
+  font-style: var(--footer-font-style);
+}
+
+
+/**
+ * Style bottombar
+ */
+
+body > footer > :nth-child(2) {
+  color: var(--bottombar-color);
+  background-color: var(--bottombar-background-color);
+  font-family: var(--bottombar-font-family);
+  font-size: var(--bottombar-font-size);
+  font-weight: var(--bottombar-font-weight);
+  font-style: var(--bottombar-font-style);
+}
+
+
+/**
+ * Unobtrusive links in header and footer sections.
+ */
+
+body > header > * > * a,
+body > header > * > * a:hover,
+body > header > * > * a:focus,
+body > header > * > * a:active,
+body > footer > * > * a,
+body > footer > * > * a:hover,
+body > footer > * > * a:focus,
+body > footer > * > * a:active {
+  color: inherit;
+}
+
+body > header > :nth-child(2) > * a,
+body > header > :nth-child(2) > * a:hover
+body > header > :nth-child(2) > * a:focus
+body > header > :nth-child(2) > * a:active {
+  text-decoration-color: inherit;
+  transition: none;
+}

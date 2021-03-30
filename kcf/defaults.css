@@ -1,0 +1,415 @@
+/**
+ * Kntnt CSS Framework – https://github.com/Kntnt/kntnt-css-framework
+ *
+ * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
+ * SPDX-License-Identifier: MIT
+ *
+ * IMPORTANT: Don't edit this file. Instead, alter values by overriding them
+ * in your own stylesheet loaded after Kntnt CSS Framework.
+*/
+
+
+/**
+ * Defaults for desktop devices
+ */
+
+@media (min-width: 1024px) {
+
+  :root {
+
+    /* Font size of the root element at different screen widths. */
+    --root-font-size: 20px;
+
+    /* Maximum width of content within rows (e.g. max width of header, main and footer). */
+    --content-width: 45rem;
+
+    /* Padding around content within rows (e.g. padding of header, main and footer) */
+    --row-padding: 4rem;
+
+    /* Distance that protruding rows (e.g. header) protrudes with. */
+    --row-protruding: 4rem;
+
+    /* Vertical padding for the topbar */
+    --topbar-padding-vertical: var(--space-small);
+
+    /* Maximum height of header content (e.g. logo height at desktop). */
+    --header-content-height-max: 3rem;
+
+     /* Vertical padding for the header. */
+    --header-padding-vertical: var(--space-medium);
+
+    /* Verticla padding for a shrunken header. */
+    --header-shrunken-padding-vertical: var(--space-small);
+
+    /* Footer vertical padding */
+    --bottombar-padding-vertical: var(--space-small);
+
+  }
+
+}
+
+
+/**
+ * Defaults for tablet devices
+ */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  :root {
+    --root-font-size: 18px;
+    --content-width: 45rem;
+    --row-padding: 2rem;
+    --row-protruding: 0rem;
+    --topbar-padding-vertical: var(--space-small);
+    --header-content-height-max: 2.5rem;
+    --header-padding-vertical: var(--space-small);
+    --header-shrunken-padding-vertical: var(--space-xsmall);
+    --bottombar-padding-vertical: var(--space-xsmall);    
+  }
+
+}
+
+/**
+ * Defaults for mobile devices
+ */
+@media (max-width: 767px) {
+
+  :root {
+    --root-font-size: 16px;
+    --content-width: 45rem;
+    --row-padding: 1rem;
+    --row-protruding: 0rem;
+    --topbar-padding-vertical: var(--space-small);
+    --header-content-height-max: 2rem;
+    --header-padding-vertical: var(--space-xsmall);
+    --header-shrunken-padding-vertical: var(--space-xxsmall);
+    --bottombar-padding-vertical: var(--space-xxsmall);    
+  }
+
+}
+
+
+/**
+ * All devices
+ */
+
+:root {
+
+
+  /**
+   * Vertical spacing
+   */
+  --vertical-space-block: var(--space-large);
+  --vertical-space-paragraph: var(--space-medium);
+  --vertical-space-paragraph-h1: var(--space-medium);
+  --vertical-space-paragraph-heading: var(--space-xsmall);
+  --vertical-space-list-item:var(--space-small);
+  --vertical-space-dl-term: var(--space-medium);
+  --vertical-space-dl-description: var(--space-xsmall);
+  --vertical-space-caption: var(--space-xsmall);
+
+
+
+  /**
+   *  Defaults for text (directly or through inheritance from body)
+   */
+
+  --text-font-family: var(--font-stack-sans);
+  --text-font-size: var(--font-size-medium);
+  --text-font-weight: var(--font-weight-normal);
+  --text-font-style: normal;
+  --text-line-height: 1.5;
+  --text-background-color: var(--white);
+  --text-color: var(--gray-ii);
+
+
+  /**
+   *  Defaults for lists, tables, images and similar contents forming a "box" inbetween two paragraphs
+   */
+
+  --block-indent: var(--space-large);
+  --box-padding: 1rem;
+  --box-padding-text: 1.2rem 1.5rem;
+
+
+  /**
+   *  Defaults for the topbar
+   */
+
+  --topbar-font-family: var(--font-stack-sans);
+  --topbar-font-size: var(--font-size-xsmall);
+  --topbar-font-weight: var(--font-weight-normal);
+  --topbar-font-style: normal;
+  --topbar-color: var(--white);
+  --topbar-background-color: var(--black);
+
+
+  /**
+   *  Defaults for the header
+   */
+
+  --header-font-family: var(--font-stack-sans);
+  --header-font-size: var(--font-size-small);
+  --header-font-weight: var(--font-weight-semi-bold);
+  --header-font-style: normal;
+  --header-color: var(--black);
+  --header-background-color: var(--white);
+
+
+  /**
+   *  Default for page footer
+   */
+
+  --footer-font-family: var(--font-stack-sans);
+  --footer-font-size: var(--font-size-small);
+  --footer-font-weight: var(--font-weight-normal);
+  --footer-font-style: normal;
+  --footer-color: var(--black);
+  --footer-background-color: var(--white);
+
+
+  /**
+   *  Defaults for the bar at the page bottom
+   */
+
+  --bottombar-font-family: var(--font-stack-sans);
+  --bottombar-font-size: var(--font-size-xsmall);
+  --bottombar-font-weight: var(--font-weight-normal);
+  --bottombar-font-style: normal;
+  --bottombar-color: var(--gray-vi);
+  --bottombar-background-color: var(--black);
+
+
+  /**
+   *  Defaults for h1
+   */
+
+  --h1-font-family: var(--font-stack-sans);
+  --h1-font-size: var(--font-size-xxlarge);
+  --h1-font-weight: var(--font-weight-bold);
+  --h1-font-style: normal;
+  --h1-line-height: 1.25;
+  --h1-color: var(--gray-ii);
+
+
+  /**
+   * Defaults for kicker (the superheading of h1).
+   */
+
+  --h1-kicker-space: 0.25em;
+  --h1-kicker-font-family: var(--h1-font-family);
+  --h1-kicker-font-size: 0.5em;
+  --h1-kicker-font-weight: var(--font-weight-medium);
+  --h1-kicker-font-style: normal;
+  --h1-kicker-color: var(--gray-ii);
+
+
+  /**
+   * Defaults for deck (the subheading of h1)
+   */
+
+  --h1-deck-space: 0.25em;
+  --h1-deck-font-family: var(--h1-font-family);
+  --h1-deck-font-size: 0.63em;
+  --h1-deck-font-weight: var(--font-weight-medium);
+  --h1-deck-font-style: normal;
+  --h1-deck-color: var(--gray-ii);
+
+
+  /**
+   * Defaults for large h1 and its kick and deck are the same as for
+   * corrsponding normal verions except following…
+   */
+
+  --h1-big-font-size: var(--font-size-xbig);
+  --h1-big-color: var(--white);
+  --h1-big-kicker-font-size: var(--font-size-xxlarge);
+  --h1-big-kicker-color: var(--white);
+  --h1-big-deck-font-size: var(--font-size-big);
+  --h1-big-deck-color: var(--white);
+
+
+  /**
+   *  Defaults for h2
+   */
+
+  --h2-font-family: var(--font-stack-sans);
+  --h2-font-size: var(--font-size-xlarge);
+  --h2-font-weight: var(--font-weight-semi-bold);
+  --h2-font-style: normal;
+  --h2-line-height: 1.25;
+  --h2-color: var(--gray-ii);
+
+
+  /**
+   *  Defaults for h3
+   */
+
+  --h3-font-family: var(--font-stack-sans);
+  --h3-font-size: var(--font-size-large);
+  --h3-font-weight: var(--font-weight-medium);
+  --h3-font-style: normal;
+  --h3-line-height: 1.25;
+  --h3-color: var(--gray-ii);
+
+
+  /**
+   *  Defaults for h4
+   */
+
+  --h4-font-family: var(--text-font-family);
+  --h4-font-size: var(--text-font-size);
+  --h4-font-weight: var(--font-weight-medium);
+  --h4-font-style: italic;
+  --h4-line-height: var(--text-line-height);
+  --h4-color: var(--gray-ii);
+
+
+  /**
+   *  Defaults for h5
+   */
+
+  --h5-font-family: var(--text-font-family);
+  --h5-font-size: var(--text-font-size);
+  --h5-font-weight: var(--font-weight-semi-bold);
+  --h5-font-style: var(--text-font-style);
+  --h5-line-height: var(--text-line-height);
+  --h5-color: var(--text-color);
+
+
+  /**
+   *  Defaults for h6
+   */
+
+  --h6-font-family: var(--text-font-family);
+  --h6-font-weight: var(--font-weight-semi-bold);
+  --h6-font-style: var(--text-font-style);
+  --h6-color: var(--text-color);
+
+
+  /**
+   *  Defaults for table
+   */
+
+  --table-font-family: var(--font-stack-sans);
+  --table-font-size: var(--font-size-small);
+  --table-font-weight: var(--font-weight-normal);
+  --table-font-style: normal;
+  --table-heading-color: var(--white);
+  --table-heading-background-color: var(--gray-ii);
+  --table-row-odd-color: var(--gray-ii);
+  --table-row-odd-background-color: var(--almost-white);
+  --table-row-even-color: var(--gray-ii);
+  --table-row-even-background-color: var(--gray-x);
+  --table-row-hovering-color: var(--gray-ii);
+  --table-row-hovering-background-color: var(--gray-viii);
+  --table-cell-gutter: var(--space-xxsmall);
+  --table-cell-padding-vertical: var(--space-xsmall);
+  --table-cell-padding-horizontal: var(--space-small);
+  --table-shadow: var(--shadow);
+
+
+  /**
+   * Description list
+   */
+
+  --dl-term-font-family: var(--text-font-family);
+  --dl-term-font-size: var(--text-font-size);
+  --dl-term-font-weight: var(--font-weight-semi-bold);
+  --dl-term-font-style: var(--text-font-style);
+  --dl-term-line-height: var(--text-line-height);
+  --dl-term-color: var(--text-color);
+  --dl-description-font-family: var(--text-font-family);
+  --dl-description-font-size: var(--text-font-size);
+  --dl-description-font-weight: var(--text-font-weight);
+  --dl-description-font-style: var(--text-font-style);
+  --dl-description-line-height: var(--text-line-height);
+  --dl-description-color: var(--text-color);
+
+
+  /**
+   *  Default for caption
+   */
+
+  --caption-font-family: var(--font-stack-sans);
+  --caption-font-size: var(--font-size-xsmall);
+  --caption-font-weight: var(--font-weight-normal);
+  --caption-font-style: normal;
+
+
+  /**
+   * Defaults for blockquote
+   */
+  --blockquote-font-family: var(--text-font-family);
+  --blockquote-font-size: var(--font-size-larger);
+  --blockquote-font-weight: var(--font-weight-light);
+  --blockquote-font-style: italic;
+  --blockquote-bar: solid;
+  --blockquote-bar-width: var(--space-xsmall);
+  --blockquote-bar-color: var(--color-primary);
+  --blockquote-bar-indent: var(--space-medium);
+
+
+  /**
+   * Link colors
+   */
+  --link-color: var(--color-primary);
+  --link-hover-color: var(--color-primary-accentuated);
+
+
+  /**
+   * Button colors
+   */
+  --button-color: var(--white);
+  --button-background-color: var(--color-primary-accentuated);
+  --button-hover-color: var(--color-primary-accentuated);
+  --button-hover-background-color: var(--extra-white);
+
+
+  /**
+   * Monospace text
+   */
+  --monospace-background: var(--gray-x);
+
+
+  /**
+   * Pre-box
+   */
+
+  --pre-padding: var(--space-medium);
+  --pre-shadow: var(--shadow);
+
+
+  /**
+   * Defaults for lead
+   */
+  --lead-margin-top: var(--block-indent);
+  --lead-margin-bottom: var(--block-indent);
+  --lead-font-family: var(--text-font-family);
+  --lead-font-size: var(--text-font-size);
+  --lead-font-weight: var(--font-weight-bold);
+  --lead-font-style: var(--text-font-style);
+  --lead-color: var(--gray-iii);
+
+
+  /**
+   * Defaults for byline
+   */
+  --byline-vertical-padding: var(--space-xsmall);
+  --byline-border: 1px solid var(--gray-iii);
+  --byline-font-family: var(--font-stack-sans);
+  --byline-font-size: var(--font-size-small);
+  --byline-font-weight: var(--font-weight-normal);
+  --byline-font-style: normal;
+  --byline-color: var(--text-color);
+  --byline-separator: ' • ';
+
+
+  /**
+   * Defaults for images
+   */ 
+
+  --image-shadow: var(--shadow);
+
+
+}

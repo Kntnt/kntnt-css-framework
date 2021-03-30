@@ -1,0 +1,236 @@
+/**
+ * Kntnt CSS Framework – https://github.com/Kntnt/kntnt-css-framework
+ *
+ * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
+ * SPDX-License-Identifier: MIT
+ *
+ * IMPORTANT: Kntnt CSS Framwork (KCF) requires that Nicolas Gallagher's
+ * normalize.css (see https://necolas.github.io/normalize.css/) is loaed
+ * before any of the KCF files. A copy is included with the example.
+ * This stylesheet only provides additional normalization needed by KCF.
+ */
+
+
+
+/**
+ *  Responsive fonts
+ */
+
+:root {
+  font-size: var(--root-font-size);
+}
+
+
+/**
+ *  Include border and padding in claculation of width and height
+ */
+
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+
+/**
+ * Required for some things to work, including "pull", "sticky header"
+ * and "push footer to bottom".
+ */
+
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+
+/**
+ * Vertical spacing is based on the principle that block-level elements is
+ * responsible to keep vertical distance to adjacent block-level element
+ * predecessor and not have any other margins.
+ */
+
+address,
+article,
+aside,
+blockquote,
+dd,
+details,
+dialog,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hr,
+li,
+main,
+nav,
+ol,
+p,
+pre,
+section,
+table,
+ul {
+  margin: 0;
+}
+
+* + address,
+* + article,
+* + aside,
+* + blockquote,
+* + dd,
+* + details,
+* + dialog,
+* + div,
+* + dl,
+* + fieldset,
+* + figcaption,
+* + figure,
+* + footer,
+* + form,
+* + h1,
+* + h2,
+* + h3,
+* + h4,
+* + h5,
+* + h6,
+* + header,
+* + hr,
+* + li,
+* + main,
+* + nav,
+* + ol,
+* + p,
+* + pre,
+* + section,
+* + table,
+* + ul {
+  margin-top: var(--vertical-space-block);
+}
+
+p + p {
+  margin-top: var(--vertical-space-paragraph);
+}
+
+li + li {
+  margin-top: var(--vertical-space-list-item);    
+}
+
+dt + dd {
+  margin-top: var(--vertical-space-definition-item-heading);  
+}
+
+dd + dt {
+  margin-top: var(--vertical-space-definition-item);    
+}
+
+h1 + p {
+  margin-top: var(--vertical-space-paragraph-h1);  
+}
+
+h2 + p,
+h3 + p,
+h4 + p,
+h5 + p,
+h6 + p {
+  margin-top: var(--vertical-space-paragraph-heading);
+}
+
+
+/**
+ *  Fluid images.
+ */
+
+img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+
+/*
+ * Don't style content within <address>…</address>.
+ */
+
+address {
+  font-style: normal;
+}
+
+
+/*
+ * Make <small>, <big>, <sub>, <sup> use the constants.
+ */
+small {
+  font-size: var(--font-size-smaller);
+}
+
+big {
+  font-size: var(--font-size-larger);
+}
+
+sub {
+  font-size: var(--font-size-xsmaller);
+}
+
+sup {
+  font-size: var(--font-size-xsmaller);
+}
+
+
+/**
+ * Dont render an outlinr around an object with focus.
+ */
+
+:focus {
+  outline: none;
+}
+
+
+/**
+ *  Use smooth scroll for jumps on pages
+ */
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+
+/**
+ * Enable kerning and ligatures.
+ */
+body {
+    text-rendering: optimizeLegibility;
+}
+
+
+/**
+ *  Respect users requested to minimize the amount of animation or motion
+ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0. !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0 !important;
+    scroll-behavior: auto !important;
+  }
+}
