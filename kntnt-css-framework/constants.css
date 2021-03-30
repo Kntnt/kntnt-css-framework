@@ -80,14 +80,6 @@
   --space-xlarge: 4rem;
 
 
-   /**
-    * Overlays
-    */
-
-  --overlay-dark: rgba(0, 0, 0, 0.5);
-  --overlay-light: rgba(255, 255, 255, 0.5);
-
-
   /**
    * Drop shadow
    */
