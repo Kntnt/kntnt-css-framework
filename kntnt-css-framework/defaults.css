@@ -369,7 +369,7 @@
   /**
    * Monospace text
    */
-  --monospace-background: var(--gray-x);
+  --monospace-background: var(--darken-ix);
 
 
   /**

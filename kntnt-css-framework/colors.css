@@ -85,4 +85,31 @@
   --gray-x: hsl(0, 0%, 92%);
 
 
+  /**
+   * Darkeing
+   */
+  --darken-i: rgba(0,0,0,0.9);
+  --darken-ii: rgba(0,0,0,0.8);
+  --darken-iii: rgba(0,0,0,0.7);
+  --darken-iv: rgba(0,0,0,0.6);
+  --darken-v: rgba(0,0,0,0.5);
+  --darken-vi: rgba(0,0,0,0.4);
+  --darken-vii: rgba(0,0,0,0.3);
+  --darken-viii: rgba(0,0,0,0.2);
+  --darken-ix: rgba(0,0,0,0.1);
+
+  /**
+   * Lightening
+   */
+  --lighten-i: rgba(255, 255, 2550, 0.1);
+  --lighten-ii: rgba(255, 255, 2550, 0.2);
+  --lighten-iii: rgba(255, 255, 2550, 0.3);
+  --lighten-iv: rgba(255, 255, 2550, 0.4);
+  --lighten-v: rgba(255, 255, 2550, 0.5);
+  --lighten-vi: rgba(255, 255, 2550, 0.6);
+  --lighten-vii: rgba(255, 255, 2550, 0.7);
+  --lighten-viii: rgba(255, 255, 2550, 0.8);
+  --lighten-ix: rgba(255, 255, 2550, 0.9);
+
+
 }
