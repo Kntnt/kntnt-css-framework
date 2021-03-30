@@ -178,10 +178,10 @@ body > header pre,
 body > footer pre,
 body > header table,
 body > footer table,
-body > header ul
+body > header ul,
 body > footer ul {
+  max-width: none;
   margin-left: 0;
-  margin-right: 0;
 }
 
 body > header img,
