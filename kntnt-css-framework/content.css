@@ -504,3 +504,13 @@ del {
 ins {
     background-color: #d4fcbc;
 }
+
+
+/**
+ * Abbreviations and acronyms
+ */
+
+
+abbr {
+  cursor: help;
+}
