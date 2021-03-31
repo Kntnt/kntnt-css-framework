@@ -97,6 +97,46 @@
 
 
   /**
+   * Primary color is inteded for links and hovered buttons.
+   * YOU SHOULD OVERRIDE THIS ONE.
+   */
+
+   --color-primary: hsl(130, 70%, 30%);
+
+
+   /**
+    * Accentuated primary color is inteded for buttons and hovered links.
+    * YOU SHOULD OVERRIDE THIS ONE.
+    */
+
+   --color-primary-accentuated: hsl(130, 70%, 20%);
+
+
+   /**
+    * Dark color intended for panels.
+    * YOU SHOULD OVERRIDE THIS ONE.
+    */
+   --color-primary-dark: hsl(130, 30%, 50%);
+
+
+   /**
+    * Light color intended for panels.
+    * YOU SHOULD OVERRIDE THIS ONE.
+    */
+   --color-primary-light: hsl(130, 30%, 80%);
+
+
+  /**
+   * Alert colors inteded for error messages, alert boxes etcetera.
+   */
+
+  --color-alert: hsl(0, 80%, 40%);
+  --color-alert-accentuated: hsl(0, 100%, 60%);
+  --color-alert-dark: hsl(0, 80%, 30%);
+  --color-alert-light: hsl(0, 70%, 50%);
+
+
+  /**
    * Vertical spacing
    */
   --vertical-space-block: var(--space-large);
