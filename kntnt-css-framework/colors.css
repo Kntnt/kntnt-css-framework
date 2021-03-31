@@ -42,7 +42,7 @@
 
 
   /**
-   * Alert colors inteded forerror messages, alert boxes etcetera.
+   * Alert colors inteded for error messages, alert boxes etcetera.
    */
 
   --color-alert: hsl(0, 80%, 40%);
