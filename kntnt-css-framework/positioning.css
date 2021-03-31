@@ -4,9 +4,8 @@
  * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
  * SPDX-License-Identifier: MIT
  *
- * Use <aside>…</aside> to poistion and style the wrapped content.
- * 
- * Positioning of <aside>…</aside> is determined by classes:
+ * Position <img>, <pre>, <table>, <div>, <figure> and <aside>
+ * with following classes:
  *
  * |---------------------|------------------------------------------------|
  * | Class(es)           | Position                                       |
@@ -32,23 +31,6 @@
  * | margin left/right   | Aligned to left/right viewport edge with 1rem  |
  * |                     | distance and third column width                |
  * ----------------------|-------------------------------------------------
- *
- * Styling of <aside>…</aside> is determined by it's content and classes:
- *
- *   <aside> wrapps <img> with or without wrapping <figure>:
- *     The image is positioned
- *
- *   <aside> wrapps <table> with or without wrapping <figure>:
- *     The table is positioned
- *
- *   <aside> wrapps <blockquote> with or without wrapping <figure>:
- *     The quote is positioned and shown as pull quote
- *
- *   <aside> wrapps content that doesn't match above criteria:
- *     The content is positioned
- *
- *   <aside class="panel"> wrapps any content:
- *     The content is positioned and shwon as a panel
  */
 
 
@@ -56,8 +38,19 @@
  * Indented
  */
 
-main > * > * > aside:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin) {
-  display: inline-block;
+/**
+ * Blocks not in page header and footer.
+ */
+
+body > :not(header):not(footer) > * > * > blockquote:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+body > :not(header):not(footer) > * > * > div:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+body > :not(header):not(footer) > * > * > dl:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+body > :not(header):not(footer) > * > * > figure:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+body > :not(header):not(footer) > * > * > img:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+body > :not(header):not(footer) > * > * > ol:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+body > :not(header):not(footer) > * > * > pre:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+body > :not(header):not(footer) > * > * > table:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+body > :not(header):not(footer) > * > * > ul:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin) {
   max-width: calc(100% - 2 * var(--block-indent));
   margin-left: var(--block-indent);
 }
@@ -67,7 +60,12 @@ main > * > * > aside:not(.center):not(.wide):not(.protrude):not(.left):not(.righ
  * Center
  */
 
-main > * > * > aside.center {
+body > :not(header):not(footer) > * > * > img.center,
+body > :not(header):not(footer) > * > * > pre.center,
+body > :not(header):not(footer) > * > * > table.center,
+body > :not(header):not(footer) > * > * > div.center,
+body > :not(header):not(footer) > * > * > figure.center,
+body > :not(header):not(footer) > * > * > aside.center {
   max-width: calc(100% - 2 * var(--block-indent));
   margin-left: auto;
   margin-right: auto;
@@ -78,7 +76,12 @@ main > * > * > aside.center {
  * Wide
  */
 
-main > * > * > aside.wide {
+body > :not(header):not(footer) > * > * > img.wide,
+body > :not(header):not(footer) > * > * > pre.wide,
+body > :not(header):not(footer) > * > * > table.wide,
+body > :not(header):not(footer) > * > * > div.wide,
+body > :not(header):not(footer) > * > * > figure.wide,
+body > :not(header):not(footer) > * > * > aside.wide {
   width: 100%;
 }
 
@@ -87,7 +90,12 @@ main > * > * > aside.wide {
  * Wide protrude
  */
 
-main > * > * > aside.protrude:not(.left):not(.right) {  
+body > :not(header):not(footer) > * > * > img.protrude:not(.left):not(.right),
+body > :not(header):not(footer) > * > * > pre.protrude:not(.left):not(.right),
+body > :not(header):not(footer) > * > * > table.protrude:not(.left):not(.right),
+body > :not(header):not(footer) > * > * > div.protrude:not(.left):not(.right),
+body > :not(header):not(footer) > * > * > figure.protrude:not(.left):not(.right),
+body > :not(header):not(footer) > * > * > aside.protrude:not(.left):not(.right) {  
   width: auto; /* If used with wide */
   max-width: none; /* If used with center */
   margin-left: calc(0px - var(--row-protruding));
@@ -99,7 +107,12 @@ main > * > * > aside.protrude:not(.left):not(.right) {
  * Wide margin
  */
 
-main > * > * > aside.wide.margin {
+body > :not(header):not(footer) > * > * > img.wide.margin,
+body > :not(header):not(footer) > * > * > pre.wide.margin,
+body > :not(header):not(footer) > * > * > table.wide.margin,
+body > :not(header):not(footer) > * > * > div.wide.margin,
+body > :not(header):not(footer) > * > * > figure.wide.margin,
+body > :not(header):not(footer) > * > * > aside.wide.margin {
   max-width: 100vw;
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -111,25 +124,55 @@ main > * > * > aside.wide.margin {
  * Left/right
  */
 
-main > * > * > aside.left,
-main > * > * > aside.right {
+body > :not(header):not(footer) > * > * > img.left,
+body > :not(header):not(footer) > * > * > pre.left,
+body > :not(header):not(footer) > * > * > table.left,
+body > :not(header):not(footer) > * > * > div.left,
+body > :not(header):not(footer) > * > * > figure.left,
+body > :not(header):not(footer) > * > * > aside.left,
+body > :not(header):not(footer) > * > * > img.right,
+body > :not(header):not(footer) > * > * > pre.right,
+body > :not(header):not(footer) > * > * > table.right,
+body > :not(header):not(footer) > * > * > div.right,
+body > :not(header):not(footer) > * > * > figure.right,
+body > :not(header):not(footer) > * > * > aside.right {
   width: calc(50% - var(--vertical-space-block) / 2);
   margin-top: calc(1.5 * var(--vertical-space-paragraph));  
   margin-bottom: calc(0.5 * var(--vertical-space-paragraph));
 }
 
-main > * > * > aside.left {
+body > :not(header):not(footer) > * > * > img.left,
+body > :not(header):not(footer) > * > * > pre.left,
+body > :not(header):not(footer) > * > * > table.left,
+body > :not(header):not(footer) > * > * > div.left,
+body > :not(header):not(footer) > * > * > figure.left,
+body > :not(header):not(footer) > * > * > aside.left {
   float: left;
   margin-right: var(--vertical-space-block);
 }
 
-main > * > * > aside.right {
+body > :not(header):not(footer) > * > * > img.right,
+body > :not(header):not(footer) > * > * > pre.right,
+body > :not(header):not(footer) > * > * > table.right,
+body > :not(header):not(footer) > * > * > div.right,
+body > :not(header):not(footer) > * > * > figure.right,
+body > :not(header):not(footer) > * > * > aside.right {
   float: right;
   margin-left: var(--vertical-space-block);
 }
 
-main > * > * > aside.left + p,
-main > * > * > aside.right + p {
+body > :not(header):not(footer) > * > * > img.left + p,
+body > :not(header):not(footer) > * > * > pre.left + p,
+body > :not(header):not(footer) > * > * > table.left + p,
+body > :not(header):not(footer) > * > * > div.left + p,
+body > :not(header):not(footer) > * > * > figure.left + p,
+body > :not(header):not(footer) > * > * > aside.left + p,
+body > :not(header):not(footer) > * > * > img.right + p,
+body > :not(header):not(footer) > * > * > pre.right + p,
+body > :not(header):not(footer) > * > * > table.right + p,
+body > :not(header):not(footer) > * > * > div.right + p,
+body > :not(header):not(footer) > * > * > figure.right + p,
+body > :not(header):not(footer) > * > * > aside.right + p {
   margin-top: var(--vertical-space-paragraph);  
 }
 
@@ -138,11 +181,21 @@ main > * > * > aside.right + p {
  * Left/right protrude
  */
 
-main > * > * > aside.left.protrude {
+body > :not(header):not(footer) > * > * > img.left.protrude,
+body > :not(header):not(footer) > * > * > pre.left.protrude,
+body > :not(header):not(footer) > * > * > table.left.protrude,
+body > :not(header):not(footer) > * > * > div.left.protrude,
+body > :not(header):not(footer) > * > * > figure.left.protrude,
+body > :not(header):not(footer) > * > * > aside.left.protrude {
   margin-left: calc(0px - var(--row-protruding));
 }
 
-main > * > * > aside.right.protrude {
+body > :not(header):not(footer) > * > * > img.right.protrude,
+body > :not(header):not(footer) > * > * > pre.right.protrude,
+body > :not(header):not(footer) > * > * > table.right.protrude,
+body > :not(header):not(footer) > * > * > div.right.protrude,
+body > :not(header):not(footer) > * > * > figure.right.protrude,
+body > :not(header):not(footer) > * > * > aside.right.protrude {
   margin-right: calc(0px - var(--row-protruding));
 }
 
@@ -151,94 +204,70 @@ main > * > * > aside.right.protrude {
  * Left/right margin
  */
 
-main > * > * > aside.left.margin,
-main > * > * > aside.right.margin {
+body > :not(header):not(footer) > * > * > img.left.margin,
+body > :not(header):not(footer) > * > * > pre.left.margin,
+body > :not(header):not(footer) > * > * > table.left.margin,
+body > :not(header):not(footer) > * > * > div.left.margin,
+body > :not(header):not(footer) > * > * > figure.left.margin,
+body > :not(header):not(footer) > * > * > aside.left.margin,
+body > :not(header):not(footer) > * > * > img.right.margin,
+body > :not(header):not(footer) > * > * > pre.right.margin,
+body > :not(header):not(footer) > * > * > table.right.margin,
+body > :not(header):not(footer) > * > * > div.right.margin,
+body > :not(header):not(footer) > * > * > figure.right.margin,
+body > :not(header):not(footer) > * > * > aside.right.margin {
   --padding: min(var(--vertical-space-block), var(--row-padding));
   width: calc(100% / 3);
 }
 
-main > * > * > aside.left.margin {
+body > :not(header):not(footer) > * > * > img.left.margin,
+body > :not(header):not(footer) > * > * > pre.left.margin,
+body > :not(header):not(footer) > * > * > table.left.margin,
+body > :not(header):not(footer) > * > * > div.left.margin,
+body > :not(header):not(footer) > * > * > figure.left.margin,
+body > :not(header):not(footer) > * > * > aside.left.margin {
   margin-left: max(calc(-100% / 3 - var(--padding)), calc(50% - 50vw + var(--padding)));
 }
 
-main > * > * > aside.right.margin {
+body > :not(header):not(footer) > * > * > img.right.margin,
+body > :not(header):not(footer) > * > * > pre.right.margin,
+body > :not(header):not(footer) > * > * > table.right.margin,
+body > :not(header):not(footer) > * > * > div.right.margin,
+body > :not(header):not(footer) > * > * > figure.right.margin,
+body > :not(header):not(footer) > * > * > aside.right.margin {
   margin-right: max(calc(-100% / 3 - var(--padding)), calc(50% - 50vw + var(--padding)));
 }
+
+
 
 
 /**
  * Panel
  */
 
-main > * > * > aside.panel {
+body > :not(header):not(footer) > * > * > div:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+
+
+body > :not(header):not(footer) > * > * > div.panel:not() {
+  display: inline-block;
+}
+
+body > :not(header):not(footer) > * > * > div.panel {
   padding: var(--box-padding-text);
   box-shadow: var(--shadow);
 }
 
-main > * > * > aside.panel > * {
+body > :not(header):not(footer) > * > * > div.panel > * {
   font-size: var(--font-size-smaller);
 }
 
-main > * > * > aside.wide.margin.panel {
+body > :not(header):not(footer) > * > * > div.wide.margin.panel {
     padding: var(--row-padding);
 }
 
-main > * > * > aside.wide.margin.panel > * {
+body > :not(header):not(footer) > * > * > div.wide.margin.panel > * {
   width: 100%;
   max-width: calc(var(--content-width) + 2 * var(--row-protruding));
   margin-left: auto;
   margin-right: auto;
-}
-
-
-/**
- * Image
- */
-
-main > * > * > aside:not(.panel) > img,
-main > * > * > aside:not(.panel) > figure > img {
-  width: 100%
-  height: auto;
-}
-
-
-/**
- * Quote
- */
-
-main > * > * > aside:not(.panel) > blockquote,
-main > * > * > aside:not(.panel) > figure > blockquote {
-  margin: 0;
-}
-
-main > * > * > aside:not(.panel) > figure > blockquote + figcaption {
-  margin-left: calc(var(--blockquote-bar-width) + var(--blockquote-bar-indent));
-  margin-right: 0;
-}
-
-main > * > * > aside.wide.margin > blockquote,
-main > * > * > aside.wide.margin > figure > blockquote {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: calc(100% - 2 * var(--block-indent));
-}
-
-
-/**
- * Table
- */
-
-main > * > * > aside:not(.panel) > table,
-main > * > * > aside:not(.panel) > figure > table {
-  width: 100%;
-  margin: 0;
-}
-
-main > * > * > aside.wide.margin > table,
-main > * > * > aside.wide.margin > figure > table {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: calc(100% - 2 * var(--block-indent));
 }
