@@ -374,6 +374,8 @@ h1 > .deck {
  */
 
 .byline {
+  max-width: none;
+  margin-left: 0;
   padding: var(--byline-vertical-padding) 0;
   border-top: var(--byline-border);
   border-bottom: var(--byline-border);
