@@ -307,6 +307,7 @@ dl > dd:not(:first-child) {
  ul,
  ol {
   padding-inline-start: var(--box-padding);
+  line-height: var(--text-line-height);
  }
 
  li ul,
