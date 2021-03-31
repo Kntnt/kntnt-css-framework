@@ -7,14 +7,23 @@
 
 
 /**
- * Floats and clearfixes
+ * Don't allow floats to wrap headers if not explicit allowed.
  */
 
-.wrap-float {
-  clear: none !important;
+h1:not(.wrap), 
+h2:not(.wrap), 
+h3:not(.wrap), 
+h4:not(.wrap), 
+h5:not(.wrap) {
+  clear: both;
 }
 
-.no-wrap-float {
+
+/**
+ * Don't allow floats to wrap.
+ */
+
+.no-wrap {
   clear: both !important;
 }
 
