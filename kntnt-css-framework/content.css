@@ -146,51 +146,23 @@ p + h6 + p {
  * Blocks not in page header and footer.
  */
 
-blockquote,
-dl,
-figure,
-img,
-ol,
-pre,
-table,
-ul {
+body > :not(header):not(footer) > * > * > blockquote,
+body > :not(header):not(footer) > * > * > div,
+body > :not(header):not(footer) > * > * > dl,
+body > :not(header):not(footer) > * > * > figure,
+body > :not(header):not(footer) > * > * > img,
+body > :not(header):not(footer) > * > * > ol,
+body > :not(header):not(footer) > * > * > pre,
+body > :not(header):not(footer) > * > * > table,
+body > :not(header):not(footer) > * > * > ul {
   max-width: calc(100% - 2 * var(--block-indent));
   margin-left: var(--block-indent);
 }
 
-img,
-pre,
-table {
+body > :not(header):not(footer) > * > * > img,
+body > :not(header):not(footer) > * > * > pre,
+body > :not(header):not(footer) > * > * > table {
   box-shadow: var(--pre-shadow);
-}
-
-body > header blockquote,
-body > footer blockquote,
-body > header dl,
-body > footer dl,
-body > header figure,
-body > footer figure,
-body > header img,
-body > footer img,
-body > header ol,
-body > footer ol,
-body > header pre,
-body > footer pre,
-body > header table,
-body > footer table,
-body > header ul,
-body > footer ul {
-  max-width: none;
-  margin-left: 0;
-}
-
-body > header img,
-body > footer img,
-body > header pre,
-body > footer pre,
-body > header table,
-body > footer table {
-  box-shadow: none;
 }
 
 
