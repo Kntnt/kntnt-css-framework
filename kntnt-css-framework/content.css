@@ -528,3 +528,12 @@ abbr[title]:active:after {
   background: var(--kbd-tooltip-color-background);
   box-shadow: var(--shadow);
 }
+
+
+/**
+ * Markup
+ */
+
+mark {
+  background-color: var(--mark-color-background);
+}
