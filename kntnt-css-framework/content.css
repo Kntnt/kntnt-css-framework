@@ -143,21 +143,8 @@ p + h6 + p {
 
 
 /**
- * Blocks not in page header and footer.
+ * Shadows on <img>, <pre> and <table>
  */
-
-body > :not(header):not(footer) > * > * > blockquote,
-body > :not(header):not(footer) > * > * > div,
-body > :not(header):not(footer) > * > * > dl,
-body > :not(header):not(footer) > * > * > figure,
-body > :not(header):not(footer) > * > * > img,
-body > :not(header):not(footer) > * > * > ol,
-body > :not(header):not(footer) > * > * > pre,
-body > :not(header):not(footer) > * > * > table,
-body > :not(header):not(footer) > * > * > ul {
-  max-width: calc(100% - 2 * var(--block-indent));
-  margin-left: var(--block-indent);
-}
 
 body > :not(header):not(footer) > * > * > img,
 body > :not(header):not(footer) > * > * > pre,
