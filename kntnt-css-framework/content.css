@@ -479,11 +479,11 @@ hr.fleuron::after {
  */
 
 kbd {
-	background-color: #eee;
+	background-color: var(--color-kbd-background);
 	border-radius: 3px;
 	border: 1px solid #b4b4b4;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
-	color: #333;
+	color: var(--color-kbd);
 	display: inline-block;
 	font-size: .85em;
 	font-weight: 700;
@@ -498,11 +498,11 @@ kbd {
  */
 
 del {
-    background-color: #fbb;
+    background-color: var(--color-del)
 }
 
 ins {
-    background-color: #d4fcbc;
+    background-color: var(--color-ins);
 }
 
 
@@ -511,6 +511,20 @@ ins {
  */
 
 
-abbr {
+abbr[title] {
+  position: relative;
   cursor: help;
+}
+
+abbr[title]:focus:after,
+abbr[title]:active:after {
+  content: attr(title);
+  position: absolute;
+  top: 3.75em;
+  left: 1em;
+  padding: 2px;
+  font-size: 50%;
+  white-space: nowrap;
+  background: var(--color-tooltip);
+  box-shadow: var(--shadow);
 }
