@@ -312,6 +312,16 @@ h5:not(.wrap) {
 }
 
 
+.darken {
+  background-color: var(--darken-ix);
+}
+
+.lighen {
+  background-color: var(--lighten-ix);
+}
+
+
+
 /**
  *  Box-shadow
  */
