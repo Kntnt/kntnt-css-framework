@@ -485,11 +485,11 @@ kbd {
  */
 
 del {
-    background-color: var(--del-color-background)
+    background-color: var(--color-negative)
 }
 
 ins {
-    background-color: var(--ins-color-background);
+    background-color: var(--color-positive);
 }
 
 
