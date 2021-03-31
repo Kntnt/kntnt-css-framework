@@ -758,10 +758,65 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 </code></pre>
 <p>The result is a discreet marking of the abbreviation, indicating that the users can hover over the abbreviation to see an explanation in a tooltip.</p>
 <div><p><abbr title="HyperText Markup Language">HTML</abbr> is a markup language used to create the semantics and structure of a web page.</p></div>
-<h2>Positioning and sizing</h2>
-<p>TODO</p>
-<h2>Aside</h2>
-<p>TODO</p>
+<h2>Positioning</h2>
+<p>KCF gives you the opportunity to influence the width and position of a piece of content and thereby create pull quotes, calboxes and what not. This option applies to elements listed below provided they are not wrapped by anything.</p>
+<ul>
+<li>blockquote</li>
+<li>div</li>
+<li>dl</li>
+<li>figure</li>
+<li>img</li>
+<li>ol</li>
+<li>pre</li>
+<li>table</li>
+<li>ul</li>
+</ul>
+<p>By default, they are positioned between paragraphs with indentation. By applying one of the classes in the table below, their size and position will change.</p>
+<figure><table>
+<thead>
+<tr><th>Class(es)</th><th>Position</th></tr></thead>
+<tbody><tr><td>(no class)</td><td>Indented from column&#39;s left, taking up as much horizontal space as needed with respect to indention from column&#39;s right.</td></tr><tr><td>center</td><td>Centered column&#39;s left and right indention.</td></tr><tr><td>wide</td><td>Stretched as wide as the column</td></tr><tr><td>protrude wide</td><td>Stretched as wide as header/footer</td></tr><tr><td>margin wide</td><td>Stretched between viewport edges</td></tr><tr><td>left/right</td><td>Aligned to left/right column edge with half column width</td></tr><tr><td>protrude left/right</td><td>Aligned to left/right header/footer edge with half column width</td></tr><tr><td>margin left/right</td><td>Aligned to left/right viewport edge with 1rem distance and third column width</td></tr></tbody>
+</table></figure>
+<p>Below follows demonstrations of all classes.</p>
+<h5>Class <code>center</code></h5>
+<div class="center hint-of-mint panel min-content-no-wrap-center"><span>center</span></div>
+<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<h5>Class: <code>wide</code></h5>
+<div class="wide creamy-peach panel min-content-no-wrap-center"><span>wide</span></div>
+<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<h5>Class: <code>protrude wide</code></h5>
+<div class="protrude wide milky-yellow panel min-content-no-wrap-center"><span>protrude wide</span></div>
+<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<h5>Class: <code>margin wide</code></h5>
+<div class="margin wide lilac-haze panel min-content-no-wrap-center"><span>margin wide</span></div>
+<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<h5>Class: <code>left</code></h5>
+<div class="left cloudy-blue panel min-content-no-wrap-center"><span>left</span></div>
+<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<h5>Class: <code>right</code></h5>
+<div class="right dash-of-lime panel min-content-no-wrap-center"><span>right</span></div>
+<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<h5>Class: <code>protrude left</code></h5>
+<div class="protrude left mellow-coral-red panel min-content-no-wrap-center"><span>protrude left</span></div>
+<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<h5>Class: <code>protrude right</code></h5>
+<div class="protrude right cherry-blossom-pink panel min-content-no-wrap-center"><span>protrude right</span></div>
+<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<h5>Class: <code>left margin</code></h5>
+<div class="left margin pale-orange panel min-content-no-wrap-center"><span>left margin</span></div>
+<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<h5>Class: <code>right margin</code></h5>
+<div class="right margin breezy-blue panel min-content-no-wrap-center"><span>right margin</span></div>
+<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+
+
+
+
+
+
+
+
+
 <h2>Dealing with floats</h2>
 <p>TODO</p>
 <h2>Horizontal lines and dinkuses</h2>

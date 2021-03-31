@@ -109,3 +109,9 @@
   margin-top: var(--space-xxsmall);
 }
 
+.min-content-no-wrap-center {
+  width: min-content;
+  min-width: 20vw;
+  white-space: nowrap;
+  text-align: center;
+}
