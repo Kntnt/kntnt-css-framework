@@ -674,17 +674,14 @@
 <li>Transliterations</li>
 <li>Thoughts (such as &quot;She wondered, <em>What is this writer talking about, anyway?</em>&quot;)</li>
 <li>Ship or vessel names in Western writing systems (such as &quot;They searched the docks for the <em>Empress of the Galaxy</em>, the ship to which they were assigned.&quot;)</li>
-
 </ul>
 </li>
-
 </ul>
 <h5><code>&lt;strong&gt;</code> and <code>&lt;b&gt;</code></h5>
 <p>Two HTML elements are rendering their wrapped content with boldface but with different semantic meaning:</p>
 <ul>
 <li>Use <code>&lt;strong&gt;…&lt;/strong&gt;</code> to markup a word or a phrase that need <strong>strong emphasis</strong>. Example: <strong>Warning:</strong> The coffee is hot.</li>
 <li>Use <code>&lt;b&gt;…&lt;/b&gt;</code> to <b>bring attention to</b> to the marked up word or phrase. <cite><a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i'>MDN Web Docs</a></cite> suggest using it for cases like keywords in summary, product names in a review, or other spans of text whose typical presentation would be boldfaced (but not including any special importance).</li>
-
 </ul>
 <h5><code>&lt;mark&gt;</code></h5>
 <p>If you need to <mark>mark or highlight</mark> a portion of a text, wrap it with <code>&lt;mark&gt;…&lt;/mark&gt;</code>.</p>
@@ -758,7 +755,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 <p>The result is a discreet marking of the abbreviation, indicating that the users can hover over the abbreviation to see an explanation in a tooltip.</p>
 <div><p><abbr title="HyperText Markup Language">HTML</abbr> is a markup language used to create the semantics and structure of a web page.</p></div>
 <h2>Positioning</h2>
-<p>KCF gives you the opportunity to influence the width and position of a block of content and thereby create pull quotes, calboxes and what not. 
+<p>KCF gives you the opportunity to influence the width and position of a block of content and thereby create pull quotes, calboxes and more.
 <p>By default, blocks are positioned between paragraphs with indentation. By applying one of the classes in the table below, their size and position will change.</p>
 <figure><table>
 <thead>
@@ -822,20 +819,25 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 <div class="right margin breezy-blue panel min-content-no-wrap-center"><span>right margin</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
 <p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
-<h3>Demonstration of various blocks</h3>
-<p>The position classes can be applied following elements provided they are not themselves wrapped by anything.</p>
+<h3>Conditions for positioning to happen</h3>
+<p>The positioning classes above must only be used on following elements:</p>
 <ul>
-<li><code>&lt;aside&gt;…&lt;/aside&gt;</code></li>
 <li><code>&lt;blockquote&gt;…&lt;/blockquote&gt;</code></li>
-<li><code>&lt;div&gt;…&lt;/div&gt;</code></li>
-<li><code>&lt;dl&gt;…&lt;/dl&gt;</code></li>
-<li><code>&lt;figure&gt;…&lt;/figure&gt;</code></li>
-<li><code>&lt;img&gt;</code></li>
-<li><code>&lt;ol&gt;…&lt;\ol&gt;</code></li>
-<li><code>&lt;pre&gt;…&lt;/pre&gt;</code></li>
-<li><code>&lt;table&gt;…&lt;/table&gt;</code></li>
 <li><code>&lt;ul&gt;…&lt;\ul&gt;</code></li>
+<li><code>&lt;ol&gt;…&lt;\ol&gt;</code></li>
+<li><code>&lt;dl&gt;…&lt;/dl&gt;</code></li>
+<li><code>&lt;table&gt;…&lt;/table&gt;</code></li>
+<li><code>&lt;pre&gt;…&lt;/pre&gt;</code></li>
+<li><code>&lt;img&gt;</code></li>
+<li><code>&lt;figure&gt;…&lt;/figure&gt;</code></li>
+<li><code>&lt;aside&gt;…&lt;/aside&gt;</code></li>
+<li><code>&lt;div&gt;…&lt;/div&gt;</code></li>
 </ul>
+<p>Moreover, the positioning classes above must only be used on an element that is not wrappen by any other element. Thus, following example is not valid:</p>
+<pre class="negative panel"><code>&lt;figure&gt;&lt;img <span class="darken">class="wide"</span> … &gt;&lt;/figure&gt;</code></pre>
+<p>However, following is valid and will produce the expected result:</p>
+<pre class="positive panel"><code>&lt;figure <span class="darken">class="wide"</span>&gt;&lt;img … &gt;&lt;/figure&gt;</code></pre>
+<h3>Demonstration of various blocks</h3>
 <p>Below, you find examples demonstrating positioning of block content.</p>
 <h5>Block: <code>&lt;blockquote&gt;</code></h5>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
