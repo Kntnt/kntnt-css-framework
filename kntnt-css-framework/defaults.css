@@ -103,7 +103,7 @@
   --vertical-space-paragraph: var(--space-medium);
   --vertical-space-paragraph-h1: var(--space-medium);
   --vertical-space-paragraph-heading: var(--space-xsmall);
-  --vertical-space-list-item:var(--space-small);
+  --vertical-space-list-item:var(--space-medium);
   --vertical-space-dl-term: var(--space-medium);
   --vertical-space-dl-description: var(--space-xsmall);
   --vertical-space-caption: var(--space-xsmall);
