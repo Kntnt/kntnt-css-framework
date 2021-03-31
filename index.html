@@ -317,10 +317,10 @@
 <pre><code>&lt;dl&gt;
 
   &lt;dt&gt;Aroma&lt;/dt&gt;
-  &lt;dd&gt;Aroma is round in shape and has a greenish-yellow to yellow colour with red streaks. Aroma ripens in late September through December and sometimes longer. Suitable for growing in zones 1-4.&lt;/dd&gt;
+  &lt;dd&gt;Aroma is round in shape and has a greenish-yellow to yellow color with red streaks. Aroma ripens in late September through December and sometimes longer. Suitable for growing in zones 1-4.&lt;/dd&gt;
 
   &lt;dt&gt;Katja&lt;/dt&gt;
-  &lt;dd&gt;The size is medium, and the colour is green to yellow. If the fruit has been in the sun, it can be almost completely covered in a warm red colour. Katja matures from August to November and is suitable for growing in zones 1-4.&lt;/dd&gt;
+  &lt;dd&gt;The size is medium, and the color is green to yellow. If the fruit has been in the sun, it can be almost completely covered in a warm red color. Katja matures from August to November and is suitable for growing in zones 1-4.&lt;/dd&gt;
   
   &lt;dt&gt;Transparente blanche&lt;/dt&gt;
   &lt;dd&gt;The color is yellowish white and medium in size. The apple ripens from mid-August and can be grown in zones 1-6&lt;/dd&gt;
@@ -501,7 +501,7 @@
 <h2>Images</h2>
 <p>There are a lot to say about images on the web. That is, however, out of scope of this artcile. Its purpose is to show how to use KCF. But I will offer some advice:</p>
 <h4>Image file format</h4>
-<p>Use WebP or JPEG for photographs. Use WebP, PNG-8 or GIF for illustrations with few colours, no large tinted surfaces or alpha channel. Use WebP or PNG-24 for illustrations with many colours, large tinted surfaces or alpha channel.</p>
+<p>Use WebP or JPEG for photographs. Use WebP, PNG-8 or GIF for illustrations with few colors, no large tinted surfaces or alpha channel. Use WebP or PNG-24 for illustrations with many colors, large tinted surfaces or alpha channel.</p>
 <h4>Crop</h4>
 <p>As a rule of thumb, crop images to the classic proportions of 3:2 (landscape) or 2:3 (portrait) if you don&#39;t need a more specific crop.</p>
 <h4>Resizing</h4>
@@ -725,7 +725,6 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 <li>Use <code>&lt;code&gt;…&lt;/code&gt;</code> to markup short fragment of <code>computer code</code>. Example: The tag <code>&lt;br&gt;</code> represents line feed.</li>
 <li>Use <code>&lt;kbd&gt;…&lt;/kbd&gt;</code> to illustrate <kbd>k</kbd><kbd>e</kbd><kbd>y</kbd><kbd>s</kbd> on the keyboard. Example: Press <kbd>⌘</kbd> + <kbd>S</kbd> to save.</li>
 <li>Use <code>&lt;samp&gt;…&lt;/samp&gt;</code> to represent a sample output from a computer. Example: If you see <samp>Error</samp> on the screen, something went wrong.</li>
-
 </ul>
 <h5><code>&lt;pre&gt;</code></h5>
 <p>To represent longer text that must appear exactly as preformatted – as if it were written on a typewriter – use <code>&lt;pre&gt;…&lt;/pre&gt;</code>.</p>
@@ -759,72 +758,208 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 <p>The result is a discreet marking of the abbreviation, indicating that the users can hover over the abbreviation to see an explanation in a tooltip.</p>
 <div><p><abbr title="HyperText Markup Language">HTML</abbr> is a markup language used to create the semantics and structure of a web page.</p></div>
 <h2>Positioning</h2>
-<p>KCF gives you the opportunity to influence the width and position of a piece of content and thereby create pull quotes, calboxes and what not. This option applies to elements listed below provided they are not themselves wrapped by anything.</p>
-<ul>
-<li>blockquote</li>
-<li>div</li>
-<li>dl</li>
-<li>figure</li>
-<li>img</li>
-<li>ol</li>
-<li>pre</li>
-<li>table</li>
-<li>ul</li>
-</ul>
-<p>By default, they are positioned between paragraphs with indentation. By applying one of the classes in the table below, their size and position will change.</p>
+<p>KCF gives you the opportunity to influence the width and position of a block of content and thereby create pull quotes, calboxes and what not. 
+<p>By default, blocks are positioned between paragraphs with indentation. By applying one of the classes in the table below, their size and position will change.</p>
 <figure><table>
 <thead>
 <tr><th>Class(es)</th><th>Position</th></tr></thead>
 <tbody><tr><td>(no class)</td><td>Indented from column&#39;s left, taking up as much horizontal space as needed with respect to indention from column&#39;s right.</td></tr><tr><td>center</td><td>Centered column&#39;s left and right indention.</td></tr><tr><td>wide</td><td>Stretched as wide as the column</td></tr><tr><td>protrude wide</td><td>Stretched as wide as header/footer</td></tr><tr><td>margin wide</td><td>Stretched between viewport edges</td></tr><tr><td>left/right</td><td>Aligned to left/right column edge with half column width</td></tr><tr><td>protrude left/right</td><td>Aligned to left/right header/footer edge with half column width</td></tr><tr><td>margin left/right</td><td>Aligned to left/right viewport edge with 1rem distance and third column width</td></tr></tbody>
 </table></figure>
-<p>Below follows demonstrations of all classes.</p>
+<h3>Demonstration of postioning classes</h3>
+<p>Below, you find examples of application of each class. Please check it on vary sceen sizes.</p>
 <h5>Class: <code>(no class)</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="touch-of-torqouise panel min-content-no-wrap-center"><span>(no class)</span></div>
-<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
+<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>center</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="center hint-of-mint panel min-content-no-wrap-center"><span>center</span></div>
-<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
+<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>wide</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="wide creamy-peach panel min-content-no-wrap-center"><span>wide</span></div>
-<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
+<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>protrude wide</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="protrude wide milky-yellow panel min-content-no-wrap-center"><span>protrude wide</span></div>
-<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
+<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>margin wide</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="margin wide lilac-haze panel min-content-no-wrap-center"><span>margin wide</span></div>
-<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
+<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>left</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="left cloudy-blue panel min-content-no-wrap-center"><span>left</span></div>
-<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
+<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>right</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="right dash-of-lime panel min-content-no-wrap-center"><span>right</span></div>
-<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
+<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>protrude left</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="protrude left mellow-coral-red panel min-content-no-wrap-center"><span>protrude left</span></div>
-<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
+<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>protrude right</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="protrude right cherry-blossom-pink panel min-content-no-wrap-center"><span>protrude right</span></div>
-<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
+<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>left margin</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="left margin pale-orange panel min-content-no-wrap-center"><span>left margin</span></div>
-<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
+<p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
+<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>right margin</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="right margin breezy-blue panel min-content-no-wrap-center"><span>right margin</span></div>
-<p>When editing, this paragraph followed directly after the code that creates the "panel" you see. The code used to create the panel can be seen within it. The important thing here is neither the class panel nor the imaginative name of the colour that precedes it. The important thing is the class or classes that come first. These or these decide how big the panel will be and where it will be placed.</p>
-
-
-
-
-
-
-
-
-
-
-
+<p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
+<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
+<h3>Demonstration of various blocks</h3>
+<p>The position classes can be applied following elements provided they are not themselves wrapped by anything.</p>
+<ul>
+<li><code>&lt;aside&gt;…&lt;/aside&gt;</code></li>
+<li><code>&lt;blockquote&gt;…&lt;/blockquote&gt;</code></li>
+<li><code>&lt;div&gt;…&lt;/div&gt;</code></li>
+<li><code>&lt;dl&gt;…&lt;/dl&gt;</code></li>
+<li><code>&lt;figure&gt;…&lt;/figure&gt;</code></li>
+<li><code>&lt;img&gt;</code></li>
+<li><code>&lt;ol&gt;…&lt;\ol&gt;</code></li>
+<li><code>&lt;pre&gt;…&lt;/pre&gt;</code></li>
+<li><code>&lt;table&gt;…&lt;/table&gt;</code></li>
+<li><code>&lt;ul&gt;…&lt;\ul&gt;</code></li>
+</ul>
+<p>Below, you find examples demonstrating positioning of block content.</p>
+<h5>Block: <code>&lt;blockquote&gt;</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
+<blockquote class="right">Life is a long lesson in humility</blockquote>
+<p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
+<p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
+<h5>Block: <code>&lt;ul&gt;</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
+<ul class="right margin">
+  <li>Oscar II</li>
+  <li>Gustav V</li>
+  <li>Gustav VI Adolf</li>
+  <li>Carl XVI Gustaf</li>
+</ul>
+<p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
+<p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
+<h5>Block: <code>&lt;ol&gt;</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
+<ol class="right">
+  <li>Dance You Off med Benjamin Ingrosso</li>
+  <li>Every Single Day med Felix Sandman</li>
+  <li>My Turn med John Lundvik</li>
+</ol>
+<p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
+<p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
+<h5>Block: <code>&lt;dl&gt;</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
+<dl class="center lilac-haze panel">
+  <dt>Aroma</dt>
+  <dd>Aroma is round in shape and has a greenish-yellow to yellow color with red streaks. Aroma ripens in late September through December and sometimes longer. Suitable for growing in zones 1-4.</dd>
+  <dt>Katja</dt>
+  <dd>The size is medium, and the color is green to yellow. If the fruit has been in the sun, it can be almost completely covered in a warm red color. Katja matures from August to November and is suitable for growing in zones 1-4.</dd>
+  <dt>Transparente blanche</dt>
+  <dd>The color is yellowish white and medium in size. The apple ripens from mid-August and can be grown in zones 1-6</dd>
+</dl>
+<p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
+<p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
+<h5>Block: <code>&lt;table&gt;</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
+<table class="left">
+    <caption>Population in Sweden's three smallest municipalities</caption>
+    <thead>
+        <tr>
+            <td>Municipality</td>
+            <td>Population</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Bjurholm</td>
+            <td>2 387</td>
+        </tr>
+        <tr>
+            <td>Sorsele</td>
+            <td>2 442</td>
+        </tr>
+        <tr>
+            <td>Dorotea</td>
+            <td>2 498</td>
+        </tr>
+    </tbody>
+</table>
+<p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
+<p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
+<h5>Block: <code>&lt;pre&gt;</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
+<pre class="right hint-of-mint panel">   ----------------------------
+  | I'm an expert in my field. |
+   ----------------------------
+           \   ^__^
+            \  (oo)\_______
+               (__)\       )\/\
+                   ||----w |
+                   ||     ||
+</pre>
+<p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
+<p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
+<h5>Block: <code>&lt;img&gt;</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
+<img class ="protrude wide"
+     srcset="images/image-225.jpg 225w,
+             images/image-300.jpg 300w,
+             images/image-450.jpg 450w,
+             images/image-600.jpg 600w,
+             images/image-900.jpg 900w,
+             images/image-1060.jpg 1060w,
+             images/image-1920.jpg 1920w" sizes="(max-width: 1920px) 100vw, 1920px" src="images/image-1920.jpg" loading="lazy" alt="Hot air balloon over sea at blue hour">
+<p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
+<p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
+<h5>Block: <code>&lt;figure&gt;</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
+<aside class="center margin panel">
+  <h2>When to use &lt;figure&gt;</h2>
+  <p>Use &lt;aside&gt;…&lt;/figure&gt; to wrap content that is referenced in the main content, but that can be moved outside the main content without affecting it.</p>
+  <p>The outline, padding and smaller font size are due to the class <code>panel</code> presented below. </p>
+  <p>The color of the background is determined by one of the color classes explained below.</p>
+</aside>
+<p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
+<p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
+<h5>Block: <code>&lt;aside&gt;</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
+<aside class="protrude right frozen-fuchsia panel">
+  <h2>When to use &lt;aside&gt;</h2>
+  <p>Use <code>&lt;aside&gt;…&lt;/aside&gt;</code> to wrap content that is only indirectly related to the main content.</p>
+  <p>The outline, padding and smaller font size are due to the class <code>panel</code> presented below. </p>
+  <p>The color of the background is determined by one of the color classes explained below.</p>
+</aside>
+<p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
+<p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
+<h5>Block: <code>&lt;div&gt;</code></h5>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
+<aside class="wide milky-yellow panel">
+  <h2>When to use &lt;div&gt;</h2>
+  <p>Use &lt;div&gt;…&lt;/div&gt; to position content that semantic should not be positioned with <code>&lt;figure&gt;…&lt;/figure&gt;</code> or <code>&lt;aside&gt;…&lt;/aside&gt;</code> but requires a wrapper because it consists of either multiple elements (like this callout) or a single element that cannot be positioned (e.g. <code>&lt;samp&gt;…&lt;/samp&gt;</code>).</p>
+  <p>The border, padding and smaller font size are due to the class <code>panel</code> presented below.</p>
+  <p>The color of the background is determined by one of the color classes explained below.</p>
+</aside>
+<p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
+<p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
 <h2>Dealing with floats</h2>
 <p>TODO</p>
 <h2>Horizontal lines and dinkuses</h2>
+<p>TODO</p>
+<h2>Color classes</h2>
 <p>TODO</p>
 <h2>Miscellaneous classes</h2>
 <p>TODO</p>
