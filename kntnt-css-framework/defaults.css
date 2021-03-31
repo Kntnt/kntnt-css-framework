@@ -452,4 +452,21 @@
   --image-shadow: var(--shadow);
 
 
+  /**
+   * Defaults for <del> and <ins>
+   */
+   
+   --del-color-background: #d4fcbc;
+   --ins-color-background: #fbb;
+   
+
+   /**
+    * Defaults fro <kbd>
+    */
+
+   --kbd-color: var(--gray-ii);
+   --kbd-color-background: var(--gray-x);
+   --kbd-tooltip-color-background: var(--gray-x);
+
+
 }
