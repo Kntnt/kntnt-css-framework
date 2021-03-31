@@ -30,106 +30,275 @@
 
 
 /**
- * Colors
+ * Colors for panels (typically used on <div>, <figuere>, <aside> and
+ * <section>) and highlighted text (typically used on <span> and <mark>).
  */
 
-.black {
-  color: var(--black);
-}
-
-.white {
-  color: var(--white);
-}
-
-.gray-dark {
-  color: var(--gray-ii);
-}
-
-.gray-light {
-  color: var(--gray-ix);
-}
-
-.color-primary {
-  color: var(--color-primary);
-}
-
-.color-primary-dark {
-  color: var(--color-primary-dark);
-}
-
-.color-primary-light {
-  color: var(--color-primary-light);
-}
-
-.error,
-.color-alert {
-  color: var(--color-alert);
-}
-
-.color-alert-dark {
-  color: var(--color-alert-dark);
-}
-
-.color-alert-light {
-  color: var(--color-alert-light);
-}
-
-
-/**
- * Panels
- */
-
-.panel,
-.panel.transparent {
-  background-color: transparent;
+.panel.yellow
+.highlighted.yellow {
   color: inherit;
+  background-color: var(--yellow);
 }
 
-.panel.black {
+.panel.blue
+.highlighted.blue {
+  color: inherit;
+  background-color: var(--blue);
+}
+
+.panel.green
+.highlighted.green {
+  color: inherit;
+  background-color: var(--green);
+}
+
+.panel.red
+.highlighted.red {
+  color: inherit;
+  background-color: var(--red);
+}
+
+.panel.torquoise
+.highlighted.torquoise {
+  color: inherit;
+  background-color: var(--torquoise);
+}
+
+.panel.orange
+.highlighted.orange {
+  color: inherit;
+  background-color: var(--orange);
+}
+
+.panel.lavender
+.highlighted.lavender {
+  color: inherit;
+  background-color: var(--lavender);
+}
+
+.panel.pink
+.highlighted.pink {
+  color: inherit;
+  background-color: var(--pink);
+}
+
+.panel.lilac
+.highlighted.lilac {
+  color: inherit;
+  background-color: var(--lilac);
+}
+
+.panel.touch-of-torqouise
+.highlighted.touch-of-torqouise {
+  color: inherit;
+  background-color: var(--touch-of-torqouise);
+}
+
+.panel.hint-of-mint
+.highlighted.hint-of-mint {
+  color: inherit;
+  background-color: var(--hint-of-mint);
+}
+
+.panel.creamy-peach
+.highlighted.creamy-peach {
+  color: inherit;
+  background-color: var(--creamy-peach);
+}
+
+.panel.pink-blush
+.highlighted.pink-blush {
+  color: inherit;
+  background-color: var(--pink-blush);
+}
+
+.panel.milky-yellow
+.highlighted.milky-yellow {
+  color: inherit;
+  background-color: var(--milky-yellow);
+}
+
+.panel.lilac-haze
+.highlighted.lilac-haze {
+  color: inherit;
+  background-color: var(--lilac-haze);
+}
+
+.panel.cloudy-blue
+.highlighted.cloudy-blue {
+  color: inherit;
+  background-color: var(--cloudy-blue);
+}
+
+.panel.dash-of-lime
+.highlighted.dash-of-lime {
+  color: inherit;
+  background-color: var(--dash-of-lime);
+}
+
+.panel.mellow-coral-red
+.highlighted.mellow-coral-red {
+  color: inherit;
+  background-color: var(--mellow-coral-red);
+}
+
+.panel.cherry-blossom-pink
+.highlighted.cherry-blossom-pink {
+  color: inherit;
+  background-color: var(--cherry-blossom-pink);
+}
+
+.panel.dusty-grey
+.highlighted.dusty-grey {
+  color: inherit;
+  background-color: var(--dusty-grey);
+}
+
+.panel.pale-orange
+.highlighted.pale-orange {
+  color: inherit;
+  background-color: var(--pale-orange);
+}
+
+.panel.breezy-blue
+.highlighted.breezy-blue {
+  color: inherit;
+  background-color: var(--breezy-blue);
+}
+
+.panel.frozen-fuchsia
+.highlighted.frozen-fuchsia {
+  color: inherit;
+  background-color: var(--frozen-fuchsia);
+}
+
+.panel.black
+.highlighted.black {
+  color: var(--white);
   background-color: var(--black);
-  color: var(--white);
 }
 
-.panel.white {
+.panel.extra-black
+.highlighted.extra-black {
+  color: var(--extra-white);
+  background-color: var(--extra-black);
+}
+
+.panel.almost-black
+.highlighted.almost-black {
+  color: var(--almost-white);
+  background-color: var(--almost-black);
+}
+
+.panel.white
+.highlighted.white {
+  color: var(--black);
   background-color: var(--white);
-  color: var(--black);
 }
 
-.panel.gray-dark {
+.panel.almost-white
+.highlighted.almost-white {
+  color: var(--almost-black);
+  background-color: var(--almost-white);
+}
+
+.panel.extra-white
+.highlighted.extra-white {
+  color: var(--extra-black);
+  background-color: var(--extra-white);
+}
+
+.panel.gray-i
+.highlighted.gray-i {
+  color: var(--white);
+  background-color: var(--gray-i);
+}
+
+.panel.gray-ii
+.highlighted.gray-ii {
+  color: var(--white);
   background-color: var(--gray-ii);
-  color: var(--white);
 }
 
-.panel.gray-light {
+.panel.gray-iii
+.highlighted.gray-iii {
+  color: var(--white);
+  background-color: var(--gray-iii);
+}
+
+.panel.gray-iv
+.highlighted.gray-iv {
+  color: var(--white);
+  background-color: var(--gray-iv);
+}
+
+.panel.gray-v
+.highlighted.gray-v {
+  color: var(--white);
+  background-color: var(--gray-v);
+}
+
+.panel.gray-vi
+.highlighted.gray-vi {
+  color: var(--black);
+  background-color: var(--gray-vi);
+}
+
+.panel.gray-vii
+.highlighted.gray-vii {
+  color: var(--black);
+  background-color: var(--gray-vii);
+}
+
+.panel.gray-viii
+.highlighted.gray-viii {
+  color: var(--black);
+  background-color: var(--gray-viii);
+}
+
+.panel.gray-ix
+.highlighted.gray-ix {
+  color: var(--black);
   background-color: var(--gray-ix);
+}
+
+.panel.gray-x
+.highlighted.gray-x {
   color: var(--black);
+  background-color: var(--gray-x);
 }
 
-.panel.color-primary-dark {
-  background-color: var(--color-primary-dark);
-  color: var(--white);
-}
-
-.panel.color-primary-light {
-  background-color: var(--color-primary-light);
-  color: var(--black);
-}
-
-.panel.color-alert-dark {
+.panel.color-alert-dark,
+.highlight.color-alert-dark {
   background-color: var(--color-alert-dark);
   color: var(--white);
 }
 
-.panel.color-alert-light {
+.panel.color-alert-light,
+.highlight.color-alert-light {
   background-color: var(--color-alert-light);
+  color: var(--black);
+}
+
+.panel.color-primary-light,
+.highlight.color-primary-dark {
+  background-color: var(--color-primary-dark);
   color: var(--white);
 }
 
-.panel * {
+.panel.color-primary-light,
+.highlight.color-primary-light {
+  background-color: var(--color-primary-light);
+  color: var(--black);
+}
+
+.panel *,
+.highlight * {
   color: inherit;
 }
 
-.panel a {
+.panel a,
+.highlight a {
   text-decoration-color: inherit;
 }
 
