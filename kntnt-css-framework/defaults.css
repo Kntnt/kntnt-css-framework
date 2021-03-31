@@ -132,9 +132,9 @@
 
   --color-alert: hsl(0, 80%, 40%);
   --color-alert-accentuated: hsl(0, 100%, 60%);
-  --color-alert-dark: hsl(0, 80%, 30%);
-  --color-alert-light: hsl(0, 70%, 50%);
-
+  --color-alert-dark: var(--red);
+  --color-alert-light: var(--cherry-blossom-pink);
+  
 
   /**
    * Vertical spacing
@@ -456,8 +456,8 @@
    * Defaults for <del> and <ins>
    */
    
-   --del-color-background: #d4fcbc;
-   --ins-color-background: #fbb;
+   --del-color-background: var(--pink-blush);
+   --ins-color-background: var(--touch-of-torqouise);
    
 
    /**
@@ -467,6 +467,13 @@
    --kbd-color: var(--gray-ii);
    --kbd-color-background: var(--gray-x);
    --kbd-tooltip-color-background: var(--gray-x);
+
+
+   /**
+    * Defaults for <mark>
+    */
+
+    --mark-color-background: var(--yellow);
 
 
 }
