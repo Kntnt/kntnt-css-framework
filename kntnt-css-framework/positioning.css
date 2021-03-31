@@ -38,6 +38,7 @@
  * Position: indented (no class)
  */
 
+body > :not(header):not(footer) > * > * > .indent,
 body > :not(header):not(footer) > * > * > aside:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
 body > :not(header):not(footer) > * > * > blockquote:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
 body > :not(header):not(footer) > * > * > div:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
@@ -187,8 +188,20 @@ body > :not(header):not(footer) > * > * > .wide.margin.panel > * {
  * Styling: Quote
  */
 
-body > :not(header):not(footer) > * > * > blockquote,
-body > :not(header):not(footer) > * > * > figure > blockquote {
+body > :not(header):not(footer) > * > * > blockquote.indent,
+body > :not(header):not(footer) > * > * > blockquote.center,
+body > :not(header):not(footer) > * > * > blockquote.wide,
+body > :not(header):not(footer) > * > * > blockquote.protrude,
+body > :not(header):not(footer) > * > * > blockquote.left,
+body > :not(header):not(footer) > * > * > blockquote.right,
+body > :not(header):not(footer) > * > * > blockquote.margin,
+body > :not(header):not(footer) > * > * > figure > blockquote.indent,
+body > :not(header):not(footer) > * > * > figure > blockquote.center,
+body > :not(header):not(footer) > * > * > figure > blockquote.wide,
+body > :not(header):not(footer) > * > * > figure > blockquote.protrude,
+body > :not(header):not(footer) > * > * > figure > blockquote.left,
+body > :not(header):not(footer) > * > * > figure > blockquote.right,
+body > :not(header):not(footer) > * > * > figure > blockquote.margin {
   font-family: var(--pullquote-font-family);
   font-size: var(--pullquote-font-size);
   font-weight: var(--pullquote-font-weight);
@@ -196,28 +209,3 @@ body > :not(header):not(footer) > * > * > figure > blockquote {
   border-left: var(--pullquote-bar-width) var(--pullquote-bar) var(--pullquote-bar-color);
   padding-left: var(--pullquote-bar-indent);
 }
-
-
-
-
-/*
-body > :not(header):not(footer) > * > * > blockquote:not(.panel),
-body > :not(header):not(footer) > * > * > figure:not(.panel) > blockquote {
-  margin: 0;
-}
-
-body > :not(header):not(footer) > * > * > figure:not(.panel) > blockquote + figcaption {
-  margin-left: calc(var(--blockquote-bar-width) + var(--blockquote-bar-indent));
-  margin-right: 0;
-}
-
-body > :not(header):not(footer) > * > * > blockquote:not(.panel).wide.margin,
-body > :not(header):not(footer) > * > * > figure:not(.panel).wide.margin > blockquote {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: calc(100% - 2 * var(--block-indent));
-}
-
-
-*/
