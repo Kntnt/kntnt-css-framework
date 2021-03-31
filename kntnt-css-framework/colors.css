@@ -52,10 +52,20 @@
 
 
   /**
-   *  Blacks.
+   * <del> and <ins> colors
    */
+   
+   --color-del: #d4fcbc;
+   --color-ins: #fbb;
+   
 
+   /**
+    * <kbd> colors
+    */
 
+   --color-kbd: var(--gray-ii);
+   --color-kbd-background: var(--gray-x);
+   --color-tooltip: var(--gray-x);
 
 
 }
