@@ -134,6 +134,15 @@
   --color-alert-accentuated: hsl(0, 100%, 60%);
   --color-alert-dark: var(--red);
   --color-alert-light: var(--cherry-blossom-pink);
+
+  
+  /**
+   * Positive/negative colors inteded för ins/del, right/wrong etcetera.
+   */
+
+  --color-positive: var(--hint-of-mint);
+  --color-negative: var(--cherry-blossom-pink);
+
   
 
   /**
