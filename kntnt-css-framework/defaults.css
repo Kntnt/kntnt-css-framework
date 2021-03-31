@@ -391,6 +391,19 @@
 
 
   /**
+   * Defaults for pullquote
+   */
+  --pullquote-font-family: var(--text-font-family);
+  --pullquote-font-size: var(--font-size-large);
+  --pullquote-font-weight: var(--font-weight-light);
+  --pullquote-font-style: italic;
+  --pullquote-bar: solid;
+  --pullquote-bar-width: var(--space-xsmall);
+  --pullquote-bar-color: var(--color-primary);
+  --pullquote-bar-indent: var(--space-medium);
+
+
+  /**
    * Link colors
    */
   --link-color: var(--color-primary);
