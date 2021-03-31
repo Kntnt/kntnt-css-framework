@@ -96,6 +96,35 @@
 
 
   /**
+   * Colors inspired by Stabilo Boss' highlighters.
+   */
+
+  --yellow: #F1E740;
+  --blue: #3AAFDC;
+  --green: #2BA727;
+  --red: #E94F58;
+  --torquoise: #009E6C;
+  --orange: #F39539;
+  --lavender: #85569C;
+  --pink: #EA5A79;
+  --lilac: #D72E83;
+  --touch-of-torqouise: #A1D4CF;
+  --hint-of-mint: #90CBAA;
+  --creamy-peach: #F4A384;
+  --pink-blush: #F4ACB6;
+  --milky-yellow: #F8DD74;
+  --lilac-haze: #D5B6D4;
+  --cloudy-blue: #b5c9df;
+  --dash-of-lime: #dff18f;
+  --mellow-coral-red: #fa7656;
+  --cherry-blossom-pink: #fe7d8f;
+  --dusty-grey: #cccccc;
+  --pale-orange: #ffcc99;
+  --breezy-blue: #99ccff;
+  --frozen-fuchsia: #cc99cc;
+
+
+  /**
    *  Blacks.
    */
 
