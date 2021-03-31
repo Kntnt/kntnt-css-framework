@@ -277,14 +277,14 @@ h5:not(.wrap) {
   background-color: var(--gray-x);
 }
 
-.panel.color-alert-dark,
-.highlight.color-alert-dark {
+.panel.alert-dark,
+.highlight.alert-dark {
   background-color: var(--color-alert-dark);
   color: var(--white);
 }
 
-.panel.color-alert-light,
-.highlight.color-alert-light {
+.panel.alert-light,
+.highlight.alert-light {
   background-color: var(--color-alert-light);
   color: var(--black);
 }
