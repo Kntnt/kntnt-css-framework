@@ -184,11 +184,12 @@ body > :not(header):not(footer) > * > * > .right.margin {
 
 body > :not(header):not(footer) > * > * > .panel {
   padding: var(--box-padding-text);
+  font-size: var(--font-size-smaller);
   box-shadow: var(--shadow);
 }
 
 body > :not(header):not(footer) > * > * > .panel > * {
-  font-size: var(--font-size-smaller);
+  font-size: inherit;
 }
 
 body > :not(header):not(footer) > * > * > .wide.margin.panel {
