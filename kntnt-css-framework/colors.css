@@ -1,0 +1,223 @@
+/**
+ * Kntnt CSS Framework – https://github.com/Kntnt/kntnt-css-framework
+ *
+ * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
+ * SPDX-License-Identifier: MIT
+ */
+
+
+.panel.yellow,
+.bgcolor.yellow {
+  color: var(--extra-black);
+  background-color: var(--yellow);
+}
+
+.panel.blue,
+.bgcolor.blue {
+  color: var(--extra-black);
+  background-color: var(--blue);
+}
+
+.panel.green,
+.bgcolor.green {
+  color: var(--extra-black);
+  background-color: var(--green);
+}
+
+.panel.red,
+.bgcolor.red {
+  color: var(--extra-black);
+  background-color: var(--red);
+}
+
+.panel.torquoise,
+.bgcolor.torquoise {
+  color: var(--extra-black);
+  background-color: var(--torquoise);
+}
+
+.panel.orange,
+.bgcolor.orange {
+  color: var(--extra-black);
+  background-color: var(--orange);
+}
+
+.panel.lavender,
+.bgcolor.lavender {
+  color: var(--extra-black);
+  background-color: var(--lavender);
+}
+
+.panel.pink,
+.bgcolor.pink {
+  color: var(--extra-black);
+  background-color: var(--pink);
+}
+
+.panel.lilac,
+.bgcolor.lilac {
+  color: var(--extra-black);
+  background-color: var(--lilac);
+}
+
+.panel.touch-of-torqouise,
+.bgcolor.touch-of-torqouise {
+  color: var(--extra-black);
+  background-color: var(--touch-of-torqouise);
+}
+
+.panel.hint-of-mint,
+.bgcolor.hint-of-mint {
+  color: var(--extra-black);
+  background-color: var(--hint-of-mint);
+}
+
+.panel.creamy-peach,
+.bgcolor.creamy-peach {
+  color: var(--extra-black);
+  background-color: var(--creamy-peach);
+}
+
+.panel.pink-blush,
+.bgcolor.pink-blush {
+  color: var(--extra-black);
+  background-color: var(--pink-blush);
+}
+
+.panel.milky-yellow,
+.bgcolor.milky-yellow {
+  color: var(--extra-black);
+  background-color: var(--milky-yellow);
+}
+
+.panel.lilac-haze,
+.bgcolor.lilac-haze {
+  color: var(--extra-black);
+  background-color: var(--lilac-haze);
+}
+
+.panel.cloudy-blue,
+.bgcolor.cloudy-blue {
+  color: var(--extra-black);
+  background-color: var(--cloudy-blue);
+}
+
+.panel.dash-of-lime,
+.bgcolor.dash-of-lime {
+  color: var(--extra-black);
+  background-color: var(--dash-of-lime);
+}
+
+.panel.mellow-coral-red,
+.bgcolor.mellow-coral-red {
+  color: var(--extra-black);
+  background-color: var(--mellow-coral-red);
+}
+
+.panel.cherry-blossom-pink,
+.bgcolor.cherry-blossom-pink {
+  color: var(--extra-black);
+  background-color: var(--cherry-blossom-pink);
+}
+
+.panel.dusty-grey,
+.bgcolor.dusty-grey {
+  color: var(--extra-black);
+  background-color: var(--dusty-grey);
+}
+
+.panel.pale-orange,
+.bgcolor.pale-orange {
+  color: var(--extra-black);
+  background-color: var(--pale-orange);
+}
+
+.panel.breezy-blue,
+.bgcolor.breezy-blue {
+  color: var(--extra-black);
+  background-color: var(--breezy-blue);
+}
+
+.panel.frozen-fuchsia,
+.bgcolor.frozen-fuchsia {
+  color: var(--extra-black);
+  background-color: var(--frozen-fuchsia);
+}
+
+.panel.black,
+.bgcolor.black {
+  color: var(--extra-black);
+  background-color: var(--black);
+}
+
+.panel.white,
+.bgcolor.white {
+  color: var(--extra-black);
+  background-color: var(--white);
+}
+
+.panel.positive,
+.bgcolor.positive {
+  color: var(--black);
+  background-color: var(--color-positive);
+}
+
+.panel.negative,
+.bgcolor.negative {
+  color: var(--black);
+  background-color: var(--color-negative);
+}
+
+.panel.alert-dark,
+.bgcolor.alert-dark {
+  color: var(--extra-white);
+  background-color: var(--color-alert-dark);
+}
+
+.panel.alert-light,
+.bgcolor.alert-light {
+  color: var(--extra-black);
+  background-color: var(--color-alert-light);
+}
+
+.panel.gray-dark,
+.bgcolor.gray-dark {
+  color: var(--almost-white);
+  background-color: var(--almost-black);
+}
+
+.panel.gray-light,
+.bgcolor.gray-light {
+  color: var(--black);
+  background-color: var(--gray-ix);
+}
+
+.panel.color-primary-dark,
+.bgcolor.color-primary-dark {
+  color: var(--extra-white);
+  background-color: var(--color-primary-dark);
+}
+
+.panel.color-primary-light,
+.bgcolor.color-primary-light {
+  color: var(--extra-black);
+  background-color: var(--color-primary-light);
+}
+
+.panel *,
+.bgcolor * {
+  color: inherit;
+}
+
+.panel a,
+.bgcolor a {
+  text-decoration-color: inherit;
+}
+
+.darken {
+  background-color: var(--darken-ix);
+}
+
+.lighen {
+  background-color: var(--lighten-ix);
+}

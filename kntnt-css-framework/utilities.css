@@ -29,234 +29,19 @@ h5:not(.wrap) {
 
 
 /**
- *  Children and descendants, respectively, inherits this elemenet's color
  */
 
-.children-inherit-color > :not(:hover):not(:focus):not(:active),
-.descendants-inherit-color :not(:hover):not(:focus):not(:active) {
-  color: inherit;
 }
 
 
 /**
- * Colors for panels (typically used on <div>, <figuere>, <aside> and
- * <section>) and highlighted text (typically used on <span> and <mark>).
  */
 
-.panel.yellow,
-.highlighted.yellow {
-  color: var(--extra-black);
-  background-color: var(--yellow);
 }
 
-.panel.blue,
-.highlighted.blue {
-  color: var(--extra-black);
-  background-color: var(--blue);
-}
 
-.panel.green,
-.highlighted.green {
-  color: var(--extra-black);
-  background-color: var(--green);
-}
 
-.panel.red,
-.highlighted.red {
-  color: var(--extra-black);
-  background-color: var(--red);
-}
-
-.panel.torquoise,
-.highlighted.torquoise {
-  color: var(--extra-black);
-  background-color: var(--torquoise);
-}
-
-.panel.orange,
-.highlighted.orange {
-  color: var(--extra-black);
-  background-color: var(--orange);
-}
-
-.panel.lavender,
-.highlighted.lavender {
-  color: var(--extra-black);
-  background-color: var(--lavender);
-}
-
-.panel.pink,
-.highlighted.pink {
-  color: var(--extra-black);
-  background-color: var(--pink);
-}
-
-.panel.lilac,
-.highlighted.lilac {
-  color: var(--extra-black);
-  background-color: var(--lilac);
-}
-
-.panel.touch-of-torqouise,
-.highlighted.touch-of-torqouise {
-  color: var(--extra-black);
-  background-color: var(--touch-of-torqouise);
-}
-
-.panel.hint-of-mint,
-.highlighted.hint-of-mint {
-  color: var(--extra-black);
-  background-color: var(--hint-of-mint);
-}
-
-.panel.creamy-peach,
-.highlighted.creamy-peach {
-  color: var(--extra-black);
-  background-color: var(--creamy-peach);
-}
-
-.panel.pink-blush,
-.highlighted.pink-blush {
-  color: var(--extra-black);
-  background-color: var(--pink-blush);
-}
-
-.panel.milky-yellow,
-.highlighted.milky-yellow {
-  color: var(--extra-black);
-  background-color: var(--milky-yellow);
-}
-
-.panel.lilac-haze,
-.highlighted.lilac-haze {
-  color: var(--extra-black);
-  background-color: var(--lilac-haze);
-}
-
-.panel.cloudy-blue,
-.highlighted.cloudy-blue {
-  color: var(--extra-black);
-  background-color: var(--cloudy-blue);
-}
-
-.panel.dash-of-lime,
-.highlighted.dash-of-lime {
-  color: var(--extra-black);
-  background-color: var(--dash-of-lime);
-}
-
-.panel.mellow-coral-red,
-.highlighted.mellow-coral-red {
-  color: var(--extra-black);
-  background-color: var(--mellow-coral-red);
-}
-
-.panel.cherry-blossom-pink,
-.highlighted.cherry-blossom-pink {
-  color: var(--extra-black);
-  background-color: var(--cherry-blossom-pink);
-}
-
-.panel.dusty-grey,
-.highlighted.dusty-grey {
-  color: var(--extra-black);
-  background-color: var(--dusty-grey);
-}
-
-.panel.pale-orange,
-.highlighted.pale-orange {
-  color: var(--extra-black);
-  background-color: var(--pale-orange);
-}
-
-.panel.breezy-blue,
-.highlighted.breezy-blue {
-  color: var(--extra-black);
-  background-color: var(--breezy-blue);
-}
-
-.panel.frozen-fuchsia,
-.highlighted.frozen-fuchsia {
-  color: var(--extra-black);
-  background-color: var(--frozen-fuchsia);
-}
-
-.panel.black,
-.highlighted.black {
-  color: var(--extra-black);
-  background-color: var(--black);
-}
-
-.panel.white,
-.highlighted.white {
-  color: var(--extra-black);
-  background-color: var(--white);
-}
-
-.panel.positive,
-.highlight.positive {
-  color: var(--black);
-  background-color: var(--color-positive);
-}
-
-.panel.negative,
-.highlight.negative {
-  color: var(--black);
-  background-color: var(--color-negative);
-}
-
-.panel.alert-dark,
-.highlight.alert-dark {
-  color: var(--extra-white);
-  background-color: var(--color-alert-dark);
-}
-
-.panel.alert-light,
-.highlight.alert-light {
-  color: var(--extra-black);
-  background-color: var(--color-alert-light);
-}
-
-.panel.gray-dark,
-.highlight.gray-dark {
-  color: var(--almost-white);
-  background-color: var(--almost-black);
-}
-
-.panel.gray-light,
-.highlight.gray-light {
-  color: var(--black);
-  background-color: var(--gray-ix);
-}
-
-.panel.color-primary-dark,
-.highlight.color-primary-dark {
-  color: var(--extra-white);
-  background-color: var(--color-primary-dark);
-}
-
-.panel.color-primary-light,
-.highlight.color-primary-light {
-  color: var(--extra-black);
-  background-color: var(--color-primary-light);
-}
-
-.panel *,
-.highlight * {
   color: inherit;
-}
-
-.panel a,
-.highlight a {
-  text-decoration-color: inherit;
-}
-
-.darken {
-  background-color: var(--darken-ix);
-}
-
-.lighen {
-  background-color: var(--lighten-ix);
 }
 
 
@@ -271,7 +56,6 @@ h5:not(.wrap) {
 .no-shadow {
   box-shadow: none;
 }
-
 
 
 /**
