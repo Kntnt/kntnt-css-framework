@@ -116,6 +116,7 @@
     * Dark color intended for panels.
     * YOU SHOULD OVERRIDE THIS ONE.
     */
+
    --color-primary-dark: hsl(130, 30%, 50%);
 
 
@@ -123,6 +124,7 @@
     * Light color intended for panels.
     * YOU SHOULD OVERRIDE THIS ONE.
     */
+
    --color-primary-light: hsl(130, 30%, 80%);
 
 
@@ -135,7 +137,7 @@
   --color-alert-dark: var(--red);
   --color-alert-light: var(--cherry-blossom-pink);
 
-  
+
   /**
    * Positive/negative colors inteded för ins/del, right/wrong etcetera.
    */
@@ -144,10 +146,10 @@
   --color-negative: var(--cherry-blossom-pink);
 
   
-
   /**
    * Vertical spacing
    */
+   
   --vertical-space-block: var(--space-large);
   --vertical-space-paragraph: var(--space-medium);
   --vertical-space-paragraph-h1: var(--space-medium);
