@@ -205,6 +205,18 @@ h5:not(.wrap) {
   background-color: var(--color-negative);
 }
 
+.panel.alert-dark,
+.highlight.alert-dark {
+  color: var(--extra-white);
+  background-color: var(--color-alert-dark);
+}
+
+.panel.alert-light,
+.highlight.alert-light {
+  color: var(--extra-black);
+  background-color: var(--color-alert-light);
+}
+
 .panel.gray-dark,
 .highlight.gray-dark {
   color: var(--almost-white);
@@ -239,7 +251,6 @@ h5:not(.wrap) {
   text-decoration-color: inherit;
 }
 
-
 .darken {
   background-color: var(--darken-ix);
 }
@@ -247,7 +258,6 @@ h5:not(.wrap) {
 .lighen {
   background-color: var(--lighten-ix);
 }
-
 
 
 /**
