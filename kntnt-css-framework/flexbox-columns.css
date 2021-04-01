@@ -1,0 +1,343 @@
+/**
+ * Kntnt CSS Framework – https://github.com/Kntnt/kntnt-css-framework
+ *
+ * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
+ * SPDX-License-Identifier: MIT
+ *
+* Start by making an element into a row by ading the class `row` followed by one of the `row-…` classes that identifies how many columns the row should have:
+ * 
+ *   <div class="row has-50-50-cols">
+ *     …
+ *   </div>
+ * 
+ * Create the required number of columns:
+ * 
+ *   <div class="row has-25-25-50-cols">
+ *     <div> <!-- First column -->
+ *       …
+ *     </div>
+ *     <div> <!-- Second column -->
+ *       …
+ *     </div>
+ *     <div> <!-- Third column -->
+ *       …
+ *     </div>
+ *   </div>
+ * 
+ * Finally, create desired number of cells in each column:
+ * 
+ *   <div class="row has-25-25-50-cols">
+ *     <div> <!-- First column -->
+ *       <div>…</div> <!-- First cell of first column -->
+ *       <div>…</div> <!-- Second cell of first column -->
+ *       …
+ *       <div>…</div> <!-- Last cell of first column -->
+ *     </div>
+ *     <div> <!-- Second column -->
+ *       …
+ *     </div>
+ *     <div> <!-- Third column -->
+ *       …
+ *     </div>
+ *   </div>
+ * 
+ * It's possible to add rows in columns like this:
+ * 
+ *   <div class="row has-50-50-cols">
+ *     <div> <!-- First column -->
+ *       <div class="row has-50-50-cols">
+ *         <div> <!-- First subcolumn -->
+ *           …
+ *         </div>
+ *         <div> <!-- Second subcolumn -->
+ *           …
+ *         </div>
+ *       </div>
+ *     </div>
+ *     <div> <!-- Last column -->
+ *       …
+ *     </div>
+ *   </div>
+ * 
+ * The class `stacks-normal-1024` makes columns stack on top of each other if the wide is smaller than 1024 px:
+ * 
+ *   <div class="row has-50-50-cols stacks-normal-1024">
+ *     <div> <!-- First column -->
+ *       …
+ *     </div>
+ *     <div> <!-- Second column -->
+ *       …
+ *     </div>
+ *   </div>
+ * 
+ * The columns are stacked with the first column above and the second below and so forth. By using the class `stacks-reverse-1024` instead, the stack order is reversed.
+ * 
+ * The classes `stacks-normal-768` and `stacks-reverse-768` works the same but for widths lessthan 768 px.
+ * 
+ * By default, with exception for `<input>`, any element put in columns gets 0.5 rem padding, 0 margin, border-box sizing and block display. Moreover, list items get its bullet or number placed inside the bounding box.
+ * 
+ * By adding the class `has-no-gutter` on a column or a row, this default behaviour is stopped for the column or row, respectively.
+ * 
+ *   <div class="row has-50-50-cols has-no-gutter">
+ *     …
+ *   </div>
+ * 
+ * By adding `has-no-gutter-left` or `has-no-gutter-right` on a column, the left or right padding, respectively, is removed for all objects in that column.
+ * 
+ * By adding `has-no-gutter-top` or `has-no-gutter-bottom` on a row, the top or bottom padding, respectively, is removed for all objects in columns of that row.
+ *
+ * Example:
+ *
+ *   <div class="row has-50-50-cols stacks-normal-768">
+ *     <div>
+ *       <div class="row has-50-50-cols">
+ *         <div>
+ *           <p>A</p>
+ *         </div>
+ *         <div>
+ *           <p>B</p>
+ *         </div>
+ *       </div>
+ *       <p>C</p>
+ *       <p>D</p>
+ *     </div>
+ *     <div>
+ *       <div>E</div>
+ *       <div>F</div>
+ *       <div>G</div>      
+ *     </div>
+ *   </div>
+ *   <div class="row has-100-cols">
+ *     <div>
+ *       <div>H</div>
+ *       <div>I</div>      
+ *     </div>
+ *   </div> 
+ */
+
+
+/* Outer container form a row of columns */
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+
+
+/* Middle container form a column of elements. */
+
+.row > * {
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.row .row,
+.row > *,
+.row > * > * {
+  margin: 0;
+}
+
+/* Columns: 100% */
+
+.has-100-cols > * {
+  flex-basis: 100%;
+}
+
+
+/* Colums: 50% + 50% */
+
+.has-50-50-cols > * {
+  flex-basis: 50%;
+}
+
+
+/* Columns: 33% + 67% */
+
+.has-33-67-cols > :first-child {
+  flex-basis: 33.33%;
+}
+
+.has-33-67-cols > :last-child {
+  flex-basis: 66.67%;
+}
+
+
+/* Columns: 67% + 33% */
+
+.has-67-33-cols > :first-child {
+  flex-basis: 66.67%;
+}
+
+.has-67-33-cols > :last-child {
+  flex-basis: 33.33%;
+}
+
+
+/* Columns 25% + 75% */
+
+.has-25-75-cols > :first-child {
+  flex-basis: 25%;
+}
+
+.has-25-75-cols > :last-child {
+  flex-basis: 75%;
+}
+
+
+/* Columns 75% + 25% */
+
+.has-75-25-cols > :first-child {
+  flex-basis: 75%;
+}
+
+.has-75-25-cols > :last-child {
+  flex-basis: 25%;
+}
+
+
+/* Columns 33% + 33% + 33% */
+
+.has-33-33-33-cols > * {
+  flex-basis: 33.33%;
+}
+
+
+/* Columns 25% + 25% + 50% */
+
+.has-25-25-50-cols > :nth-child(1) {
+  flex-basis: 25%;
+}
+
+.has-25-25-50-cols > :nth-child(2) {
+  flex-basis: 25%;
+}
+
+.has-25-25-50-cols > :nth-child(3) {
+  flex-basis: 50%;
+}
+
+
+/* Columns 25% + 50% + 25% */
+
+.has-25-50-25-cols > :nth-child(1) {
+  flex-basis: 25%;
+}
+
+.has-25-50-25-cols > :nth-child(2) {
+  flex-basis: 50%;
+}
+
+.has-25-50-25-cols > :nth-child(3) {
+  flex-basis: 25%;
+}
+
+
+/* Columns 50% + 25% + 25% */
+
+.has-50-25-25-cols > :nth-child(1) {
+  flex-basis: 50%;
+}
+
+.has-50-25-25-cols > :nth-child(2) {
+  flex-basis: 25%;
+}
+
+.has-50-25-25-cols > :nth-child(3) {
+  flex-basis: 25%;
+}
+
+
+/* Columns 25% + 25% + 25% + 25% */
+
+.has-25-25-25-25-cols > * {
+  flex-basis: 25%;
+}
+
+
+/* Inner container form elemens */
+
+.row:not(.has-no-gutter) > :not(.has-no-gutter) > :not(.row) {
+  display: block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.row:not(.has-no-gutter).has-no-gutter-top > :not(.has-no-gutter) > :not(input):not(.row),
+.row:not(.has-no-gutter).has-no-gutter-top > :not(.has-no-gutter) .row:not(.has-no-gutter) > :not(.has-no-gutter) > :not(input):not(.row) {
+  padding-top: 0;
+}
+
+.row:not(.has-no-gutter).has-no-gutter-bottom > :not(.has-no-gutter) > :not(input):not(.row),
+.row:not(.has-no-gutter).has-no-gutter-bottom > :not(.has-no-gutter) .row:not(.has-no-gutter) > :not(.has-no-gutter) > :not(input):not(.row) {
+  padding-bottom: 0;
+}
+
+.row:not(.has-no-gutter) > :not(.has-no-gutter).has-no-gutter-left > :not(input):not(.row),
+.row:not(.has-no-gutter) > :not(.has-no-gutter).has-no-gutter-left .row:not(.has-no-gutter) > :not(.has-no-gutter):first-child > :not(input):not(.row) {
+  padding-left: 0;
+}
+
+.row:not(.has-no-gutter) > :not(.has-no-gutter).has-no-gutter-right > :not(input):not(.row),
+.row:not(.has-no-gutter) > :not(.has-no-gutter).has-no-gutter-right .row:not(.has-no-gutter) > :not(.has-no-gutter):last-child > :not(input):not(.row) {
+  padding-right: 0;
+}
+
+
+/* Responsivity */
+
+@media (max-width: 767px) {
+
+  .row.stacks-normal-768 {
+    flex-direction: column;
+  }
+
+  .row.stacks-reverse-768 {
+    flex-direction: column-reverse;
+  }
+
+  .row.stacks-normal-768:not(.has-no-gutter) > :not(.has-no-gutter) > :not(input):not(.row),
+  .row.stacks-normal-768:not(.has-no-gutter) > :not(.has-no-gutter) .row:not(.has-no-gutter) > :not(.has-no-gutter):first-child > :not(input):not(.row),
+  .row.stacks-reverse-768:not(.has-no-gutter) > :not(.has-no-gutter) > :not(input):not(.row),
+  .row.stacks-reverse-768:not(.has-no-gutter) > :not(.has-no-gutter) .row:not(.has-no-gutter) > :not(.has-no-gutter):last-child > :not(input):not(.row) {
+    padding-left: 0;  
+  }
+
+  .row.stacks-normal-768:not(.has-no-gutter) > :not(.has-no-gutter) > :not(input):not(.row),
+  .row.stacks-normal-768:not(.has-no-gutter) > :not(.has-no-gutter) .row:not(.has-no-gutter) > :not(.has-no-gutter):last-child > :not(input):not(.row),
+  .row.stacks-reverse-768:not(.has-no-gutter) > :not(.has-no-gutter) > :not(input):not(.row),
+  .row.stacks-reverse-768:not(.has-no-gutter) > :not(.has-no-gutter) .row:not(.has-no-gutter) > :not(.has-no-gutter):first-child > :not(input):not(.row) {
+    padding-right: 0;
+  }
+
+}
+
+@media (max-width: 1023px) {
+
+  .row.stacks-normal-1024 {
+    flex-direction: column;
+  }
+
+  .row.stacks-reverse-1024 {
+    flex-direction: column-reverse;
+  }
+
+  .row.stacks-normal-1024:not(.has-no-gutter) > :not(.has-no-gutter) > :not(input):not(.row),
+  .row.stacks-normal-1024:not(.has-no-gutter) > :not(.has-no-gutter) .row:not(.has-no-gutter) > :not(.has-no-gutter):first-child > :not(input):not(.row),
+  .row.stacks-reverse-1024:not(.has-no-gutter) > :not(.has-no-gutter) > :not(input):not(.row),
+  .row.stacks-reverse-1024:not(.has-no-gutter) > :not(.has-no-gutter) .row:not(.has-no-gutter) > :not(.has-no-gutter):last-child > :not(input):not(.row) {
+    padding-left: 0;  
+  }
+
+  .row.stacks-normal-1024:not(.has-no-gutter) > :not(.has-no-gutter) > :not(input):not(.row),
+  .row.stacks-normal-1024:not(.has-no-gutter) > :not(.has-no-gutter) .row:not(.has-no-gutter) > :not(.has-no-gutter):last-child > :not(input):not(.row),
+  .row.stacks-reverse-1024:not(.has-no-gutter) > :not(.has-no-gutter) > :not(input):not(.row),
+  .row.stacks-reverse-1024:not(.has-no-gutter) > :not(.has-no-gutter) .row:not(.has-no-gutter) > :not(.has-no-gutter):first-child > :not(input):not(.row) {
+    padding-right: 0;
+  }
+
+}

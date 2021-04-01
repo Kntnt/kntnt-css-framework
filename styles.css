@@ -128,16 +128,22 @@
   outline: 1px solid red;
 }
 
+.h-spacer-50 { height: 50px; }
+.h-spacer-100 { height: 100px; }
+.h-spacer-200 { height: 200px; }
+.h-spacer-400 { height: 400px; }
+
 .faux-columns-demo .col1,
 .faux-columns-demo .col2,
 .faux-columns-demo .col3,
 .faux-columns-demo .col4 {
   background: var(--pale-orange);
-  padding: 1em;
+  padding: 1rem;
   text-align: center;
- }
+}
 
- .h-spacer-50 { height: 50px; }
- .h-spacer-100 { height: 100px; }
- .h-spacer-200 { height: 200px; }
- .h-spacer-400 { height: 400px; }
+.row > div > :not(.row) {
+  background: var(--hint-of-mint);    
+  border: 0.2rem solid white;
+  text-align: center;
+}

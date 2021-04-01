@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="kntnt-css-framework/colors.css">
     <link rel="stylesheet" href="kntnt-css-framework/positioning.css">
     <link rel="stylesheet" href="kntnt-css-framework/faux-columns.css">
+    <link rel="stylesheet" href="kntnt-css-framework/flexbox-columns.css">
     <link rel="stylesheet" href="kntnt-css-framework/utilities.css">
     <link rel="stylesheet" href="kntnt-css-framework/wordpress.css">
     <link rel="stylesheet" href="styles.css">
@@ -1186,7 +1187,196 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 </div>
 <p>For better control, but also more cumbersome syntax, take a look at flexbox columns.</p>
 <h2>Flexbox columns</h2>
-<p>TODO</p>
+<p>Start by making an element into a row by ading the class <code>row</code>
+followed by one of the <code>row-…</code> classes that identifies how many
+columns the row should have:</p>
+<pre><code>  &lt;div class=&quot;row has-50-50-cols&quot;&gt;
+    …
+  &lt;/div&gt;
+</code></pre>
+<p>Create the required number of columns:</p>
+<pre><code>  &lt;div class=&quot;row has-25-25-50-cols&quot;&gt;
+    &lt;div&gt; &lt;!-- First column --&gt;
+      …
+    &lt;/div&gt;
+    &lt;div&gt; &lt;!-- Second column --&gt;
+      …
+    &lt;/div&gt;
+    &lt;div&gt; &lt;!-- Third column --&gt;
+      …
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+<p>Finally, create desired number of cells in each column:</p>
+<pre><code>  &lt;div class=&quot;row has-25-25-50-cols&quot;&gt;
+    &lt;div&gt; &lt;!-- First column --&gt;
+      &lt;div&gt;…&lt;/div&gt; &lt;!-- First cell of first column --&gt;
+      &lt;div&gt;…&lt;/div&gt; &lt;!-- Second cell of first column --&gt;
+      …
+      &lt;div&gt;…&lt;/div&gt; &lt;!-- Last cell of first column --&gt;
+    &lt;/div&gt;
+    &lt;div&gt; &lt;!-- Second column --&gt;
+      …
+    &lt;/div&gt;
+    &lt;div&gt; &lt;!-- Third column --&gt;
+      …
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+<p>It&#39;s possible to add rows in columns like this:</p>
+<pre><code>  &lt;div class=&quot;row has-50-50-cols&quot;&gt;
+    &lt;div&gt; &lt;!-- First column --&gt;
+      &lt;div class=&quot;row has-50-50-cols&quot;&gt;
+        &lt;div&gt; &lt;!-- First subcolumn --&gt;
+          …
+        &lt;/div&gt;
+        &lt;div&gt; &lt;!-- Second subcolumn --&gt;
+          …
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div&gt; &lt;!-- Last column --&gt;
+      …
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+<p>The class <code>stacks-normal-1024</code> makes columns stack on
+top of each other if the wide is smaller than 1024 px:</p>
+<pre><code>  &lt;div class=&quot;row has-50-50-cols stacks-normal-1024&quot;&gt;
+    &lt;div&gt; &lt;!-- First column --&gt;
+      …
+    &lt;/div&gt;
+    &lt;div&gt; &lt;!-- Second column --&gt;
+      …
+    &lt;/div&gt;
+  &lt;/div&gt;
+</code></pre>
+<p>The columns are stacked with the first column above and the second below
+and so forth. By using the class <code>stacks-reverse-1024</code> instead,
+the stack order is reversed.</p>
+<p>The classes <code>stacks-normal-768</code> and
+<code>stacks-reverse-768</code> works the same but for widths lessthan 768 px.</p>
+<p>By default, with exception for <code>&lt;input&gt;</code>, any element put in columns gets
+0.5 rem padding, 0 margin, border-box sizing and block display. Moreover, list
+items get its bullet or number placed inside the bounding box.</p>
+<p>By adding the class <code>has-no-gutter</code> on a column or a row,
+this default behaviour is stopped for the column or row, respectively.</p>
+<pre><code>  &lt;div class=&quot;row has-50-50-cols has-no-gutter&quot;&gt;
+    …
+  &lt;/div&gt;
+</code></pre>
+<p>By adding <code>has-no-gutter-left</code> or <code>has-no-gutter-right</code>
+on a column, the left or right padding, respectively, is removed for all
+objects in that column.</p>
+<p>By adding <code>has-no-gutter-top</code> or <code>has-no-gutter-bottom</code>
+on a row, the top or bottom padding, respectively, is removed for all
+objects in columns of that row..</p>
+<p>Finally, let’s take a look at an example:</p>
+<pre><code>&lt;div class=&quot;row has-100-cols&quot;&gt;
+   &lt;div&gt;
+      &lt;div class=&quot;row has-50-50-cols stacks-normal-768&quot;&gt;
+         &lt;div&gt;
+            &lt;div class=&quot;row has-50-50-cols&quot;&gt;
+               &lt;div&gt;
+                  &lt;dib&gt; a) 25% &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div&gt;
+                  &lt;div&gt; b) 25% &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div&gt; c) 50% &lt;/div&gt;
+            &lt;div&gt; d) 50% &lt;/div&gt;
+         &lt;/div&gt;
+         &lt;div&gt;
+            &lt;div&gt; e) 50% &lt;/div&gt;
+            &lt;div&gt; f) 50% &lt;/div&gt;
+            &lt;div&gt; g) 50% &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div class=&quot;row has-100-cols&quot;&gt;
+         &lt;div&gt;
+            &lt;div class=&quot;row has-67-33-cols stacks-normal-1024&quot;&gt;
+               &lt;div&gt;
+                  &lt;div&gt;
+                     &lt;div&gt; h) 67% &lt;/div&gt;
+                  &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div&gt;
+                  &lt;div&gt; i) 33% &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;row has-25-25-25-25-cols stacks-normal-1024&quot;&gt;
+               &lt;div&gt;
+                  &lt;div&gt; j) 25% &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div&gt;
+                  &lt;div&gt; k) 25% &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div&gt;
+                  &lt;div&gt; l) 25% &lt;/div&gt;
+               &lt;/div&gt;
+               &lt;div&gt;
+                  &lt;div&gt; m) 25% &lt;/div&gt;
+               &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div&gt; n) 100% &lt;/div&gt;
+         &lt;/div&gt;
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>The result looks as follows.</p>
+<div class="row has-100-cols">
+   <div>
+      <div class="row has-50-50-cols stacks-normal-768">
+         <div>
+            <div class="row has-50-50-cols">
+               <div>
+                  <div>a) 25%</div>
+               </div>
+               <div>
+                  <div>b) 25%</div>
+               </div>
+            </div>
+            <div>c) 50%</div>
+            <div>d) 50%</div>
+         </div>
+         <div>
+            <div>e) 50%</div>
+            <div>f) 50%</div>
+            <div>g) 50%</div>
+         </div>
+      </div>
+      <div class="row has-100-cols">
+         <div>
+            <div class="row has-67-33-cols stacks-normal-1024">
+               <div>
+                  <div>
+                     <div>h) 67%</div>
+                  </div>
+               </div>
+               <div>
+                  <div>i) 33%</div>
+               </div>
+            </div>
+            <div class="row has-25-25-25-25-cols stacks-normal-1024">
+               <div>
+                  <div>j) 25%</div>
+               </div>
+               <div>
+                  <div>k) 25%</div>
+               </div>
+               <div>
+                  <div>l) 25%</div>
+               </div>
+               <div>
+                  <div>m) 25%</div>
+               </div>
+            </div>
+            <div>n) 100%</div>
+         </div>
+      </div>
+   </div>
+</div>
 <h2>Links and buttons</h2>
 <p>Next up to implement</p>
 <h2>Forms</h2>
@@ -1199,7 +1389,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 <p>Following is a list of ideas for the future in no particualr order:</p>
 <ul>
 <li>Replace the current flex-box solution for sticky footer with a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers">grid solution</a></li>
-<li>Real columns (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns">CSS Multi-column Layout</a>)</li>
+<li>Multi-columns (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Columns">CSS Multi-column Layout</a>)</li>
 <li>Styling of <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details"><code>&lt;details&gt;</code></a></li>
 <li>How to work with <code>&lt;embed&gt;</code>, <code>&lt;object&gt;</code> and <code>&lt;iframe&gt;</code></li>
 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout">Grids</a></li>
