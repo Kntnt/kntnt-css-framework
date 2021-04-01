@@ -657,7 +657,7 @@
 </blockquote>
 <h2>Editing text</h2>
 <p>Many people who write for the web want to forget what they are writing needs to be converted to <abbr title="Hyper Text Markup Language">HTML</abbr> Unfortunately, word processors and text editors are lousy at creating semantically correct <abbr>HTML</abbr> code. Therefore, every web writer should know basic <abbr>HTML</abbr> and be prepared to use it. In this article, there are many examples of what you can do. However, the article is not a course in <abbr>HTML</abbr>. Nevertheless, in this section, we will get acquainted with <abbr>HTML</abbr> elements that are primarily there to give text semantic meaning and graphic style.</p>
-<h5><code>&lt;em&gt;</code>, <code>&lt;dfn&gt;</code>, <code>&lt;cite&gt;</code>, <code>&lt;var&gt;</code> and <code>&lt;i&gt;</code></h5>
+<h4><code>&lt;em&gt;</code>, <code>&lt;dfn&gt;</code>, <code>&lt;cite&gt;</code>, <code>&lt;var&gt;</code> and <code>&lt;i&gt;</code></h4>
 <p>Several HTML elements make the content they wrap rendered italicized. They differ in their semantic meaning. Choose wisely.</p>
 <ul>
 <li><p>Use <code>&lt;em&gt;…&lt;/em&gt;</code> to markup a word or a phrase that need <em>emphasis</em>. Example: This is <em>indeed</em> essential.</p>
@@ -680,13 +680,13 @@
 </ul>
 </li>
 </ul>
-<h5><code>&lt;strong&gt;</code> and <code>&lt;b&gt;</code></h5>
+<h4><code>&lt;strong&gt;</code> and <code>&lt;b&gt;</code></h4>
 <p>Two HTML elements are rendering their wrapped content with boldface but with different semantic meaning:</p>
 <ul>
 <li>Use <code>&lt;strong&gt;…&lt;/strong&gt;</code> to markup a word or a phrase that need <strong>strong emphasis</strong>. Example: <strong>Warning:</strong> The coffee is hot.</li>
 <li>Use <code>&lt;b&gt;…&lt;/b&gt;</code> to <b>bring attention to</b> to the marked up word or phrase. <cite><a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/i'>MDN Web Docs</a></cite> suggest using it for cases like keywords in summary, product names in a review, or other spans of text whose typical presentation would be boldfaced (but not including any special importance).</li>
 </ul>
-<h5><code>&lt;mark&gt;</code></h5>
+<h4><code>&lt;mark&gt;</code></h4>
 <p>If you need to <mark>mark or highlight</mark> a portion of a text, wrap it with <code>&lt;mark&gt;…&lt;/mark&gt;</code>.</p>
 <p><b>Example:</b> <dfn>Anaphora</dfn> is a figure of speech in which words repeat at the beginning of successive clauses, phrases, or sentences. Dr Martin Luther King Jr. eminently used anaphora in his famous talk from 1963:</p>
 <figure>
@@ -697,21 +697,21 @@
   </blockquote>
   <figcaption>– Martin Luther King Jr., <cite>I have a dream</cite>, 1963</figcaption>
 </figure>
-<h5><code>&lt;u&gt;</code> and <code>&lt;s&gt;</code></h5>
+<h4><code>&lt;u&gt;</code> and <code>&lt;s&gt;</code></h4>
 <p>The two elements <code>&lt;u&gt;…&lt;/u&gt;</code> and <code>&lt;s&gt;…&lt;/s&gt;</code> draw a line <u>under</u> and <s>through</s>, respectively, their wrapped content.</p>
 <ul>
 <li>Use <code>&lt;u&gt;…&lt;/u&gt;</code> as an unarticulated annotation of the wrapped text. Example: In this text, <u>speling</u> mistakes are <u>underlned</u>.</li>
 <li>Use <code>&lt;s&gt;…&lt;/s&gt;</code> to show that the wrapped content are no longer relevant or no longer accurate. Example: <s>Use <code>&lt;s&gt;</code> to decorate your text.</s></li>
 
 </ul>
-<h5><code>&lt;ins&gt;</code> and <code>&lt;del&gt;</code></h5>
+<h4><code>&lt;ins&gt;</code> and <code>&lt;del&gt;</code></h4>
 <p>Use <code>&lt;ins&gt;…&lt;/ins&gt;</code> and <code>&lt;del&gt;…&lt;/del&gt;</code> to wrap text that has been <ins>inserted</ins> and <del>deleted</del>, respectively.</p>
 <ul>
 <li>Use <code>&lt;ins&gt;…&lt;/ins&gt;</code> to markup text that have been inserted. Example: He has <ins>got</ins> a new coat.</li>
 <li><code>&lt;del&gt;…&lt;/del&gt;</code> to markup text that have been deleted. Example: The gave me his old <del>ugly</del> coat.</li>
 
 </ul>
-<h5><code>&lt;sup&gt;</code> and <code>&lt;sub&gt;</code></h5>
+<h4><code>&lt;sup&gt;</code> and <code>&lt;sub&gt;</code></h4>
 <p>Use <code>&lt;sup&gt;…&lt;/sup&gt;</code> and <code>&lt;sub&gt;…&lt;/sub&gt;</code> to create <sup>superscript</sup> and <sub>subscript</sub> respectively.</p>
 <ul>
 <li>Use <code>&lt;sup&gt;…&lt;/sup&gt;</code> to display <code>…</code> as superscript. Example: The Pythagorean theorem: <var>a</var><sup>2</sup> + <var>b</var><sup>2</sup> = <var>c</var><sup>2</sup></li>
@@ -719,14 +719,14 @@
 C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffeine.”</p></li>
 
 </ul>
-<h5><code>&lt;pre&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;kbd&gt;</code> and <code>&lt;samp&gt;</code></h5>
+<h4><code>&lt;pre&gt;</code>, <code>&lt;code&gt;</code>, <code>&lt;kbd&gt;</code> and <code>&lt;samp&gt;</code></h4>
 <p>To represent computer code, input and output and similar, we have <code>&lt;code&gt;</code>, <code>&lt;kbd&gt;</code> and <code>&lt;samp&gt;</code>, respectively.</p>
 <ul>
 <li>Use <code>&lt;code&gt;…&lt;/code&gt;</code> to markup short fragment of <code>computer code</code>. Example: The tag <code>&lt;br&gt;</code> represents line feed.</li>
 <li>Use <code>&lt;kbd&gt;…&lt;/kbd&gt;</code> to illustrate <kbd>k</kbd><kbd>e</kbd><kbd>y</kbd><kbd>s</kbd> on the keyboard. Example: Press <kbd>⌘</kbd> + <kbd>S</kbd> to save.</li>
 <li>Use <code>&lt;samp&gt;…&lt;/samp&gt;</code> to represent a sample output from a computer. Example: If you see <samp>Error</samp> on the screen, something went wrong.</li>
 </ul>
-<h5><code>&lt;pre&gt;</code></h5>
+<h4><code>&lt;pre&gt;</code></h4>
 <p>To represent longer text that must appear exactly as preformatted – as if it were written on a typewriter – use <code>&lt;pre&gt;…&lt;/pre&gt;</code>.</p>
 <p>Follwoing HTML code, adapted from  <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre'>MDN Web Docs</a> presentation of <code>&lt;pre&gt;</code> is an example where it&#39;s important to wrap the content in <code>&lt;pre&gt;…&lt;/pre&gt;</code>:</p>
 <pre><code>&lt;pre&gt;
@@ -750,7 +750,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
                    ||----w |
                    ||     ||
 </pre>
-<h5><code>&lt;abbr&gt;</code></h5>
+<h4><code>&lt;abbr&gt;</code></h4>
 <p>Use <code>&lt;abbr&gt;…&lt;/abbr&gt;</code> to wrap abbreviations and acronyms.</p>
 <p>It would of course be silly to wrap every <i>e.g.</i>, <i>i.e.</i>, <i>etc</i> and so forth with <code>&lt;abbr&gt;…&lt;/abbr&gt;</code>. Use it instead with the <code>title</code> attribute, as shown below, when introducing an abbreviation or acronyme that might be unknonw for the read.</p>
 <pre><code>&lt;p&gt;&lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt; is a markup language used to create the semantics and structure of a web page.&lt;/p&gt;
@@ -843,62 +843,62 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 <p>Neat, yeah? You will see more examples with and without <code>panel</code> applied below.</p>
 <h3>Demonstration of postioning classes</h3>
 <p>Below, you find examples of application of each class. Please check it on vary sceen sizes.</p>
-<h5>Class: <code>(no class)</code></h5>
+<h4>Class: <code>(no class)</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="touch-of-torqouise panel min-content-no-wrap-center"><span>(no class)</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
-<h5>Class: <code>center</code></h5>
+<h4>Class: <code>center</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="center hint-of-mint panel min-content-no-wrap-center"><span>center</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
-<h5>Class: <code>wide</code></h5>
+<h4>Class: <code>wide</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="wide creamy-peach panel min-content-no-wrap-center"><span>wide</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
-<h5>Class: <code>protrude wide</code></h5>
+<h4>Class: <code>protrude wide</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="protrude wide milky-yellow panel min-content-no-wrap-center"><span>protrude wide</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
-<h5>Class: <code>margin wide</code></h5>
+<h4>Class: <code>margin wide</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="margin wide lilac-haze panel min-content-no-wrap-center"><span>margin wide</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
-<h5>Class: <code>left</code></h5>
+<h4>Class: <code>left</code></h4>
 <div class="left cloudy-blue panel min-content-no-wrap-center"><span>left</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
 <p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
-<h5>Class: <code>right</code></h5>
+<h4>Class: <code>right</code></h4>
 <div class="right dash-of-lime panel min-content-no-wrap-center"><span>right</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
 <p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
-<h5>Class: <code>protrude left</code></h5>
+<h4>Class: <code>protrude left</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="protrude left mellow-coral-red panel min-content-no-wrap-center"><span>protrude left</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
 <p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
-<h5>Class: <code>protrude right</code></h5>
+<h4>Class: <code>protrude right</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="protrude right cherry-blossom-pink panel min-content-no-wrap-center"><span>protrude right</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
 <p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
-<h5>Class: <code>left margin</code></h5>
+<h4>Class: <code>left margin</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="left margin pale-orange panel min-content-no-wrap-center"><span>left margin</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
 <p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
-<h5>Class: <code>right margin</code></h5>
+<h4>Class: <code>right margin</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="right margin breezy-blue panel min-content-no-wrap-center"><span>right margin</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
 <p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h3>Demonstration of all permissble blocks</h3>
 <p>Below, you find examples demonstrating positioning of block content.</p>
-<h5>Block: <code>&lt;blockquote&gt;</code></h5>
+<h4>Block: <code>&lt;blockquote&gt;</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
 <blockquote class="right">Life is a long lesson in humility</blockquote>
 <p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
 <p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
-<h5>Block: <code>&lt;ul&gt;</code></h5>
+<h4>Block: <code>&lt;ul&gt;</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
 <ul class="right margin">
   <li>Oscar II</li>
@@ -908,7 +908,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 </ul>
 <p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
 <p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
-<h5>Block: <code>&lt;ol&gt;</code></h5>
+<h4>Block: <code>&lt;ol&gt;</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
 <ol class="right">
   <li>Dance You Off med Benjamin Ingrosso</li>
@@ -917,7 +917,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 </ol>
 <p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
 <p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
-<h5>Block: <code>&lt;dl&gt;</code></h5>
+<h4>Block: <code>&lt;dl&gt;</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
 <dl class="center lilac-haze panel">
   <dt>Aroma</dt>
@@ -929,7 +929,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 </dl>
 <p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
 <p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
-<h5>Block: <code>&lt;table&gt;</code></h5>
+<h4>Block: <code>&lt;table&gt;</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
 <table class="left">
     <caption>Population in Sweden's three smallest municipalities</caption>
@@ -956,7 +956,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 </table>
 <p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
 <p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
-<h5>Block: <code>&lt;pre&gt;</code></h5>
+<h4>Block: <code>&lt;pre&gt;</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
 <pre class="right hint-of-mint panel">   ----------------------------
   | I'm an expert in my field. |
@@ -969,7 +969,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 </pre>
 <p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
 <p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
-<h5>Block: <code>&lt;img&gt;</code></h5>
+<h4>Block: <code>&lt;img&gt;</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
 <img class ="protrude wide"
      srcset="images/image-225.jpg 225w,
@@ -981,7 +981,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
              images/image-1920.jpg 1920w" sizes="(max-width: 1920px) 100vw, 1920px" src="images/image-1920.jpg" loading="lazy" alt="Hot air balloon over sea at blue hour">
 <p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
 <p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
-<h5>Block: <code>&lt;figure&gt;</code></h5>
+<h4>Block: <code>&lt;figure&gt;</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
 <aside class="center margin panel">
   <h2>When to use &lt;figure&gt;</h2>
@@ -991,7 +991,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 </aside>
 <p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
 <p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
-<h5>Block: <code>&lt;aside&gt;</code></h5>
+<h4>Block: <code>&lt;aside&gt;</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
 <aside class="protrude right frozen-fuchsia panel">
   <h2>When to use &lt;aside&gt;</h2>
@@ -1001,7 +1001,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 </aside>
 <p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
 <p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
-<h5>Block: <code>&lt;div&gt;</code></h5>
+<h4>Block: <code>&lt;div&gt;</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vel neque  ut nisi eleifend aliquet. Aenean ut enim sapien. Praesent ultrices  maximus nunc, non mattis sapien dapibus non. Nullam tincidunt interdum  nunc, a euismod ligula sollicitudin sollicitudin.</p>
 <aside class="wide milky-yellow panel">
   <h2>When to use &lt;div&gt;</h2>
@@ -1013,7 +1013,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 <p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
 <h3>Demonstration of common nested blocks</h3>
 <p>Below, you find examples with nested elements. Notice that the position classes are only used on the outermost of them. Please check it on vary sceen sizes.</p>
-<h5><code>&lt;figure&gt;&lt;image … &gt;&lt;figcaption&gt;…&lt;/figcaption&gt;&lt;/figure&gt;</code></h5>
+<h4><code>&lt;figure&gt;&lt;image … &gt;&lt;figcaption&gt;…&lt;/figcaption&gt;&lt;/figure&gt;</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus dui sit amet diam semper vehicula. Etiam id est a elit condimentum consectetur a eu diam.</p>
 <figure class="left">
   <img srcset="images/image-225.jpg 225w,
@@ -1026,7 +1026,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
   <figcaption>Hot air balloon over sea at blue hour</figcaption>
 </figure>
 <p>Suspendisse sagittis mauris at lectus aliquet aliquam. Pellentesque sagittis consectetur ornare. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin iaculis, tortor eget volutpat hendrerit, nulla turpis efficitur tortor, eget semper magna ante vitae diam. Phasellus commodo ex cursus, condimentum magna sit amet, fringilla sem. Pellentesque vehicula nec nisl sollicitudin tincidunt. Maecenas luctus ultricies massa, tempor interdum erat semper in. Suspendisse hendrerit, nisi at tempus semper, dolor odio volutpat neque, malesuada facilisis velit velit eget diam. Maecenas iaculis et elit a tincidunt. Pellentesque lacus eros, finibus quis semper id, bibendum bibendum nisi.</p>
-<h5><code>&lt;figure&gt;&lt;blockquote&gt;…&lt;/blockquote&gt;&lt;figcaption&gt;…&lt;/figcaption&gt;&lt;/figure&gt;</code></h5>
+<h4><code>&lt;figure&gt;&lt;blockquote&gt;…&lt;/blockquote&gt;&lt;figcaption&gt;…&lt;/figcaption&gt;&lt;/figure&gt;</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus dui sit amet diam semper vehicula. Etiam id est a elit condimentum consectetur a eu diam.</p>
 <figure class="right">
   <blockquote cite="https://www.imdb.com/title/tt0109830/">
@@ -1035,7 +1035,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
   <figcaption>– Forest Gump in the movie <cite><a href="https://www.imdb.com/title/tt0109830/">Forest Gump</a></cite></figcaption>
 </figure>
 <p>Suspendisse sagittis mauris at lectus aliquet aliquam. Pellentesque sagittis consectetur ornare. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin iaculis, tortor eget volutpat hendrerit, nulla turpis efficitur tortor, eget semper magna ante vitae diam. Phasellus commodo ex cursus, condimentum magna sit amet, fringilla sem. Pellentesque vehicula nec nisl sollicitudin tincidunt. Maecenas luctus ultricies massa, tempor interdum erat semper in. Suspendisse hendrerit, nisi at tempus semper, dolor odio volutpat neque, malesuada facilisis velit velit eget diam. Maecenas iaculis et elit a tincidunt. Pellentesque lacus eros, finibus quis semper id, bibendum bibendum nisi.</p>
-<h5><code>&lt;aside&gt;&lt;table&gt;…&lt;/table&gt;&lt;/aside&gt;</code></h5>
+<h4><code>&lt;aside&gt;&lt;table&gt;…&lt;/table&gt;&lt;/aside&gt;</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus dui sit amet diam semper vehicula. Etiam id est a elit condimentum consectetur a eu diam.</p>
 <aside class="left">
   <table>
@@ -1063,7 +1063,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
   </table>
 </aside>
 <p>Suspendisse sagittis mauris at lectus aliquet aliquam. Pellentesque sagittis consectetur ornare. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin iaculis, tortor eget volutpat hendrerit, nulla turpis efficitur tortor, eget semper magna ante vitae diam. Phasellus commodo ex cursus, condimentum magna sit amet, fringilla sem. Pellentesque vehicula nec nisl sollicitudin tincidunt. Maecenas luctus ultricies massa, tempor interdum erat semper in. Suspendisse hendrerit, nisi at tempus semper, dolor odio volutpat neque, malesuada facilisis velit velit eget diam. Maecenas iaculis et elit a tincidunt. Pellentesque lacus eros, finibus quis semper id, bibendum bibendum nisi.</p>
-<h5><code>&lt;aside&gt;&lt;figure&gt;&lt;blockquote&gt;…&lt;/blockquote&gt;&lt;figcaption&gt;…&lt;/figcaption&gt;&lt;/figure&gt;&lt;/aside&gt;</code></h5>
+<h4><code>&lt;aside&gt;&lt;figure&gt;&lt;blockquote&gt;…&lt;/blockquote&gt;&lt;figcaption&gt;…&lt;/figcaption&gt;&lt;/figure&gt;&lt;/aside&gt;</code></h4>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla cursus dui sit amet diam semper vehicula. Etiam id est a elit condimentum consectetur a eu diam.</p>
 <aside class="right">
   <figure>
@@ -1075,9 +1075,99 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 </aside>
 <p>Suspendisse sagittis mauris at lectus aliquet aliquam. Pellentesque sagittis consectetur ornare. Interdum et malesuada fames ac ante ipsum primis in faucibus. Proin iaculis, tortor eget volutpat hendrerit, nulla turpis efficitur tortor, eget semper magna ante vitae diam. Phasellus commodo ex cursus, condimentum magna sit amet, fringilla sem. Pellentesque vehicula nec nisl sollicitudin tincidunt. Maecenas luctus ultricies massa, tempor interdum erat semper in. Suspendisse hendrerit, nisi at tempus semper, dolor odio volutpat neque, malesuada facilisis velit velit eget diam. Maecenas iaculis et elit a tincidunt. Pellentesque lacus eros, finibus quis semper id, bibendum bibendum nisi.</p>
 <h2>Dealing with floats</h2>
-<p>Implemenetd but not documentet.</p>
+<p>When any of the classes <code>left</code> and <code>right</code> are applied to an element, the element moves to left or right (obviously) and leaves a space next to it. The elements following <em>after</em> the moving element are allowed to move up and fill that space. The element moved is said to <dfn>float</dfn> and the elements filling the empty space it leaves are said to <dfn>wrap</dfn> the floating element.</p>
+<p>The default behaviour is usually what we want. But sometimes it is not desired for the content following to move up and wrap the floating content. An example is when we have several left/right aligned images with to little text between them. Then the images get stapled on each other, while the text that was supposed to come <em>after</em> each image are moved up and put next to the first image.</p>
+<figure class="right">
+  <img srcset="images/image-225.jpg 225w,
+               images/image-300.jpg 300w,
+               images/image-450.jpg 450w,
+               images/image-600.jpg 600w,
+               images/image-900.jpg 900w,
+               images/image-1060.jpg 1060w,
+               images/image-1920.jpg 1920w" sizes="(max-width: 1920px) 100vw, 1920px" src="images/image-1920.jpg" loading="lazy" alt="Hot air balloon over sea at blue hour">
+  <figcaption>Hot air balloon over sea at blue hour</figcaption>
+</figure>
+<p>This text belongs to the first picture.</p>
+<figure class="right">
+  <img srcset="images/image-225.jpg 225w,
+               images/image-300.jpg 300w,
+               images/image-450.jpg 450w,
+               images/image-600.jpg 600w,
+               images/image-900.jpg 900w,
+               images/image-1060.jpg 1060w,
+               images/image-1920.jpg 1920w" sizes="(max-width: 1920px) 100vw, 1920px" src="images/image-1920.jpg" loading="lazy" alt="Hot air balloon over sea at blue hour">
+  <figcaption>Hot air balloon over sea at blue hour</figcaption>
+</figure>
+<p>This text belongs to the second picture.</p>
+<figure class="right">
+  <img srcset="images/image-225.jpg 225w,
+               images/image-300.jpg 300w,
+               images/image-450.jpg 450w,
+               images/image-600.jpg 600w,
+               images/image-900.jpg 900w,
+               images/image-1060.jpg 1060w,
+               images/image-1920.jpg 1920w" sizes="(max-width: 1920px) 100vw, 1920px" src="images/image-1920.jpg" loading="lazy" alt="Hot air balloon over sea at blue hour">
+  <figcaption>Hot air balloon over sea at blue hour</figcaption>
+</figure>
+<p>This text belongs to the third picture.</p>
+<hr>
+<p>And so on. To prevent this KCF offers several solutions. The easiest of them all is to use an invisible horizontal ruler that prevens content following it to move up above it. You get the ruler by putting <code>&lt;hr&gt;</code> where you want the flowing up bondary. Here comes the same example as above, but now with <code>&lt;hr&gt;</code> after each text. Notice how the text beloing to the image is allowed to move up, but not content following `<hr>`.</p>
+<figure class="right">
+  <img srcset="images/image-225.jpg 225w,
+               images/image-300.jpg 300w,
+               images/image-450.jpg 450w,
+               images/image-600.jpg 600w,
+               images/image-900.jpg 900w,
+               images/image-1060.jpg 1060w,
+               images/image-1920.jpg 1920w" sizes="(max-width: 1920px) 100vw, 1920px" src="images/image-1920.jpg" loading="lazy" alt="Hot air balloon over sea at blue hour">
+  <figcaption>Hot air balloon over sea at blue hour</figcaption>
+</figure>
+<p>This text belongs to the first picture.</p>
+<hr>
+<figure class="right">
+  <img srcset="images/image-225.jpg 225w,
+               images/image-300.jpg 300w,
+               images/image-450.jpg 450w,
+               images/image-600.jpg 600w,
+               images/image-900.jpg 900w,
+               images/image-1060.jpg 1060w,
+               images/image-1920.jpg 1920w" sizes="(max-width: 1920px) 100vw, 1920px" src="images/image-1920.jpg" loading="lazy" alt="Hot air balloon over sea at blue hour">
+  <figcaption>Hot air balloon over sea at blue hour</figcaption>
+</figure>
+<p>This text belongs to the second picture.</p>
+<hr>
+<figure class="right">
+  <img srcset="images/image-225.jpg 225w,
+               images/image-300.jpg 300w,
+               images/image-450.jpg 450w,
+               images/image-600.jpg 600w,
+               images/image-900.jpg 900w,
+               images/image-1060.jpg 1060w,
+               images/image-1920.jpg 1920w" sizes="(max-width: 1920px) 100vw, 1920px" src="images/image-1920.jpg" loading="lazy" alt="Hot air balloon over sea at blue hour">
+  <figcaption>Hot air balloon over sea at blue hour</figcaption>
+</figure>
+<p>This text belongs to the third picture.</p>
+<hr>
+<p>That looks better! Don&#39;t you think?</p>
+<p>If you want to prevent an element to move up and wrap around a floating element, you can add the class <code>dont-wrap</code> on it instead of putting <code>&lt;hr&gt;</code> before it.
+<p>Yet anoter solution is to put the class <code>clear</code> on a wrapper around the floating element. This solution is handy when you have a wrapper, e.g. <code>&lt;div&gt;…&lt;/div&gt;</code> containing only floating elements. See faux columns below for an example.</p>
 <h2>Horizontal lines and dinkuses</h2>
-<p>Implemenetd but not documentet.</p>
+<p>To get a visible horizontal line, use <code>&lt;hr&gt;</code> with a style class specifying the llok of the line. Without a style class, <code>&lt;hr&gt;</code> is invisble, but still useful as a stopper of content that otherwise would have flowed upwards, due to a float (see above). HCF offers following classes:</p>
+<h4>Single solid line: <code>&lt;hr class=&quot;single&quot;&gt;</code></h4>
+<br><hr class="single">
+<h4>Double solid lines: <code>&lt;hr class=&quot;double&quot;&gt;</code></h4>
+<br><hr class="double">
+<h4>Dashed line: <code>&lt;hr class=&quot;dashed&quot;&gt;</code></h4>
+<br><hr class="dashed">
+<h4>Dotted line: <code>&lt;hr class=&quot;dotted&quot;&gt;</code></h4>
+<br><hr class="dotted">
+<p>Instead of a line, you can get a <def>dinkus</dfn>. That is a small a small piece of artwork used in magainzes and books. KCF supports following dinkus:</p>
+<h4>Three stars in line: <code>&lt;hr class=&quot;dinkus&quot;&gt;</code></h4>
+<hr class="dinkus">
+<h4>Asterism: <code>&lt;hr class=&quot;asterism&quot;&gt;</code></h4>
+<hr class="asterism">
+<h4>Fleuron: <code>&lt;hr class=&quot;fleuron&quot;&gt;</code></h4>
+<hr class="fleuron">
 <h2>Faux columns</h2>
 <p>KCF offerts two solutions to organizae content i “rows” and “columns”. Here we take a look at the simplest solution: <em>faux columns</em>. </p>
 <p>They are <em>faux</em> since the content of one column is not flowing to the next as they do in ”real” columns that you find for instance in newspapers and magazines. What you put in a faux column, stays in that column. Thus, a faux column behaves exactly as a cell in a speradsheet.</p>
@@ -1382,9 +1472,9 @@ objects in columns of that row..</p>
 <h2>Forms</h2>
 <p>Next up to implement</p>
 <h2>Color classes</h2>
-<p>Implemenetd but not documentet.</p>
+<p>Implemented but not documentet.</p>
 <h2>Miscellaneous classes</h2>
-<p>Implemenetd but not documentet.</p>
+<p>Implemented but not documentet.</p>
 <h2>Ideas for future</h2>
 <p>Following is a list of ideas for the future in no particualr order:</p>
 <ul>
