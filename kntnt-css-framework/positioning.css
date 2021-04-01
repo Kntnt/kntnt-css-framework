@@ -216,13 +216,20 @@ body > :not(header):not(footer) > * > * > blockquote.protrude,
 body > :not(header):not(footer) > * > * > blockquote.left,
 body > :not(header):not(footer) > * > * > blockquote.right,
 body > :not(header):not(footer) > * > * > blockquote.margin,
-body > :not(header):not(footer) > * > * > figure > blockquote.indent,
-body > :not(header):not(footer) > * > * > figure > blockquote.center,
-body > :not(header):not(footer) > * > * > figure > blockquote.wide,
-body > :not(header):not(footer) > * > * > figure > blockquote.protrude,
-body > :not(header):not(footer) > * > * > figure > blockquote.left,
-body > :not(header):not(footer) > * > * > figure > blockquote.right,
-body > :not(header):not(footer) > * > * > figure > blockquote.margin {
+body > :not(header):not(footer) > * > * > .indent > blockquote,
+body > :not(header):not(footer) > * > * > .center > blockquote,
+body > :not(header):not(footer) > * > * > .wide > blockquote,
+body > :not(header):not(footer) > * > * > .protrude > blockquote,
+body > :not(header):not(footer) > * > * > .left > blockquote,
+body > :not(header):not(footer) > * > * > .right > blockquote,
+body > :not(header):not(footer) > * > * > .margin > blockquote,
+body > :not(header):not(footer) > * > * > aside.indent > * > blockquote,
+body > :not(header):not(footer) > * > * > aside.center > * > blockquote,
+body > :not(header):not(footer) > * > * > aside.wide > * > blockquote,
+body > :not(header):not(footer) > * > * > aside.protrude > * > blockquote,
+body > :not(header):not(footer) > * > * > aside.left > * > blockquote,
+body > :not(header):not(footer) > * > * > aside.right > * > blockquote,
+body > :not(header):not(footer) > * > * > aside.margin > * > blockquote {
   font-family: var(--pullquote-font-family);
   font-size: var(--pullquote-font-size);
   font-weight: var(--pullquote-font-weight);
