@@ -106,7 +106,8 @@ body > :not(header):not(footer) > * > * > .wide.margin {
 body > :not(header):not(footer) > * > * > .left,
 body > :not(header):not(footer) > * > * > .right {
   width: calc(50% - var(--vertical-space-block) / 2);
-  margin-top: calc(1.5 * var(--vertical-space-paragraph));  
+  margin-top: calc(1.5 * var(--vertical-space-paragraph));
+  margin-bottom: calc(0.5 * var(--vertical-space-paragraph));
 }
 
 body > :not(header):not(footer) > * > * > .left {
