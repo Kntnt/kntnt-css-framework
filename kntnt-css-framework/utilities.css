@@ -20,27 +20,46 @@ h5:not(.wrap) {
 
 
 /**
- * Don't allow floats to wrap.
+ * Pevent the element to wrap floats that preceede it.
  */
 
-.no-wrap {
+.dont-wrap {
   clear: both !important;
 }
 
 
 /**
+ * Prevent an element containing only floats to collaps to nothing and thereby
+ * making the element following it (its first sibling) to wrap around the
+ * floats inside the element. This is a modern version of clearfix.
+ *
+ * Notice that this solution alter the display property. If tha is not
+ * appropriate, use either the legacy clearfix class on this element or
+ * use .dont-wrap on the element following.
  */
 
+.clear {
+  display: flow-root;  
 }
 
 
 /**
+ * The legacy clearfix hack
  */
 
+.clearfix:after {
+    content: " ";
+    display: table;
+    clear: both;
 }
 
 
+/**
+ *  Children and descendants, respectively, inherits this elemenet's color
+ */
 
+.children-inherit-color > :not(:hover):not(:focus):not(:active),
+.descendants-inherit-color :not(:hover):not(:focus):not(:active) {
   color: inherit;
 }
 
