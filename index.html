@@ -618,7 +618,7 @@
 </aside>
 <h2>Blockquotes</h2>
 <p>Longer quotes that are reproduced in a separate paragraph are called <em>block quotes</em>. A such is wrappen in <code>&lt;blockquote&gt;…&lt;/blockquote&gt;</code> as in this example:</p>
-<pre><code class='language-html' lang='html'>&lt;blockquote cite=&quot;https://www.imdb.com/title/tt0109830/&quot;&gt;
+<pre><code>&lt;blockquote cite=&quot;https://www.imdb.com/title/tt0109830/&quot;&gt;
   &lt;p&gt;Mamma said stupid is as stupid does!&lt;/p&gt;
 &lt;/blockquote&gt;
 </code></pre>
@@ -628,7 +628,7 @@
 </blockquote>
 <p>Notice that the <code>cite</code> attribute isn’t rendered. It’s optional. If included, it must be a URL that designates a source document or message for the information quoted. This attribute is intended to point machines (e.g. search engines) to information explaining the context or the reference for the quote.</p>
 <p>To add a human-readable cite, use following construct:</p>
-<pre><code class='language-html' lang='html'>&lt;figure&gt;
+<pre><code>&lt;figure&gt;
   &lt;blockquote cite=&quot;https://www.imdb.com/title/tt0109830/&quot;&gt;
     &lt;p&gt;Mamma said stupid is as stupid does!&lt;/p&gt;
   &lt;/blockquote&gt;
@@ -644,7 +644,7 @@
 </figure>
 <p>Note that <code>&lt;cite&gt;…&lt;/cite&gt;</code> encloses the name of the work from which the quote comes. It should <em>not</em> contain the author’s name or anything else.</p>
 <p>For a single paragraph quote, the wrapping <code>&lt;p&gt;…&lt;/p&gt;</code> tags can be omitted:</p>
-<pre><code class='language-html' lang='html'>&lt;blockquote&gt;
+<pre><code>&lt;blockquote&gt;
   Mamma said stupid is as stupid does!
 &lt;/blockquote&gt;
 </code></pre>
@@ -726,7 +726,7 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 <h5><code>&lt;pre&gt;</code></h5>
 <p>To represent longer text that must appear exactly as preformatted – as if it were written on a typewriter – use <code>&lt;pre&gt;…&lt;/pre&gt;</code>.</p>
 <p>Follwoing HTML code, adapted from  <a href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/pre'>MDN Web Docs</a> presentation of <code>&lt;pre&gt;</code> is an example where it&#39;s important to wrap the content in <code>&lt;pre&gt;…&lt;/pre&gt;</code>:</p>
-<pre><code class='language-html' lang='html'>&lt;pre&gt;
+<pre><code>&lt;pre&gt;
    ----------------------------
   | I&#39;m an expert in my field. |
    ----------------------------
@@ -750,12 +750,13 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 <h5><code>&lt;abbr&gt;</code></h5>
 <p>Use <code>&lt;abbr&gt;…&lt;/abbr&gt;</code> to wrap abbreviations and acronyms.</p>
 <p>It would of course be silly to wrap every <i>e.g.</i>, <i>i.e.</i>, <i>etc</i> and so forth with <code>&lt;abbr&gt;…&lt;/abbr&gt;</code>. Use it instead with the <code>title</code> attribute, as shown below, when introducing an abbreviation or acronyme that might be unknonw for the read.</p>
-<pre><code class='language-html' lang='html'>&lt;p&gt;&lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt; is a markup language used to create the semantics and structure of a web page.&lt;/p&gt;
+<pre><code>&lt;p&gt;&lt;abbr title=&quot;HyperText Markup Language&quot;&gt;HTML&lt;/abbr&gt; is a markup language used to create the semantics and structure of a web page.&lt;/p&gt;
 </code></pre>
 <p>The result is a discreet marking of the abbreviation, indicating that the users can hover over the abbreviation to see an explanation in a tooltip.</p>
 <div><p><abbr title="HyperText Markup Language">HTML</abbr> is a markup language used to create the semantics and structure of a web page.</p></div>
-<h2>Positioning</h2>
+<h2>Positioning and styling of content blocks</h2>
 <p>KCF gives you the opportunity to influence the width and position of a block of content and thereby create pull quotes, calboxes and more.
+<h3>Positioning</h3>
 <p>By default, blocks are positioned between paragraphs with indentation. By applying one of the classes in the table below, their size and position will change.</p>
 <figure><table>
 <thead>
@@ -779,6 +780,25 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 <pre class="negative panel"><code>&lt;figure&gt;&lt;img <span class="darken">class="wide"</span> … &gt;&lt;/figure&gt;</code></pre>
 <p>However, following is valid and will produce the expected result:</p>
 <pre class="positive panel"><code>&lt;figure <span class="darken">class="wide"</span>&gt;&lt;img … &gt;&lt;/figure&gt;</code></pre>
+<h3>Styling</h3>
+<p>With positioning comes some styling. Most of it happens behind he curtain, to ensure the expected look of the positioned element. But there is a class designed to go hand in hand with positioning: <code>panel</code>.</p>
+<p>When a positioned element has the class <code>panel</code>, it appears slightly reduced in a panel with border and padding. The effect is even more noticeable if you use one of the predefined color classes (see below) or yor own customized color class.</p>
+<p>For an example, let’s start with a centered <code>&lt;div&gt;…&lt;/div&gt;</code> with some silly content. The result looks like this:</p>
+<div class="center outline-on-hover">
+  Silly content.
+</code></div>
+<p>It doesn't look centered. That's because the <em>text</em> within the wrapper <code>&lt;div&gt;…&lt;/div&gt;</code> isn't centered. But the <em>wrapper</em> itself is centered. Hover or tap on it to see the otherwise invisble wrapper.</p>
+<p>Now add the class <code>panel</code>: <code>&lt;div class="panel"&gt;…&lt;/div&gt;</code>. Here is how it looks like:</p>
+<div class="center panel">
+  Silly content.
+</div>
+<p>It looks like the content has moved into a panel and shrunked a tad to get some space around itself.</p>
+<p>And finally give it some color:</p>
+<p>Finally, add a color class to it: <code>&lt;div class="panel breezy-blue"&gt;…&lt;/div&gt;</code>. This is the result:</p>
+<div class="center panel breezy-blue">
+  Silly content.
+</div>
+<p>Neat, yeah? You will see more examples with and without <code>panel</code> applied below.</p>
 <h3>Demonstration of postioning classes</h3>
 <p>Below, you find examples of application of each class. Please check it on vary sceen sizes.</p>
 <h5>Class: <code>(no class)</code></h5>
@@ -949,6 +969,8 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 </aside>
 <p>Curabitur malesuada  metus consequat felis consectetur sodales. Integer commodo, nunc ac  facilisis suscipit, enim libero vehicula nulla, id vestibulum diam ipsum eget ex. Integer vel bibendum justo. Sed porta, lorem id cursus luctus, risus metus ullamcorper libero, ut euismod ante massa sed lorem.</p>
 <p>Nunc  vel arcu sed tortor elementum sagittis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Maecenas ut orci  vel dui tincidunt euismod.</p>
+
+
 <h2>Dealing with floats</h2>
 <p>TODO</p>
 <h2>Horizontal lines and dinkuses</h2>
