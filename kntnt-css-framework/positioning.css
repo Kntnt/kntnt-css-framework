@@ -107,7 +107,6 @@ body > :not(header):not(footer) > * > * > .left,
 body > :not(header):not(footer) > * > * > .right {
   width: calc(50% - var(--vertical-space-block) / 2);
   margin-top: calc(1.5 * var(--vertical-space-paragraph));  
-  margin-bottom: calc(0.5 * var(--vertical-space-paragraph));
 }
 
 body > :not(header):not(footer) > * > * > .left {
@@ -125,6 +124,27 @@ body > :not(header):not(footer) > * > * > .right + p {
   margin-top: var(--vertical-space-paragraph);  
 }
 
+body > :not(header):not(footer) > * > * > h2 + .left,
+body > :not(header):not(footer) > * > * > h3 + .left,
+body > :not(header):not(footer) > * > * > h4 + .left,
+body > :not(header):not(footer) > * > * > h5 + .left,
+body > :not(header):not(footer) > * > * > h2 + .right,
+body > :not(header):not(footer) > * > * > h3 + .right,
+body > :not(header):not(footer) > * > * > h4 + .right,
+body > :not(header):not(footer) > * > * > h5 + .right {
+  margin-top: calc(0.63 * var(--vertical-space-paragraph));
+}
+
+body > :not(header):not(footer) > * > * > h2 + .left + p,
+body > :not(header):not(footer) > * > * > h3 + .left + p,
+body > :not(header):not(footer) > * > * > h4 + .left + p,
+body > :not(header):not(footer) > * > * > h5 + .left + p,
+body > :not(header):not(footer) > * > * > h2 + .right + p,
+body > :not(header):not(footer) > * > * > h3 + .right + p,
+body > :not(header):not(footer) > * > * > h4 + .right + p,
+body > :not(header):not(footer) > * > * > h5 + .right + p {
+  margin-top: var(--vertical-space-paragraph-heading);
+}
 
 /**
  * Position: left/right protrude
