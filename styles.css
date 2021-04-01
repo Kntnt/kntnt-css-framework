@@ -109,9 +109,21 @@
   margin-top: var(--space-xxsmall);
 }
 
+
+/**
+ * Following classes are needed in index.html to demonstrate some points.
+ * Beyond that purpose, they are not particular useful, so don't blindly
+ * copy them. :-);
+ */
+
 .min-content-no-wrap-center {
   width: min-content;
   min-width: 20vw;
   white-space: nowrap;
   text-align: center;
+}
+
+.outline-on-hover:hover,
+.outline-on-hover:active {
+  outline: 1px solid red;
 }
