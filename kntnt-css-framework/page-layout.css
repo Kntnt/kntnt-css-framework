@@ -43,6 +43,7 @@ body > * > * > * {
 body > header {
   --topbar-height: calc(var(--topbar-font-size) + 2 * var(--topbar-padding-vertical));
   --header-height: calc(var(--header-content-height-max) + 2 * var(--header-padding-vertical));
+  z-index: 9999;
 }
 
 body > header > * {
