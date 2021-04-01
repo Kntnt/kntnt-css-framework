@@ -417,19 +417,19 @@ hr.double {
 }
 
 hr.single {
-  border-top: 1px solid var(--text-color);
+  border-top: 1px solid var(--hr-color-line);
 }
 
 hr.dashed {
-  border-top: 2px dashed var(--text-color);
+  border-top: 2px dashed var(--hr-color-line);
 }
 
 hr.dotted {
-  border-top: 3px dotted var(--text-color);
+  border-top: 3px dotted var(--hr-color-line);
 }
 
 hr.double {
-  border-top: 5px double var(--text-color);
+  border-top: 5px double var(--hr-color-line);
 }
 
 
@@ -443,6 +443,7 @@ hr.fleuron {
   margin: 2em 0;
   text-align: center;
   line-height: 1px;
+  color: var(--hr-color-dinkus);
 }
 
 hr.dinkus::after {

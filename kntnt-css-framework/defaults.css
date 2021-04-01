@@ -477,6 +477,14 @@
 
 
   /**
+   * Defaults for <hr>
+   */
+
+   --hr-color-line: var(--gray-viii);
+   --hr-color-dinkus: var(--text-color);
+
+
+  /**
    * Defaults for <del> and <ins>
    */
    
