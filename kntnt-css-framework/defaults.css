@@ -499,5 +499,11 @@
 
     --mark-color-background: var(--yellow);
 
+  /**
+   * Faux column gutter
+   */
+
+   --faux-column-space: var(--space-medium);
+
 
 }

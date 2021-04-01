@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="kntnt-css-framework/page-layout.css">
     <link rel="stylesheet" href="kntnt-css-framework/page-styles.css">
     <link rel="stylesheet" href="kntnt-css-framework/content.css">
+    <link rel="stylesheet" href="kntnt-css-framework/colors.css">
     <link rel="stylesheet" href="kntnt-css-framework/positioning.css">
+    <link rel="stylesheet" href="kntnt-css-framework/faux-columns.css">
     <link rel="stylesheet" href="kntnt-css-framework/utilities.css">
     <link rel="stylesheet" href="kntnt-css-framework/wordpress.css">
     <link rel="stylesheet" href="styles.css">
@@ -1076,8 +1078,114 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 <h2>Horizontal lines and dinkuses</h2>
 <p>Implemenetd but not documentet.</p>
 <h2>Faux columns</h2>
-<p>TODO</p>
-<h2>Box layout</h2>
+<p>KCF offerts two solutions to organizae content i “rows” and “columns”. Here we take a look at the simplest solution: <em>faux columns</em>. </p>
+<p>They are <em>faux</em> since the content of one column is not flowing to the next as they do in ”real” columns that you find for instance in newspapers and magazines. What you put in a faux column, stays in that column. Thus, a faux column behaves exactly as a cell in a speradsheet.</p>
+<p>With faux columns you can divide the available horizontal space in 1 trough 4 columns, and you can tell each column to occupy 25, 33, 50, 67, 75 or 100 percentage of the avilable width. The percentage with of all columns making up a row must always be 100 % – of course. Thus, following divisions of a row is possible:</p>
+<div class="clear faux-columns-demo">
+  <div class="col1">100%</div>
+  <div class="col2 width50 first">50%</div>
+  <div class="col2 width50 last">50%</div>
+  <div class="col2 width25 first">25%</div>
+  <div class="col2 width75 last">75%</div>
+  <div class="col2 width75 first">75%</div>
+  <div class="col2 width25 last">25%</div>
+  <div class="col2 width33 first">33%</div>
+  <div class="col2 width67 last">67%</div>
+  <div class="col2 width67 first">67%</div>
+  <div class="col2 width33 last">33%</div>
+  <div class="col3 width33 first">33%</div>
+  <div class="col3 width33">33%</div>
+  <div class="col3 width33 last">33%</div>
+  <div class="col3 width25 first">25%</div>
+  <div class="col3 width25">25%</div>
+  <div class="col3 width50 last">50%</div>
+  <div class="col3 width25 first">25%</div>
+  <div class="col3 width50">50%</div>
+  <div class="col3 width25 last">25%</div>
+  <div class="col3 width50 first">50%</div>
+  <div class="col3 width25">25%</div>
+  <div class="col3 width25 last">25%</div>
+  <div class="col4 width25 first">25%</div>
+  <div class="col4 width25">25%</div>
+  <div class="col4 width25">25%</div>
+  <div class="col4 width25 last">25%</div>
+</div>
+<p>The biggest benefit of faux columns over flexbox columns, presented next, is that you don’t need any wrappers around the row or column ot the content. You just slap classes onto the elements that you want to form columns. There are three categories of classes you need to deal with.</p>
+<div class="clear">
+  <div class="col3 width33 first">
+    <h4>Numer of columns</h4>
+    <p><code>col1</code> ⇒ 1 column<p>
+    <p><code>col2</code> ⇒ 2 columns<p>
+    <p><code>col3</code> ⇒ 3 columns<p>
+    <p><code>col4</code> ⇒ 4 columns<p>
+  </div>
+  <div class="col3 width33">
+    <h4>Numer of columns</h4>
+    <p><code>width25</code> ⇒ 25% width<p>
+    <p><code>width33</code> ⇒ 33% width<p>
+    <p><code>width50</code> ⇒ 50% width<p>
+    <p><code>width67</code> ⇒ 67% width<p>
+    <p><code>width75</code> ⇒ 75% width<p>
+    <p><code>width100</code> ⇒ 100% width<p>
+  </div>
+  <div class="col3 width33 last">
+    <h4>Boundary markers</h4>
+    <p><code>first</code> ⇒ first column<p>
+    <p><code>last</code> ⇒ last column<p>
+  </div>
+</div>
+<p>This is how the classes are used to accomplish the above demonstration of all possible combinations of columns.</p>
+<pre><code>&lt;div class=&quot;clear&quot;&gt;
+  
+  &lt;div class=&quot;col1&quot;&gt;100%&lt;/div&gt;
+
+  &lt;div class=&quot;col2 width50 first&quot;&gt;50%&lt;/div&gt;
+  &lt;div class=&quot;col2 width50 last&quot;&gt;50%&lt;/div&gt;
+
+  &lt;div class=&quot;col2 width25 first&quot;&gt;25%&lt;/div&gt;
+  &lt;div class=&quot;col2 width75 last&quot;&gt;75%&lt;/div&gt;
+
+  &lt;div class=&quot;col2 width75 first&quot;&gt;75%&lt;/div&gt;
+  &lt;div class=&quot;col2 width25 last&quot;&gt;25%&lt;/div&gt;
+
+  &lt;div class=&quot;col2 width33 first&quot;&gt;33%&lt;/div&gt;
+  &lt;div class=&quot;col2 width67 last&quot;&gt;67%&lt;/div&gt;
+
+  &lt;div class=&quot;col2 width67 first&quot;&gt;67%&lt;/div&gt;
+  &lt;div class=&quot;col2 width33 last&quot;&gt;33%&lt;/div&gt;
+
+  &lt;div class=&quot;col3 width33 first&quot;&gt;33%&lt;/div&gt;
+  &lt;div class=&quot;col3 width33&quot;&gt;33%&lt;/div&gt;
+  &lt;div class=&quot;col3 width33 last&quot;&gt;33%&lt;/div&gt;
+
+  &lt;div class=&quot;col3 width25 first&quot;&gt;25%&lt;/div&gt;
+  &lt;div class=&quot;col3 width25&quot;&gt;25%&lt;/div&gt;
+  &lt;div class=&quot;col3 width50 last&quot;&gt;50%&lt;/div&gt;
+
+  &lt;div class=&quot;col3 width25 first&quot;&gt;25%&lt;/div&gt;
+  &lt;div class=&quot;col3 width50&quot;&gt;50%&lt;/div&gt;
+  &lt;div class=&quot;col3 width25 last&quot;&gt;25%&lt;/div&gt;
+
+  &lt;div class=&quot;col3 width50 first&quot;&gt;50%&lt;/div&gt;
+  &lt;div class=&quot;col3 width25&quot;&gt;25%&lt;/div&gt;
+  &lt;div class=&quot;col3 width25 last&quot;&gt;25%&lt;/div&gt;
+
+  &lt;div class=&quot;col4 width25 first&quot;&gt;25%&lt;/div&gt;
+  &lt;div class=&quot;col4 width25&quot;&gt;25%&lt;/div&gt;
+  &lt;div class=&quot;col4 width25&quot;&gt;25%&lt;/div&gt;
+  &lt;div class=&quot;col4 width25 last&quot;&gt;25%&lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+<p>Notice that there are no wrapper element around any cell, any column or any row – as stated above – but there is one around the whole collections of rows. This is beacuse columns are ”floats&quot; (see above), and thereby allows the next sibling after it to place itself next to it. That’s how the row is formed. But that also allows the first sibling to the last column to sneak up and find gaps underneath or to the right of the columns where it spreads it content. Not pretty. Thus, we often need to wrap rows of columns with <code>&lt;div class="clear"&gt;…&lt;/div&gt;</code> to force the siblings to stay underneath the row.</p>
+<p>Another thing, which might be an issue, is that each column are not taller than necessary. Thus, you probably don’t want to use a background color on the columns as seen below:</p>
+<div class="clear">
+  <div class="col4 width25 first bgcolor red"><div class="h-spacer-400"></div></div>
+  <div class="col4 width25 bgcolor green"><div class="h-spacer-50"></div></div>
+  <div class="col4 width25 bgcolor blue"><div class="h-spacer-100"></div></div>
+  <div class="col4 width25 last bgcolor orange"><div class="h-spacer-200"></div></div>
+</div>
+<p>For better control, but also more cumbersome syntax, take a look at flexbox columns.</p>
+<h2>Flexbox columns</h2>
 <p>TODO</p>
 <h2>Links and buttons</h2>
 <p>Next up to implement</p>

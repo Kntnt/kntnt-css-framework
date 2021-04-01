@@ -127,3 +127,17 @@
 .outline-on-hover:active {
   outline: 1px solid red;
 }
+
+.faux-columns-demo .col1,
+.faux-columns-demo .col2,
+.faux-columns-demo .col3,
+.faux-columns-demo .col4 {
+  background: var(--pale-orange);
+  padding: 1em;
+  text-align: center;
+ }
+
+ .h-spacer-50 { height: 50px; }
+ .h-spacer-100 { height: 100px; }
+ .h-spacer-200 { height: 200px; }
+ .h-spacer-400 { height: 400px; }
