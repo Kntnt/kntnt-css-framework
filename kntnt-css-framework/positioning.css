@@ -7,30 +7,30 @@
  * Position <img>, <pre>, <table>, <div>, <figure> and <aside>
  * with following classes:
  *
- * |---------------------|------------------------------------------------|
- * | Class(es)           | Position                                       |
- * |---------------------|------------------------------------------------|
- * | (no class)          | Indented from column's left, taking up as much |
- * |                     | horizontal space as needed with respect to     |
- * |                     | indention from column's right.                 |
- * |                     |                                                |
- * | center              | Centered column's left and right indention.    |
- * |                     |                                                |
- * | wide                | Stretched as wide as the column                |
- * |                     |                                                |
- * | protrude wide       | Stretched as wide as header/footer             |
- * |                     |                                                |
- * | margin wide         | Stretched between viewport edges               |
- * |                     |                                                |
- * | left/right          | Aligned to left/right column edge with         |
- * |                     | half column width                              |
- * |                     |                                                |
- * | protrude left/right | Aligned to left/right header/footer edge with  |
- * |                     | half column width                              |
- * |                     |                                                |
- * | margin left/right   | Aligned to left/right viewport edge with 1rem  |
- * |                     | distance and third column width                |
- * ----------------------|-------------------------------------------------
+ * |----------------------|------------------------------------------------|
+ * | Class(es)            | Position                                       |
+ * |----------------------|------------------------------------------------|
+ * | indent (or no class) | Indented from column's left, taking up as much |
+ * |                      | horizontal space as needed with respect to     |
+ * |                      | indention from column's right.                 |
+ * |                      |                                                |
+ * | center               | Centered column's left and right indention.    |
+ * |                      |                                                |
+ * | wide                 | Stretched as wide as the column                |
+ * |                      |                                                |
+ * | protrude wide        | Stretched as wide as header/footer             |
+ * |                      |                                                |
+ * | margin wide          | Stretched between viewport edges               |
+ * |                      |                                                |
+ * | left/right           | Aligned to left/right column edge with         |
+ * |                      | half column width                              |
+ * |                      |                                                |
+ * | protrude left/right  | Aligned to left/right header/footer edge with  |
+ * |                      | half column width                              |
+ * |                      |                                                |
+ * | margin left/right    | Aligned to left/right viewport edge with 1rem  |
+ * |                      | distance and third column width                |
+ * -----------------------|-------------------------------------------------
  */
 
 
