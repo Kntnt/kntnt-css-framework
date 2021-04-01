@@ -44,7 +44,7 @@
       </div>
     </header>
     <div>
-      <aside class="panel color-alert-dark">
+      <aside class="panel alert-dark">
         <div>
           <p>Please, notice that this documentation is far from complete.<br>(By the way, this is an example of an alert panel.)</p>
         </div>
@@ -613,7 +613,7 @@
 </code></pre>
 <p>The URL is not rendered:</p>
 <div><p><samp>When Dave asks HAL to open the pod bay door, HAL answers: <q cite="https://www.imdb.com/title/tt0062622/quotes/qt0396921">I'm sorry, Dave. I'm afraid I can't do that.</q></samp></p></div>
-<aside class="panel color-alert-light">
+<aside class="panel alert-light">
   <p>Don't use <code>&lt;q&gt;…&lt;/q&gt;</code> for other purposes than quotes. For sarcasm and similar applications of quotation marks, you must write the correct quotation marks yourself.</p>
 </aside>
 <h2>Blockquotes</h2>
@@ -762,40 +762,50 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 <tr><th>Class(es)</th><th>Position</th></tr></thead>
 <tbody><tr><td>(no class)</td><td>Indented from column&#39;s left, taking up as much horizontal space as needed with respect to indention from column&#39;s right.</td></tr><tr><td>center</td><td>Centered column&#39;s left and right indention.</td></tr><tr><td>wide</td><td>Stretched as wide as the column</td></tr><tr><td>protrude wide</td><td>Stretched as wide as header/footer</td></tr><tr><td>margin wide</td><td>Stretched between viewport edges</td></tr><tr><td>left/right</td><td>Aligned to left/right column edge with half column width</td></tr><tr><td>protrude left/right</td><td>Aligned to left/right header/footer edge with half column width</td></tr><tr><td>margin left/right</td><td>Aligned to left/right viewport edge with 1rem distance and third column width</td></tr></tbody>
 </table></figure>
+<p>The positioning classes above must only be used on following elements:</p>
+<ul>
+<li><code>&lt;blockquote&gt;…&lt;/blockquote&gt;</code></li>
+<li><code>&lt;ul&gt;…&lt;\ul&gt;</code></li>
+<li><code>&lt;ol&gt;…&lt;\ol&gt;</code></li>
+<li><code>&lt;dl&gt;…&lt;/dl&gt;</code></li>
+<li><code>&lt;table&gt;…&lt;/table&gt;</code></li>
+<li><code>&lt;pre&gt;…&lt;/pre&gt;</code></li>
+<li><code>&lt;img&gt;</code></li>
+<li><code>&lt;figure&gt;…&lt;/figure&gt;</code></li>
+<li><code>&lt;aside&gt;…&lt;/aside&gt;</code></li>
+<li><code>&lt;div&gt;…&lt;/div&gt;</code></li>
+</ul>
+<p>Moreover, the positioning classes above must only be used on an element that is not wrappen by any other element. Thus, following example is not valid:</p>
+<pre class="negative panel"><code>&lt;figure&gt;&lt;img <span class="darken">class="wide"</span> … &gt;&lt;/figure&gt;</code></pre>
+<p>However, following is valid and will produce the expected result:</p>
+<pre class="positive panel"><code>&lt;figure <span class="darken">class="wide"</span>&gt;&lt;img … &gt;&lt;/figure&gt;</code></pre>
 <h3>Demonstration of postioning classes</h3>
 <p>Below, you find examples of application of each class. Please check it on vary sceen sizes.</p>
 <h5>Class: <code>(no class)</code></h5>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="touch-of-torqouise panel min-content-no-wrap-center"><span>(no class)</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
-<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>center</code></h5>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="center hint-of-mint panel min-content-no-wrap-center"><span>center</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
-<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>wide</code></h5>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="wide creamy-peach panel min-content-no-wrap-center"><span>wide</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
-<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>protrude wide</code></h5>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="protrude wide milky-yellow panel min-content-no-wrap-center"><span>protrude wide</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
-<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>margin wide</code></h5>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="margin wide lilac-haze panel min-content-no-wrap-center"><span>margin wide</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
-<p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>left</code></h5>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="left cloudy-blue panel min-content-no-wrap-center"><span>left</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
 <p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
 <h5>Class: <code>right</code></h5>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum semper rhoncus nulla vitae faucibus. Curabitur ac felis at purus volutpat pharetra vel dignissim enim. Integer cursus massa fringilla venenatis varius.</p>
 <div class="right dash-of-lime panel min-content-no-wrap-center"><span>right</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
 <p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
@@ -819,24 +829,6 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 <div class="right margin breezy-blue panel min-content-no-wrap-center"><span>right margin</span></div>
 <p>Nulla ac molestie ipsum. Aenean imperdiet, dui non sagittis fringilla, ipsum augue hendrerit dui, quis dignissim neque massa a massa. Pellentesque malesuada augue venenatis sem tincidunt sagittis. Phasellus ut arcu ex.</p>
 <p>Nulla scelerisque, sapien id vestibulum porta, erat mauris tristique mauris, vitae blandit libero augue eu nunc. Nam imperdiet sapien vitae consequat auctor. Curabitur ac leo efficitur tortor maximus blandit quis ac metus. Morbi et fermentum est.</p>
-<h3>Conditions for positioning to happen</h3>
-<p>The positioning classes above must only be used on following elements:</p>
-<ul>
-<li><code>&lt;blockquote&gt;…&lt;/blockquote&gt;</code></li>
-<li><code>&lt;ul&gt;…&lt;\ul&gt;</code></li>
-<li><code>&lt;ol&gt;…&lt;\ol&gt;</code></li>
-<li><code>&lt;dl&gt;…&lt;/dl&gt;</code></li>
-<li><code>&lt;table&gt;…&lt;/table&gt;</code></li>
-<li><code>&lt;pre&gt;…&lt;/pre&gt;</code></li>
-<li><code>&lt;img&gt;</code></li>
-<li><code>&lt;figure&gt;…&lt;/figure&gt;</code></li>
-<li><code>&lt;aside&gt;…&lt;/aside&gt;</code></li>
-<li><code>&lt;div&gt;…&lt;/div&gt;</code></li>
-</ul>
-<p>Moreover, the positioning classes above must only be used on an element that is not wrappen by any other element. Thus, following example is not valid:</p>
-<pre class="negative panel"><code>&lt;figure&gt;&lt;img <span class="darken">class="wide"</span> … &gt;&lt;/figure&gt;</code></pre>
-<p>However, following is valid and will produce the expected result:</p>
-<pre class="positive panel"><code>&lt;figure <span class="darken">class="wide"</span>&gt;&lt;img … &gt;&lt;/figure&gt;</code></pre>
 <h3>Demonstration of various blocks</h3>
 <p>Below, you find examples demonstrating positioning of block content.</p>
 <h5>Block: <code>&lt;blockquote&gt;</code></h5>
@@ -961,10 +953,28 @@ C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub> – also known as “caffe
 <p>TODO</p>
 <h2>Horizontal lines and dinkuses</h2>
 <p>TODO</p>
+<h2>Faux columns</h2>
+<p>TODO</p>
+<h2>Box layout</h2>
+<p>TODO</p>
+<h2>Links and buttons</h2>
+<p>Next up to implement</p>
+<h2>Forms</h2>
+<p>Next up to implement</p>
 <h2>Color classes</h2>
-<p>TODO</p>
+<p>Implemenetd but not documentet.</p>
 <h2>Miscellaneous classes</h2>
-<p>TODO</p>
+<p>Implemenetd but not documentet.</p>
+<h2>Ideas for future</h2>
+<p>Following is a list of ideas for the future in no particualr order:</p>
+<ul>
+<li>Styling of <code>&lt;details&gt;</code></li>
+<li>Lightbox with <code>&lt;dialog&gt;</code> (likely JS)</li>
+<li>How to work with <code>&lt;embed&gt;</code>, <code>&lt;object&gt;</code> and <code>&lt;iframe&gt;</code></li>
+<li>Gallery of images and other ”blocks&quot; with various looks</li>
+<li>Carousell of images and other ”blocks&quot; with various looks</li>
+<li>Parallax effetcs (likely JS)</li>
+</ul>
 <footer>
 <aside class="panel transparent">
   <div>
