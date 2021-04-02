@@ -87,6 +87,19 @@ h5:not(.wrap) {
 
 
 /**
+ * Hide or remove element
+ */
+
+.hidden {
+  visibility: hidden;
+}
+
+.removed {
+  display: none;
+}
+
+
+/**
  * Kicker and deck for H1. Kicker is the smaller heading above a main heading,
  * and deck is the smaller heading below a main heading. Example of usage:;
  * <h1><span class="kicker">KICKER: </span>HEADING<span class="deck"> DECK</span></h1>
