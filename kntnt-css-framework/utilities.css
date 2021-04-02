@@ -191,7 +191,7 @@ h1 > .deck {
 
 
 /**
- *
+ * Outline an element without affecting the layout.
  */
 .debug {
   outline: 1px solid red;
