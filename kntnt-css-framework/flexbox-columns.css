@@ -4,7 +4,7 @@
  * SPDX-FileCopyrightText: 2021 Kntnt Sweden AB
  * SPDX-License-Identifier: MIT
  *
-* Start by making an element into a row by ading the class `row` followed by one of the `row-…` classes that identifies how many columns the row should have:
+ * Start by making an element into a row by ading the class `row` followed by one of the `row-…` classes that identifies how many columns the row should have:
  * 
  *   <div class="row has-50-50-cols">
  *     …
