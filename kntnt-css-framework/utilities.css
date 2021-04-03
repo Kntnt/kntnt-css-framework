@@ -141,6 +141,60 @@ h5:not(.wrap) {
 
 
 /**
+ * Swap columns in a flexbox.
+ */
+
+.swaped-columns {
+  flex-direction: row-reverse;
+}
+
+@media (min-width: 1024px) {
+  .swaped-columns-on-desktop {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .swaped-columns-on-tablet {
+    flex-direction: row-reverse;
+  }
+}
+
+@media (max-width: 767px) {
+  .swaped-columns-on-mobile {
+    flex-direction: row-reverse;
+  }
+}
+
+
+/**
+ * Swap rows in a flexbox.
+ */
+
+.swaped-rows {
+  flex-direction: column-reverse;
+}
+
+@media (min-width: 1024px) {
+  .swaped-rows-on-desktop {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .swaped-rows-on-tablet {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 767px) {
+  .swaped-rows-on-mobile {
+    flex-direction: column-reverse;
+  }
+}
+
+
+/**
  * Kicker and deck for H1. Kicker is the smaller heading above a main heading,
  * and deck is the smaller heading below a main heading. Example of usage:;
  * <h1><span class="kicker">KICKER: </span>HEADING<span class="deck"> DECK</span></h1>
