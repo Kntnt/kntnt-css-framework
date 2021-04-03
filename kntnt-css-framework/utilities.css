@@ -87,15 +87,56 @@ h5:not(.wrap) {
 
 
 /**
- * Hide or remove element
+ * Hide element
  */
 
 .hidden {
   visibility: hidden;
 }
 
+@media (min-width: 1024px) {
+  .hidden-on-desktop {
+    visibility: hidden;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .hidden-on-tablet {
+    visibility: hidden;
+  }
+}
+
+@media (max-width: 767px) {
+  .hidden-on-mobile {
+    visibility: hidden;
+  }
+}
+
+
+/**
+ * Remove element
+ */
+
 .removed {
   display: none;
+}
+
+@media (min-width: 1024px) {
+  .removed-on-desktop {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .removed-on-tablet {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .removed-on-mobile {
+    display: none;
+  }
 }
 
 
