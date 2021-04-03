@@ -38,17 +38,17 @@
  * Position: indented (no class)
  */
 
-body > :not(header):not(footer) > * > * > .indent,
-body > :not(header):not(footer) > * > * > aside:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
-body > :not(header):not(footer) > * > * > blockquote:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
-body > :not(header):not(footer) > * > * > div:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
-body > :not(header):not(footer) > * > * > dl:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
-body > :not(header):not(footer) > * > * > figure:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
-body > :not(header):not(footer) > * > * > img:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
-body > :not(header):not(footer) > * > * > ol:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
-body > :not(header):not(footer) > * > * > pre:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
-body > :not(header):not(footer) > * > * > table:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
-body > :not(header):not(footer) > * > * > ul:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin) {
+main .indent,
+main aside:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+main blockquote:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+main div:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+main dl:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+main figure:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+main img:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+main ol:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+main pre:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+main table:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin),
+main ul:not(.center):not(.wide):not(.protrude):not(.left):not(.right):not(.margin) {
   max-width: calc(100% - 2 * var(--block-indent));
   margin-left: var(--block-indent);
 }
@@ -58,8 +58,7 @@ body > :not(header):not(footer) > * > * > ul:not(.center):not(.wide):not(.protru
  * Position: center
  */
 
-
-body > :not(header):not(footer) > * > * > .center {
+main .center {
   max-width: calc(100% - 2 * var(--block-indent));
   margin-left: auto;
   margin-right: auto;
@@ -70,7 +69,7 @@ body > :not(header):not(footer) > * > * > .center {
  * Position: wide
  */
 
-body > :not(header):not(footer) > * > * > .wide {
+main .wide {
   width: 100%;
 }
 
@@ -79,7 +78,7 @@ body > :not(header):not(footer) > * > * > .wide {
  * Position: wide protrude
  */
 
-body > :not(header):not(footer) > * > * > .protrude:not(.left):not(.right) {  
+main .protrude:not(.left):not(.right) {  
   width: auto;
   max-width: calc(100% + 2 * var(--row-protruding));
   margin-left: calc(0px - var(--row-protruding));
@@ -91,7 +90,7 @@ body > :not(header):not(footer) > * > * > .protrude:not(.left):not(.right) {
  * Position: wide margin
  */
 
-body > :not(header):not(footer) > * > * > .wide.margin {
+main .wide.margin {
   max-width: 100vw;
   width: 100vw;
   margin-left: calc(50% - 50vw);
@@ -103,47 +102,47 @@ body > :not(header):not(footer) > * > * > .wide.margin {
  * Position: left/right
  */
 
-body > :not(header):not(footer) > * > * > .left,
-body > :not(header):not(footer) > * > * > .right {
+main .left,
+main .right {
   width: calc(50% - var(--vertical-space-block) / 2);
   margin-top: calc(1.5 * var(--vertical-space-paragraph));
   margin-bottom: calc(0.5 * var(--vertical-space-paragraph));
 }
 
-body > :not(header):not(footer) > * > * > .left {
+main .left {
   float: left;
   margin-right: var(--vertical-space-block);
 }
 
-body > :not(header):not(footer) > * > * > .right {
+main .right {
   float: right;
   margin-left: var(--vertical-space-block);
 }
 
-body > :not(header):not(footer) > * > * > .left + p,
-body > :not(header):not(footer) > * > * > .right + p {
+main .left + p,
+main .right + p {
   margin-top: var(--vertical-space-paragraph);  
 }
 
-body > :not(header):not(footer) > * > * > h2 + .left,
-body > :not(header):not(footer) > * > * > h3 + .left,
-body > :not(header):not(footer) > * > * > h4 + .left,
-body > :not(header):not(footer) > * > * > h5 + .left,
-body > :not(header):not(footer) > * > * > h2 + .right,
-body > :not(header):not(footer) > * > * > h3 + .right,
-body > :not(header):not(footer) > * > * > h4 + .right,
-body > :not(header):not(footer) > * > * > h5 + .right {
+main h2 + .left,
+main h3 + .left,
+main h4 + .left,
+main h5 + .left,
+main h2 + .right,
+main h3 + .right,
+main h4 + .right,
+main h5 + .right {
   margin-top: calc(0.63 * var(--vertical-space-paragraph));
 }
 
-body > :not(header):not(footer) > * > * > h2 + .left + p,
-body > :not(header):not(footer) > * > * > h3 + .left + p,
-body > :not(header):not(footer) > * > * > h4 + .left + p,
-body > :not(header):not(footer) > * > * > h5 + .left + p,
-body > :not(header):not(footer) > * > * > h2 + .right + p,
-body > :not(header):not(footer) > * > * > h3 + .right + p,
-body > :not(header):not(footer) > * > * > h4 + .right + p,
-body > :not(header):not(footer) > * > * > h5 + .right + p {
+main h2 + .left + p,
+main h3 + .left + p,
+main h4 + .left + p,
+main h5 + .left + p,
+main h2 + .right + p,
+main h3 + .right + p,
+main h4 + .right + p,
+main h5 + .right + p {
   margin-top: var(--vertical-space-paragraph-heading);
 }
 
@@ -151,11 +150,11 @@ body > :not(header):not(footer) > * > * > h5 + .right + p {
  * Position: left/right protrude
  */
 
-body > :not(header):not(footer) > * > * > .left.protrude {
+main .left.protrude {
   margin-left: calc(0px - var(--row-protruding));
 }
 
-body > :not(header):not(footer) > * > * > .right.protrude {
+main .right.protrude {
   margin-right: calc(0px - var(--row-protruding));
 }
 
@@ -164,17 +163,17 @@ body > :not(header):not(footer) > * > * > .right.protrude {
  * Position: left/right margin
  */
 
-body > :not(header):not(footer) > * > * > .left.margin,
-body > :not(header):not(footer) > * > * > .right.margin {
+main .left.margin,
+main .right.margin {
   --padding: min(var(--vertical-space-block), var(--row-padding));
   width: calc(100% / 3);
 }
 
-body > :not(header):not(footer) > * > * > .left.margin {
+main .left.margin {
   margin-left: max(calc(-100% / 3 - var(--padding)), calc(50% - 50vw + var(--padding)));
 }
 
-body > :not(header):not(footer) > * > * > .right.margin {
+main .right.margin {
   margin-right: max(calc(-100% / 3 - var(--padding)), calc(50% - 50vw + var(--padding)));
 }
 
@@ -183,21 +182,21 @@ body > :not(header):not(footer) > * > * > .right.margin {
  * Styling: Panel
  */
 
-body > :not(header):not(footer) > * > * > .panel {
+main .panel {
   padding: var(--box-padding-text);
   font-size: var(--font-size-smaller);
   box-shadow: var(--shadow);
 }
 
-body > :not(header):not(footer) > * > * > .panel > * {
+main .panel > * {
   font-size: inherit;
 }
 
-body > :not(header):not(footer) > * > * > .wide.margin.panel {
+main .wide.margin.panel {
     padding: var(--row-padding);
 }
 
-body > :not(header):not(footer) > * > * > .wide.margin.panel > * {
+main .wide.margin.panel > * {
   width: 100%;
   max-width: calc(var(--content-width) + 2 * var(--row-protruding));
   margin-left: auto;
@@ -209,27 +208,27 @@ body > :not(header):not(footer) > * > * > .wide.margin.panel > * {
  * Styling: Quote
  */
 
-body > :not(header):not(footer) > * > * > blockquote.indent,
-body > :not(header):not(footer) > * > * > blockquote.center,
-body > :not(header):not(footer) > * > * > blockquote.wide,
-body > :not(header):not(footer) > * > * > blockquote.protrude,
-body > :not(header):not(footer) > * > * > blockquote.left,
-body > :not(header):not(footer) > * > * > blockquote.right,
-body > :not(header):not(footer) > * > * > blockquote.margin,
-body > :not(header):not(footer) > * > * > .indent > blockquote,
-body > :not(header):not(footer) > * > * > .center > blockquote,
-body > :not(header):not(footer) > * > * > .wide > blockquote,
-body > :not(header):not(footer) > * > * > .protrude > blockquote,
-body > :not(header):not(footer) > * > * > .left > blockquote,
-body > :not(header):not(footer) > * > * > .right > blockquote,
-body > :not(header):not(footer) > * > * > .margin > blockquote,
-body > :not(header):not(footer) > * > * > aside.indent > * > blockquote,
-body > :not(header):not(footer) > * > * > aside.center > * > blockquote,
-body > :not(header):not(footer) > * > * > aside.wide > * > blockquote,
-body > :not(header):not(footer) > * > * > aside.protrude > * > blockquote,
-body > :not(header):not(footer) > * > * > aside.left > * > blockquote,
-body > :not(header):not(footer) > * > * > aside.right > * > blockquote,
-body > :not(header):not(footer) > * > * > aside.margin > * > blockquote {
+main blockquote.indent,
+main blockquote.center,
+main blockquote.wide,
+main blockquote.protrude,
+main blockquote.left,
+main blockquote.right,
+main blockquote.margin,
+main .indent > blockquote,
+main .center > blockquote,
+main .wide > blockquote,
+main .protrude > blockquote,
+main .left > blockquote,
+main .right > blockquote,
+main .margin > blockquote,
+main aside.indent > * > blockquote,
+main aside.center > * > blockquote,
+main aside.wide > * > blockquote,
+main aside.protrude > * > blockquote,
+main aside.left > * > blockquote,
+main aside.right > * > blockquote,
+main aside.margin > * > blockquote {
   font-family: var(--pullquote-font-family);
   font-size: var(--pullquote-font-size);
   font-weight: var(--pullquote-font-weight);
