@@ -105,7 +105,7 @@ h5:not(.wrap) {
  * <h1><span class="kicker">KICKER: </span>HEADING<span class="deck"> DECK</span></h1>
  */
 
-h1 > .kicker {
+.kicker {
   display: block;
   margin-bottom: var(--h1-kicker-space);
   font-family: var(--h1-kicker-font-family);
@@ -115,7 +115,7 @@ h1 > .kicker {
   color: var(--h1-kicker-color);
 }
 
-h1 > .deck {
+.deck {
   display: block;
   margin-top: var(--h1-deck-space);
   font-family: var(--h1-deck-font-family);
